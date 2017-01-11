@@ -1,59 +1,59 @@
 {
-    "name": "number-generator",
-    "version": "0.1.0",
-    "description": "Generate pseudo random numbers and hashs.",
-    "main": "lib/index.js",
-    "types": "lib/index.d.ts",
-    "engines": {
-        "node": ">=4.0.0"
-    },
-    "scripts": {
-        "build": "rimraf ./lib/* && tsc --project tsconfig.json",
-        "build:production": "npm run build && uglifyjs ./lib/index.js --screw-ie8 -m -r 'require,exports' -c -o ./lib/index.js",
-        "build:test": "tsc --project tsconfig-test.json",
-        "pretest": "npm run lint && npm run build:test",
-        "test": "nyc mocha --recursive './lib/tests/**/*-test.js' && nyc report --reporter=html",
-        "lint": "tslint -s ./node_modules/custom-tslint-formatters/formatters -t grouped './src/**/*.ts'",
-        "prepublish": "npm test && npm run build:production",
-        "commit": "git-cz",
-        "release": "standard-version"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@github.com/MartinHelmut/number-generator.git"
-    },
-    "keywords": [
-        "numbers",
-        "random",
-        "alea",
-        "murmur",
-        "hash"
-    ],
-    "author": "Martin Helmut Fieber <info@martin-fieber.de>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/MartinHelmut/number-generator/issues"
-    },
-    "homepage": "https://github.com/MartinHelmut/number-generator#readme",
-    "devDependencies": {
-        "@types/chai": "3.4.34",
-        "@types/mocha": "2.2.37",
-        "@types/node": "7.0.0",
-        "chai": "3.5.0",
-        "commitizen": "2.9.5",
-        "custom-tslint-formatters": "2.0.0",
-        "cz-conventional-changelog": "1.2.0",
-        "mocha": "3.2.0",
-        "nyc": "10.0.0",
-        "rimraf": "2.5.4",
-        "standard-version": "4.0.0",
-        "tslint": "4.3.1",
-        "typescript": "2.1.4",
-        "uglify-js": "2.7.5"
-    },
-    "config": {
-        "commitizen": {
-            "path": "cz-conventional-changelog"
-        }
+  "name": "number-generator",
+  "version": "0.1.1",
+  "description": "Generate pseudo random numbers and hashs.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "build": "rimraf ./lib/* && tsc --project tsconfig.json",
+    "build:production": "npm run build && uglifyjs ./lib/index.js --screw-ie8 -m -r 'require,exports' -c -o ./lib/index.js",
+    "build:test": "tsc --project tsconfig-test.json",
+    "pretest": "npm run lint && npm run build:test",
+    "test": "nyc mocha --recursive './lib/tests/**/*-test.js' && nyc report --reporter=html",
+    "lint": "tslint -s ./node_modules/custom-tslint-formatters/formatters -t grouped './src/**/*.ts'",
+    "prepublish": "npm test && npm run build:production",
+    "commit": "git-cz",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MartinHelmut/number-generator.git"
+  },
+  "keywords": [
+    "numbers",
+    "random",
+    "alea",
+    "murmur",
+    "hash"
+  ],
+  "author": "Martin Helmut Fieber <info@martin-fieber.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MartinHelmut/number-generator/issues"
+  },
+  "homepage": "https://github.com/MartinHelmut/number-generator#readme",
+  "devDependencies": {
+    "@types/chai": "3.4.34",
+    "@types/mocha": "2.2.37",
+    "@types/node": "7.0.0",
+    "chai": "3.5.0",
+    "commitizen": "2.9.5",
+    "custom-tslint-formatters": "2.0.0",
+    "cz-conventional-changelog": "1.2.0",
+    "mocha": "3.2.0",
+    "nyc": "10.0.0",
+    "rimraf": "2.5.4",
+    "standard-version": "4.0.0",
+    "tslint": "4.3.1",
+    "typescript": "2.1.4",
+    "uglify-js": "2.7.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
     }
+  }
 }
