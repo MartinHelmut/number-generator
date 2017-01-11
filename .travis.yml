@@ -11,4 +11,3 @@ deploy:
   on:
     tags: true
     repo: MartinHelmut/number-generator
-    condition: "$TRAVIS_COMMIT == ^chore(release):.*$"
