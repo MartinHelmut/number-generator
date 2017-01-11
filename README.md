@@ -1,6 +1,8 @@
 # Number Generator
 
+[![Build Status][travisimg]][travisorg]
 [![Commitizen friendly][czimg]][czcli]
+[![Standard Version][stdimg]][stdurl]
 
 Generate repeatable pseudo random numbers and non-cryptographic hash
 numbers with in Node.js and browser.
@@ -244,8 +246,12 @@ on repeatable random numbers" from Rune Skovbo Johansen.
 Thanks to Johannes Baagøe for the Alea port and Ray Morgan for the MurmurHash2
 algorithm implementation in JavaScript.
 
+[travisimg]: https://travis-ci.org/MartinHelmut/number-generator.svg?branch=master
+[travisorg]: https://travis-ci.org/MartinHelmut/number-generator
 [czimg]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
 [czcli]: http://commitizen.github.io/cz-cli/
+[stdimg]: https://img.shields.io/badge/release-standard%20version-brightgreen.svg
+[stdurl]: https://github.com/conventional-changelog/standard-version
 [ts]: http://www.typescriptlang.org/
 [wal]: https://web.archive.org/web/20111118012238/http://baagoe.com/en/RandomMusings/javascript/
 [date]: https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Date
