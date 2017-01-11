@@ -59,4 +59,7 @@ GitHub.
 6. Publish: `npm publish`
 7. **Done!**
 
+For more information on building a release see [https://github.com/conventional-changelog/standard-version][sv]
+
 [czcli]: http://commitizen.github.io/cz-cli/
+[sv]: https://github.com/conventional-changelog/standard-version
