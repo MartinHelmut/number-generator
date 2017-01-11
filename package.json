@@ -16,7 +16,7 @@
     "lint": "tslint -s ./node_modules/custom-tslint-formatters/formatters -t grouped './src/**/*.ts'",
     "prepublish": "npm test && npm run build:production",
     "commit": "git-cz",
-    "release": "standard-version"
+    "release": "standard-version -a"
   },
   "repository": {
     "type": "git",
