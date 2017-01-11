@@ -2,11 +2,11 @@
 
 [![Commitizen friendly][czimg]][czcli]
 
-Generate repeatable **pseudo random numbers** and **non-cryptographic
-hash numbers** with in Node.js and browser.
+Generate repeatable pseudo random numbers and non-cryptographic hash
+numbers with in Node.js and browser.
 
-**This library is not yet suitable for production! Wait until major
-release v1.0.0 for a stable API.**
+**This library is not yet suitable for production!** Wait until major
+release v1.0.0 for a stable API.
 
 ## Contents
 
@@ -68,8 +68,7 @@ to bundle your dependencies to use the library in current browser environments.
 
 You can use the `aleaRNGFactory` method to generate (pseudo) random numbers
 based an a seed (**default seed is** `1`). Every seed let you produce the
-same result for the number getter methods. Firstly get a new *Alea* instance
-and see what this means.
+same result for the number getter methods.
 
 #### Create a new random number generator
 
