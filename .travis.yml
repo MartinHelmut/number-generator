@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '6'
+- '5'
+- '4'
+deploy:
+  provider: npm
+  email: info@martin-fieber.de
+  api_key:
+    secure: $NPM_TOKEN
+  on:
+    tags: true
+    repo: MartinHelmut/number-generator
+    branch: master
