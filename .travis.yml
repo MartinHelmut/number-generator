@@ -11,5 +11,4 @@ deploy:
   on:
     tags: true
     repo: MartinHelmut/number-generator
-    branch: master
-  skin_cleanup: true
+    condition: "$TRAVIS_COMMIT == ^chore(release):.*$"
