@@ -12,3 +12,4 @@ deploy:
     tags: true
     repo: MartinHelmut/number-generator
     branch: master
+  skin_cleanup: true
