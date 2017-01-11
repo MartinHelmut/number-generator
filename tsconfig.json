@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": false,
+        "alwaysStrict": true,
+        "baseUrl": "./",
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "lib": ["es5"],
+        "module": "umd",
+        "outDir": "lib",
+        "moduleResolution": "node",
+        "newLine": "LF",
+        "noImplicitAny": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "target": "ES5",
+        "declaration": true,
+        "paths": {
+            "*": [
+                "node_modules/@types/*",
+                "*"
+            ]
+        },
+        "preserveConstEnums": false,
+        "pretty": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "strictNullChecks": true
+    },
+    "include": [ "./src/index.ts" ]
+}
