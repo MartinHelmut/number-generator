@@ -49,4 +49,14 @@ to create a proper commit message.
 Push the changes and your feature branch and create a "Merge Request" on
 GitHub.
 
+## Recommended workflow for release
+
+1. Make changes
+2. Commit those changes with `npm run commit`
+3. Make sure all tests turn green
+4. Create a new release with `npm run release`
+5. Push your release `git push --follow-tags origin master`
+6. Publish: `npm publish`
+7. **Done!**
+
 [czcli]: http://commitizen.github.io/cz-cli/

@@ -234,31 +234,7 @@ hashFn('What?', 42);
 
 ## Development
 
-Clone the repo and ...
-
-### Run tests
-
-To lint the application and run all the tests use:
-
-```shell
-npm test
-```
-
-### Build the library
-
-If you want to build the application you can either run
-
-```shell
-npm run build
-```
-
-for a default build or
-
-```shell
-npm run build:production
-```
-
-for a minified version.
+If you want ot contribute see [https://github.com/MartinHelmut/number-generator/blob/master/CONTRIBUTING.md][cont]
 
 ## Disclaimer
 
@@ -275,4 +251,5 @@ algorithm implementation in JavaScript.
 [wal]: https://web.archive.org/web/20111118012238/http://baagoe.com/en/RandomMusings/javascript/
 [date]: https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Date
 [mur]: https://en.wikipedia.org/wiki/MurmurHash
+[cont]: https://github.com/MartinHelmut/number-generator/blob/master/CONTRIBUTING.md
 [unit]: https://blogs.unity3d.com/2015/01/07/a-primer-on-repeatable-random-numbers/
