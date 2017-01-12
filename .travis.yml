@@ -5,7 +5,7 @@ node_js:
 - '4'
 deploy:
   provider: npm
-  email: info@martin-fieber.de
+  email: $AUTHOR_EMAIL
   api_key: $NPM_API_KEY
   on:
     tags: true
