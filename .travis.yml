@@ -6,8 +6,7 @@ node_js:
 deploy:
   provider: npm
   email: info@martin-fieber.de
-  api_key:
-    secure: $NPM_TOKEN
+  api_key: $NPM_API_KEY
   on:
     tags: true
     repo: MartinHelmut/number-generator
