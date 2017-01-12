@@ -6,7 +6,7 @@
 [![Standard Version][stdimg]][stdurl]
 
 Generate repeatable pseudo random numbers and non-cryptographic hash
-numbers with in Node.js and browser.
+numbers with Node.js and browser.
 
 **This library is not yet suitable for production!** Wait until major
 release v1.0.0 for a stable API.
