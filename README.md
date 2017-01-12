@@ -1,6 +1,7 @@
 # Number Generator
 
 [![Build Status][travisimg]][travisorg]
+[![Coverage Status][covimg]][covurl]
 [![Commitizen friendly][czimg]][czcli]
 [![Standard Version][stdimg]][stdurl]
 
@@ -248,6 +249,8 @@ algorithm implementation in JavaScript.
 
 [travisimg]: https://travis-ci.org/MartinHelmut/number-generator.svg?branch=master
 [travisorg]: https://travis-ci.org/MartinHelmut/number-generator
+[covimg]: https://coveralls.io/repos/github/MartinHelmut/number-generator/badge.svg?branch=master
+[covurl]: https://coveralls.io/github/MartinHelmut/number-generator?branch=master
 [czimg]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
 [czcli]: http://commitizen.github.io/cz-cli/
 [stdimg]: https://img.shields.io/badge/release-standard%20version-brightgreen.svg
