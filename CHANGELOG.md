@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.1"></a>
+## [0.2.1](https://github.com/MartinHelmut/number-generator/compare/v0.2.0...v0.2.1) (2017-01-17)
+
+
+### Bug Fixes
+
+* **state:** Don't use import helpers to resolve smaller compile results ([54cabba](https://github.com/MartinHelmut/number-generator/commit/54cabba))
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/MartinHelmut/number-generator/compare/v0.1.9...v0.2.0) (2017-01-17)
 
