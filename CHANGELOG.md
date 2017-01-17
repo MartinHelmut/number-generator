@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/MartinHelmut/number-generator/compare/v0.1.9...v0.2.0) (2017-01-17)
+
+
+### Features
+
+* **state:** Added getter and setter for internal state ([5b836a3](https://github.com/MartinHelmut/number-generator/commit/5b836a3))
+
+
+
 <a name="0.1.9"></a>
 ## [0.1.9](https://github.com/MartinHelmut/number-generator/compare/v0.1.8...v0.1.9) (2017-01-12)
 
