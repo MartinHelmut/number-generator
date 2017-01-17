@@ -1,5 +1,5 @@
 import { assert } from 'chai';
-import { INumberGenerator, aleaRNGFactory } from '../';
+import { INumberGenerator, aleaRNGFactory, INumberGeneratorState } from '../';
 
 describe('aleaRNGFactory', () => {
     describe('uFloat32()', () => {
@@ -204,6 +204,100 @@ describe('aleaRNGFactory', () => {
 
         it('throws a TypeError on negative seed of 0', () => {
             assert.throw(() => aleaRNGFactory(0), TypeError);
+        });
+    });
+
+    describe('getState()', () => {
+        it('gets a representation of the internal state', () => {
+            const generator: INumberGenerator = aleaRNGFactory(1);
+            const state: INumberGeneratorState = generator.getState();
+
+            assert.isDefined(state);
+        });
+
+        it('returns the correction', () => {
+            const generator: INumberGenerator = aleaRNGFactory(2);
+            const state: INumberGeneratorState = generator.getState();
+
+            assert.equal(state.correction, 1);
+        });
+
+        it('returns all sequences', () => {
+            const generator: INumberGenerator = aleaRNGFactory(3);
+            const state: INumberGeneratorState = generator.getState();
+
+            assert.lengthOf(state.sequence, 3);
+        });
+
+        it('returns the internal state with default settings', () => {
+            const generator: INumberGenerator = aleaRNGFactory();
+            const state: INumberGeneratorState = generator.getState();
+
+            assert.equal(state.correction, 1);
+            assert.isNumber(state.sequence[0]);
+            assert.isNumber(state.sequence[1]);
+            assert.isNumber(state.sequence[2]);
+        });
+    });
+
+    describe('setState()', () => {
+        it('creates default values if not all defined', () => {
+            const generator: INumberGenerator = aleaRNGFactory();
+            const state: INumberGeneratorState = {
+                correction: 1,
+                sequence: []
+            };
+            generator.setState(state);
+            const internalState: INumberGeneratorState = generator.getState();
+
+            assert.equal(internalState.correction, 1);
+            assert.equal(internalState.sequence[0], 0);
+            assert.equal(internalState.sequence[1], 0);
+            assert.equal(internalState.sequence[2], 0);
+        });
+
+        it('ignores unused sequences', () => {
+            const generator: INumberGenerator = aleaRNGFactory();
+            const state: INumberGeneratorState = {
+                correction: 1,
+                sequence: [5, 4, 3, 2, 1, 0]
+            };
+            generator.setState(state);
+            const internalState: INumberGeneratorState = generator.getState();
+
+            assert.equal(internalState.correction, 1);
+            assert.equal(internalState.sequence[0], 5);
+            assert.equal(internalState.sequence[1], 4);
+            assert.equal(internalState.sequence[2], 3);
+            assert.lengthOf(internalState.sequence, 3);
+        });
+
+        it('restores the state on same instance if called without custom state', () => {
+            const generator: INumberGenerator = aleaRNGFactory();
+            generator.setState();
+            const internalState: INumberGeneratorState = generator.getState();
+
+            assert.equal(internalState.correction, 1);
+            assert.equal(internalState.sequence[0], 0);
+            assert.equal(internalState.sequence[1], 0);
+            assert.equal(internalState.sequence[2], 0);
+            assert.lengthOf(internalState.sequence, 3);
+        });
+
+        it('should reset the state if no state object is defined', () => {
+            const generator: INumberGenerator = aleaRNGFactory();
+            generator.uInt32();
+            generator.uInt32();
+            const state1: INumberGeneratorState = generator.getState();
+            const value1: number = generator.uInt32();
+            generator.uInt32();
+            generator.uInt32();
+            generator.setState(state1);
+            const state2: INumberGeneratorState = generator.getState();
+            const value2: number = generator.uInt32();
+
+            assert.deepEqual(state1, state2);
+            assert.equal(value1, value2);
         });
     });
 });

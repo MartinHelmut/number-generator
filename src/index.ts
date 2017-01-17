@@ -1,11 +1,19 @@
+export interface INumberGeneratorState {
+    correction: number;
+    sequence: number[];
+}
+
 export interface INumberGenerator {
     setSeed: (seed: number) => number;
     uFloat32: () => number;
     uInt32: () => number;
+    getState: () => INumberGeneratorState;
+    setState: (state?: INumberGeneratorState) => void;
 }
 
 export type TNumberHashGenerator = (hash: string, seed: number) => number;
 
+const ALEA_CORRECTION_DEFAULT: number = 1;
 const ALEA_FRACTURE_FLOAT: number = 2.3283064365386963e-10; // 2^-32
 const ALEA_FRACTURE_INT: number = 0x100000000; // 2^32
 const ALEA_TERM: number = 2091639;
@@ -65,10 +73,10 @@ function uMul32(x: number, y: number): number {
  * @return             A number generator object
  */
 export function aleaRNGFactory(initialSeed?: number): INumberGenerator {
+    let correction: number = ALEA_CORRECTION_DEFAULT;
     let sequence0: number = 0;
     let sequence1: number = 0;
     let sequence2: number = 0;
-    let correction: number = 0;
 
     /**
      * Set the used seed number
@@ -87,7 +95,7 @@ export function aleaRNGFactory(initialSeed?: number): INumberGenerator {
         sequence1 = seed * ALEA_FRACTURE_FLOAT;
         seed = (seed * ALEA_MULTIPLIER + 1) >>> 0;
         sequence2 = seed * ALEA_FRACTURE_FLOAT;
-        correction = 1;
+        correction = ALEA_CORRECTION_DEFAULT;
 
         return seed;
     }
@@ -115,9 +123,45 @@ export function aleaRNGFactory(initialSeed?: number): INumberGenerator {
         return (uFloat32() * ALEA_FRACTURE_INT) >>> 0;
     }
 
+    /**
+     * Get the internal sequence state
+     *
+     * @return An object defining the internal state
+     */
+    function getState(): INumberGeneratorState {
+        return {
+            correction,
+            sequence: [
+                sequence0,
+                sequence1,
+                sequence2
+            ]
+        };
+    }
+
+    /**
+     * Set the internal sequence state
+     *
+     * @param state? An object defining the internal state
+     */
+    function setState(state?: INumberGeneratorState): void {
+        const defaultState: INumberGeneratorState = {
+            correction: ALEA_CORRECTION_DEFAULT,
+            sequence: []
+        };
+        state = state
+            ? { ...defaultState, ...state } as INumberGeneratorState
+            : defaultState;
+
+        correction = state.correction;
+        sequence0 = state.sequence[0] || 0;
+        sequence1 = state.sequence[1] || 0;
+        sequence2 = state.sequence[2] || 0;
+    }
+
     setSeed(initialSeed === undefined ? 1 : initialSeed);
 
-    return { setSeed, uFloat32, uInt32 };
+    return { setSeed, uFloat32, uInt32, getState, setState };
 }
 
 /**

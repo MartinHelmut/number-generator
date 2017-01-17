@@ -20,6 +20,7 @@ release v1.0.0 for a stable API.
     * [Create an unsigned integer](#create-an-unsigned-integer)
     * [Create an unsigned float](#create-an-unsigned-float)
     * [Change the seed](#change-the-seed)
+    * [Get the state](#get-the-state)
     * [Something like Math.random?](#something-like-math-random)
   * [Generate hash](#generate-hash)
   * [TypeScript](#typescript)
@@ -165,6 +166,24 @@ generator.setSeed(2);
 // Get some more random numbers
 generator.uInt32();
 generator.uInt32();
+```
+
+#### Get the state
+
+You can get and restore the internal state with `getState` and `setState`.
+
+```javascript
+var generator = aleaRNGFactory();
+generator.uInt32();
+generator.uInt32();
+var state = generator.getState(); // Get the generator state
+var value1 = generator.uInt32();
+generator.uInt32();
+generator.uInt32();
+generator.setState(state); // Set the previouse state
+var value2 = generator.uInt32();
+
+value1 === value2; // true
 ```
 
 #### Something like Math.random?
