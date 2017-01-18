@@ -12,7 +12,7 @@
     "build:production": "npm run build && uglifyjs ./lib/index.js --screw-ie8 -m -r 'require,exports' -c -o ./lib/index.js",
     "build:test": "tsc --project tsconfig-test.json",
     "pretest": "npm run lint && npm run build:test",
-    "test": "nyc mocha --recursive './lib/tests/**/*-test.js'",
+    "test": "nyc mocha --recursive ./lib/tests/**/*-test.js",
     "test:coverage": "nyc report --reporter=text-lcov | coveralls",
     "test:browser": "karma start karma.config.js",
     "lint": "tslint -s ./node_modules/custom-tslint-formatters/formatters -t grouped './src/**/*.ts'",
