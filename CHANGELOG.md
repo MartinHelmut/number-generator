@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.2"></a>
+## [0.2.2](https://github.com/MartinHelmut/number-generator/compare/v0.2.1...v0.2.2) (2017-01-19)
+
+
+### Bug Fixes
+
+* **test:** Run tests also on Windows ([e055a01](https://github.com/MartinHelmut/number-generator/commit/e055a01))
+
+
+
 <a name="0.2.1"></a>
 ## [0.2.1](https://github.com/MartinHelmut/number-generator/compare/v0.2.0...v0.2.1) (2017-01-17)
 
