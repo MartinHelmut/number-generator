@@ -3,6 +3,15 @@
 You want do something for this repo? Nice and easy! And of course: you
 are the best!
 
+## Contents
+
+* [Run tests](#run-tests)
+* [Build the library](#build-the-library)
+* [Commit changes](#commit-changes)
+* [Recommended workflow for release](#recommended-workflow-for-release)
+
+* * *
+
 Clone the repo and ...
 
 ## Run tests
@@ -11,6 +20,13 @@ To lint the application and run all the tests use:
 
 ```shell
 npm test
+```
+
+To run the test in different browsers use the [Karma test runner][karma]
+with:
+
+```shell
+npm run test:browser
 ```
 
 ## Build the library
@@ -63,3 +79,4 @@ For more information on building a release see [https://github.com/conventional-
 
 [czcli]: http://commitizen.github.io/cz-cli/
 [sv]: https://github.com/conventional-changelog/standard-version
+[karma]: https://karma-runner.github.io/1.0/index.html
