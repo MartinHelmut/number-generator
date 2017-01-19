@@ -101,3 +101,4 @@ npm-debug.log
 coverage/
 lib/
 .nyc_output/
+sauce_connect.log

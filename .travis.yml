@@ -3,4 +3,7 @@ node_js:
 - '6'
 - '5'
 - '4'
+script:
+  - npm test
+  - npm run test:browser:sauce
 after_success: npm run test:coverage
