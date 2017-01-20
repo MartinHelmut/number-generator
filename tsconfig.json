@@ -6,7 +6,7 @@
         "experimentalDecorators": true,
         "importHelpers": false,
         "lib": ["es5"],
-        "module": "umd",
+        "module": "commonjs",
         "outDir": "lib",
         "moduleResolution": "node",
         "newLine": "LF",
