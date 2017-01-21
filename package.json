@@ -9,8 +9,8 @@
   },
   "scripts": {
     "build": "rimraf ./lib/* && tsc --project tsconfig.json",
-    "build:production": "npm run build && uglifyjs ./lib/index.js --screw-ie8 -m -r 'require,exports' -c -o ./lib/index.js",
-    "build:test": "tsc --project tsconfig-test.json",
+    "build:production": "npm run build && uglifyjs ./lib/index.js --screw-ie8 -m toplevel -r 'require,exports' -c -o ./lib/index.js --lint",
+    "build:test": "tsc --project tsconfig-test.json && uglifyjs ./lib/index.js --screw-ie8 -m toplevel -r 'require,exports' -c -o ./lib/index.js --lint",
     "pretest": "npm run lint && npm run build:test",
     "test": "nyc mocha --recursive ./lib/tests/**/*-test.js",
     "test:coverage": "nyc report --reporter=text-lcov | coveralls",

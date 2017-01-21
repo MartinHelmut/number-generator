@@ -149,11 +149,11 @@ export function aleaRNGFactory(initialSeed?: number): INumberGenerator {
             correction: ALEA_CORRECTION_DEFAULT,
             sequence: []
         };
-        state = state
-            ? { ...defaultState, ...state } as INumberGeneratorState
-            : defaultState;
 
-        correction = state.correction;
+        state = state || defaultState;
+        state.sequence = state.sequence || [];
+
+        correction = state.correction || ALEA_CORRECTION_DEFAULT;
         sequence0 = state.sequence[0] || 0;
         sequence1 = state.sequence[1] || 0;
         sequence2 = state.sequence[2] || 0;
