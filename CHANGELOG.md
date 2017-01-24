@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.4"></a>
+## [0.2.4](https://github.com/MartinHelmut/number-generator/compare/v0.2.3...v0.2.4) (2017-01-24)
+
+
+### Bug Fixes
+
+* **travis:** Simplyfied test command ([2e4a053](https://github.com/MartinHelmut/number-generator/commit/2e4a053))
+
+
+
 <a name="0.2.3"></a>
 ## [0.2.3](https://github.com/MartinHelmut/number-generator/compare/v0.2.2...v0.2.3) (2017-01-20)
 
