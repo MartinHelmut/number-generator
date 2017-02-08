@@ -240,14 +240,14 @@ This package contains all the type definitions for TypeScript needed:
 
 ```typescript
 import {
-    INumberGenerator, TNumberHashGenerator,
+    NumberGenerator, NumberHashGenerator,
     aleaRNGFactory, murmurHash
 } from 'number-generator';
 
-const generator: INumberGenerator = aleaRNGFactory();
-// const factory: () => INumberGenerator = aleaRNGFactory;
+const generator: NumberGenerator = aleaRNGFactory();
+// const factory: () => NumberGenerator = aleaRNGFactory;
 
-const hashFn: TNumberHashGenerator = murmurHash;
+const hashFn: NumberHashGenerator = murmurHash;
 
 generator.uInt32();
 hashFn('What?', 42);

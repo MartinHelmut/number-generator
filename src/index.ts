@@ -1,17 +1,17 @@
-export interface INumberGeneratorState {
+export interface NumberGeneratorState {
     correction: number;
     sequence: number[];
 }
 
-export interface INumberGenerator {
+export interface NumberGenerator {
     setSeed: (seed: number) => number;
     uFloat32: () => number;
     uInt32: () => number;
-    getState: () => INumberGeneratorState;
-    setState: (state?: INumberGeneratorState) => void;
+    getState: () => NumberGeneratorState;
+    setState: (state?: NumberGeneratorState) => void;
 }
 
-export type TNumberHashGenerator = (hash: string, seed: number) => number;
+export type NumberHashGenerator = (hash: string, seed: number) => number;
 
 const ALEA_CORRECTION_DEFAULT: number = 1;
 const ALEA_FRACTURE_FLOAT: number = 2.3283064365386963e-10; // 2^-32
@@ -72,7 +72,7 @@ function uMul32(x: number, y: number): number {
  * @param  initialSeed Optional start seed number
  * @return             A number generator object
  */
-export function aleaRNGFactory(initialSeed?: number): INumberGenerator {
+export function aleaRNGFactory(initialSeed?: number): NumberGenerator {
     let correction: number = ALEA_CORRECTION_DEFAULT;
     let sequence0: number = 0;
     let sequence1: number = 0;
@@ -128,7 +128,7 @@ export function aleaRNGFactory(initialSeed?: number): INumberGenerator {
      *
      * @return An object defining the internal state
      */
-    function getState(): INumberGeneratorState {
+    function getState(): NumberGeneratorState {
         return {
             correction,
             sequence: [
@@ -144,8 +144,8 @@ export function aleaRNGFactory(initialSeed?: number): INumberGenerator {
      *
      * @param state? An object defining the internal state
      */
-    function setState(state?: INumberGeneratorState): void {
-        const defaultState: INumberGeneratorState = {
+    function setState(state?: NumberGeneratorState): void {
+        const defaultState: NumberGeneratorState = {
             correction: ALEA_CORRECTION_DEFAULT,
             sequence: []
         };
