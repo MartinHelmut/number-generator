@@ -1,10 +1,10 @@
 import { assert } from 'chai';
-import { INumberGenerator, aleaRNGFactory, INumberGeneratorState } from '../';
+import { NumberGenerator, aleaRNGFactory, NumberGeneratorState } from '../';
 
 describe('aleaRNGFactory', () => {
     describe('uFloat32()', () => {
         it('should return an unsigned float number without explicit seed', () => {
-            const generator: INumberGenerator = aleaRNGFactory();
+            const generator: NumberGenerator = aleaRNGFactory();
             const value: number = generator.uFloat32();
 
             assert.isNumber(value, 'Value is not a number');
@@ -14,7 +14,7 @@ describe('aleaRNGFactory', () => {
         });
 
         it('returns multiple different numbers on repeated call', () => {
-            const generator: INumberGenerator = aleaRNGFactory();
+            const generator: NumberGenerator = aleaRNGFactory();
             const value1: number = generator.uFloat32();
             const value2: number = generator.uFloat32();
             const value3: number = generator.uFloat32();
@@ -27,34 +27,34 @@ describe('aleaRNGFactory', () => {
         });
 
         it('produces a different result with seed', () => {
-            const generator1: INumberGenerator = aleaRNGFactory(1);
+            const generator1: NumberGenerator = aleaRNGFactory(1);
             const value1: number = generator1.uFloat32();
-            const generator2: INumberGenerator = aleaRNGFactory(2);
+            const generator2: NumberGenerator = aleaRNGFactory(2);
             const value2: number = generator2.uFloat32();
 
             assert.notEqual(value1, value2);
         });
 
         it('produces same result on new instance with default seed', () => {
-            const generator1: INumberGenerator = aleaRNGFactory();
+            const generator1: NumberGenerator = aleaRNGFactory();
             const value1: number = generator1.uFloat32();
-            const generator2: INumberGenerator = aleaRNGFactory();
+            const generator2: NumberGenerator = aleaRNGFactory();
             const value2: number = generator2.uFloat32();
 
             assert.equal(value1, value2);
         });
 
         it('produces same result on new instance with custom seed', () => {
-            const generator1: INumberGenerator = aleaRNGFactory(1);
+            const generator1: NumberGenerator = aleaRNGFactory(1);
             const value1: number = generator1.uFloat32();
-            const generator2: INumberGenerator = aleaRNGFactory(1);
+            const generator2: NumberGenerator = aleaRNGFactory(1);
             const value2: number = generator2.uFloat32();
 
             assert.equal(value1, value2);
         });
 
         it('[loop] should return unique valid uFloat32 after repeated calls', () => {
-            const generator: INumberGenerator = aleaRNGFactory();
+            const generator: NumberGenerator = aleaRNGFactory();
             const iterations: number = 100;
             const stack: number[] = [];
 
@@ -92,7 +92,7 @@ describe('aleaRNGFactory', () => {
 
     describe('uInt32()', () => {
         it('should return a unsigned integer without explicit seed', () => {
-            const generator: INumberGenerator = aleaRNGFactory();
+            const generator: NumberGenerator = aleaRNGFactory();
             const value: number = generator.uInt32();
 
             assert.isNumber(value, 'Value is not a number');
@@ -101,7 +101,7 @@ describe('aleaRNGFactory', () => {
         });
 
         it('returns multiple different numbers on repeated call', () => {
-            const generator: INumberGenerator = aleaRNGFactory();
+            const generator: NumberGenerator = aleaRNGFactory();
             const value1: number = generator.uInt32();
             const value2: number = generator.uInt32();
             const value3: number = generator.uInt32();
@@ -114,34 +114,34 @@ describe('aleaRNGFactory', () => {
         });
 
         it('produces a different result with seed', () => {
-            const generator1: INumberGenerator = aleaRNGFactory(1);
+            const generator1: NumberGenerator = aleaRNGFactory(1);
             const value1: number = generator1.uInt32();
-            const generator2: INumberGenerator = aleaRNGFactory(2);
+            const generator2: NumberGenerator = aleaRNGFactory(2);
             const value2: number = generator2.uInt32();
 
             assert.notEqual(value1, value2);
         });
 
         it('produces same result on new instance with default seed', () => {
-            const generator1: INumberGenerator = aleaRNGFactory();
+            const generator1: NumberGenerator = aleaRNGFactory();
             const value1: number = generator1.uInt32();
-            const generator2: INumberGenerator = aleaRNGFactory();
+            const generator2: NumberGenerator = aleaRNGFactory();
             const value2: number = generator2.uInt32();
 
             assert.equal(value1, value2);
         });
 
         it('produces same result on new instance with custom seed', () => {
-            const generator1: INumberGenerator = aleaRNGFactory(1);
+            const generator1: NumberGenerator = aleaRNGFactory(1);
             const value1: number = generator1.uInt32();
-            const generator2: INumberGenerator = aleaRNGFactory(1);
+            const generator2: NumberGenerator = aleaRNGFactory(1);
             const value2: number = generator2.uInt32();
 
             assert.equal(value1, value2);
         });
 
         it('[loop] should return unique valid uInt32 after repeated calls', () => {
-            const generator: INumberGenerator = aleaRNGFactory();
+            const generator: NumberGenerator = aleaRNGFactory();
             const iterations: number = 100;
             const stack: number[] = [];
 
@@ -177,7 +177,7 @@ describe('aleaRNGFactory', () => {
 
     describe('setSeed()', () => {
         it('results in different numbers if seed is changed from default', () => {
-            const generator: INumberGenerator = aleaRNGFactory();
+            const generator: NumberGenerator = aleaRNGFactory();
             const value1: number = generator.uInt32();
             generator.setSeed(4);
             const value2: number = generator.uInt32();
@@ -186,7 +186,7 @@ describe('aleaRNGFactory', () => {
         });
 
         it('results in different numbers if seed is changed from defined', () => {
-            const generator: INumberGenerator = aleaRNGFactory(1);
+            const generator: NumberGenerator = aleaRNGFactory(1);
             const value1: number = generator.uInt32();
             generator.setSeed(2);
             const value2: number = generator.uInt32();
@@ -209,29 +209,29 @@ describe('aleaRNGFactory', () => {
 
     describe('getState()', () => {
         it('gets a representation of the internal state', () => {
-            const generator: INumberGenerator = aleaRNGFactory(1);
-            const state: INumberGeneratorState = generator.getState();
+            const generator: NumberGenerator = aleaRNGFactory(1);
+            const state: NumberGeneratorState = generator.getState();
 
             assert.isDefined(state);
         });
 
         it('returns the correction', () => {
-            const generator: INumberGenerator = aleaRNGFactory(2);
-            const state: INumberGeneratorState = generator.getState();
+            const generator: NumberGenerator = aleaRNGFactory(2);
+            const state: NumberGeneratorState = generator.getState();
 
             assert.equal(state.correction, 1);
         });
 
         it('returns all sequences', () => {
-            const generator: INumberGenerator = aleaRNGFactory(3);
-            const state: INumberGeneratorState = generator.getState();
+            const generator: NumberGenerator = aleaRNGFactory(3);
+            const state: NumberGeneratorState = generator.getState();
 
             assert.lengthOf(state.sequence, 3);
         });
 
         it('returns the internal state with default settings', () => {
-            const generator: INumberGenerator = aleaRNGFactory();
-            const state: INumberGeneratorState = generator.getState();
+            const generator: NumberGenerator = aleaRNGFactory();
+            const state: NumberGeneratorState = generator.getState();
 
             assert.equal(state.correction, 1);
             assert.isNumber(state.sequence[0]);
@@ -242,13 +242,13 @@ describe('aleaRNGFactory', () => {
 
     describe('setState()', () => {
         it('creates default values if not all defined', () => {
-            const generator: INumberGenerator = aleaRNGFactory();
-            const state: INumberGeneratorState = {
+            const generator: NumberGenerator = aleaRNGFactory();
+            const state: NumberGeneratorState = {
                 correction: 1,
                 sequence: []
             };
             generator.setState(state);
-            const internalState: INumberGeneratorState = generator.getState();
+            const internalState: NumberGeneratorState = generator.getState();
 
             assert.equal(internalState.correction, 1);
             assert.equal(internalState.sequence[0], 0);
@@ -257,13 +257,13 @@ describe('aleaRNGFactory', () => {
         });
 
         it('ignores unused sequences', () => {
-            const generator: INumberGenerator = aleaRNGFactory();
-            const state: INumberGeneratorState = {
+            const generator: NumberGenerator = aleaRNGFactory();
+            const state: NumberGeneratorState = {
                 correction: 1,
                 sequence: [5, 4, 3, 2, 1, 0]
             };
             generator.setState(state);
-            const internalState: INumberGeneratorState = generator.getState();
+            const internalState: NumberGeneratorState = generator.getState();
 
             assert.equal(internalState.correction, 1);
             assert.equal(internalState.sequence[0], 5);
@@ -273,9 +273,9 @@ describe('aleaRNGFactory', () => {
         });
 
         it('restores the state on same instance if called without custom state', () => {
-            const generator: INumberGenerator = aleaRNGFactory();
+            const generator: NumberGenerator = aleaRNGFactory();
             generator.setState();
-            const internalState: INumberGeneratorState = generator.getState();
+            const internalState: NumberGeneratorState = generator.getState();
 
             assert.equal(internalState.correction, 1);
             assert.equal(internalState.sequence[0], 0);
@@ -285,15 +285,15 @@ describe('aleaRNGFactory', () => {
         });
 
         it('should reset the state if no state object is defined', () => {
-            const generator: INumberGenerator = aleaRNGFactory();
+            const generator: NumberGenerator = aleaRNGFactory();
             generator.uInt32();
             generator.uInt32();
-            const state1: INumberGeneratorState = generator.getState();
+            const state1: NumberGeneratorState = generator.getState();
             const value1: number = generator.uInt32();
             generator.uInt32();
             generator.uInt32();
             generator.setState(state1);
-            const state2: INumberGeneratorState = generator.getState();
+            const state2: NumberGeneratorState = generator.getState();
             const value2: number = generator.uInt32();
 
             assert.deepEqual(state1, state2);
