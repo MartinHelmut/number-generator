@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@types/chai@3.4.34":
-  version "3.4.34"
-  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-3.4.34.tgz#d5335792823bb09cddd5e38c3d211b709183854d"
+"@types/chai@3.4.35":
+  version "3.4.35"
+  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-3.4.35.tgz#e8d65f83492d2944f816fc620741821c28a8c900"
 
 "@types/mocha@2.2.39":
   version "2.2.39"
@@ -546,9 +546,9 @@ browserify-zlib@~0.1.2:
   dependencies:
     pako "~0.2.0"
 
-browserify@14.0.0, browserify@^14.0.0:
-  version "14.0.0"
-  resolved "https://registry.yarnpkg.com/browserify/-/browserify-14.0.0.tgz#67e6cfe7acb2fb1a1908e8a763452306de0bcf38"
+browserify@14.1.0, browserify@^14.0.0:
+  version "14.1.0"
+  resolved "https://registry.yarnpkg.com/browserify/-/browserify-14.1.0.tgz#0508cc1e7bf4c152312c2fa523e676c0b0b92311"
   dependencies:
     JSONStream "^1.0.3"
     assert "^1.4.0"
@@ -857,9 +857,9 @@ commander@2.9.0, commander@^2.9.0:
   dependencies:
     graceful-readlink ">= 1.0.0"
 
-commitizen@2.9.5:
-  version "2.9.5"
-  resolved "https://registry.yarnpkg.com/commitizen/-/commitizen-2.9.5.tgz#f9605c8c1170eef86331676b5b5f12ab595bf498"
+commitizen@2.9.6:
+  version "2.9.6"
+  resolved "https://registry.yarnpkg.com/commitizen/-/commitizen-2.9.6.tgz#c0d00535ef264da7f63737edfda4228983fa2291"
   dependencies:
     cachedir "^1.1.0"
     chalk "1.1.3"
@@ -874,7 +874,7 @@ commitizen@2.9.5:
     lodash "4.17.2"
     minimist "1.2.0"
     path-exists "2.1.0"
-    shelljs "0.7.5"
+    shelljs "0.7.6"
     strip-json-comments "2.0.1"
 
 commondir@^1.0.1:
@@ -3854,9 +3854,9 @@ shell-quote@^1.4.2, shell-quote@^1.6.1:
     array-reduce "~0.0.0"
     jsonify "~0.0.0"
 
-shelljs@0.7.5:
-  version "0.7.5"
-  resolved "https://registry.yarnpkg.com/shelljs/-/shelljs-0.7.5.tgz#2eef7a50a21e1ccf37da00df767ec69e30ad0675"
+shelljs@0.7.6:
+  version "0.7.6"
+  resolved "https://registry.yarnpkg.com/shelljs/-/shelljs-0.7.6.tgz#379cccfb56b91c8601e4793356eb5382924de9ad"
   dependencies:
     glob "^7.0.0"
     interpret "^1.0.0"
@@ -4287,9 +4287,9 @@ typedarray@~0.0.5:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typescript@2.1.5:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.1.5.tgz#6fe9479e00e01855247cea216e7561bafcdbcd4a"
+typescript@2.1.6:
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.1.6.tgz#40c7e6e9e5da7961b7718b55505f9cac9487a607"
 
 uglify-js@2.7.5, uglify-js@^2.6:
   version "2.7.5"
