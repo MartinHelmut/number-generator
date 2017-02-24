@@ -43,7 +43,7 @@ function uInt32(hash: string, position: number): number {
  * @return          Unsigned int16
  */
 function uInt16(hash: string, position: number): number {
-    return (hash.charCodeAt(position++)) + (hash.charCodeAt(position++) << 8);
+    return hash.charCodeAt(position++) + (hash.charCodeAt(position++) << 8);
 }
 
 /**
