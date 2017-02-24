@@ -1,5 +1,6 @@
 # Number Generator
 
+[![npm][npmimg]][npmurl]
 [![Build Status][travisimg]][travisorg]
 [![Coverage Status][covimg]][covurl]
 [![Commitizen friendly][czimg]][czcli]
@@ -266,6 +267,8 @@ on repeatable random numbers" from Rune Skovbo Johansen.
 Thanks to Johannes Baagøe for the Alea port and Ray Morgan for the MurmurHash2
 algorithm implementation in JavaScript.
 
+[npmurl]: https://www.npmjs.com/package/number-generator
+[npmimg]: https://img.shields.io/npm/v/number-generator.svg
 [travisimg]: https://travis-ci.org/MartinHelmut/number-generator.svg?branch=master
 [travisorg]: https://travis-ci.org/MartinHelmut/number-generator
 [covimg]: https://coveralls.io/repos/github/MartinHelmut/number-generator/badge.svg?branch=master
