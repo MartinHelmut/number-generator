@@ -176,7 +176,7 @@ export function aleaRNGFactory(initialSeed?: number): NumberGenerator {
  * @param  seed      An optional seed value
  * @return           Generated number
  */
-export function murmurHash(hash: string, seed?: number): number {
+export function murmurHash(hash: string, seed: number = 1): number {
     if (seed !== undefined && seed % 1 !== 0) {
         throw new TypeError('Expected seed to be an integer, float given');
     }

@@ -47,8 +47,8 @@
     "commitizen": "2.9.6",
     "coveralls": "2.11.16",
     "custom-tslint-formatters": "2.0.0",
-    "cz-conventional-changelog": "1.2.0",
-    "karma": "1.4.1",
+    "cz-conventional-changelog": "2.0.0",
+    "karma": "1.5.0",
     "karma-browserify": "5.1.1",
     "karma-chai": "0.1.0",
     "karma-chrome-launcher": "2.0.0",
@@ -59,16 +59,20 @@
     "karma-typescript": "2.1.7",
     "mocha": "3.2.0",
     "nyc": "10.1.2",
-    "rimraf": "2.5.4",
+    "rimraf": "2.6.1",
     "standard-version": "4.0.0",
-    "tslint": "4.4.2",
-    "typescript": "2.1.6",
-    "uglify-js": "2.7.5",
+    "tslint": "4.5.1",
+    "typescript": "2.2.1",
+    "uglify-js": "2.8.5",
     "watchify": "3.9.0"
   },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "eslint": "3.16.1",
+    "eslint-plugin-compat": "1.0.2"
   }
 }
