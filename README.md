@@ -22,6 +22,7 @@ release v1.0.0 for a stable API.
     * [Create an unsigned float](#create-an-unsigned-float)
     * [Change the seed](#change-the-seed)
     * [Get the state](#get-the-state)
+    * [Set the state](#set-the-state)
     * [Something like Math.random?](#something-like-math-random)
   * [Generate hash](#generate-hash)
   * [TypeScript](#typescript)
@@ -185,6 +186,32 @@ generator.setState(state); // Set the previouse state
 var value2 = generator.uInt32();
 
 value1 === value2; // true
+```
+
+For the TypeScript the state interface is `NumberGeneratorState`.
+
+```javascript
+const generator = aleaRNGFactory();
+generator.uInt32();
+
+const state: NumberGeneratorState = generator.getState();
+```
+
+#### Set the state
+
+You can set the state with `setState` on two ways, first, if you don't
+pass any parameter the state resets to an initial state. Or you can pass
+an state to restore a previous setting:
+
+```javascript
+var generator = aleaRNGFactory();
+generator.uInt32();
+
+var state = generator.getState();
+generator.setState(); // Reset the state
+generator.uInt32();   // Get a new value
+
+generator.getState(state); // Restore saved state
 ```
 
 #### Something like Math.random?
