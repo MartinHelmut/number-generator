@@ -40,8 +40,8 @@
   "homepage": "https://github.com/MartinHelmut/number-generator#readme",
   "devDependencies": {
     "@types/chai": "3.4.35",
-    "@types/mocha": "2.2.39",
-    "@types/node": "7.0.5",
+    "@types/mocha": "2.2.40",
+    "@types/node": "7.0.8",
     "browserify": "14.1.0",
     "chai": "3.5.0",
     "commitizen": "2.9.6",
@@ -65,7 +65,7 @@
     "standard-version": "4.0.0",
     "tslint": "4.5.1",
     "typescript": "2.2.1",
-    "uglify-js": "2.8.8",
+    "uglify-js": "2.8.12",
     "watchify": "3.9.0"
   },
   "config": {
