@@ -299,5 +299,37 @@ describe('aleaRNGFactory', () => {
             assert.deepEqual(state1, state2);
             assert.equal(value1, value2);
         });
+
+        it('should reset the state object is passed without "correction"', () => {
+            const generator: NumberGenerator = aleaRNGFactory();
+            const state: Partial<NumberGeneratorState> = {
+                correction: undefined,
+                sequence: [1, 2, 3]
+            };
+            generator.setState(state as NumberGeneratorState);
+            const internalState: NumberGeneratorState = generator.getState();
+
+            assert.equal(internalState.correction, 1);
+            assert.equal(internalState.sequence[0], 1);
+            assert.equal(internalState.sequence[1], 2);
+            assert.equal(internalState.sequence[2], 3);
+            assert.lengthOf(internalState.sequence, 3);
+        });
+
+        it('should reset the state object is passed without "sequence"', () => {
+            const generator: NumberGenerator = aleaRNGFactory();
+            const state: Partial<NumberGeneratorState> = {
+                correction: 5,
+                sequence: undefined
+            };
+            generator.setState(state as NumberGeneratorState);
+            const internalState: NumberGeneratorState = generator.getState();
+
+            assert.equal(internalState.correction, 5);
+            assert.equal(internalState.sequence[0], 0);
+            assert.equal(internalState.sequence[1], 0);
+            assert.equal(internalState.sequence[2], 0);
+            assert.lengthOf(internalState.sequence, 3);
+        });
     });
 });
