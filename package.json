@@ -39,10 +39,10 @@
   },
   "homepage": "https://github.com/MartinHelmut/number-generator#readme",
   "devDependencies": {
-    "@types/chai": "3.4.35",
+    "@types/chai": "3.5.0",
     "@types/mocha": "2.2.40",
     "@types/node": "7.0.12",
-    "browserify": "14.1.0",
+    "browserify": "14.3.0",
     "chai": "3.5.0",
     "commitizen": "2.9.6",
     "coveralls": "2.13.0",
@@ -50,7 +50,7 @@
     "cz-conventional-changelog": "2.0.0",
     "eslint": "3.19.0",
     "eslint-plugin-compat": "1.0.2",
-    "karma": "1.5.0",
+    "karma": "1.6.0",
     "karma-browserify": "5.1.1",
     "karma-chai": "0.1.0",
     "karma-chrome-launcher": "2.0.0",
@@ -63,9 +63,9 @@
     "nyc": "10.2.0",
     "rimraf": "2.6.1",
     "standard-version": "4.0.0",
-    "tslint": "4.5.1",
+    "tslint": "5.1.0",
     "typescript": "2.2.2",
-    "uglify-js": "2.8.21",
+    "uglify-js": "2.8.22",
     "watchify": "3.9.0"
   },
   "config": {
