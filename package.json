@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "engines": {
-    "node": ">=6"
+    "node": ">=4"
   },
   "scripts": {
     "build": "rimraf ./lib/* && tsc --project tsconfig.json",
