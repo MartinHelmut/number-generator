@@ -17,6 +17,7 @@
     "test:browser": "karma start karma.config.js",
     "test:browser:sauce": "karma start karma-sauce.config.js",
     "lint": "tslint -s ./node_modules/custom-tslint-formatters/formatters -t grouped './src/**/*.ts'",
+    "format": "prettier --print-width 120 --tab-width 4 --single-quote --parser typescript --write \"src/**/*.ts\"",
     "commit": "git-cz",
     "release": "standard-version -a",
     "prepublish": "npm test && npm run build:production"
@@ -61,6 +62,7 @@
     "karma-typescript": "3.0.4",
     "mocha": "3.4.2",
     "nyc": "11.0.3",
+    "prettier": "^1.5.2",
     "rimraf": "2.6.1",
     "standard-version": "4.2.0",
     "tslint": "5.4.3",

@@ -6,6 +6,7 @@ are the best!
 ## Contents
 
 * [Run tests](#run-tests)
+* [Format the code](#format-the-code)
 * [Build the library](#build-the-library)
 * [Commit changes](#commit-changes)
 * [Recommended workflow for release](#recommended-workflow-for-release)
@@ -19,6 +20,8 @@ Clone the repo and ...
 To lint the application and run all the tests use:
 
 ```shell
+yarn test
+# or
 npm test
 ```
 
@@ -26,20 +29,30 @@ To run the test in different browsers use the [Karma test runner][karma]
 with:
 
 ```shell
+yarn test:browser
+# or
 npm run test:browser
 ```
+
+## Format the code
+
+To format the code use `yarn format` or `npm run format`.
 
 ## Build the library
 
 If you want to build the application you can either run
 
 ```shell
+yarn build
+# or
 npm run build
 ```
 
 for a default build or
 
 ```shell
+yarn build:production
+# or
 npm run build:production
 ```
 

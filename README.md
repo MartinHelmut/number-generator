@@ -5,6 +5,7 @@
 [![Coverage Status][covimg]][covurl]
 [![Commitizen friendly][czimg]][czcli]
 [![Standard Version][stdimg]][stdurl]
+[![styled with prettier][prtimg]][prturl]
 
 Generate repeatable pseudo random numbers and non-cryptographic hash
 numbers with Node.js and browser.
@@ -304,6 +305,8 @@ algorithm implementation in JavaScript.
 [czcli]: http://commitizen.github.io/cz-cli/
 [stdimg]: https://img.shields.io/badge/release-standard%20version-brightgreen.svg
 [stdurl]: https://github.com/conventional-changelog/standard-version
+[prtimg]: https://img.shields.io/badge/styled_with-prettier-ff69b4.svg
+[prturl]: https://github.com/prettier/prettier
 [ts]: http://www.typescriptlang.org/
 [wal]: https://web.archive.org/web/20111118012238/http://baagoe.com/en/RandomMusings/javascript/
 [date]: https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Date
