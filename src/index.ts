@@ -29,10 +29,12 @@ const MURMUR_BASE: number = 24;
  * @return          Unsigned int32
  */
 function uInt32(hash: string, position: number): number {
-    return (hash.charCodeAt(position++)) +
+    return (
+        hash.charCodeAt(position++) +
         (hash.charCodeAt(position++) << 8) +
         (hash.charCodeAt(position++) << 16) +
-        (hash.charCodeAt(position) << 24);
+        (hash.charCodeAt(position) << 24)
+    );
 }
 
 /**
@@ -59,7 +61,7 @@ function uMul32(x: number, y: number): number {
     const nonLinear: number = x & 0xffff;
     const linearBase: number = x >>> 16;
 
-    return ((nonLinear * y) + (((linearBase * y) & 0xffff) << 16)) | 0;
+    return (nonLinear * y + (((linearBase * y) & 0xffff) << 16)) | 0;
 }
 
 /**
@@ -131,11 +133,7 @@ export function aleaRNGFactory(initialSeed?: number): NumberGenerator {
     function getState(): NumberGeneratorState {
         return {
             correction,
-            sequence: [
-                sequence0,
-                sequence1,
-                sequence2
-            ]
+            sequence: [sequence0, sequence1, sequence2]
         };
     }
 
