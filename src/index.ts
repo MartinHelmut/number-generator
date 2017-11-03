@@ -28,7 +28,7 @@ const MURMUR_BASE: number = 24;
  * @param  position String start position
  * @return          Unsigned int32
  */
-function uInt32(hash: string, position: number): number {
+function uInt32Getter(hash: string, position: number): number {
     return (
         hash.charCodeAt(position++) +
         (hash.charCodeAt(position++) << 8) +
@@ -44,7 +44,7 @@ function uInt32(hash: string, position: number): number {
  * @param  position String start position
  * @return          Unsigned int16
  */
-function uInt16(hash: string, position: number): number {
+function uInt16Getter(hash: string, position: number): number {
     return hash.charCodeAt(position++) + (hash.charCodeAt(position++) << 8);
 }
 
@@ -55,7 +55,7 @@ function uInt16(hash: string, position: number): number {
  * @param  y Linear base
  * @return   Unsigned int32
  */
-function uMul32(x: number, y: number): number {
+function uMul32Getter(x: number, y: number): number {
     x = x | 0;
     y = y | 0;
     const nonLinear: number = x & 0xffff;
@@ -184,13 +184,13 @@ export function murmurHash(hash: string, seed: number = 1): number {
     let length: number = hash.length;
 
     while (length >= 4) {
-        let calculated: number = uInt32(hash, currentIndex);
+        let calculated: number = uInt32Getter(hash, currentIndex);
 
-        calculated = uMul32(calculated, MURMUR_MULTIPLIER);
+        calculated = uMul32Getter(calculated, MURMUR_MULTIPLIER);
         calculated ^= calculated >>> MURMUR_BASE;
-        calculated = uMul32(calculated, MURMUR_MULTIPLIER);
+        calculated = uMul32Getter(calculated, MURMUR_MULTIPLIER);
 
-        hashSum = uMul32(hashSum, MURMUR_MULTIPLIER);
+        hashSum = uMul32Getter(hashSum, MURMUR_MULTIPLIER);
         hashSum ^= calculated;
 
         currentIndex += 4;
@@ -199,24 +199,24 @@ export function murmurHash(hash: string, seed: number = 1): number {
 
     switch (length) {
         case 3:
-            hashSum ^= uInt16(hash, currentIndex);
+            hashSum ^= uInt16Getter(hash, currentIndex);
             hashSum ^= hash.charCodeAt(currentIndex + 2) << 16;
-            hashSum = uMul32(hashSum, MURMUR_MULTIPLIER);
+            hashSum = uMul32Getter(hashSum, MURMUR_MULTIPLIER);
             break;
         case 2:
-            hashSum ^= uInt16(hash, currentIndex);
-            hashSum = uMul32(hashSum, MURMUR_MULTIPLIER);
+            hashSum ^= uInt16Getter(hash, currentIndex);
+            hashSum = uMul32Getter(hashSum, MURMUR_MULTIPLIER);
             break;
         case 1:
             hashSum ^= hash.charCodeAt(currentIndex);
-            hashSum = uMul32(hashSum, MURMUR_MULTIPLIER);
+            hashSum = uMul32Getter(hashSum, MURMUR_MULTIPLIER);
             break;
         default:
             hashSum = 0;
     }
 
     hashSum ^= hashSum >>> 13;
-    hashSum = uMul32(hashSum, MURMUR_MULTIPLIER);
+    hashSum = uMul32Getter(hashSum, MURMUR_MULTIPLIER);
     hashSum ^= hashSum >>> 15;
 
     return hashSum >>> 0;
