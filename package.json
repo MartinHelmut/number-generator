@@ -11,7 +11,7 @@
     "postbuild": "uglifyjs ./lib/index.js --screw-ie8 -m toplevel -r 'require,exports' -c -o ./lib/index.js --lint && cp ./src/index.d.ts lib/",
     "build": "rimraf ./lib/* && babel src -d lib",
     "build:docs": "jsdoc src/index.js -r -R ./README.md -d docs",
-    "pretest": "npm run lint",
+    "pretest": "npm run lint && npm run build",
     "test": "nyc mocha --recursive ./lib/**/*-test.js",
     "test:coverage": "nyc report --reporter=text-lcov | coveralls",
     "test:browser": "karma start karma.config.js",
@@ -43,7 +43,6 @@
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-preset-env": "1.6.1",
-    "browserify": "14.5.0",
     "chai": "4.1.2",
     "commitizen": "2.9.6",
     "coveralls": "3.0.0",
