@@ -1,7 +1,7 @@
 module.exports = function(config) {
     config.set({
         basePath: '',
-        frameworks: ['mocha', 'chai'],
+        frameworks: ['browserify', 'mocha', 'chai'],
         files: ['src/**/*.js'],
         reporters: ['progress'],
         port: 9876,
@@ -12,7 +12,10 @@ module.exports = function(config) {
         singleRun: true,
         concurrency: Infinity,
         preprocessors: {
-            'src/**/*.js': ['babel']
+            'src/**/*.js': ['browserify']
+        },
+        browserify: {
+            transform: ['babelify']
         }
     })
 };
