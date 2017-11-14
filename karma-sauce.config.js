@@ -81,7 +81,7 @@ const customLaunchers = {
 module.exports = function(config) {
     config.set({
         basePath: '',
-        frameworks: ['mocha', 'chai'],
+        frameworks: ['browserify', 'mocha', 'chai'],
         files: ['src/**/*.js'],
         reporters: ['progress', 'saucelabs'],
         port: 9876,
@@ -102,6 +102,12 @@ module.exports = function(config) {
         },
         captureTimeout: 120000, // Increase timeout in case connection in CI is slow
         customLaunchers: customLaunchers,
-        browsers: Object.keys(customLaunchers)
+        browsers: Object.keys(customLaunchers),
+        preprocessors: {
+            'src/**/*.js': ['browserify']
+        },
+        browserify: {
+            transform: ['babelify']
+        }
     })
 };

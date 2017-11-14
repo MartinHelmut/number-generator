@@ -43,6 +43,8 @@
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-preset-env": "1.6.1",
+    "babelify": "8.0.0",
+    "browserify": "14.5.0",
     "chai": "4.1.2",
     "commitizen": "2.9.6",
     "coveralls": "3.0.0",
@@ -51,7 +53,6 @@
     "eslint-plugin-compat": "2.0.1",
     "jsdoc": "3.5.5",
     "karma": "1.7.1",
-    "karma-babel-preprocessor": "7.0.0",
     "karma-browserify": "5.1.1",
     "karma-chai": "0.1.0",
     "karma-chrome-launcher": "2.2.0",
@@ -64,8 +65,7 @@
     "prettier": "1.7.4",
     "rimraf": "2.6.2",
     "standard-version": "4.2.0",
-    "uglify-js": "3.1.6",
-    "watchify": "3.9.0"
+    "uglify-js": "3.1.6"
   },
   "config": {
     "commitizen": {
