@@ -81,11 +81,8 @@ const customLaunchers = {
 module.exports = function(config) {
     config.set({
         basePath: '',
-        frameworks: ['mocha', 'chai', 'karma-typescript'],
-        files: ['src/**/*.ts'],
-        preprocessors: {
-            'src/**/*.ts': ['karma-typescript']
-        },
+        frameworks: ['mocha', 'chai'],
+        files: ['src/**/*.js'],
         reporters: ['progress', 'saucelabs'],
         port: 9876,
         colors: true,

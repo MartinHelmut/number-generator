@@ -1,11 +1,8 @@
 module.exports = function(config) {
     config.set({
         basePath: '',
-        frameworks: ['mocha', 'chai', 'karma-typescript'],
-        files: ['src/**/*.ts'],
-        preprocessors: {
-            'src/**/*.ts': ['karma-typescript']
-        },
+        frameworks: ['mocha', 'chai'],
+        files: ['src/**/*.js'],
         reporters: ['progress'],
         port: 9876,
         colors: true,
@@ -13,6 +10,9 @@ module.exports = function(config) {
         autoWatch: false,
         browsers: ['Chrome', 'Firefox', 'Safari'],
         singleRun: true,
-        concurrency: Infinity
+        concurrency: Infinity,
+        preprocessors: {
+            'src/**/*.js': ['babel']
+        }
     })
 };
