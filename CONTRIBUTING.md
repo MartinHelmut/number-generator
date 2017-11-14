@@ -8,6 +8,7 @@ are the best!
 * [Run tests](#run-tests)
 * [Format the code](#format-the-code)
 * [Build the library](#build-the-library)
+* [Build library documentation](#build-library-documentation)
 * [Commit changes](#commit-changes)
 * [Recommended workflow for release](#recommended-workflow-for-release)
 
@@ -29,34 +30,30 @@ To run the test in different browsers use the [Karma test runner][karma]
 with:
 
 ```shell
-yarn test:browser
-# or
 npm run test:browser
 ```
 
 ## Format the code
 
-To format the code use `yarn format` or `npm run format`.
+To format the code use `npm run format`.
 
 ## Build the library
 
-If you want to build the application you can either run
+If you want to build the application run
 
 ```shell
-yarn build
-# or
 npm run build
 ```
 
-for a default build or
+for a minified version.
+
+## Build library documentation
+
+To create an API documentation run:
 
 ```shell
-yarn build:production
-# or
-npm run build:production
+npm run build:docs
 ```
-
-for a minified version.
 
 ## Commit changes
 

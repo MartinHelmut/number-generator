@@ -28,8 +28,6 @@ release v1.0.0 for a stable API.
   * [Generate hash](#generate-hash)
   * [TypeScript](#typescript)
 * [Development](#development)
-  * [Run tests](#run-tests)
-  * [Build the library](#build-the-library)
 * [Disclaimer](#disclaimer)
 
 * * *
@@ -59,9 +57,6 @@ After that you can import it how you like, e.g.:
 // ES2015
 import { aleaRNGFactory, murmurHash } from 'number-generator';
 
-// Node.js < 6.0.0
-var prng = require('number-generator'); // => prng.murmurHash(...)
-
 // Node.js >= 6.0.0
 const { aleaRNGFactory, murmurHash } = require('number-generator');
 ```
@@ -88,13 +83,13 @@ an exception** as `TypeError`.
 
 ```javascript
 // Valid:
-var generator1 = aleaRNGFactory(); // Default seed: 1
-var generator2 = aleaRNGFactory(4836325);
+const generator1 = aleaRNGFactory(); // Default seed: 1
+const generator2 = aleaRNGFactory(4836325);
 
 // Invalid:
-var notValidGen1 = aleaRNGFactory(0);
-var notValidGen2 = aleaRNGFactory(0.47);
-var notValidGen3 = aleaRNGFactory(-1);
+const notValidGen1 = aleaRNGFactory(0);
+const notValidGen2 = aleaRNGFactory(0.47);
+const notValidGen3 = aleaRNGFactory(-1);
 ```
 
 #### Create an unsigned integer
@@ -103,7 +98,7 @@ If you have an valid generator object you can use the `uInt32` method to
 get a random unsigned integer. Call it multiple times to get new numbers.
 
 ```javascript
-var generator = aleaRNGFactory(10);
+const generator = aleaRNGFactory(10);
 generator.uInt32(); // 20916391
 generator.uInt32(); // 1567221093
 ```
@@ -115,11 +110,11 @@ This means if you create multiple generators with the same seed, you get
 the same result for the n-th call:
 
 ```javascript
-var generator1 = aleaRNGFactory(2);
-var generator2 = aleaRNGFactory(2);
+const generator1 = aleaRNGFactory(2);
+const generator2 = aleaRNGFactory(2);
 
-var value1 = generator1.uInt32();
-var value2 = generator2.uInt32();
+const value1 = generator1.uInt32();
+const value2 = generator2.uInt32();
 
 value1 === value2; // true
 ```
@@ -131,7 +126,7 @@ applies to the `uFloat32` method. But this time you get an unsigned float
 value.
 
 ```javascript
-var generator = aleaRNGFactory(5);
+const generator = aleaRNGFactory(5);
 generator.uFloat32(); // 0.0024349885061383247
 generator.uFloat32(); // 0.1826920467428863
 ```
@@ -142,11 +137,11 @@ So, also if you create multiple generators with the same seed, you get
 the same result for the n-th call:
 
 ```javascript
-var generator1 = aleaRNGFactory(4);
-var generator2 = aleaRNGFactory(4);
+const generator1 = aleaRNGFactory(4);
+const generator2 = aleaRNGFactory(4);
 
-var value1 = generator1.uFloat32();
-var value2 = generator2.uFloat32();
+const value1 = generator1.uFloat32();
+const value2 = generator2.uFloat32();
 
 value1 === value2; // true
 ```
@@ -157,7 +152,7 @@ You can change the seed used by the generator object with the `setSeed`
 method.
 
 ```javascript
-var generator = aleaRNGFactory(1);
+const generator = aleaRNGFactory(1);
 
 // Get some random numbers
 generator.uInt32();
@@ -176,20 +171,20 @@ generator.uInt32();
 You can get and restore the internal state with `getState` and `setState`.
 
 ```javascript
-var generator = aleaRNGFactory();
+const generator = aleaRNGFactory();
 generator.uInt32();
 generator.uInt32();
-var state = generator.getState(); // Get the generator state
-var value1 = generator.uInt32();
+const state = generator.getState(); // Get the generator state
+const value1 = generator.uInt32();
 generator.uInt32();
 generator.uInt32();
 generator.setState(state); // Set the previouse state
-var value2 = generator.uInt32();
+const value2 = generator.uInt32();
 
 value1 === value2; // true
 ```
 
-For the TypeScript the state interface is `NumberGeneratorState`.
+For TypeScript the state interface is `NumberGeneratorState`.
 
 ```javascript
 const generator = aleaRNGFactory();
@@ -205,10 +200,10 @@ pass any parameter the state resets to an initial state. Or you can pass
 an state to restore a previous setting:
 
 ```javascript
-var generator = aleaRNGFactory();
+const generator = aleaRNGFactory();
 generator.uInt32();
 
-var state = generator.getState();
+const state = generator.getState();
 generator.setState(); // Reset the state
 generator.uInt32();   // Get a new value
 
@@ -221,8 +216,8 @@ If you want something similar to `Math.random()` you can use the [JavaScript
 Date API][date] with a timestamp, e.g.:
 
 ```javascript
-var generator = aleaRNGFactory(Date.now());
-var random = generator.uFloat32;
+const generator = aleaRNGFactory(Date.now());
+const random = generator.uFloat32;
 
 // Get a random float number
 random();
@@ -238,8 +233,8 @@ The simplest way to use it is by passing a string to generate the hash
 number. The default seed is `0`.
 
 ```javascript
-var hash1 = murmurHash('My string.');
-var hash2 = murmurHash('My string.', 0);
+const hash1 = murmurHash('My string.');
+const hash2 = murmurHash('My string.', 0);
 
 hash1;           // 1836966117
 hash1 === hash2; // true
@@ -251,8 +246,8 @@ Different seeds generate different results for the same input string.
 **Only whole numbers are valid seed** values for the `murmurHash` function!
 
 ```javascript
-var hash1 = murmurHash('My string.', 1);
-var hash2 = murmurHash('My string.', 2);
+const hash1 = murmurHash('My string.', 1);
+const hash2 = murmurHash('My string.', 2);
 
 hash1 === hash2; // false
 ```
@@ -260,7 +255,7 @@ hash1 === hash2; // false
 Float numbers as seed value throw a `TypeError`:
 
 ```javascript
-var hash = murmurHash('My string.', 0.7); // TypeError!
+const hash = murmurHash('My string.', 0.7); // TypeError!
 ```
 
 ### TypeScript
