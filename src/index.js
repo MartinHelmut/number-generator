@@ -1,4 +1,4 @@
-/** Made with love! */
+/** The MIT License (MIT) - Copyright (c) 2016 Martin Helmut Fieber */
 
 /**
  * Number generator state

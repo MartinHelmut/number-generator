@@ -21,16 +21,7 @@ Clone the repo and ...
 To lint the application and run all the tests use:
 
 ```shell
-yarn test
-# or
 npm test
-```
-
-To run the test in different browsers use the [Karma test runner][karma]
-with:
-
-```shell
-npm run test:browser
 ```
 
 ## Format the code
@@ -69,11 +60,9 @@ e.g.:
 git checkout -b feature/restore-alea-state
 ```
 
-Add your changes and run `npm run commit` to start the commitizen cli
-to create a proper commit message.
+Add your changes and run `npm run commit` to start the commitizen cli to create a proper commit message.
 
-Push the changes and your feature branch and create a "Merge Request" on
-GitHub.
+Push the changes and your feature branch and create a "Merge Request" on GitHub.
 
 ## Recommended workflow for release
 

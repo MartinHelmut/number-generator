@@ -7,6 +7,10 @@
     "env": {
         "node": true,
         "browser": true,
-        "mocha": true
+        "jest": true
+    },
+    "plugins": ["compat"],
+    "rules": {
+        "compat/compat": "error"
     }
 }

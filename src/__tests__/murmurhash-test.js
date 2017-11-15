@@ -1,142 +1,124 @@
-import { assert } from 'chai';
 import { murmurHash } from '../';
 
 describe('murmurHash()', () => {
-    it('should generate an number hash by string', () => {
+    test('should generate an number hash by string', () => {
         const testString = 'Awkward code!';
         const hash = murmurHash(testString);
 
-        assert.isNumber(hash, 'Value is not a number');
-        assert.isAbove(hash, 1, 'Hash is larger than 1');
-        assert.isTrue(hash % 1 === 0, `Hash ${hash} is not an unsigned integer`);
+        expect(hash).toBeGreaterThan(1);
+        expect(hash % 1 === 0).toBeTruthy();
     });
 
-    it('should generate an number hash by string of length 1', () => {
+    test('should generate an number hash by string of length 1', () => {
         const testString = 'I';
         const hash = murmurHash(testString);
 
-        assert.isNumber(hash, 'Value is not a number');
-        assert.isAbove(hash, 1, 'Hash is larger than 1');
-        assert.isTrue(hash % 1 === 0, `Hash ${hash} is not an unsigned integer`);
+        expect(hash).toBeGreaterThan(1);
+        expect(hash % 1 === 0).toBeTruthy();
     });
 
-    it('should generate an number hash by string of length 2', () => {
+    test('should generate an number hash by string of length 2', () => {
         const testString = 'am';
         const hash = murmurHash(testString);
 
-        assert.isNumber(hash, 'Value is not a number');
-        assert.isAbove(hash, 1, 'Hash is larger than 1');
-        assert.isTrue(hash % 1 === 0, `Hash ${hash} is not an unsigned integer`);
+        expect(hash).toBeGreaterThan(1);
+        expect(hash % 1 === 0).toBeTruthy();
     });
 
-    it('should generate an number hash by string of length 3', () => {
+    test('should generate an number hash by string of length 3', () => {
         const testString = 'MHF';
         const hash = murmurHash(testString);
 
-        assert.isNumber(hash, 'Value is not a number');
-        assert.isAbove(hash, 1, 'Hash is larger than 1');
-        assert.isTrue(hash % 1 === 0, `Hash ${hash} is not an unsigned integer`);
+        expect(hash).toBeGreaterThan(1);
+        expect(hash % 1 === 0).toBeTruthy();
     });
 
-    it('returns zero on empty string', () => {
+    test('returns zero on empty string', () => {
         const testString = '';
         const hash = murmurHash(testString);
 
-        assert.isNumber(hash, 'Value is not a number');
-        assert.equal(hash, 0, 'Number is not unsigned');
+        expect(hash).toBe(0);
     });
 
-    it('produces a different hash with same string but different seed', () => {
+    test('produces a different hash with same string but different seed', () => {
         const testString = 'Awkward code!';
         const hash1 = murmurHash(testString, 1);
         const hash2 = murmurHash(testString, 2);
 
-        assert.notEqual(hash1, hash2);
+        expect(hash1).not.toEqual(hash2);
     });
 
-    it('produces the same hash with same string and seed', () => {
+    test('produces the same hash with same string and seed', () => {
         const testString = 'Awkward code!';
         const hash1 = murmurHash(testString, 1);
         const hash2 = murmurHash(testString, 1);
         const hash3 = murmurHash(testString, 1);
         const hash4 = murmurHash(testString, 1);
 
-        assert.equal(hash1, hash2);
-        assert.equal(hash3, hash4);
-        assert.equal(hash4, hash1);
+        expect(hash1).toBe(hash2);
+        expect(hash3).toBe(hash4);
+        expect(hash4).toBe(hash1);
     });
 
-    it('should return a valid result if seed is 0', () => {
+    test('should return a valid result if seed is 0', () => {
         const testString = 'Awkward code!';
         const hash = murmurHash(testString, 0);
 
-        assert.isNumber(hash, 'Value is not a number');
-        assert.isAbove(hash, 1, 'Hash is larger than 1');
-        assert.isTrue(hash % 1 === 0, `Hash ${hash} is not an unsigned integer`);
+        expect(hash).toBeGreaterThan(1);
+        expect(hash % 1 === 0).toBeTruthy();
     });
 
-    it('should return a valid result on negative seed', () => {
+    test('should return a valid result on negative seed', () => {
         const testString = 'Awkward code!';
         const hash = murmurHash(testString, -10);
 
-        assert.isNumber(hash, 'Value is not a number');
-        assert.isAbove(hash, 1, 'Hash is larger than 1');
-        assert.isTrue(hash % 1 === 0, `Hash ${hash} is not an unsigned integer`);
+        expect(hash).toBeGreaterThan(1);
+        expect(hash % 1 === 0).toBeTruthy();
     });
 
-    it('throws a TypeError on float seed value', () => {
-        assert.throw(() => murmurHash('', 0.2), TypeError);
+    test('throws a TypeError on float seed value', () => {
+        expect(() => murmurHash('', 0.2)).toThrowError(TypeError);
     });
 
-    it('[loop] should produce unique results on unsigned seeds', () => {
+    test('[loop] should produce unique results on unsigned seeds', () => {
         const iterations = 100;
         const stack = [];
 
         for (let i = 0; i <= iterations; i++) {
             const hash = murmurHash('Awkward code!', i);
 
-            assert.isNumber(hash, 'Value is not a number');
-            assert.isAbove(hash, 1, 'Hash is larger than 1');
-            assert.isTrue(hash % 1 === 0, `Hash ${hash} is not an unsigned integer`);
+            expect(hash).toBeGreaterThan(1);
+            expect(hash % 1 === 0).toBeTruthy();
 
             stack.push(hash);
         }
 
         // Test the "unique-nes" of the generated numbers
-        const uniqueStack = stack.filter((value, index, self) => index === self.indexOf(value));
-        const stackLength = stack.length;
-        const uniqueStackLength = uniqueStack.length;
-
-        assert.equal(
-            stackLength,
-            uniqueStackLength,
-            `From ${iterations} iterations there where ${stackLength - uniqueStackLength} duplicates`
+        const uniqueStack = stack.filter(
+            (value, index, self) => index === self.indexOf(value)
         );
+
+        expect(stack).toHaveLength(uniqueStack.length);
     });
 
-    it('[loop] should produce unique results on seed range from negative to positive', () => {
+    test('[loop] should produce unique results on seed range from negative to positive', () => {
         const iterations = 100;
         const stack = [];
 
         for (let i = -100; i <= iterations; i++) {
             const hash = murmurHash('Awkward code!', i);
 
-            assert.isNumber(hash, 'Value is not a number');
-            assert.isAbove(hash, 1, 'Hash is larger than 1');
-            assert.isTrue(hash % 1 === 0, `Hash ${hash} is not an unsigned integer`);
+            expect(hash).toBeGreaterThan(1);
+            expect(hash % 1 === 0).toBeTruthy();
 
             stack.push(hash);
         }
 
         // Test the "unique-nes" of the generated numbers
-        const uniqueStack = stack.filter((value, index, self) => index === self.indexOf(value));
-        const stackLength = stack.length;
-        const uniqueStackLength = uniqueStack.length;
-
-        assert.equal(
-            stackLength,
-            uniqueStackLength,
-            `From ${iterations} iterations there where ${stackLength - uniqueStackLength} duplicates`
+        const uniqueStack = stack.filter(
+            (value, index, self) => index === self.indexOf(value)
         );
+
+        expect(stack).toHaveLength(uniqueStack.length);
     });
 });
