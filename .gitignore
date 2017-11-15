@@ -97,11 +97,11 @@ GitHub.sublime-settings
 
 ## App ###
 node_modules/
-npm-debug.log
 coverage/
 lib/
 .nyc_output/
-sauce_connect.log
 docs/
+sauce_connect.log
+npm-debug.log
 yarn.lock
 package-lock.json
