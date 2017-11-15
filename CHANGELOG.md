@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/MartinHelmut/number-generator/compare/v0.2.16...v1.0.0) (2017-11-15)
+
+
+### Features
+
+* Change implementation from typescript to javascript ([75167db](https://github.com/MartinHelmut/number-generator/commit/75167db)), closes [#7](https://github.com/MartinHelmut/number-generator/issues/7)
+
+
+### BREAKING CHANGES
+
+* This changes the language the library is implemented in.
+
+
+
 <a name="0.2.16"></a>
 ## [0.2.16](https://github.com/MartinHelmut/number-generator/compare/v0.2.15...v0.2.16) (2017-11-03)
 
