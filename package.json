@@ -12,8 +12,8 @@
     "build": "rimraf ./lib/* && babel src -d lib",
     "build:docs": "jsdoc src/index.js -r -R ./README.md -d docs",
     "pretest": "npm run lint && npm run build",
-    "test": "jest --coverage src",
-    "test:coverage": "jest --coverage src && cat ./coverage/lcov.info | coveralls",
+    "test": "jest --coverage",
+    "test:coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "lint": "eslint --ext .js src/",
     "format": "prettier --print-width 80 --tab-width 4 --single-quote --write \"src/**/*.js\"",
     "commit": "git-cz",
@@ -44,18 +44,21 @@
     "commitizen": "2.9.6",
     "coveralls": "3.0.0",
     "cz-conventional-changelog": "2.1.0",
-    "eslint": "4.10.0",
-    "eslint-plugin-compat": "2.0.1",
-    "jest": "21.2.1",
+    "eslint": "4.15.0",
+    "eslint-plugin-compat": "2.1.0",
+    "jest": "22.0.6",
     "jsdoc": "3.5.5",
-    "prettier": "1.7.4",
+    "prettier": "1.10.2",
     "rimraf": "2.6.2",
     "standard-version": "4.2.0",
-    "uglify-js": "3.1.6"
+    "uglify-js": "3.3.5"
   },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "jest": {
+    "roots": ["<rootDir>/src"]
   }
 }
