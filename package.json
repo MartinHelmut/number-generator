@@ -62,5 +62,20 @@
     "roots": [
       "<rootDir>/src"
     ]
+  },
+  "renovate": {
+    "extends": [
+      "config:base"
+    ],
+    "dependencies": {
+      "semanticPrefix": "chore:",
+      "semanticCommitScope": ""
+    },
+    "pin": {
+      "semanticPrefix": "chore:",
+      "semanticCommitScope": ""
+    },
+    "semanticPrefix": "chore:",
+    "semanticCommitScope": ""
   }
 }
