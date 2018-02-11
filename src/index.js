@@ -140,7 +140,7 @@ export function aleaRNGFactory(initialSeed) {
     function setSeed(seed) {
         if (seed % 1 !== 0 || seed <= 0) {
             throw new TypeError(
-                'Expected seed to be an unsigned integer greater 1'
+                `Expected seed to be an unsigned integer greater 1, but got "${seed}"`
             );
         }
 
