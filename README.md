@@ -33,7 +33,7 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
 
 ## Usage
 
-This small library (**1.4kb compressed, 777b with gzip**) contains two methods, the random number generator called _Alea_ and a number hash generator named _MurmurHash2_. The _Alea_ implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal].
+This small library (**1.5kb compressed, 784b with gzip**) contains two methods, the random number generator called _Alea_ and a number hash generator named _MurmurHash2_. The _Alea_ implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal].
 
 More about the hash function _MurmurHash2_ can be found [here][mur].
 
@@ -49,10 +49,10 @@ After that you can import it, e.g.:
 
 ```javascript
 // ES2015
-import { aleaRNGFactory, murmurHash } from 'number-generator';
+import { aleaRNGFactory, murmurhash2_x86_32 } from 'number-generator';
 
 // Node.js >= 6.0.0
-const { aleaRNGFactory, murmurHash } = require('number-generator');
+const { aleaRNGFactory, murmurhash2_x86_32 } = require('number-generator');
 ```
 
 For use with TypeScript take a look at the [usage with typescript section](#typescript).
@@ -203,15 +203,15 @@ random();
 
 ### Generate hash
 
-The `murmurHash` functions implements the [MurmurHash2 algorithm][mur] in JavaScript. It takes a string and generates a non-cryptographic hash number as unsigned integer.
+The `murmurhash2_x86_32` functions implements the [MurmurHash2 algorithm][mur] in JavaScript. It takes a string and generates a non-cryptographic hash number as unsigned integer.
 
 #### Basic hash generation
 
 The simplest way to use it is by passing a string to generate the hash number. The default seed is `0`.
 
 ```javascript
-const hash1 = murmurHash('My string.');
-const hash2 = murmurHash('My string.', 0);
+const hash1 = murmurhash2_x86_32('My string.');
+const hash2 = murmurhash2_x86_32('My string.', 0);
 
 hash1; // 1836966117
 hash1 === hash2; // true
@@ -221,11 +221,11 @@ This should create the exact **same result on your machine**!
 
 #### Hash based on different seeds
 
-Different seeds generate different results for the same input string. **Only whole numbers are valid seed** values for the `murmurHash` function!
+Different seeds generate different results for the same input string. **Only whole numbers are valid seed** values for the `murmurhash2_x86_32` function!
 
 ```javascript
-const hash1 = murmurHash('My string.', 1);
-const hash2 = murmurHash('My string.', 2);
+const hash1 = murmurhash2_x86_32('My string.', 1);
+const hash2 = murmurhash2_x86_32('My string.', 2);
 
 hash1 === hash2; // false
 ```
@@ -233,7 +233,7 @@ hash1 === hash2; // false
 Float numbers as seed value throw a `TypeError`:
 
 ```javascript
-const hash = murmurHash('My string.', 0.7); // TypeError!
+const hash = murmurhash2_x86_32('My string.', 0.7); // TypeError!
 ```
 
 ### TypeScript
@@ -245,13 +245,13 @@ import {
     NumberGenerator,
     NumberHashGenerator,
     aleaRNGFactory,
-    murmurHash
+    murmurhash2_x86_32
 } from 'number-generator';
 
 const generator: NumberGenerator = aleaRNGFactory();
 // const factory: () => NumberGenerator = aleaRNGFactory;
 
-const hashFn: NumberHashGenerator = murmurHash;
+const hashFn: NumberHashGenerator = murmurhash2_x86_32;
 
 generator.uInt32();
 hashFn('What?', 42);

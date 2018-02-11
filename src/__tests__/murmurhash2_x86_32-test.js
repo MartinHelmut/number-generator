@@ -1,9 +1,9 @@
-import { murmurHash } from '../';
+import { murmurhash2_x86_32 } from '../';
 
-describe('murmurHash()', () => {
+describe('murmurhash2_x86_32()', () => {
     test('should generate an number hash by string', () => {
         const testString = 'Awkward code!';
-        const hash = murmurHash(testString);
+        const hash = murmurhash2_x86_32(testString);
 
         expect(hash).toBeGreaterThan(1);
         expect(hash % 1 === 0).toBeTruthy();
@@ -11,7 +11,7 @@ describe('murmurHash()', () => {
 
     test('should generate an number hash by string of length 1', () => {
         const testString = 'I';
-        const hash = murmurHash(testString);
+        const hash = murmurhash2_x86_32(testString);
 
         expect(hash).toBeGreaterThan(1);
         expect(hash % 1 === 0).toBeTruthy();
@@ -19,7 +19,7 @@ describe('murmurHash()', () => {
 
     test('should generate an number hash by string of length 2', () => {
         const testString = 'am';
-        const hash = murmurHash(testString);
+        const hash = murmurhash2_x86_32(testString);
 
         expect(hash).toBeGreaterThan(1);
         expect(hash % 1 === 0).toBeTruthy();
@@ -27,7 +27,7 @@ describe('murmurHash()', () => {
 
     test('should generate an number hash by string of length 3', () => {
         const testString = 'MHF';
-        const hash = murmurHash(testString);
+        const hash = murmurhash2_x86_32(testString);
 
         expect(hash).toBeGreaterThan(1);
         expect(hash % 1 === 0).toBeTruthy();
@@ -35,25 +35,25 @@ describe('murmurHash()', () => {
 
     test('returns zero on empty string', () => {
         const testString = '';
-        const hash = murmurHash(testString);
+        const hash = murmurhash2_x86_32(testString);
 
         expect(hash).toBe(0);
     });
 
     test('produces a different hash with same string but different seed', () => {
         const testString = 'Awkward code!';
-        const hash1 = murmurHash(testString, 1);
-        const hash2 = murmurHash(testString, 2);
+        const hash1 = murmurhash2_x86_32(testString, 1);
+        const hash2 = murmurhash2_x86_32(testString, 2);
 
         expect(hash1).not.toEqual(hash2);
     });
 
     test('produces the same hash with same string and seed', () => {
         const testString = 'Awkward code!';
-        const hash1 = murmurHash(testString, 1);
-        const hash2 = murmurHash(testString, 1);
-        const hash3 = murmurHash(testString, 1);
-        const hash4 = murmurHash(testString, 1);
+        const hash1 = murmurhash2_x86_32(testString, 1);
+        const hash2 = murmurhash2_x86_32(testString, 1);
+        const hash3 = murmurhash2_x86_32(testString, 1);
+        const hash4 = murmurhash2_x86_32(testString, 1);
 
         expect(hash1).toBe(hash2);
         expect(hash3).toBe(hash4);
@@ -62,7 +62,7 @@ describe('murmurHash()', () => {
 
     test('should return a valid result if seed is 0', () => {
         const testString = 'Awkward code!';
-        const hash = murmurHash(testString, 0);
+        const hash = murmurhash2_x86_32(testString, 0);
 
         expect(hash).toBeGreaterThan(1);
         expect(hash % 1 === 0).toBeTruthy();
@@ -70,14 +70,14 @@ describe('murmurHash()', () => {
 
     test('should return a valid result on negative seed', () => {
         const testString = 'Awkward code!';
-        const hash = murmurHash(testString, -10);
+        const hash = murmurhash2_x86_32(testString, -10);
 
         expect(hash).toBeGreaterThan(1);
         expect(hash % 1 === 0).toBeTruthy();
     });
 
     test('throws a TypeError on float seed value', () => {
-        expect(() => murmurHash('', 0.2)).toThrowError(TypeError);
+        expect(() => murmurhash2_x86_32('', 0.2)).toThrowError(TypeError);
     });
 
     test('[loop] should produce unique results on unsigned seeds', () => {
@@ -85,7 +85,7 @@ describe('murmurHash()', () => {
         const stack = [];
 
         for (let i = 0; i <= iterations; i++) {
-            const hash = murmurHash('Awkward code!', i);
+            const hash = murmurhash2_x86_32('Awkward code!', i);
 
             expect(hash).toBeGreaterThan(1);
             expect(hash % 1 === 0).toBeTruthy();
@@ -106,7 +106,7 @@ describe('murmurHash()', () => {
         const stack = [];
 
         for (let i = -100; i <= iterations; i++) {
-            const hash = murmurHash('Awkward code!', i);
+            const hash = murmurhash2_x86_32('Awkward code!', i);
 
             expect(hash).toBeGreaterThan(1);
             expect(hash % 1 === 0).toBeTruthy();
@@ -123,9 +123,9 @@ describe('murmurHash()', () => {
     });
 
     test('produces an exact reproducible hash (like defined in other implementations)', () => {
-        const hash1 = murmurHash('string', 0);
-        const hash2 = murmurHash('string', 13);
-        const hash3 = murmurHash('something', 5);
+        const hash1 = murmurhash2_x86_32('string', 0);
+        const hash2 = murmurhash2_x86_32('string', 13);
+        const hash3 = murmurhash2_x86_32('something', 5);
         expect(hash1).toBe(1640947696);
         expect(hash2).toBe(485409088);
         expect(hash3).toBe(4098796303);
