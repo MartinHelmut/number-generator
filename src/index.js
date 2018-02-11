@@ -51,10 +51,13 @@
  *
  * @function setState
  * @memberof NumberGenerator
- * @param {NumberGeneratorState} [state] A pre configured state object
+ * @param {NumberGeneratorState} [state={correction: 1, sequence: [0, 0, 0]] A pre configured state object
  */
 
 const ALEA_CORRECTION_DEFAULT = 1;
+const START_SEQUENCE_0 = 0;
+const START_SEQUENCE_1 = 0;
+const START_SEQUENCE_2 = 0;
 const ALEA_FRACTURE_FLOAT = 2.3283064365386963e-10; // 2^-32
 const ALEA_FRACTURE_INT = 0x100000000; // 2^32
 const ALEA_TERM = 2091639;
@@ -120,9 +123,9 @@ function uMul32Getter(x, y) {
  */
 export function aleaRNGFactory(initialSeed) {
     let correction = ALEA_CORRECTION_DEFAULT;
-    let sequence0 = 0;
-    let sequence1 = 0;
-    let sequence2 = 0;
+    let sequence0 = START_SEQUENCE_0;
+    let sequence1 = START_SEQUENCE_1;
+    let sequence2 = START_SEQUENCE_2;
 
     /**
      * Set the used seed number
@@ -187,21 +190,21 @@ export function aleaRNGFactory(initialSeed) {
     /**
      * Set the internal sequence state
      *
-     * @param {NumberGeneratorState} [state] An object defining the internal state
+     * @param {NumberGeneratorState} [state={correction: 1, sequence: [0, 0, 0]}] An object defining the internal state
      */
     function setState(state) {
         const defaultState = {
             correction: ALEA_CORRECTION_DEFAULT,
-            sequence: []
+            sequence: [START_SEQUENCE_0, START_SEQUENCE_1, START_SEQUENCE_2]
         };
 
         state = state || defaultState;
         state.sequence = state.sequence || [];
 
         correction = state.correction || ALEA_CORRECTION_DEFAULT;
-        sequence0 = state.sequence[0] || 0;
-        sequence1 = state.sequence[1] || 0;
-        sequence2 = state.sequence[2] || 0;
+        sequence0 = state.sequence[0] || START_SEQUENCE_0;
+        sequence1 = state.sequence[1] || START_SEQUENCE_1;
+        sequence2 = state.sequence[2] || START_SEQUENCE_2;
     }
 
     setSeed(initialSeed === undefined ? 1 : initialSeed);
