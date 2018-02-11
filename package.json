@@ -67,6 +67,9 @@
       "<rootDir>/src"
     ]
   },
+  "babel": {
+    "presets": ["env"]
+  },
   "eslintConfig": {
     "extends": "eslint:recommended",
     "parserOptions": {
