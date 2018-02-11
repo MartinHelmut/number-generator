@@ -1,4 +1,4 @@
-/** The MIT License (MIT) - Copyright (c) 2016-2018 Martin Helmut Fieber */
+/*! The MIT License (MIT) - Copyright (c) 2016-2018 Martin Helmut Fieber */
 
 /**
  * Number generator state
@@ -51,7 +51,7 @@
  *
  * @function setState
  * @memberof NumberGenerator
- * @param {NumberGeneratorState} [state={correction: 1, sequence: [0, 0, 0]] A pre configured state object
+ * @param {NumberGeneratorState} [state={correction: 1, sequence: [0, 0, 0]}] A pre configured state object
  */
 
 const ALEA_CORRECTION_DEFAULT = 1;
