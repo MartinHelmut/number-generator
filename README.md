@@ -12,6 +12,7 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
 ## Contents
 
 * [Usage](#usage)
+    * [Support](#support)
     * [Install](#install)
     * [Random numbers](#random-numbers)
         * [Create a new random number generator](#create-a-new-random-number-generator)
@@ -33,6 +34,13 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
 This small library (**1.4kb compressed, 777b with gzip**) contains two methods, the random number generator called _Alea_ and a number hash generator named _MurmurHash2_. The _Alea_ implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal].
 
 More about the hash function _MurmurHash2_ can be found [here][mur].
+
+### Support
+
+This library was tested in:
+
+* Node >= 6
+* All major browsers and IE >= 9
 
 ### Install
 
