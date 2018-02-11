@@ -50,17 +50,7 @@ npm run build:docs
 
 **This repo is is Commitizen-friendly!** ([read more][czcli])
 
-Checkout a new branch, the naming convention is:
-
-`[feature|fix|refactor|chore]/change-name`
-
-e.g.:
-
-```shell
-git checkout -b feature/restore-alea-state
-```
-
-Add your changes and run `npm run commit` to start the commitizen cli to create a proper commit message.
+Checkout a new branch, there is no naming convention for branches, only for commits. Add your changes and run `npm run commit` to start the commitizen cli to create a proper commit message.
 
 Push the changes and your feature branch and create a "Merge Request" on GitHub.
 
