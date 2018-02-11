@@ -63,6 +63,22 @@
       "<rootDir>/src"
     ]
   },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true,
+      "browser": true,
+      "jest": true
+    },
+    "plugins": ["compat"],
+    "rules": {
+      "compat/compat": "error"
+    }
+  },
   "renovate": {
     "extends": [
       "config:base"
