@@ -53,6 +53,10 @@
     "standard-version": "4.3.0",
     "uglify-js": "3.3.10"
   },
+  "files": [
+    "lib/index.d.ts",
+    "lib/index.js"
+  ],
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
