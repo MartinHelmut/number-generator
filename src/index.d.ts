@@ -1,3 +1,5 @@
+/** The MIT License (MIT) - Copyright (c) 2016-2018 Martin Helmut Fieber */
+
 export interface NumberGeneratorState {
     correction: number;
     sequence: number[];
