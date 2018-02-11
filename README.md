@@ -12,27 +12,27 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
 ## Contents
 
 * [Usage](#usage)
-  * [Install](#install)
-  * [Random numbers](#random-numbers)
-    * [Create a new random number generator](#create-a-new-random-number-generator)
-    * [Create an unsigned integer](#create-an-unsigned-integer)
-    * [Create an unsigned float](#create-an-unsigned-float)
-    * [Change the seed](#change-the-seed)
-    * [Get the state](#get-the-state)
-    * [Set the state](#set-the-state)
-    * [Something like Math.random?](#something-like-mathrandom)
-  * [Generate hash](#generate-hash)
-  * [TypeScript](#typescript)
+    * [Install](#install)
+    * [Random numbers](#random-numbers)
+        * [Create a new random number generator](#create-a-new-random-number-generator)
+        * [Create an unsigned integer](#create-an-unsigned-integer)
+        * [Create an unsigned float](#create-an-unsigned-float)
+        * [Change the seed](#change-the-seed)
+        * [Get the state](#get-the-state)
+        * [Set the state](#set-the-state)
+        * [Something like Math.random?](#something-like-mathrandom)
+    * [Generate hash](#generate-hash)
+    * [TypeScript](#typescript)
 * [Development](#development)
 * [Disclaimer](#disclaimer)
 
-* * *
+---
 
 ## Usage
 
-This small library contains two methods, the random number generator called *Alea* and a number hash generator named *MurmurHash2*. The *Alea* implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal].
+This small library (**1.4kb compressed, 777b with gzip**) contains two methods, the random number generator called _Alea_ and a number hash generator named _MurmurHash2_. The _Alea_ implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal].
 
-More about the hash function *MurmurHash2* can be found [here][mur].
+More about the hash function _MurmurHash2_ can be found [here][mur].
 
 ### Install
 
@@ -181,7 +181,7 @@ generator.uInt32();
 
 const state = generator.getState();
 generator.setState(); // Reset the state
-generator.uInt32();   // Get a new value
+generator.uInt32(); // Get a new value
 
 generator.getState(state); // Restore saved state
 ```
@@ -208,7 +208,7 @@ The simplest way to use it is by passing a string to generate the hash number. T
 const hash1 = murmurHash('My string.');
 const hash2 = murmurHash('My string.', 0);
 
-hash1;           // 1836966117
+hash1; // 1836966117
 hash1 === hash2; // true
 ```
 
@@ -235,8 +235,10 @@ This package contains all the type definitions for TypeScript needed:
 
 ```typescript
 import {
-    NumberGenerator, NumberHashGenerator,
-    aleaRNGFactory, murmurHash
+    NumberGenerator,
+    NumberHashGenerator,
+    aleaRNGFactory,
+    murmurHash
 } from 'number-generator';
 
 const generator: NumberGenerator = aleaRNGFactory();
