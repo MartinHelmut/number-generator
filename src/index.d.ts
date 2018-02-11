@@ -13,6 +13,6 @@ export interface NumberGenerator {
     setState: (state?: NumberGeneratorState) => void;
 }
 
-export declare type NumberHashGenerator = (hash: string, seed: number) => number;
+export declare type NumberHashGenerator = (hash: string, seed?: number) => number;
 export declare function aleaRNGFactory(initialSeed?: number): NumberGenerator;
-export declare function murmurHash(hash: string, seed?: number): number;
+export declare function murmurhash2_x86_32(hash: string, seed?: number): number;
