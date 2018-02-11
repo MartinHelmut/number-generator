@@ -224,7 +224,7 @@ export function aleaRNGFactory(initialSeed) {
  * @param {number} [seed=1] An optional seed value
  * @return {number} Generated number
  */
-export function murmurHash(hash, seed = 1) {
+export function murmurhash2_x86_32(hash, seed = 1) {
     if (seed !== undefined && seed % 1 !== 0) {
         throw new TypeError('Expected seed to be an integer, float given');
     }
