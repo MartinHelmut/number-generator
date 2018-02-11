@@ -5,58 +5,52 @@
  *
  * @typedef {Object} NumberGeneratorState
  * @property {number} correction Alea correction value
- * @property {number[]} sequence An array of sequences for generating numbers
+ * @property {number[]} sequence An 3-length array of sequences for generating numbers
  */
 
 /**
- * Number generator
- *
+ * @global
  * @namespace NumberGenerator
  */
 
 /**
  * Set a seed for the generator
  *
- * @method
+ * @function setSeed
  * @memberof NumberGenerator
- * @name NumberGenerator#setSeed
- * @param {number} seed The seed to use for number generation
- * @return {number} Returns the passed seed
+ * @param {number} seed The start seed to use for number generation
+ * @return {number} Returns the defined seed
  */
 
 /**
- * Get an unsigned float with max 32 bit
+ * Get an unsigned 32 bit float
  *
- * @method
+ * @function uFloat32
  * @memberof NumberGenerator
- * @name NumberGenerator#uFloat32
- * @return {number} Returns an unsigned float with max 32 bit
+ * @return {number} Returns an unsigned 32 bit float
  */
 
 /**
- * Get an unsigned integer with max 32 bit
+ * Get an unsigned 32 bit integer
  *
- * @method
+ * @function uInt32
  * @memberof NumberGenerator
- * @name NumberGenerator#uInt32
- * @return {number} Returns an unsigned integer with max 32 bit
+ * @return {number} Returns an unsigned 32 bit integer
  */
 
 /**
  * Returns the current number generator state
  *
- * @method
+ * @function getState
  * @memberof NumberGenerator
- * @name NumberGenerator#getState
  * @return {NumberGeneratorState} Returns the internal number generator state
  */
 
 /**
  * Set a new number generator state
  *
- * @method
+ * @function setState
  * @memberof NumberGenerator
- * @name NumberGenerator#setState
  * @param {NumberGeneratorState} [state] A pre configured state object
  */
 
@@ -121,7 +115,7 @@ function uMul32Getter(x, y) {
  * Johannes Baagøe <baagoe@baagoe.com>, 2010
  * Refactored and extended from Martin Helmut Fieber <info@martin-fieber.de>
  *
- * @param {number} [initialSeed] Optional start seed number
+ * @param {number} [initialSeed=1] Optional start seed number
  * @return {NumberGenerator} A number generator object
  */
 export function aleaRNGFactory(initialSeed) {
