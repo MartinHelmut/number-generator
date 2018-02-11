@@ -12,7 +12,6 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
 ## Contents
 
 * [Usage](#usage)
-    * [Support](#support)
     * [Install](#install)
     * [Random numbers](#random-numbers)
         * [Create a new random number generator](#create-a-new-random-number-generator)
@@ -23,7 +22,10 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
         * [Set the state](#set-the-state)
         * [Something like Math.random?](#something-like-mathrandom)
     * [Generate hash](#generate-hash)
+        * [Basic hash generation](#basic-hash-generation)
+        * [Hash based on different seeds](#hash-based-on-different-seeds)
     * [TypeScript](#typescript)
+    * [Support](#support)
 * [Development](#development)
 * [Disclaimer](#disclaimer)
 
@@ -34,13 +36,6 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
 This small library (**1.4kb compressed, 777b with gzip**) contains two methods, the random number generator called _Alea_ and a number hash generator named _MurmurHash2_. The _Alea_ implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal].
 
 More about the hash function _MurmurHash2_ can be found [here][mur].
-
-### Support
-
-This library was tested in:
-
-* Node >= 6
-* All major browsers and IE >= 9
 
 ### Install
 
@@ -210,6 +205,8 @@ random();
 
 The `murmurHash` functions implements the [MurmurHash2 algorithm][mur] in JavaScript. It takes a string and generates a non-cryptographic hash number as unsigned integer.
 
+#### Basic hash generation
+
 The simplest way to use it is by passing a string to generate the hash number. The default seed is `0`.
 
 ```javascript
@@ -221,6 +218,8 @@ hash1 === hash2; // true
 ```
 
 This should create the exact **same result on your machine**!
+
+#### Hash based on different seeds
 
 Different seeds generate different results for the same input string. **Only whole numbers are valid seed** values for the `murmurHash` function!
 
@@ -258,9 +257,16 @@ generator.uInt32();
 hashFn('What?', 42);
 ```
 
+### Support
+
+This library was tested in:
+
+* Node >= 6
+* All major browsers and IE >= 9
+
 ## Development
 
-If you want ot contribute see [https://github.com/MartinHelmut/number-generator/blob/master/CONTRIBUTING.md][cont]
+If you want ot contribute see the [CONTRIBUTING.md][cont]
 
 ## Disclaimer
 
