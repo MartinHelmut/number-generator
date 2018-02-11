@@ -31,7 +31,9 @@ numbers with Node.js and browser.
 
 ## Usage
 
-This small library contains two methods, the random number generator called *Alea* and a number hash generator named *MurmurHash2*. The *Alea* implementation is originally from Johannes Baagøe and ported to [TypeScript][ts] from me. Johannes Baagøe site is offline but here is a [Web Archive Link][wal]. You can read more about the hash function *MurmurHash2* [here][mur].
+This small library contains two methods, the random number generator called *Alea* and a number hash generator named *MurmurHash2*. The *Alea* implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal].
+
+More about the hash function *MurmurHash2* can be found [here][mur].
 
 ### Install
 
