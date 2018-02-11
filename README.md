@@ -7,8 +7,7 @@
 [![Standard Version][stdimg]][stdurl]
 [![styled with prettier][prtimg]][prturl]
 
-Generate repeatable pseudo random numbers and non-cryptographic hash
-numbers with Node.js and browser.
+Generate repeatable pseudo random numbers and non-cryptographic hash numbers for usage in Node.js and browser environments.
 
 ## Contents
 
@@ -21,7 +20,7 @@ numbers with Node.js and browser.
     * [Change the seed](#change-the-seed)
     * [Get the state](#get-the-state)
     * [Set the state](#set-the-state)
-    * [Something like Math.random?](#something-like-math-random)
+    * [Something like Math.random?](#something-like-mathrandom)
   * [Generate hash](#generate-hash)
   * [TypeScript](#typescript)
 * [Development](#development)
@@ -53,17 +52,17 @@ import { aleaRNGFactory, murmurHash } from 'number-generator';
 const { aleaRNGFactory, murmurHash } = require('number-generator');
 ```
 
-For use with TypeScript take a look at [this readme chapter](#typescript).
+For use with TypeScript take a look at the [usage with typescript section](#typescript).
 
 **Remark:** There is no global namespace exposed for the browser! You have to bundle your dependencies to use the library in current browser environments.
 
 ### Random numbers
 
-You can use the `aleaRNGFactory` method to generate (pseudo) random numbers based an a seed (**default seed is** `1`). Every seed let you produce the same result for the number getter methods.
+You can use the `aleaRNGFactory` method to generate (pseudo) random numbers based an a seed (**default seed is** `1`). Every seed produces the same result for the number getter methods.
 
 #### Create a new random number generator
 
-First step is to [include the library](#install) functions you want use in your application the way you want.
+First step is to [include the library](#install) functions you want to use in your application.
 
 Now you can create a new generator with the random seed `1` or a custom one as "unsigned integer". The number `0` is not valid and will **throw an exception** as `TypeError`.
 
@@ -114,7 +113,7 @@ generator.uFloat32(); // 0.1826920467428863
 
 Again, this should create the exact **same result on your machine**!
 
-So, also if you create multiple generators with the same seed, you get the same result for the n-th call:
+If you create multiple generators with the same seed, you get the same result for the n-th call:
 
 ```javascript
 const generator1 = aleaRNGFactory(4);
@@ -174,7 +173,7 @@ const state: NumberGeneratorState = generator.getState();
 
 #### Set the state
 
-You can set the state with `setState` on two ways, first, if you don't pass any parameter the state resets to an initial state. Or you can pass an state to restore a previous setting:
+You can set the state with `setState` on two ways, first, if you don't pass any parameter the state function it will reset the state to the initial state. Or you can pass an state to restore a previous setting:
 
 ```javascript
 const generator = aleaRNGFactory();
@@ -201,7 +200,7 @@ random();
 
 ### Generate hash
 
-The `murmurHash` functions implements the [MurmurHash2 algorithm][mur] in JavaScript. It takes an string and generates a non-cryptographic hash number as unsigned integer.
+The `murmurHash` functions implements the [MurmurHash2 algorithm][mur] in JavaScript. It takes a string and generates a non-cryptographic hash number as unsigned integer.
 
 The simplest way to use it is by passing a string to generate the hash number. The default seed is `0`.
 
