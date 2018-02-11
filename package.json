@@ -19,7 +19,7 @@
     "commit": "git-cz",
     "precommit": "lint-staged",
     "release": "standard-version -a",
-    "prepublish": "npm test && npm run build"
+    "prepare": "npm test && npm run build"
   },
   "repository": {
     "type": "git",
@@ -78,14 +78,30 @@
   },
   "jest": {
     "roots": [
-      "<rootDir>/lib"
+      "<rootDir>/src"
     ]
   },
   "babel": {
     "presets": [
-      "env"
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "> 1%",
+              "Last 2 versions",
+              "IE >= 9"
+            ]
+          }
+        }
+      ]
     ]
   },
+  "browserslist": [
+    "> 1%",
+    "Last 2 versions",
+    "IE >= 9"
+  ],
   "eslintConfig": {
     "extends": "eslint:recommended",
     "parserOptions": {
