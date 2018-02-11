@@ -12,7 +12,7 @@ are the best!
 * [Commit changes](#commit-changes)
 * [Recommended workflow for release](#recommended-workflow-for-release)
 
-* * *
+---
 
 Clone the repo and ...
 
