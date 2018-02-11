@@ -8,7 +8,7 @@
     "node": ">=6"
   },
   "scripts": {
-    "postbuild": "uglifyjs ./lib/index.js --screw-ie8 -m toplevel -r 'require,exports' -c -o ./lib/index.js --lint && cp ./src/index.d.ts lib/",
+    "postbuild": "uglifyjs ./lib/index.js -m toplevel -c -o ./lib/index.js && cp ./src/index.d.ts lib/",
     "build": "rimraf ./lib/* && babel src -d lib",
     "build:docs": "jsdoc src/index.js -r -R ./README.md -d docs",
     "pretest": "npm run lint && npm run build",
@@ -64,7 +64,7 @@
   },
   "jest": {
     "roots": [
-      "<rootDir>/src"
+      "<rootDir>/lib"
     ]
   },
   "babel": {
