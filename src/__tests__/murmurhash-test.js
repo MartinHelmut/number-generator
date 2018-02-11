@@ -121,4 +121,13 @@ describe('murmurHash()', () => {
 
         expect(stack).toHaveLength(uniqueStack.length);
     });
+
+    test('produces an exact reproducible hash (like defined in other implementations)', () => {
+        const hash1 = murmurHash('string', 0);
+        const hash2 = murmurHash('string', 13);
+        const hash3 = murmurHash('something', 5);
+        expect(hash1).toBe(1640947696);
+        expect(hash2).toBe(485409088);
+        expect(hash3).toBe(4098796303);
+    });
 });
