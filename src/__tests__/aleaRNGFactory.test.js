@@ -78,6 +78,14 @@ describe('aleaRNGFactory', () => {
 
             expect(stack).toHaveLength(uniqueStack.length);
         });
+
+        test('produces the exact same results (like defined in other implementations)', () => {
+            const { uFloat32 } = aleaRNGFactory();
+            expect(uFloat32()).toBe(0.00048699788749217987);
+            expect(uFloat32()).toBe(0.6369280074723065);
+            expect(uFloat32()).toBe(0.9810351100750268);
+            expect(uFloat32()).toBe(0.6238283265847713);
+        });
     });
 
     describe('uInt32()', () => {
@@ -153,6 +161,14 @@ describe('aleaRNGFactory', () => {
             );
 
             expect(stack).toHaveLength(uniqueStack.length);
+        });
+
+        test('produces the exact same results (like defined in other implementations)', () => {
+            const { uInt32 } = aleaRNGFactory();
+            expect(uInt32()).toBe(2091640);
+            expect(uInt32()).toBe(2735584962);
+            expect(uInt32()).toBe(4213513714);
+            expect(uInt32()).toBe(2679322261);
         });
     });
 
