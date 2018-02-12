@@ -8,18 +8,17 @@
     "node": ">=6"
   },
   "scripts": {
-    "postbuild": "uglifyjs ./lib/index.js -m toplevel -c -o ./lib/index.js && cp ./src/index.d.ts lib/",
-    "build": "rimraf ./lib/* && babel src -d lib",
-    "build:docs": "jsdoc src/index.js -r -R ./README.md -d docs",
+    "build": "shx rm -fr ./lib/* && babel src -d lib --source-maps && shx cp ./src/*.d.ts lib/",
+    "build:docs": "jsdoc -c .jsdoc.json --verbose",
     "pretest": "npm run lint && npm run build",
-    "test": "jest --coverage",
-    "test:coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "test": "jest",
+    "test:coverage": "jest && cat ./coverage/lcov.info | coveralls",
     "lint": "eslint --ext .js src/",
     "format": "prettier --write \"*.{js,md}\"",
     "commit": "git-cz",
     "precommit": "lint-staged",
     "release": "standard-version -a",
-    "prepare": "npm test && npm run build"
+    "prepare": "npm test"
   },
   "repository": {
     "type": "git",
@@ -31,7 +30,8 @@
     "alea",
     "murmur",
     "hash",
-    "generator"
+    "generator",
+    "prng"
   ],
   "author": "Martin Helmut Fieber <info@martin-fieber.de>",
   "license": "MIT",
@@ -42,23 +42,23 @@
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-preset-env": "1.6.1",
+    "babel-preset-minify": "0.3.0",
     "commitizen": "2.9.6",
     "coveralls": "3.0.0",
     "cz-conventional-changelog": "2.1.0",
     "eslint": "4.17.0",
+    "eslint-config-prettier": "2.9.0",
     "eslint-plugin-compat": "2.2.0",
     "husky": "0.14.3",
     "jest": "22.2.2",
     "jsdoc": "3.5.5",
     "lint-staged": "6.1.0",
     "prettier": "1.10.2",
-    "rimraf": "2.6.2",
-    "standard-version": "4.3.0",
-    "uglify-js": "3.3.10"
+    "shx": "0.2.2",
+    "standard-version": "4.3.0"
   },
   "files": [
-    "lib/index.d.ts",
-    "lib/index.js"
+    "lib"
   ],
   "config": {
     "commitizen": {
@@ -79,7 +79,8 @@
   "jest": {
     "roots": [
       "<rootDir>/src"
-    ]
+    ],
+    "collectCoverage": true
   },
   "babel": {
     "presets": [
@@ -94,7 +95,11 @@
             ]
           }
         }
-      ]
+      ],
+      "minify"
+    ],
+    "ignore": [
+      "__tests__"
     ]
   },
   "browserslist": [
@@ -103,7 +108,10 @@
     "IE >= 9"
   ],
   "eslintConfig": {
-    "extends": "eslint:recommended",
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
     "parserOptions": {
       "ecmaVersion": 6,
       "sourceType": "module"

@@ -33,9 +33,9 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
 
 ## Usage
 
-This small library (**1.5kb compressed, 784b with gzip**) contains two methods, the random number generator called _Alea_ and a number hash generator named _MurmurHash2_. The _Alea_ implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal].
+This library contains currently two methods, one PRNG (pseudo random number generator) called _Alea_ and a number hash generator _MurmurHash2_. The _Alea_ implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal].
 
-More about the hash function _MurmurHash2_ can be found [here][mur].
+More about the hash function _MurmurHash2_ can be found [here on wikipedia][mur].
 
 ### Install
 
@@ -45,7 +45,7 @@ Use NPM to install the package:
 npm install --save number-generator
 ```
 
-After that you can import it, e.g.:
+After that you can import it either as a library, e.g.:
 
 ```javascript
 // ES2015
@@ -55,17 +55,28 @@ import { aleaRNGFactory, murmurhash2_x86_32 } from 'number-generator';
 const { aleaRNGFactory, murmurhash2_x86_32 } = require('number-generator');
 ```
 
+Or the single functions itself:
+
+```javascript
+const aleaRNGFactory = require('number-generator/lib/aleaRNGFactory');
+const murmurhash2_x86_32 = require('number-generator/lib/murmurhash2_x86_32');
+```
+
 For use with TypeScript take a look at the [usage with typescript section](#typescript).
 
-**Remark:** There is no global namespace exposed for the browser! You have to bundle your dependencies to use the library in current browser environments.
+**Remark:** There is no global namespace exposed for the browser! You have to bundle your dependencies to use the library in current browser environments. All supported environments are listed under the [support section](#support).
 
 ### Random numbers
 
-You can use the `aleaRNGFactory` method to generate (pseudo) random numbers based an a seed (**default seed is** `1`). Every seed produces the same result for the number getter methods.
+You can use the `aleaRNGFactory` method to generate (pseudo) random numbers based an a seed (**default seed is** `1`). Every seed produces the same result for the created getter method.
 
 #### Create a new random number generator
 
-First step is to [include the library](#install) functions you want to use in your application.
+First step is to [include the library](#install) functions you want to use in your application. If you only want to use the alea implementation you can import it directly by:
+
+```javascript
+const aleaRNGFactory = require('number-generator/lib/aleaRNGFactory');
+```
 
 Now you can create a new generator with the random seed `1` or a custom one as "unsigned integer". The number `0` is not valid and will **throw an exception** as `TypeError`.
 
@@ -82,12 +93,12 @@ const notValidGen3 = aleaRNGFactory(-1);
 
 #### Create an unsigned integer
 
-If you have an valid generator object you can use the `uInt32` method to get a random unsigned integer. Call it multiple times to get new numbers.
+If you have a valid generator object you can use the `uInt32` method to get a random unsigned integer. Call it multiple times to get new numbers.
 
 ```javascript
-const generator = aleaRNGFactory(10);
-generator.uInt32(); // 20916391
-generator.uInt32(); // 1567221093
+const { uInt32 } = aleaRNGFactory(10);
+uInt32(); // 20916391
+uInt32(); // 1567221093
 ```
 
 This should create the exact **same result on your machine**! You get always the same values for the same seed used.
@@ -109,9 +120,9 @@ value1 === value2; // true
 The same that works for [the uInt32 method](#create-an-unsigned-integer) applies to the `uFloat32` method. But this time you get an unsigned float value.
 
 ```javascript
-const generator = aleaRNGFactory(5);
-generator.uFloat32(); // 0.0024349885061383247
-generator.uFloat32(); // 0.1826920467428863
+const { uFloat32 } = aleaRNGFactory(5);
+uFloat32(); // 0.0024349885061383247
+uFloat32(); // 0.1826920467428863
 ```
 
 Again, this should create the exact **same result on your machine**!
@@ -176,7 +187,7 @@ const state: NumberGeneratorState = generator.getState();
 
 #### Set the state
 
-You can set the state with `setState` on two ways, first, if you don't pass any parameter the state function it will reset the state to the initial state. Or you can pass an state to restore a previous setting:
+You can set the state with `setState` on two ways, either if you don't pass any parameter to the state function it will reset the state to the initial state. Or you can pass an state to restore a previous setting:
 
 ```javascript
 const generator = aleaRNGFactory();
@@ -194,8 +205,7 @@ generator.getState(state); // Restore saved state
 If you want something similar to `Math.random()` you can use the [JavaScript Date API][date] with a timestamp, e.g.:
 
 ```javascript
-const generator = aleaRNGFactory(Date.now());
-const random = generator.uFloat32;
+const { uFloat32: random } = aleaRNGFactory(Date.now());
 
 // Get a random float number
 random();
@@ -203,11 +213,17 @@ random();
 
 ### Generate hash
 
-The `murmurhash2_x86_32` functions implements the [MurmurHash2 algorithm][mur] in JavaScript. It takes a string and generates a non-cryptographic hash number as unsigned integer.
+The `murmurhash2_x86_32` functions implements the [MurmurHash2 algorithm for 32bit integer][mur] in JavaScript. It takes a string and generates a non-cryptographic hash number as unsigned integer.
+
+You can import the function directly by:
+
+```javascript
+const murmurhash2_x86_32 = require('number-generator/lib/murmurhash2_x86_32');
+```
 
 #### Basic hash generation
 
-The simplest way to use it is by passing a string to generate the hash number. The default seed is `0`.
+The simplest way to use it is by passing a string to generate the hash number. The default seed used is `0`.
 
 ```javascript
 const hash1 = murmurhash2_x86_32('My string.');
@@ -221,7 +237,7 @@ This should create the exact **same result on your machine**!
 
 #### Hash based on different seeds
 
-Different seeds generate different results for the same input string. **Only whole numbers are valid seed** values for the `murmurhash2_x86_32` function!
+Different seeds generate different results for the same input string. **Only whole numbers are valid seed** values for any murmur hash function!
 
 ```javascript
 const hash1 = murmurhash2_x86_32('My string.', 1);
@@ -230,7 +246,7 @@ const hash2 = murmurhash2_x86_32('My string.', 2);
 hash1 === hash2; // false
 ```
 
-Float numbers as seed value throw a `TypeError`:
+A float number as a seed value throws a `TypeError`:
 
 ```javascript
 const hash = murmurhash2_x86_32('My string.', 0.7); // TypeError!
@@ -238,7 +254,7 @@ const hash = murmurhash2_x86_32('My string.', 0.7); // TypeError!
 
 ### TypeScript
 
-This package contains all the type definitions for TypeScript needed:
+This package contains all the type definitions for TypeScript needed. Every murmur hash function implements the `NumberHashGenerator` interface.
 
 ```typescript
 import {
@@ -259,18 +275,18 @@ hashFn('What?', 42);
 
 ### Support
 
-This library was tested in:
+This library was tested on the following environments:
 
 * Node >= 6
 * All major browsers and IE >= 9
 
 ## Development
 
-If you want ot contribute see the [CONTRIBUTING.md][cont]
+If you want to contribute see the [CONTRIBUTING.md][cont]
 
 ## Disclaimer
 
-"Why one pseudo random number generator and one number hash function" you may ask? Read more in [this fantastic blog post][unit] about "A primer on repeatable random numbers" from Rune Skovbo Johansen.
+"Why one pseudo random number generator and number hash functions" you may ask? Read more in [this fantastic blog post][unit] about "A primer on repeatable random numbers" from Rune Skovbo Johansen.
 
 Thanks to Johannes Baagøe for the Alea port and Ray Morgan for the MurmurHash2 algorithm implementation in JavaScript.
 
