@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/MartinHelmut/number-generator/compare/v2.0.0...v2.0.1) (2018-02-12)
+
+
+### Bug Fixes
+
+* deactivate minify step ([194177c](https://github.com/MartinHelmut/number-generator/commit/194177c))
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/MartinHelmut/number-generator/compare/v1.0.4...v2.0.0) (2018-02-12)
 
