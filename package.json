@@ -1,6 +1,6 @@
 {
   "name": "number-generator",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "Generate pseudo random numbers and hashs.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
