@@ -24,6 +24,7 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
     * [Generate hash](#generate-hash)
         * [Basic hash generation](#basic-hash-generation)
         * [Hash based on different seeds](#hash-based-on-different-seeds)
+        * [Compatibility to v1](#compatibility-to-v1)
     * [TypeScript](#typescript)
     * [Support](#support)
 * [Development](#development)
@@ -250,6 +251,14 @@ A float number as a seed value throws a `TypeError`:
 
 ```javascript
 const hash = murmurhash2_x86_32('My string.', 0.7); // TypeError!
+```
+
+#### Compatibility to v1
+
+To ensure compatibility to v1 of this library the `murmurhash2_x86_32` is also exposed as `murmurHash` method and can be used by importing it from the library:
+
+```javascript
+const { murmurHash } = require('number-generator');
 ```
 
 ### TypeScript
