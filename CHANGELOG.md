@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/MartinHelmut/number-generator/compare/v1.0.4...v2.0.0) (2018-02-12)
+
+
+### Code Refactoring
+
+* rename murmurHash function ([5b93f47](https://github.com/MartinHelmut/number-generator/commit/5b93f47))
+
+
+### Features
+
+* split methods to single functions ([75bfdfb](https://github.com/MartinHelmut/number-generator/commit/75bfdfb))
+
+
+### BREAKING CHANGES
+
+* murmurHash function is now murmurhash2_x86_32
+
+
+
 <a name="1.0.4"></a>
 ## [1.0.4](https://github.com/MartinHelmut/number-generator/compare/v1.0.3...v1.0.4) (2018-02-10)
 
