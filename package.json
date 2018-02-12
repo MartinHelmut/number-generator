@@ -41,8 +41,6 @@
   "homepage": "https://github.com/MartinHelmut/number-generator#readme",
   "devDependencies": {
     "babel-cli": "6.26.0",
-    "babel-core": "6.26.0",
-    "babel-jest": "22.2.2",
     "babel-preset-env": "1.6.1",
     "commitizen": "2.9.6",
     "coveralls": "3.0.0",
@@ -80,7 +78,7 @@
   },
   "jest": {
     "roots": [
-      "<rootDir>/src"
+      "<rootDir>/lib"
     ],
     "collectCoverage": true
   },
