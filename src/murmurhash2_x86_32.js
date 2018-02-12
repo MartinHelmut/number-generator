@@ -1,5 +1,3 @@
-/*! The MIT License (MIT) - Copyright (c) 2016-2018 Martin Helmut Fieber */
-
 /** @module number-generator/lib/murmurhash2_x86_32 */
 'use strict';
 
