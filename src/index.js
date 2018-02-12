@@ -1,9 +1,10 @@
 /** @module number-generator */
 'use strict';
 
-const aleaRNGFactory = require('./aleaRNGFactory');
-const murmurhash2_x86_32 = require('./murmurhash2_x86_32');
+import aleaRNGFactory from './aleaRNGFactory';
+import murmurhash2_x86_32 from './murmurhash2_x86_32';
 
-exports.aleaRNGFactory = aleaRNGFactory;
-exports.murmurhash2_x86_32 = murmurhash2_x86_32;
-exports.murmurHash = murmurhash2_x86_32; // Compatibility to v1
+const murmurHash = murmurhash2_x86_32;
+
+// Compatibility to v1
+export { aleaRNGFactory, murmurhash2_x86_32, murmurHash };

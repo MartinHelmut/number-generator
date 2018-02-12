@@ -74,7 +74,7 @@ const ALEA_MULTIPLIER = 69069;
  * @param {number} [initialSeed=1] Optional start seed number
  * @return {NumberGenerator} A number generator object
  */
-module.exports = function aleaRNGFactory(initialSeed) {
+export default function aleaRNGFactory(initialSeed) {
     let correction = ALEA_CORRECTION_DEFAULT;
     let sequence0 = START_SEQUENCE_0;
     let sequence1 = START_SEQUENCE_1;
@@ -163,4 +163,4 @@ module.exports = function aleaRNGFactory(initialSeed) {
     setSeed(initialSeed === undefined ? 1 : initialSeed);
 
     return { setSeed, uFloat32, uInt32, getState, setState };
-};
+}
