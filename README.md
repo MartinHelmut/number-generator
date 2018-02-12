@@ -49,23 +49,36 @@ npm install --save number-generator
 After that you can import it either as a library, e.g.:
 
 ```javascript
-// ES2015
+// ESM
 import { aleaRNGFactory, murmurhash2_x86_32 } from 'number-generator';
 
-// Node.js >= 6.0.0
+// CJS
 const { aleaRNGFactory, murmurhash2_x86_32 } = require('number-generator');
 ```
 
 Or the single functions itself:
 
 ```javascript
-const aleaRNGFactory = require('number-generator/lib/aleaRNGFactory');
-const murmurhash2_x86_32 = require('number-generator/lib/murmurhash2_x86_32');
+// ESM
+import aleaRNGFactory from 'number-generator/lib/aleaRNGFactory';
+import murmurhash2_x86_32 from 'number-generator/lib/murmurhash2_x86_32';
+
+// CJS
+const aleaRNGFactory = require('number-generator/lib/aleaRNGFactory').default;
+const murmurhash2_x86_32 = require('number-generator/lib/murmurhash2_x86_32')
+    .default;
 ```
 
 For use with TypeScript take a look at the [usage with typescript section](#typescript).
 
-**Remark:** There is no global namespace exposed for the browser! You have to bundle your dependencies to use the library in current browser environments. All supported environments are listed under the [support section](#support).
+**Remark:** For direct browser usage you can use the exposed `numberGenerator` global, e.g.:
+
+```javascript
+// Direct browser usage:
+numberGenerator.murmurhash2_x86_32('something');
+```
+
+All supported environments are listed under the [support section](#support).
 
 ### Random numbers
 
