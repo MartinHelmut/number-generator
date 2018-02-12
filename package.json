@@ -14,7 +14,7 @@
     "test": "jest",
     "test:coverage": "jest && cat ./coverage/lcov.info | coveralls",
     "lint": "eslint --ext .js src/",
-    "format": "prettier --write \"*.{js,md}\"",
+    "format": "prettier --write \"**/*.{js,md}\"",
     "commit": "git-cz",
     "precommit": "lint-staged",
     "release": "standard-version -a",
