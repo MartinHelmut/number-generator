@@ -62,7 +62,7 @@ function uMul32Getter(x, y) {
  * @param {number} [seed=1] An optional seed value
  * @return {number} Generated number
  */
-module.exports = function murmurhash2_x86_32(hash, seed = 1) {
+export default function murmurhash2_x86_32(hash, seed = 1) {
     if (seed !== undefined && seed % 1 !== 0) {
         throw new TypeError('Expected seed to be an integer, float given');
     }
@@ -108,4 +108,4 @@ module.exports = function murmurhash2_x86_32(hash, seed = 1) {
     hashSum ^= hashSum >>> 15;
 
     return hashSum >>> 0;
-};
+}

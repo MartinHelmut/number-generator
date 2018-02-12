@@ -1,4 +1,4 @@
-const aleaRNGFactory = require('../aleaRNGFactory');
+import aleaRNGFactory from '../aleaRNGFactory';
 
 describe('aleaRNGFactory', () => {
     describe('uFloat32()', () => {
