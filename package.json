@@ -82,7 +82,7 @@
   },
   "jest": {
     "roots": [
-      "<rootDir>/lib"
+      "<rootDir>/src"
     ],
     "collectCoverage": true
   },
