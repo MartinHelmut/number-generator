@@ -1,4 +1,6 @@
-import murmurhash2_x86_32 from '../murmurhash2_x86_32';
+import { requireFunction } from './helper';
+
+const murmurhash2_x86_32 = requireFunction('murmurhash2_x86_32');
 
 describe('murmurhash2_x86_32()', () => {
     test('should generate an number hash by string', () => {
