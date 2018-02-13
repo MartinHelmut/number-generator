@@ -8,8 +8,7 @@
     "node": ">=6"
   },
   "scripts": {
-    "prebuild": "shx rm -fr ./lib/*",
-    "build": "babel src -d lib --source-maps && rollup -c rollup.config.js && shx cp ./src/*.d.ts lib/",
+    "build": "shx rm -fr ./lib/* && rollup -c rollup.config.js && shx cp ./src/*.d.ts lib/",
     "build:docs": "jsdoc -c .jsdoc.json --verbose",
     "pretest": "npm run lint && npm run build",
     "test": "jest",
@@ -41,7 +40,6 @@
   },
   "homepage": "https://github.com/MartinHelmut/number-generator#readme",
   "devDependencies": {
-    "babel-cli": "6.26.0",
     "babel-plugin-external-helpers": "6.22.0",
     "babel-preset-env": "1.6.1",
     "commitizen": "2.9.6",
@@ -57,13 +55,14 @@
     "prettier": "1.10.2",
     "rollup": "0.55.5",
     "rollup-plugin-babel": "3.0.3",
+    "rollup-plugin-closure-compiler-js": "1.0.6",
+    "rollup-plugin-filesize": "1.5.0",
     "rollup-plugin-node-resolve": "3.0.2",
     "shx": "0.2.2",
     "standard-version": "4.3.0"
   },
   "files": [
-    "lib",
-    "!lib/__tests__"
+    "lib"
   ],
   "config": {
     "commitizen": {
