@@ -34,7 +34,7 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
 
 ## Usage
 
-This library contains currently two methods, one PRNG (pseudo random number generator) called _Alea_ and a number hash generator _MurmurHash2_. The _Alea_ implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal].
+This small library (**1.76 KB, gzipped size: 887 B**) contains currently two methods, one PRNG (pseudo random number generator) called _Alea_ and a number hash generator _MurmurHash2_. The _Alea_ implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal].
 
 More about the hash function _MurmurHash2_ can be found [here on wikipedia][mur].
 
@@ -64,9 +64,8 @@ import aleaRNGFactory from 'number-generator/lib/aleaRNGFactory';
 import murmurhash2_x86_32 from 'number-generator/lib/murmurhash2_x86_32';
 
 // CJS
-const aleaRNGFactory = require('number-generator/lib/aleaRNGFactory').default;
-const murmurhash2_x86_32 = require('number-generator/lib/murmurhash2_x86_32')
-    .default;
+const aleaRNGFactory = require('number-generator/lib/aleaRNGFactory');
+const murmurhash2_x86_32 = require('number-generator/lib/murmurhash2_x86_32');
 ```
 
 For use with TypeScript take a look at the [usage with typescript section](#typescript).
@@ -89,7 +88,7 @@ You can use the `aleaRNGFactory` method to generate (pseudo) random numbers base
 First step is to [include the library](#install) functions you want to use in your application. If you only want to use the alea implementation you can import it directly by:
 
 ```javascript
-import aleaRNGFactory from 'number-generator/lib/aleaRNGFactory';
+const aleaRNGFactory = require('number-generator/lib/aleaRNGFactory');
 ```
 
 Now you can create a new generator with the random seed `1` or a custom one as "unsigned integer". The number `0` is not valid and will **throw an exception** as `TypeError`.
@@ -232,7 +231,7 @@ The `murmurhash2_x86_32` functions implements the [MurmurHash2 algorithm for 32b
 You can import the function directly by:
 
 ```javascript
-import murmurhash2_x86_32 from 'number-generator/lib/murmurhash2_x86_32';
+const murmurhash2_x86_32 = require('number-generator/lib/murmurhash2_x86_32');
 ```
 
 #### Basic hash generation
