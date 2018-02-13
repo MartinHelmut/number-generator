@@ -1,4 +1,6 @@
-import aleaRNGFactory from '../aleaRNGFactory';
+import { requireFunction } from './helper';
+
+const aleaRNGFactory = requireFunction('aleaRNGFactory');
 
 describe('aleaRNGFactory', () => {
     describe('uFloat32()', () => {

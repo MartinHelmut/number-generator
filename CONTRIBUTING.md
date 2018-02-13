@@ -18,15 +18,18 @@ Clone the repo and ...
 
 ## Run tests
 
-To lint the application and run all the tests use:
-
 ```shell
+# Run jest tests
 npm test
+# Run jest tests in production
+npm run test:prod
+# Lint the application
+npm run lint
 ```
 
 ## Format the code
 
-To format the code use `npm run format`.
+To format the code use `npm run format`. This is automatically executed before commit.
 
 ## Build the library
 
