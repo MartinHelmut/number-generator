@@ -13,7 +13,7 @@
     "pretest": "npm run lint && npm run build",
     "test": "jest",
     "test:coverage": "jest && cat ./coverage/lcov.info | coveralls",
-    "lint": "eslint --ext .js src/",
+    "lint": "eslint src/",
     "format": "prettier --write \"**/*.{js,md}\"",
     "commit": "git-cz",
     "precommit": "lint-staged",
