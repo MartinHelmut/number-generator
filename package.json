@@ -10,7 +10,6 @@
   "scripts": {
     "build": "shx rm -fr ./lib/* && rollup -c rollup.config.js && shx cp ./src/*.d.ts lib/",
     "build:docs": "jsdoc -c .jsdoc.json --verbose",
-    "pretest": "npm run lint && npm run build",
     "test": "jest",
     "test:coverage": "jest && cat ./coverage/lcov.info | coveralls",
     "lint": "eslint src/",
@@ -18,7 +17,7 @@
     "precommit": "lint-staged",
     "commit": "git-cz",
     "release": "standard-version -a",
-    "prepare": "npm test"
+    "prepare": "npm run lint && npm run build && npm test"
   },
   "repository": {
     "type": "git",
