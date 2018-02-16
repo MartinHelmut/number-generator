@@ -34,9 +34,9 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
 
 ## Usage
 
-This small library (**1.76 KB, gzipped size: 887 B**) contains currently two methods, one PRNG (pseudo random number generator) called _Alea_ and a number hash generator _MurmurHash2_. The _Alea_ implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal].
+This library (**2.32 KB, gzipped size: 1.06 KB**) contains the following methods: one PRNG (pseudo random number generator) called _Alea_ and two number hash generator, _MurmurHash2_ and _MurmurHash3_ for unsigned integer with 32bit. The _Alea_ implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal] or alternatively a [direct mirror of Johannes Baagøe's wiki from Nick Quinlan][brnm].
 
-More about the hash function _MurmurHash2_ can be found [here on wikipedia][mur].
+More about the hash function _MurmurHash_ can be found [here on wikipedia][mur].
 
 ### Install
 
@@ -50,10 +50,10 @@ After that you can import it either as a library, e.g.:
 
 ```javascript
 // ESM
-import { aleaRNGFactory, murmurhash2_x86_32 } from 'number-generator';
+import * as numberGenerator from 'number-generator';
 
 // CJS
-const { aleaRNGFactory, murmurhash2_x86_32 } = require('number-generator');
+const numberGenerator = require('number-generator');
 ```
 
 Or the single functions itself:
@@ -62,10 +62,12 @@ Or the single functions itself:
 // ESM
 import aleaRNGFactory from 'number-generator/lib/aleaRNGFactory';
 import murmurhash2_x86_32 from 'number-generator/lib/murmurhash2_x86_32';
+import murmurhash3_x86_32 from 'number-generator/lib/murmurhash3_x86_32';
 
 // CJS
 const aleaRNGFactory = require('number-generator/lib/aleaRNGFactory');
 const murmurhash2_x86_32 = require('number-generator/lib/murmurhash2_x86_32');
+const murmurhash3_x86_32 = require('number-generator/lib/murmurhash3_x86_32');
 ```
 
 For use with TypeScript take a look at the [usage with typescript section](#typescript).
@@ -73,7 +75,7 @@ For use with TypeScript take a look at the [usage with typescript section](#type
 **Remark:** For direct browser usage you can use the exposed `numberGenerator` global, e.g.:
 
 ```javascript
-// Direct browser usage:
+// Direct browser usage e.g.:
 numberGenerator.murmurhash2_x86_32('something');
 ```
 
@@ -226,17 +228,19 @@ random();
 
 ### Generate hash
 
-The `murmurhash2_x86_32` functions implements the [MurmurHash2 algorithm for 32bit integer][mur] in JavaScript. It takes a string and generates a non-cryptographic hash number as unsigned integer.
+To generate number a hash there are two functions, `murmurhash2_x86_32` and `murmurhash3_x86_32`. The `murmurhash` functions implement the [MurmurHash algorithm for 32bit integer][mur] in JavaScript (murmurhash2 and 3). They take a string and generates a non-cryptographic hash number as unsigned integer (32bit).
 
-You can import the function directly by:
+You can import the functions directly by:
 
 ```javascript
 const murmurhash2_x86_32 = require('number-generator/lib/murmurhash2_x86_32');
+// or
+const murmurhash3_x86_32 = require('number-generator/lib/murmurhash3_x86_32');
 ```
 
 #### Basic hash generation
 
-The simplest way to use it is by passing a string to generate the hash number. The default seed used is `0`.
+All murmur hash functions work the same. So the following examples will take the murmur hash 2 function to demonstrate the usage. The simplest way to use it is by passing a string to generate the hash number. The default seed used is `0`.
 
 ```javascript
 const hash1 = murmurhash2_x86_32('My string.');
@@ -282,16 +286,19 @@ import {
     NumberGenerator,
     NumberHashGenerator,
     aleaRNGFactory,
-    murmurhash2_x86_32
+    murmurhash2_x86_32,
+    murmurhash3_x86_32
 } from 'number-generator';
 
 const generator: NumberGenerator = aleaRNGFactory();
 // const factory: () => NumberGenerator = aleaRNGFactory;
 
-const hashFn: NumberHashGenerator = murmurhash2_x86_32;
+const hashFn1: NumberHashGenerator = murmurhash2_x86_32;
+const hashFn2: NumberHashGenerator = murmurhash3_x86_32;
 
 generator.uInt32();
-hashFn('What?', 42);
+hashFn1('What?', 42);
+hashFn2('something', 14);
 ```
 
 ### Support
@@ -307,9 +314,9 @@ If you want to contribute see the [CONTRIBUTING.md][cont]
 
 ## Disclaimer
 
-"Why one pseudo random number generator and number hash functions" you may ask? Read more in [this fantastic blog post][unit] about "A primer on repeatable random numbers" from Rune Skovbo Johansen.
+"Why pseudo random number generators and number hash functions" you may ask? Read more in [this fantastic blog post][unit] about "A primer on repeatable random numbers" from Rune Skovbo Johansen.
 
-Thanks to Johannes Baagøe for the Alea port and Ray Morgan for the MurmurHash2 algorithm implementation in JavaScript.
+Thanks to Johannes Baagøe for the Alea port and Ray Morgan for the MurmurHash2 algorithm implementation in JavaScript. Also thanks to Karan Lyons for the [MurmurHash3 implementation][mur3].
 
 [npmurl]: https://www.npmjs.com/package/number-generator
 [npmimg]: https://img.shields.io/npm/v/number-generator.svg
@@ -325,7 +332,9 @@ Thanks to Johannes Baagøe for the Alea port and Ray Morgan for the MurmurHash2 
 [prturl]: https://github.com/prettier/prettier
 [ts]: http://www.typescriptlang.org/
 [wal]: https://web.archive.org/web/20111118012238/http://baagoe.com/en/RandomMusings/javascript/
+[brnm]: https://github.com/nquinlan/better-random-numbers-for-javascript-mirror
 [date]: https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Date
 [mur]: https://en.wikipedia.org/wiki/MurmurHash
+[mur3]: https://github.com/karanlyons/murmurHash3.js
 [cont]: https://github.com/MartinHelmut/number-generator/blob/master/CONTRIBUTING.md
 [unit]: https://blogs.unity3d.com/2015/01/07/a-primer-on-repeatable-random-numbers/

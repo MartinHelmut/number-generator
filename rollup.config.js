@@ -56,5 +56,6 @@ export default [
         name: 'numberGenerator'
     }),
     createBundleConfig('aleaRNGFactory'),
-    createBundleConfig('murmurhash2_x86_32')
+    createBundleConfig('murmurhash2_x86_32'),
+    createBundleConfig('murmurhash3_x86_32')
 ];
