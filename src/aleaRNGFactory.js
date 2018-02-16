@@ -1,11 +1,23 @@
 /** @module number-generator/lib/aleaRNGFactory */
-'use strict';
+import { throwInvalidAleaSeed } from './_shared';
 
+/**
+ * Number generator with Alea algorithm
+ *
+ * From {@link http://baagoe.com/en/RandomMusings/javascript/}
+ * Johannes Baagøe <baagoe@baagoe.com>, 2010
+ * Refactored and extended from Martin Helmut Fieber <info@martin-fieber.de>
+ *
+ * @export number-generator/lib/aleaRNGFactory
+ * @param {number} [initialSeed=1] Optional start seed number
+ * @return {NumberGenerator} A number generator object
+ */
 export default (() => {
     /**
      * Number generator state
      *
-     * @typedef {Object} NumberGeneratorState
+     * @global
+     * @namespace NumberGeneratorState
      * @property {number} correction Alea correction value
      * @property {number[]} sequence An 3-length array of sequences for generating numbers
      */
@@ -56,28 +68,23 @@ export default (() => {
      * @param {NumberGeneratorState} [state={correction: 1, sequence: [0, 0, 0]}] A pre configured state object
      */
 
-    const ALEA_CORRECTION_DEFAULT = 1;
+    const CORRECTION_DEFAULT = 1;
     const START_SEQUENCE_0 = 0;
     const START_SEQUENCE_1 = 0;
     const START_SEQUENCE_2 = 0;
-    const ALEA_FRACTURE_FLOAT = 2.3283064365386963e-10; // 2^-32
-    const ALEA_FRACTURE_INT = 0x100000000; // 2^32
-    const ALEA_TERM = 2091639;
-    const ALEA_MULTIPLIER = 69069;
+    const FRACTURE_FLOAT = 2.3283064365386963e-10; // 2^-32
+    const FRACTURE_INT = 0x100000000; // 2^32
+    const TERM = 2091639;
+    const MULTIPLIER = 69069;
 
     /**
      * Number generator with Alea algorithm
      *
-     * From http://baagoe.com/en/RandomMusings/javascript/
-     * Johannes Baagøe <baagoe@baagoe.com>, 2010
-     * Refactored and extended from Martin Helmut Fieber <info@martin-fieber.de>
-     *
-     * @export number-generator/lib/aleaRNGFactory
      * @param {number} [initialSeed=1] Optional start seed number
      * @return {NumberGenerator} A number generator object
      */
     function aleaRNGFactory(initialSeed) {
-        let correction = ALEA_CORRECTION_DEFAULT;
+        let correction = CORRECTION_DEFAULT;
         let sequence0 = START_SEQUENCE_0;
         let sequence1 = START_SEQUENCE_1;
         let sequence2 = START_SEQUENCE_2;
@@ -90,18 +97,14 @@ export default (() => {
          * @return {number} The used number value
          */
         function setSeed(seed) {
-            if (seed % 1 !== 0 || seed <= 0) {
-                throw new TypeError(
-                    `Expected seed to be an unsigned integer greater 1, but got "${seed}"`
-                );
-            }
+            throwInvalidAleaSeed(seed);
 
-            sequence0 = (seed >>> 0) * ALEA_FRACTURE_FLOAT;
-            seed = (seed * ALEA_MULTIPLIER + 1) >>> 0;
-            sequence1 = seed * ALEA_FRACTURE_FLOAT;
-            seed = (seed * ALEA_MULTIPLIER + 1) >>> 0;
-            sequence2 = seed * ALEA_FRACTURE_FLOAT;
-            correction = ALEA_CORRECTION_DEFAULT;
+            sequence0 = (seed >>> 0) * FRACTURE_FLOAT;
+            seed = (seed * MULTIPLIER + 1) >>> 0;
+            sequence1 = seed * FRACTURE_FLOAT;
+            seed = (seed * MULTIPLIER + 1) >>> 0;
+            sequence2 = seed * FRACTURE_FLOAT;
+            correction = CORRECTION_DEFAULT;
 
             return seed;
         }
@@ -112,8 +115,7 @@ export default (() => {
          * @return {number} Generated number
          */
         function uFloat32() {
-            const singleTerm =
-                ALEA_TERM * sequence0 + correction * ALEA_FRACTURE_FLOAT;
+            const singleTerm = TERM * sequence0 + correction * FRACTURE_FLOAT;
             correction = singleTerm | 0;
             sequence0 = sequence1;
             sequence1 = sequence2;
@@ -127,7 +129,7 @@ export default (() => {
          * @return {number} Generated number
          */
         function uInt32() {
-            return (uFloat32() * ALEA_FRACTURE_INT) >>> 0;
+            return (uFloat32() * FRACTURE_INT) >>> 0;
         }
 
         /**
@@ -149,14 +151,14 @@ export default (() => {
          */
         function setState(state) {
             const defaultState = {
-                correction: ALEA_CORRECTION_DEFAULT,
+                correction: CORRECTION_DEFAULT,
                 sequence: [START_SEQUENCE_0, START_SEQUENCE_1, START_SEQUENCE_2]
             };
 
             state = state || defaultState;
             state.sequence = state.sequence || [];
 
-            correction = state.correction || ALEA_CORRECTION_DEFAULT;
+            correction = state.correction || CORRECTION_DEFAULT;
             sequence0 = state.sequence[0] || START_SEQUENCE_0;
             sequence1 = state.sequence[1] || START_SEQUENCE_1;
             sequence2 = state.sequence[2] || START_SEQUENCE_2;

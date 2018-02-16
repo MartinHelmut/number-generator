@@ -29,7 +29,7 @@ npm run lint
 
 ## Format the code
 
-To format the code use `npm run format`. This is automatically executed before commit.
+To format the code use `npm run format`. This is command runs automatically before commit.
 
 ## Build the library
 
