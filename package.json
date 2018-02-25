@@ -56,7 +56,7 @@
     "jsdoc": "3.5.5",
     "lint-staged": "7.0.0",
     "prettier": "1.10.2",
-    "rollup": "0.56.2",
+    "rollup": "0.56.3",
     "rollup-plugin-babel": "3.0.3",
     "rollup-plugin-closure-compiler-js": "1.0.6",
     "rollup-plugin-filesize": "1.5.0",
