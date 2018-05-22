@@ -62,7 +62,7 @@
     "rollup-plugin-filesize": "1.5.0",
     "rollup-plugin-node-resolve": "3.3.0",
     "shx": "0.2.2",
-    "standard-version": "4.3.0"
+    "standard-version": "4.4.0"
   },
   "files": [
     "lib"
