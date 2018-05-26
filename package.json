@@ -50,7 +50,7 @@
     "cz-conventional-changelog": "2.1.0",
     "eslint": "4.19.1",
     "eslint-config-prettier": "2.9.0",
-    "eslint-plugin-compat": "2.2.0",
+    "eslint-plugin-compat": "2.3.0",
     "husky": "0.14.3",
     "jest": "23.0.0",
     "jsdoc": "3.5.5",
