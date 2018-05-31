@@ -11,30 +11,30 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
 
 ## Contents
 
-* [Usage](#usage)
-    * [Install](#install)
-    * [Random numbers](#random-numbers)
-        * [Create a new random number generator](#create-a-new-random-number-generator)
-        * [Create an unsigned integer](#create-an-unsigned-integer)
-        * [Create an unsigned float](#create-an-unsigned-float)
-        * [Change the seed](#change-the-seed)
-        * [Get the state](#get-the-state)
-        * [Set the state](#set-the-state)
-        * [Something like Math.random?](#something-like-mathrandom)
-    * [Generate hash](#generate-hash)
-        * [Basic hash generation](#basic-hash-generation)
-        * [Hash based on different seeds](#hash-based-on-different-seeds)
-        * [Compatibility to v1](#compatibility-to-v1)
-    * [TypeScript](#typescript)
-    * [Support](#support)
-* [Development](#development)
-* [Disclaimer](#disclaimer)
+-   [Usage](#usage)
+    -   [Install](#install)
+    -   [Random numbers](#random-numbers)
+        -   [Create a new random number generator](#create-a-new-random-number-generator)
+        -   [Create an unsigned integer](#create-an-unsigned-integer)
+        -   [Create an unsigned float](#create-an-unsigned-float)
+        -   [Change the seed](#change-the-seed)
+        -   [Get the state](#get-the-state)
+        -   [Set the state](#set-the-state)
+        -   [Something like Math.random?](#something-like-mathrandom)
+    -   [Generate hash](#generate-hash)
+        -   [Basic hash generation](#basic-hash-generation)
+        -   [Hash based on different seeds](#hash-based-on-different-seeds)
+        -   [Compatibility to v1](#compatibility-to-v1)
+    -   [TypeScript](#typescript)
+    -   [Support](#support)
+-   [Development](#development)
+-   [Disclaimer](#disclaimer)
 
 ---
 
 ## Usage
 
-This library (**2.32 KB, gzipped size: 1.06 KB**) contains the following methods: one PRNG (pseudo random number generator) called _Alea_ and two number hash generator, _MurmurHash2_ and _MurmurHash3_ for unsigned integer with 32bit. The _Alea_ implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal] or alternatively a [direct mirror of Johannes Baagøe's wiki from Nick Quinlan][brnm].
+This library (**2.3 KB, gzipped size: 1.05 KB**) contains the following methods: one PRNG (pseudo random number generator) called _Alea_ and two number hash generator, _MurmurHash2_ and _MurmurHash3_ for unsigned integer with 32bit. The _Alea_ implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal] or alternatively a [direct mirror of Johannes Baagøe's wiki from Nick Quinlan][brnm].
 
 More about the hash function _MurmurHash_ can be found [here on wikipedia][mur].
 
@@ -305,8 +305,8 @@ hashFn2('something', 14);
 
 This library was tested on the following environments:
 
-* Node >= 6
-* All major browsers and IE >= 9
+-   Node >= 6
+-   All major browsers and IE >= 9
 
 ## Development
 
