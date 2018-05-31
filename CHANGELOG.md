@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.1.5"></a>
+## [2.1.5](https://github.com/MartinHelmut/number-generator/compare/v2.1.4...v2.1.5) (2018-05-31)
+
+
+### Bug Fixes
+
+* murmurhash2_x86_32 do not return 0 for strings length multiply of 4 ([90b067e](https://github.com/MartinHelmut/number-generator/commit/90b067e)), closes [#78](https://github.com/MartinHelmut/number-generator/issues/78)
+
+
+
 <a name="2.1.4"></a>
 ## [2.1.4](https://github.com/MartinHelmut/number-generator/compare/v2.1.3...v2.1.4) (2018-05-29)
 
