@@ -83,7 +83,7 @@ describe('murmurhash2_x86_32()', () => {
     });
 
     test('[loop] should produce unique results on unsigned seeds', () => {
-        const iterations = 100;
+        const iterations = 1000;
         const stack = [];
 
         for (let i = 0; i <= iterations; i++) {
@@ -104,7 +104,7 @@ describe('murmurhash2_x86_32()', () => {
     });
 
     test('[loop] should produce unique results on seed range from negative to positive', () => {
-        const iterations = 100;
+        const iterations = 1000;
         const stack = [];
 
         for (let i = -100; i <= iterations; i++) {

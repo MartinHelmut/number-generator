@@ -55,7 +55,7 @@ describe('aleaRNGFactory', () => {
 
         test('[loop] should return unique valid uFloat32 after repeated calls', () => {
             const generator = aleaRNGFactory();
-            const iterations = 100;
+            const iterations = 1000;
             const stack = [];
 
             for (let i = 1; i <= iterations; i++) {
@@ -141,7 +141,7 @@ describe('aleaRNGFactory', () => {
 
         test('[loop] should return unique valid uInt32 after repeated calls', () => {
             const generator = aleaRNGFactory();
-            const iterations = 100;
+            const iterations = 1000;
             const stack = [];
 
             for (let i = 1; i <= iterations; i++) {
