@@ -72,8 +72,6 @@ export default (() => {
                 hashSum ^= hash.charCodeAt(currentIndex);
                 hashSum = uMul32Getter(hashSum, MULTIPLIER);
                 break;
-            default:
-                hashSum = 0;
         }
 
         hashSum ^= hashSum >>> 13;

@@ -132,4 +132,26 @@ describe('murmurhash2_x86_32()', () => {
         expect(hash2).toBe(485409088);
         expect(hash3).toBe(4098796303);
     });
+
+    test('do not return 0 for strings length multiply of 4', () => {
+        const hash1 = murmurhash2_x86_32('A');
+        const hash2 = murmurhash2_x86_32('AA');
+        const hash3 = murmurhash2_x86_32('AAA');
+        const hash4 = murmurhash2_x86_32('AAAA');
+        const hash5 = murmurhash2_x86_32('AAAAA');
+        const hash6 = murmurhash2_x86_32('AAAAAA');
+        const hash7 = murmurhash2_x86_32('AAAAAAA');
+        const hash8 = murmurhash2_x86_32('AAAAAAAA');
+        const hash9 = murmurhash2_x86_32('AAAAAAAAAAAA');
+
+        expect(hash1).toBe(636687721);
+        expect(hash2).toBe(3621601297);
+        expect(hash3).toBe(2474210034);
+        expect(hash4).toBe(1480750041);
+        expect(hash5).toBe(2462844500);
+        expect(hash6).toBe(263112632);
+        expect(hash7).toBe(433066591);
+        expect(hash8).toBe(586671992);
+        expect(hash9).toBe(285004715);
+    });
 });
