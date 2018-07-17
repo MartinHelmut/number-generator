@@ -72,8 +72,8 @@ export default (() => {
     const START_SEQUENCE_0 = 0;
     const START_SEQUENCE_1 = 0;
     const START_SEQUENCE_2 = 0;
-    const FRACTURE_FLOAT = 2.3283064365386963e-10; // 2^-32
-    const FRACTURE_INT = 0x100000000; // 2^32
+    const FRACTURE_FLOAT = 2 ** -32;
+    const FRACTURE_INT = 2 ** 32;
     const TERM = 2091639;
     const MULTIPLIER = 69069;
 
