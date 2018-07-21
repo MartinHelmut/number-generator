@@ -48,7 +48,7 @@
     "coveralls": "3.0.2",
     "cross-env": "5.2.0",
     "cz-conventional-changelog": "2.1.0",
-    "eslint": "5.1.0",
+    "eslint": "5.2.0",
     "eslint-config-prettier": "2.9.0",
     "eslint-plugin-compat": "2.5.0",
     "husky": "0.14.3",
