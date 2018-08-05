@@ -308,6 +308,8 @@ This library was tested on the following environments:
 -   Node >= 6
 -   All major browsers and IE >= 9
 
+Exceptions for Node are versions that reached the End-of-Life as defined under https://github.com/nodejs/Release#end-of-life-releases.
+
 ## Development
 
 If you want to contribute see the [CONTRIBUTING.md][cont]
