@@ -52,7 +52,7 @@
     "eslint-config-prettier": "2.9.0",
     "eslint-plugin-compat": "2.5.1",
     "husky": "0.14.3",
-    "jest": "23.4.2",
+    "jest": "23.5.0",
     "jsdoc": "3.5.5",
     "lint-staged": "7.2.0",
     "prettier": "1.14.2",
