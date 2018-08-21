@@ -3,6 +3,7 @@
   "version": "2.1.7",
   "description": "Generate pseudo random numbers and hashs.",
   "main": "lib/index.js",
+  "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
   "engines": {
     "node": ">=6"
@@ -12,6 +13,7 @@
     "build:docs": "jsdoc -c .jsdoc.json --verbose",
     "test": "jest",
     "test:prod": "npm run build && cross-env NODE_ENV=production jest",
+    "test:treeshaking": "agadoo lib/index.esm.js",
     "ci": "npm run lint && npm run test:prod",
     "test:coverage": "jest && cat ./coverage/lcov.info | coveralls",
     "lint": "eslint src/",
@@ -42,6 +44,7 @@
   },
   "homepage": "https://github.com/MartinHelmut/number-generator#readme",
   "devDependencies": {
+    "agadoo": "1.0.0",
     "babel-plugin-external-helpers": "6.22.0",
     "babel-preset-env": "1.7.0",
     "commitizen": "2.10.1",

@@ -70,6 +70,14 @@ const murmurhash2_x86_32 = require('number-generator/lib/murmurhash2_x86_32');
 const murmurhash3_x86_32 = require('number-generator/lib/murmurhash3_x86_32');
 ```
 
+Also because the library can safely be [tree shaked][trsh], you can import the functions for ESM like:
+
+```javascript
+// If tree shaking is used in e.g. Rollup or Webpack this
+// will only put this function with helpers in your bundle:
+import { aleaRNGFactory } from 'number-generator';
+```
+
 For use with TypeScript take a look at the [usage with typescript section](#typescript).
 
 **Remark:** For direct browser usage you can use the exposed `numberGenerator` global, e.g.:
@@ -340,3 +348,4 @@ Thanks to Johannes Baagøe for the Alea port and Ray Morgan for the MurmurHash2 
 [mur3]: https://github.com/karanlyons/murmurHash3.js
 [cont]: https://github.com/MartinHelmut/number-generator/blob/master/CONTRIBUTING.md
 [unit]: https://blogs.unity3d.com/2015/01/07/a-primer-on-repeatable-random-numbers/
+[trsh]: https://en.wikipedia.org/wiki/Tree_shaking
