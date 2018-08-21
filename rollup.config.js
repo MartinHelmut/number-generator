@@ -55,6 +55,11 @@ export default [
         format: 'umd',
         name: 'numberGenerator'
     }),
+    createBundleConfig('index', {
+        format: 'esm',
+        file: 'lib/index.esm.js',
+        sourcemapFile: 'lib/index.esm.js.map'
+    }),
     createBundleConfig('aleaRNGFactory'),
     createBundleConfig('murmurhash2_x86_32'),
     createBundleConfig('murmurhash3_x86_32')
