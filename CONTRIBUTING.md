@@ -21,10 +21,15 @@ Clone the repo and ...
 ```shell
 # Run jest tests
 npm test
+
 # Run jest tests in production
 npm run test:prod
+
 # Lint the application
 npm run lint
+
+# Test if the application is tree shakable
+npm run test:treeshaking
 ```
 
 ## Format the code
