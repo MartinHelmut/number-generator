@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/MartinHelmut/number-generator/compare/v2.1.7...v2.2.0) (2018-08-21)
+
+
+### Features
+
+* add tree shaking check to production build step ([bc2aa11](https://github.com/MartinHelmut/number-generator/commit/bc2aa11))
+
+
+
 <a name="2.1.7"></a>
 ## [2.1.7](https://github.com/MartinHelmut/number-generator/compare/v2.1.6...v2.1.7) (2018-08-05)
 
