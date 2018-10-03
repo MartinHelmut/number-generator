@@ -69,7 +69,7 @@ Push the changes and your feature branch and create a "Merge Request" on GitHub.
 3.  Make sure all tests turn green
 4.  Create a new release with `npm run release`
 5.  Push your release `git push --follow-tags origin master`
-6.  Publish: `NPM_CONFIG_OTP=XXXXXX npm run publish` (replace `XXXXXX` with a valid 2FA token)
+6.  Publish: `NPM_CONFIG_OTP=XXXXXX npm publish` (replace `XXXXXX` with a valid 2FA token)
 7.  **Done!**
 
 For more information on building a release see [https://github.com/conventional-changelog/standard-version][sv]
