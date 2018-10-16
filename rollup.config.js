@@ -43,8 +43,8 @@ function createBundleConfig(fileName, output = {}) {
             babel(babelOptions),
             closure(closureOptions),
             filesize({
-                render: (_, size, gzip) =>
-                    `Bundle size: ${size}, Gzipped size: ${gzip}`
+                render: (_, __, { bundleSize, gzipSize }) =>
+                    `Bundle size: ${bundleSize}, Gzipped size: ${gzipSize}`
             })
         ]
     };
