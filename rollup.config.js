@@ -1,6 +1,6 @@
 import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
-import closure from 'rollup-plugin-closure-compiler-js';
+import { terser } from 'rollup-plugin-terser';
 import filesize from 'rollup-plugin-filesize';
 
 const babelOptions = {
@@ -14,15 +14,6 @@ const babelOptions = {
             }
         ]
     ]
-};
-
-const closureOptions = {
-    compilationLevel: 'SIMPLE',
-    languageOut: 'ECMASCRIPT5_STRICT',
-    env: 'CUSTOM',
-    processCommonJsModules: false,
-    applyInputSourceMaps: true,
-    createSourceMap: true
 };
 
 function createBundleConfig(fileName, output = {}) {
@@ -40,7 +31,7 @@ function createBundleConfig(fileName, output = {}) {
         plugins: [
             resolve(),
             babel(babelOptions),
-            closure(closureOptions),
+            terser(),
             filesize({
                 render: (_, __, { bundleSize, gzipSize }) =>
                     `Bundle size: ${bundleSize}, Gzipped size: ${gzipSize}`
