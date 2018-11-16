@@ -61,7 +61,7 @@
     "jsdoc": "3.5.5",
     "lint-staged": "8.0.5",
     "prettier": "1.15.2",
-    "regenerator-runtime": "0.12.1",
+    "regenerator-runtime": "0.13.1",
     "rollup": "0.67.3",
     "rollup-plugin-babel": "4.0.3",
     "rollup-plugin-filesize": "5.0.1",
