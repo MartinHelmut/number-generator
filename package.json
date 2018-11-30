@@ -60,7 +60,7 @@
     "jest": "23.6.0",
     "jsdoc": "3.5.5",
     "lint-staged": "8.1.0",
-    "prettier": "1.15.2",
+    "prettier": "1.15.3",
     "regenerator-runtime": "0.13.1",
     "rollup": "0.67.3",
     "rollup-plugin-babel": "4.0.3",
