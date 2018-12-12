@@ -63,7 +63,7 @@
     "prettier": "1.15.3",
     "regenerator-runtime": "0.13.1",
     "rollup": "0.67.4",
-    "rollup-plugin-babel": "4.0.3",
+    "rollup-plugin-babel": "4.1.0",
     "rollup-plugin-filesize": "5.0.1",
     "rollup-plugin-node-resolve": "4.0.0",
     "rollup-plugin-terser": "3.0.0",
