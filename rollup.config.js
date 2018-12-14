@@ -1,24 +1,13 @@
-import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
-import { terser } from 'rollup-plugin-terser';
 import filesize from 'rollup-plugin-filesize';
+import resolve from 'rollup-plugin-node-resolve';
+import { terser } from 'rollup-plugin-terser';
 
-const babelOptions = {
-    babelrc: false,
-    exclude: 'node_modules/**',
-    presets: [
-        [
-            '@babel/preset-env',
-            {
-                modules: false
-            }
-        ]
-    ]
-};
+function createBundleConfig(input, output = {}) {
+    const fileName = input.split('/').pop();
 
-function createBundleConfig(fileName, output = {}) {
     return {
-        input: `src/${fileName}.js`,
+        input: `src/${input}.js`,
         output: Object.assign(
             {
                 file: `lib/${fileName}.js`,
@@ -30,7 +19,7 @@ function createBundleConfig(fileName, output = {}) {
         ),
         plugins: [
             resolve(),
-            babel(babelOptions),
+            babel(),
             terser(),
             filesize({
                 render: (_, __, { bundleSize, gzipSize }) =>
@@ -50,7 +39,7 @@ export default [
         file: 'lib/index.esm.js',
         sourcemapFile: 'lib/index.esm.js.map'
     }),
-    createBundleConfig('aleaRNGFactory'),
-    createBundleConfig('murmurhash2_x86_32'),
-    createBundleConfig('murmurhash3_x86_32')
+    createBundleConfig('fns/aleaRNGFactory'),
+    createBundleConfig('fns/murmurhash2_x86_32'),
+    createBundleConfig('fns/murmurhash3_x86_32')
 ];

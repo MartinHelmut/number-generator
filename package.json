@@ -10,13 +10,13 @@
   },
   "scripts": {
     "build": "shx rm -fr ./lib/* && rollup -c rollup.config.js && shx cp ./src/*.d.ts lib/",
-    "build:docs": "jsdoc -c .jsdoc.json --verbose",
+    "build:docs": "jsdoc -c jsdoc.config.js --verbose",
     "test": "jest",
     "test:prod": "npm run build && cross-env NODE_ENV=production jest",
     "test:treeshaking": "agadoo lib/index.esm.js",
     "ci": "npm run lint && npm run test:prod",
     "test:coverage": "jest && cat ./coverage/lcov.info | coveralls",
-    "lint": "eslint src/",
+    "lint": "eslint --ignore-path .prettierignore ./",
     "format": "prettier --write \"**/*.{js,md}\"",
     "precommit": "lint-staged",
     "commit": "git-cz",
@@ -72,67 +72,5 @@
   },
   "files": [
     "lib"
-  ],
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  },
-  "lint-staged": {
-    "*.{js,md}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "prettier": {
-    "printWidth": 80,
-    "tabWidth": 4,
-    "singleQuote": true
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
-  },
-  "browserslist": [
-    "> 1%",
-    "Last 2 versions",
-    "IE >= 9"
-  ],
-  "eslintConfig": {
-    "extends": [
-      "eslint:recommended",
-      "prettier"
-    ],
-    "parserOptions": {
-      "ecmaVersion": 2017,
-      "sourceType": "module"
-    },
-    "env": {
-      "node": true,
-      "browser": true,
-      "jest": true
-    },
-    "plugins": [
-      "compat"
-    ],
-    "rules": {
-      "compat/compat": "error"
-    }
-  },
-  "renovate": {
-    "extends": [
-      "config:base"
-    ],
-    "dependencies": {
-      "semanticPrefix": "chore:",
-      "semanticCommitScope": ""
-    },
-    "pin": {
-      "semanticPrefix": "chore:",
-      "semanticCommitScope": ""
-    },
-    "semanticPrefix": "chore:",
-    "semanticCommitScope": ""
-  }
+  ]
 }
