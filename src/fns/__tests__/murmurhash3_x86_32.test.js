@@ -1,96 +1,97 @@
+import { assert } from 'chai';
 import { requireFunction } from './helper';
 
 const murmurhash3_x86_32 = requireFunction('murmurhash3_x86_32');
 
 describe('murmurhash3_x86_32()', () => {
-    test('should generate an number hash by string', () => {
+    it('should generate an number hash by string', () => {
         const testString = 'Awkward code!';
         const hash = murmurhash3_x86_32(testString);
 
-        expect(hash).toBeGreaterThan(1);
-        expect(hash % 1 === 0).toBeTruthy();
+        assert.isAbove(hash, 1);
+        assert.isTrue(hash % 1 === 0);
     });
 
-    test('should generate an number hash by string of length 1', () => {
+    it('should generate an number hash by string of length 1', () => {
         const testString = 'a';
         const hash = murmurhash3_x86_32(testString);
 
-        expect(hash).toBeGreaterThan(1);
-        expect(hash % 1 === 0).toBeTruthy();
+        assert.isAbove(hash, 1);
+        assert.isTrue(hash % 1 === 0);
     });
 
-    test('should generate an number hash by string of length 2', () => {
+    it('should generate an number hash by string of length 2', () => {
         const testString = 'ab';
         const hash = murmurhash3_x86_32(testString);
 
-        expect(hash).toBeGreaterThan(1);
-        expect(hash % 1 === 0).toBeTruthy();
+        assert.isAbove(hash, 1);
+        assert.isTrue(hash % 1 === 0);
     });
 
-    test('should generate an number hash by string of length 3', () => {
+    it('should generate an number hash by string of length 3', () => {
         const testString = 'abc';
         const hash = murmurhash3_x86_32(testString);
 
-        expect(hash).toBeGreaterThan(1);
-        expect(hash % 1 === 0).toBeTruthy();
+        assert.isAbove(hash, 1);
+        assert.isTrue(hash % 1 === 0);
     });
 
-    test('returns zero on empty string', () => {
+    it('returns zero on empty string', () => {
         const testString = '';
         const hash = murmurhash3_x86_32(testString);
 
-        expect(hash).toBe(0);
+        assert.strictEqual(hash, 0);
     });
 
-    test('produces a different hash with same string but different seed', () => {
+    it('produces a different hash with same string but different seed', () => {
         const testString = 'This is awesome!';
         const hash1 = murmurhash3_x86_32(testString, 1);
         const hash2 = murmurhash3_x86_32(testString, 2);
 
-        expect(hash1).not.toEqual(hash2);
+        assert.notStrictEqual(hash1, hash2);
     });
 
-    test('produces the same hash with same string and seed', () => {
+    it('produces the same hash with same string and seed', () => {
         const testString = 'This is awesome!';
         const hash1 = murmurhash3_x86_32(testString, 1);
         const hash2 = murmurhash3_x86_32(testString, 1);
         const hash3 = murmurhash3_x86_32(testString, 1);
         const hash4 = murmurhash3_x86_32(testString, 1);
 
-        expect(hash1).toBe(hash2);
-        expect(hash3).toBe(hash4);
-        expect(hash4).toBe(hash1);
+        assert.strictEqual(hash1, hash2);
+        assert.strictEqual(hash3, hash4);
+        assert.strictEqual(hash4, hash1);
     });
 
-    test('should return a valid result if seed is 0', () => {
+    it('should return a valid result if seed is 0', () => {
         const testString = 'This is awesome!';
         const hash = murmurhash3_x86_32(testString, 0);
 
-        expect(hash).toBeGreaterThan(1);
-        expect(hash % 1 === 0).toBeTruthy();
+        assert.isAbove(hash, 1);
+        assert.isTrue(hash % 1 === 0);
     });
 
-    test('should return a valid result on negative seed', () => {
+    it('should return a valid result on negative seed', () => {
         const testString = 'This is awesome!';
         const hash = murmurhash3_x86_32(testString, -10);
 
-        expect(hash).toBeGreaterThan(1);
-        expect(hash % 1 === 0).toBeTruthy();
+        assert.isAbove(hash, 1);
+        assert.isTrue(hash % 1 === 0);
     });
 
-    test('throws a TypeError on float seed value', () => {
-        expect(() => murmurhash3_x86_32('', 0.2)).toThrowError(TypeError);
+    it('throws a TypeError on float seed value', () => {
+        assert.throws(() => murmurhash3_x86_32('', 0.2), TypeError);
     });
 
-    test('[loop] should produce unique results on unsigned seeds', () => {
+    it('[loop] should produce unique results on unsigned seeds', () => {
         const iterations = 1000;
         const stack = [];
 
         for (let i = 0; i <= iterations; i++) {
             const hash = murmurhash3_x86_32('This is awesome!', i);
 
-            expect(hash).toBeGreaterThan(1);
-            expect(hash % 1 === 0).toBeTruthy();
+            assert.isAbove(hash, 1);
+            assert.isTrue(hash % 1 === 0);
 
             stack.push(hash);
         }
@@ -100,18 +101,18 @@ describe('murmurhash3_x86_32()', () => {
             (value, index, self) => index === self.indexOf(value)
         );
 
-        expect(stack).toHaveLength(uniqueStack.length);
+        assert.lengthOf(stack, uniqueStack.length);
     });
 
-    test('[loop] should produce unique results on seed range from negative to positive', () => {
+    it('[loop] should produce unique results on seed range from negative to positive', () => {
         const iterations = 1000;
         const stack = [];
 
         for (let i = -100; i <= iterations; i++) {
             const hash = murmurhash3_x86_32('This is awesome!', i);
 
-            expect(hash).toBeGreaterThan(1);
-            expect(hash % 1 === 0).toBeTruthy();
+            assert.isAbove(hash, 1);
+            assert.isTrue(hash % 1 === 0);
 
             stack.push(hash);
         }
@@ -121,15 +122,16 @@ describe('murmurhash3_x86_32()', () => {
             (value, index, self) => index === self.indexOf(value)
         );
 
-        expect(stack).toHaveLength(uniqueStack.length);
+        assert.lengthOf(stack, uniqueStack.length);
     });
 
-    test('produces an exact reproducible hash (like defined in other implementations)', () => {
+    it('produces an exact reproducible hash (like defined in other implementations)', () => {
         const hash1 = murmurhash3_x86_32('string', 0);
         const hash2 = murmurhash3_x86_32('string', 13);
         const hash3 = murmurhash3_x86_32('something', 5);
-        expect(hash1).toBe(2904652459);
-        expect(hash2).toBe(1886458758);
-        expect(hash3).toBe(2093830963);
+
+        assert.strictEqual(hash1, 2904652459);
+        assert.strictEqual(hash2, 1886458758);
+        assert.strictEqual(hash3, 2093830963);
     });
 });

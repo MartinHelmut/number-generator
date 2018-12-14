@@ -19,10 +19,10 @@ Clone the repo and ...
 ## Run tests
 
 ```shell
-# Run jest tests
+# Run tests
 npm test
 
-# Run jest tests in production
+# Run production tests
 npm run test:prod
 
 # Lint the application
