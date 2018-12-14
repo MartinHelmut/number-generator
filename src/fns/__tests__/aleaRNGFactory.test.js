@@ -1,47 +1,48 @@
+import { assert } from 'chai';
 import { requireFunction } from './helper';
 
 const aleaRNGFactory = requireFunction('aleaRNGFactory');
 
 describe('aleaRNGFactory', () => {
     describe('uFloat32()', () => {
-        test('should return an unsigned float number without explicit seed', () => {
+        it('should return an unsigned float number without explicit seed', () => {
             const generator = aleaRNGFactory();
             const value = generator.uFloat32();
 
-            expect(value).toBeGreaterThan(0);
-            expect(value).toBeLessThan(1);
-            expect(value % 1 !== 0).toBeTruthy();
+            assert.isAbove(value, 0);
+            assert.isBelow(value, 1);
+            assert.isTrue(value % 1 !== 0);
         });
 
-        test('returns multiple different numbers on repeated call', () => {
+        it('returns multiple different numbers on repeated call', () => {
             const generator = aleaRNGFactory();
             const value1 = generator.uFloat32();
             const value2 = generator.uFloat32();
             const value3 = generator.uFloat32();
             const value4 = generator.uFloat32();
 
-            expect(value1).not.toEqual(value2);
-            expect(value2).not.toEqual(value3);
-            expect(value3).not.toEqual(value4);
-            expect(value4).not.toEqual(value1);
+            assert.notStrictEqual(value1, value2);
+            assert.notStrictEqual(value2, value3);
+            assert.notStrictEqual(value3, value4);
+            assert.notStrictEqual(value4, value1);
         });
 
-        test('produces a different result with seed', () => {
+        it('produces a different result with seed', () => {
             const generator1 = aleaRNGFactory(1);
             const value1 = generator1.uFloat32();
             const generator2 = aleaRNGFactory(2);
             const value2 = generator2.uFloat32();
 
-            expect(value1).not.toEqual(value2);
+            assert.notStrictEqual(value1, value2);
         });
 
-        test('produces same result on new instance with default seed', () => {
+        it('produces same result on new instance with default seed', () => {
             const generator1 = aleaRNGFactory();
             const value1 = generator1.uFloat32();
             const generator2 = aleaRNGFactory();
             const value2 = generator2.uFloat32();
 
-            expect(value1).toBe(value2);
+            assert.strictEqual(value1, value2);
         });
 
         it('produces same result on new instance with custom seed', () => {
@@ -50,10 +51,10 @@ describe('aleaRNGFactory', () => {
             const generator2 = aleaRNGFactory(1);
             const value2 = generator2.uFloat32();
 
-            expect(value1).toBe(value2);
+            assert.strictEqual(value1, value2);
         });
 
-        test('[loop] should return unique valid uFloat32 after repeated calls', () => {
+        it('[loop] should return unique valid uFloat32 after repeated calls', () => {
             const generator = aleaRNGFactory();
             const iterations = 1000;
             const stack = [];
@@ -62,13 +63,13 @@ describe('aleaRNGFactory', () => {
                 const value1 = generator.uFloat32();
                 const value2 = generator.uFloat32();
 
-                expect(value1).toBeGreaterThan(0);
-                expect(value1).toBeLessThan(1);
-                expect(value1 % 1 !== 0).toBeTruthy();
+                assert.isAbove(value1, 0);
+                assert.isBelow(value1, 1);
+                assert.isTrue(value1 % 1 !== 0);
 
-                expect(value2).toBeGreaterThan(0);
-                expect(value2).toBeLessThan(1);
-                expect(value2 % 1 !== 0);
+                assert.isAbove(value2, 0);
+                assert.isBelow(value2, 1);
+                assert.isTrue(value2 % 1 !== 0);
 
                 stack.push(value1, value2);
             }
@@ -78,68 +79,68 @@ describe('aleaRNGFactory', () => {
                 (value, index, self) => index === self.indexOf(value)
             );
 
-            expect(stack).toHaveLength(uniqueStack.length);
+            assert.lengthOf(stack, uniqueStack.length);
         });
 
-        test('produces the exact same results (like defined in other implementations)', () => {
+        it('produces the exact same results (like defined in other implementations)', () => {
             const { uFloat32 } = aleaRNGFactory();
-            expect(uFloat32()).toBe(0.00048699788749217987);
-            expect(uFloat32()).toBe(0.6369280074723065);
-            expect(uFloat32()).toBe(0.9810351100750268);
-            expect(uFloat32()).toBe(0.6238283265847713);
+            assert.strictEqual(uFloat32(), 0.00048699788749217987);
+            assert.strictEqual(uFloat32(), 0.6369280074723065);
+            assert.strictEqual(uFloat32(), 0.9810351100750268);
+            assert.strictEqual(uFloat32(), 0.6238283265847713);
         });
     });
 
     describe('uInt32()', () => {
-        test('should return a unsigned integer without explicit seed', () => {
+        it('should return a unsigned integer without explicit seed', () => {
             const generator = aleaRNGFactory();
             const value = generator.uInt32();
 
-            expect(value).toBeGreaterThan(1);
-            expect(value % 1 === 0).toBeTruthy();
+            assert.isAbove(value, 1);
+            assert.isTrue(value % 1 === 0);
         });
 
-        test('returns multiple different numbers on repeated call', () => {
+        it('returns multiple different numbers on repeated call', () => {
             const generator = aleaRNGFactory();
             const value1 = generator.uInt32();
             const value2 = generator.uInt32();
             const value3 = generator.uInt32();
             const value4 = generator.uInt32();
 
-            expect(value1).not.toEqual(value2);
-            expect(value2).not.toEqual(value3);
-            expect(value3).not.toEqual(value4);
-            expect(value4).not.toEqual(value1);
+            assert.notStrictEqual(value1, value2);
+            assert.notStrictEqual(value2, value3);
+            assert.notStrictEqual(value3, value4);
+            assert.notStrictEqual(value4, value1);
         });
 
-        test('produces a different result with seed', () => {
+        it('produces a different result with seed', () => {
             const generator1 = aleaRNGFactory(1);
             const value1 = generator1.uInt32();
             const generator2 = aleaRNGFactory(2);
             const value2 = generator2.uInt32();
 
-            expect(value1).not.toEqual(value2);
+            assert.notStrictEqual(value1, value2);
         });
 
-        test('produces same result on new instance with default seed', () => {
+        it('produces same result on new instance with default seed', () => {
             const generator1 = aleaRNGFactory();
             const value1 = generator1.uInt32();
             const generator2 = aleaRNGFactory();
             const value2 = generator2.uInt32();
 
-            expect(value1).toBe(value2);
+            assert.strictEqual(value1, value2);
         });
 
-        test('produces same result on new instance with custom seed', () => {
+        it('produces same result on new instance with custom seed', () => {
             const generator1 = aleaRNGFactory(1);
             const value1 = generator1.uInt32();
             const generator2 = aleaRNGFactory(1);
             const value2 = generator2.uInt32();
 
-            expect(value1).toBe(value2);
+            assert.strictEqual(value1, value2);
         });
 
-        test('[loop] should return unique valid uInt32 after repeated calls', () => {
+        it('[loop] should return unique valid uInt32 after repeated calls', () => {
             const generator = aleaRNGFactory();
             const iterations = 1000;
             const stack = [];
@@ -148,11 +149,11 @@ describe('aleaRNGFactory', () => {
                 const value1 = generator.uInt32();
                 const value2 = generator.uInt32();
 
-                expect(value1).toBeGreaterThan(1);
-                expect(value1 % 1 === 0).toBeTruthy();
+                assert.isAbove(value1, 1);
+                assert.isTrue(value1 % 1 === 0);
 
-                expect(value2).toBeGreaterThan(1);
-                expect(value2 % 1 === 0).toBeTruthy();
+                assert.isAbove(value2, 1);
+                assert.isTrue(value2 % 1 === 0);
 
                 stack.push(value1, value2);
             }
@@ -162,85 +163,85 @@ describe('aleaRNGFactory', () => {
                 (value, index, self) => index === self.indexOf(value)
             );
 
-            expect(stack).toHaveLength(uniqueStack.length);
+            assert.lengthOf(stack, uniqueStack.length);
         });
 
-        test('produces the exact same results (like defined in other implementations)', () => {
+        it('produces the exact same results (like defined in other implementations)', () => {
             const { uInt32 } = aleaRNGFactory();
-            expect(uInt32()).toBe(2091640);
-            expect(uInt32()).toBe(2735584962);
-            expect(uInt32()).toBe(4213513714);
-            expect(uInt32()).toBe(2679322261);
+            assert.strictEqual(uInt32(), 2091640);
+            assert.strictEqual(uInt32(), 2735584962);
+            assert.strictEqual(uInt32(), 4213513714);
+            assert.strictEqual(uInt32(), 2679322261);
         });
     });
 
     describe('setSeed()', () => {
-        test('results in different numbers if seed is changed from default', () => {
+        it('results in different numbers if seed is changed from default', () => {
             const generator = aleaRNGFactory();
             const value1 = generator.uInt32();
             generator.setSeed(4);
             const value2 = generator.uInt32();
 
-            expect(value1).not.toEqual(value2);
+            assert.notStrictEqual(value1, value2);
         });
 
-        test('results in different numbers if seed is changed from defined', () => {
+        it('results in different numbers if seed is changed from defined', () => {
             const generator = aleaRNGFactory(1);
             const value1 = generator.uInt32();
             generator.setSeed(2);
             const value2 = generator.uInt32();
 
-            expect(value1).not.toEqual(value2);
+            assert.notStrictEqual(value1, value2);
         });
 
-        test('throws a TypeError on float seed value', () => {
-            expect(() => aleaRNGFactory(0.5)).toThrowError(TypeError);
+        it('throws a TypeError on float seed value', () => {
+            assert.throws(() => aleaRNGFactory(0.5), TypeError);
         });
 
-        test('throws a TypeError on negative seed value', () => {
-            expect(() => aleaRNGFactory(-1)).toThrowError(TypeError);
+        it('throws a TypeError on negative seed value', () => {
+            assert.throws(() => aleaRNGFactory(-1), TypeError);
         });
 
-        test('throws a TypeError on negative seed of 0', () => {
-            expect(() => aleaRNGFactory(0)).toThrowError(TypeError);
+        it('throws a TypeError on negative seed of 0', () => {
+            assert.throws(() => aleaRNGFactory(0), TypeError);
         });
     });
 
     describe('getState()', () => {
-        test('gets a representation of the internal state', () => {
+        it('gets a representation of the internal state', () => {
             const generator = aleaRNGFactory(1);
             const state = generator.getState();
 
-            expect(state).toBeDefined();
+            assert.isDefined(state);
         });
 
-        test('returns the correction', () => {
+        it('returns the correction', () => {
             const generator = aleaRNGFactory(2);
             const state = generator.getState();
 
-            expect(state.correction).toBe(1);
+            assert.strictEqual(state.correction, 1);
         });
 
-        test('returns all sequences', () => {
+        it('returns all sequences', () => {
             const generator = aleaRNGFactory(3);
             const state = generator.getState();
 
-            expect(state.sequence).toHaveLength(3);
+            assert.lengthOf(state.sequence, 3);
         });
 
-        test('returns the internal state with default settings', () => {
+        it('returns the internal state with default settings', () => {
             const generator = aleaRNGFactory();
             const state = generator.getState();
 
-            expect(state.correction).toBe(1);
-            expect(state.sequence[0]).toBeDefined();
-            expect(state.sequence[1]).toBeDefined();
-            expect(state.sequence[2]).toBeDefined();
+            assert.strictEqual(state.correction, 1);
+            assert.isDefined(state.sequence[0]);
+            assert.isDefined(state.sequence[1]);
+            assert.isDefined(state.sequence[2]);
         });
     });
 
     describe('setState()', () => {
-        test('creates default values if not all defined', () => {
+        it('creates default values if not all defined', () => {
             const generator = aleaRNGFactory();
             const state = {
                 correction: 1,
@@ -249,13 +250,13 @@ describe('aleaRNGFactory', () => {
             generator.setState(state);
             const internalState = generator.getState();
 
-            expect(internalState.correction).toBe(1);
-            expect(internalState.sequence[0]).toBe(0);
-            expect(internalState.sequence[1]).toBe(0);
-            expect(internalState.sequence[2]).toBe(0);
+            assert.strictEqual(internalState.correction, 1);
+            assert.strictEqual(internalState.sequence[0], 0);
+            assert.strictEqual(internalState.sequence[1], 0);
+            assert.strictEqual(internalState.sequence[2], 0);
         });
 
-        test('ignores unused sequences', () => {
+        it('ignores unused sequences', () => {
             const generator = aleaRNGFactory();
             const state = {
                 correction: 1,
@@ -264,26 +265,26 @@ describe('aleaRNGFactory', () => {
             generator.setState(state);
             const internalState = generator.getState();
 
-            expect(internalState.correction).toBe(1);
-            expect(internalState.sequence[0]).toBe(5);
-            expect(internalState.sequence[1]).toBe(4);
-            expect(internalState.sequence[2]).toBe(3);
-            expect(internalState.sequence).toHaveLength(3);
+            assert.strictEqual(internalState.correction, 1);
+            assert.strictEqual(internalState.sequence[0], 5);
+            assert.strictEqual(internalState.sequence[1], 4);
+            assert.strictEqual(internalState.sequence[2], 3);
+            assert.lengthOf(internalState.sequence, 3);
         });
 
-        test('restores the state on same instance if called without custom state', () => {
+        it('restores the state on same instance if called without custom state', () => {
             const generator = aleaRNGFactory();
             generator.setState();
             const internalState = generator.getState();
 
-            expect(internalState.correction).toBe(1);
-            expect(internalState.sequence[0]).toBe(0);
-            expect(internalState.sequence[1]).toBe(0);
-            expect(internalState.sequence[2]).toBe(0);
-            expect(internalState.sequence).toHaveLength(3);
+            assert.strictEqual(internalState.correction, 1);
+            assert.strictEqual(internalState.sequence[0], 0);
+            assert.strictEqual(internalState.sequence[1], 0);
+            assert.strictEqual(internalState.sequence[2], 0);
+            assert.lengthOf(internalState.sequence, 3);
         });
 
-        test('should reset the state if no state object is defined', () => {
+        it('should reset the state if no state object is defined', () => {
             const generator = aleaRNGFactory();
             generator.uInt32();
             generator.uInt32();
@@ -295,11 +296,11 @@ describe('aleaRNGFactory', () => {
             const state2 = generator.getState();
             const value2 = generator.uInt32();
 
-            expect(state1).toEqual(state2);
-            expect(value1).toBe(value2);
+            assert.deepEqual(state1, state2);
+            assert.strictEqual(value1, value2);
         });
 
-        test('should reset the state object is passed without "correction"', () => {
+        it('should reset the state object is passed without "correction"', () => {
             const generator = aleaRNGFactory();
             const state = {
                 sequence: [1, 2, 3]
@@ -307,14 +308,14 @@ describe('aleaRNGFactory', () => {
             generator.setState(state);
             const internalState = generator.getState();
 
-            expect(internalState.correction).toBe(1);
-            expect(internalState.sequence[0]).toBe(1);
-            expect(internalState.sequence[1]).toBe(2);
-            expect(internalState.sequence[2]).toBe(3);
-            expect(internalState.sequence).toHaveLength(3);
+            assert.strictEqual(internalState.correction, 1);
+            assert.strictEqual(internalState.sequence[0], 1);
+            assert.strictEqual(internalState.sequence[1], 2);
+            assert.strictEqual(internalState.sequence[2], 3);
+            assert.lengthOf(internalState.sequence, 3);
         });
 
-        test('should reset the state object is passed without "sequence"', () => {
+        it('should reset the state object is passed without "sequence"', () => {
             const generator = aleaRNGFactory();
             const state = {
                 correction: 5
@@ -322,11 +323,11 @@ describe('aleaRNGFactory', () => {
             generator.setState(state);
             const internalState = generator.getState();
 
-            expect(internalState.correction).toBe(5);
-            expect(internalState.sequence[0]).toBe(0);
-            expect(internalState.sequence[1]).toBe(0);
-            expect(internalState.sequence[2]).toBe(0);
-            expect(internalState.sequence).toHaveLength(3);
+            assert.strictEqual(internalState.correction, 5);
+            assert.strictEqual(internalState.sequence[0], 0);
+            assert.strictEqual(internalState.sequence[1], 0);
+            assert.strictEqual(internalState.sequence[2], 0);
+            assert.lengthOf(internalState.sequence, 3);
         });
     });
 });
