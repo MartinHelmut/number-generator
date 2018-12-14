@@ -1,5 +1,5 @@
 /** @module number-generator/lib/murmurhash3_x86_32 */
-import { uMul32Getter, uInt32Getter, throwInvalidMurmurSeed } from './_shared';
+import { uMul32Getter, uInt32Getter, throwInvalidMurmurSeed } from '../utils';
 
 /**
  * Generate a non-cryptic number hash with murmur3 algorithm
