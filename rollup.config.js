@@ -30,7 +30,7 @@ function createBundleConfig(input, output = {}) {
                     `Bundle size: ${bundleSize}, Gzipped size: ${gzipSize}`
             }),
             copy({
-                files: ['src/**/*.d.ts'],
+                files: ['src/typings/*.d.ts'],
                 dest: targetDir
             })
         ]
