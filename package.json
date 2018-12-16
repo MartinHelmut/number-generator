@@ -18,7 +18,6 @@
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint --ignore-path .prettierignore ./",
     "format": "prettier --write \"**/*.{js,md}\"",
-    "precommit": "lint-staged",
     "commit": "git-cz",
     "prerelease": "npm run ci",
     "release": "standard-version -a",
