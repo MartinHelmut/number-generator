@@ -9,7 +9,7 @@
     "node": ">=6"
   },
   "scripts": {
-    "build": "shx rm -fr ./lib/* && rollup -c rollup.config.js && shx cp ./src/*.d.ts lib/",
+    "build": "shx rm -fr ./lib/* && rollup -c rollup.config.js && shx cp ./src/{*.d.ts,**/*.d.ts} lib/",
     "build:docs": "jsdoc -c jsdoc.config.js --verbose",
     "test": "nyc mocha --require @babel/register src/__tests__/* src/**/__tests__/*",
     "test:prod": "npm run build && cross-env NODE_ENV=production nyc mocha --require @babel/register src/**/__tests__/*",
