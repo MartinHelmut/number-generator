@@ -1,4 +1,5 @@
 import babel from 'rollup-plugin-babel';
+import clear from 'rollup-plugin-clear';
 import filesize from 'rollup-plugin-filesize';
 import resolve from 'rollup-plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
@@ -18,6 +19,7 @@ function createBundleConfig(input, output = {}) {
             output
         ),
         plugins: [
+            clear({ targets: ['lib'] }),
             resolve(),
             babel(),
             terser(),
