@@ -1,0 +1,8 @@
+{
+    "nyc": {
+        "reporter": [
+            "html",
+            "text"
+        ]
+    }
+}
