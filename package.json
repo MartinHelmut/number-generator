@@ -11,8 +11,8 @@
   "scripts": {
     "build": "rollup -c rollup.config.js",
     "build:docs": "jsdoc -c jsdoc.config.js --verbose",
-    "test": "nyc mocha --require @babel/register src/__tests__/* src/**/__tests__/*",
-    "test:prod": "npm run build && cross-env NODE_ENV=production nyc mocha --require @babel/register src/**/__tests__/*",
+    "test": "nyc mocha --require @babel/register src/__tests__/*.js src/**/__tests__/*.js",
+    "test:prod": "npm run build && cross-env NODE_ENV=production nyc mocha --require @babel/register src/**/__tests__/*.js && mocha --require ts-node/register src/**/*.test.ts",
     "test:treeshaking": "agadoo lib/index.esm.js",
     "ci": "npm run lint && npm run test:prod && npm test",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
@@ -46,6 +46,8 @@
     "@babel/core": "7.2.2",
     "@babel/preset-env": "7.2.0",
     "@babel/register": "7.0.0",
+    "@types/chai": "4.1.7",
+    "@types/mocha": "5.2.5",
     "agadoo": "1.0.1",
     "chai": "4.2.0",
     "commitizen": "3.0.5",
@@ -69,7 +71,9 @@
     "rollup-plugin-filesize": "5.0.1",
     "rollup-plugin-node-resolve": "4.0.0",
     "rollup-plugin-terser": "3.0.0",
-    "standard-version": "4.4.0"
+    "standard-version": "4.4.0",
+    "ts-node": "7.0.1",
+    "typescript": "3.2.2"
   },
   "files": [
     "lib"
