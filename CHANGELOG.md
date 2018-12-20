@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.3.0"></a>
+# [2.3.0](https://github.com/MartinHelmut/number-generator/compare/v2.2.5...v2.3.0) (2018-12-20)
+
+
+### Bug Fixes
+
+* copy all typings to the distribution folder lib ([1e9b41e](https://github.com/MartinHelmut/number-generator/commit/1e9b41e))
+
+
+### Features
+
+* throw a TypeError if hash is not a string for murmur functions ([d971adc](https://github.com/MartinHelmut/number-generator/commit/d971adc))
+* use mocha and chai instead of jest ([6d4c037](https://github.com/MartinHelmut/number-generator/commit/6d4c037))
+
+
+
 <a name="2.2.5"></a>
 ## [2.2.5](https://github.com/MartinHelmut/number-generator/compare/v2.2.4...v2.2.5) (2018-11-13)
 
