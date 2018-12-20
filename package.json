@@ -44,7 +44,7 @@
   "homepage": "https://github.com/MartinHelmut/number-generator#readme",
   "devDependencies": {
     "@babel/core": "7.2.2",
-    "@babel/preset-env": "7.2.0",
+    "@babel/preset-env": "7.2.3",
     "@babel/register": "7.0.0",
     "agadoo": "1.0.1",
     "chai": "4.2.0",
