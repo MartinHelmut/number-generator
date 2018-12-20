@@ -4,6 +4,29 @@ import { requireFunction } from './helper';
 const murmurhash2_x86_32 = requireFunction('murmurhash2_x86_32');
 
 describe('murmurhash2_x86_32()', () => {
+    it('should throw a TypeError if no hash is passed', () => {
+        assert.throws(
+            () => murmurhash2_x86_32(),
+            TypeError,
+            'murmurhash2_x86_32() first argument is not a string.'
+        );
+    });
+
+    it('should throw a TypeError if no string as hash is passed', () => {
+        assert.throws(
+            () => murmurhash2_x86_32(true),
+            TypeError,
+            'murmurhash2_x86_32() first argument is not a string.'
+        );
+    });
+
+    it('returns zero on empty string', () => {
+        const testString = '';
+        const hash = murmurhash2_x86_32(testString);
+
+        assert.strictEqual(hash, 0);
+    });
+
     it('should generate an number hash by string', () => {
         const testString = 'Awkward code!';
         const hash = murmurhash2_x86_32(testString);
@@ -34,13 +57,6 @@ describe('murmurhash2_x86_32()', () => {
 
         assert.isAbove(hash, 1);
         assert.isTrue(hash % 1 === 0);
-    });
-
-    it('returns zero on empty string', () => {
-        const testString = '';
-        const hash = murmurhash2_x86_32(testString);
-
-        assert.strictEqual(hash, 0);
     });
 
     it('produces a different hash with same string but different seed', () => {

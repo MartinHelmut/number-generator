@@ -3,7 +3,8 @@ import {
     uMul32Getter,
     uInt32Getter,
     throwInvalidMurmurSeed,
-    throwInvalidAleaSeed
+    throwInvalidAleaSeed,
+    throwInvalidStringHash
 } from '../utils';
 
 describe('utils', () => {
@@ -78,6 +79,36 @@ describe('utils', () => {
         it('does not throw if seed is one or greater', () => {
             assert.doesNotThrow(() => throwInvalidAleaSeed(1));
             assert.doesNotThrow(() => throwInvalidAleaSeed(2));
+        });
+    });
+
+    describe('throwInvalidStringHash()', () => {
+        it('throws a TypeError if hash is undefined', () => {
+            assert.throws(
+                () => throwInvalidStringHash(),
+                TypeError,
+                'first argument is not a string.'
+            );
+        });
+
+        it('throws a TypeError if hash is not a string', () => {
+            assert.throws(
+                () => throwInvalidStringHash({}),
+                TypeError,
+                'first argument is not a string.'
+            );
+        });
+
+        it('takes an optional function name to enhance the error message', () => {
+            assert.throws(
+                () => throwInvalidStringHash(null, 'functionName'),
+                TypeError,
+                'functionName() first argument is not a string.'
+            );
+        });
+
+        it('does not throw if hash is a string', () => {
+            assert.doesNotThrow(() => throwInvalidStringHash('Hash'));
         });
     });
 });
