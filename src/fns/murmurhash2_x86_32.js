@@ -1,5 +1,10 @@
 /** @module number-generator/lib/murmurhash2_x86_32 */
-import { uMul32Getter, uInt32Getter, throwInvalidMurmurSeed } from '../utils';
+import {
+    uMul32Getter,
+    uInt32Getter,
+    throwInvalidMurmurSeed,
+    throwInvalidStringHash
+} from '../utils';
 
 /**
  * Generate a non-cryptic number hash with murmur2 algorithm
@@ -31,13 +36,15 @@ export default (() => {
 
     /**
      * Generate a non-cryptic number hash with murmur2 algorithm
-
+     *
+     * @throws {TypeError} Throws an exception if hash is not a string
      * @throws {TypeError} Throws an exception if seed is a float
      * @param {string} hash The base string hash to generate number
      * @param {number} [seed=0] An optional seed value
      * @return {number} Generated number
      */
     function murmurhash2_x86_32(hash, seed = 0) {
+        throwInvalidStringHash(hash, 'murmurhash2_x86_32');
         throwInvalidMurmurSeed(seed);
 
         let currentIndex = 0;
