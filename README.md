@@ -34,7 +34,7 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
 
 ## Usage
 
-This library (**2.25 KB, gzipped size: 1.04 KB**) contains the following methods: one PRNG (pseudo random number generator) called _Alea_ and two number hash generator, _MurmurHash2_ and _MurmurHash3_ for unsigned integer with 32bit. The _Alea_ implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal] or alternatively a [direct mirror of Johannes Baagøe's wiki from Nick Quinlan][brnm].
+This library (**2.51 KB, gzipped size: 1.12 KB**) contains the following methods: one PRNG (pseudo random number generator) called _Alea_ and two number hash generator, _MurmurHash2_ and _MurmurHash3_ for unsigned integer with 32bit. The _Alea_ implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal] or alternatively a [direct mirror of Johannes Baagøe's wiki from Nick Quinlan][brnm].
 
 More about the hash function _MurmurHash_ can be found [here on wikipedia][mur].
 
