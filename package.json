@@ -70,7 +70,7 @@
     "rollup-plugin-cpy": "1.1.0",
     "rollup-plugin-filesize": "6.0.0",
     "rollup-plugin-node-resolve": "4.0.0",
-    "rollup-plugin-terser": "4.0.1",
+    "rollup-plugin-terser": "4.0.2",
     "standard-version": "4.4.0",
     "ts-node": "7.0.1",
     "typescript": "3.2.2"
