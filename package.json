@@ -14,9 +14,10 @@
     "test": "nyc mocha --require @babel/register src/__tests__/*.js src/**/__tests__/*.js",
     "test:prod": "npm run build && cross-env NODE_ENV=production nyc mocha --require @babel/register src/**/__tests__/*.js && mocha --require ts-node/register src/**/*.test.ts",
     "test:treeshaking": "agadoo lib/index.esm.js",
-    "ci": "npm run lint && npm run test:prod && npm test",
+    "ci": "npm run lint && npm run test:prod && npm test && npm run bundlesize",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint --ignore-path .prettierignore ./",
+    "bundlesize": "bundlesize",
     "format": "prettier --write \"**/*.{js,md}\"",
     "commit": "git-cz",
     "prerelease": "npm run ci",
@@ -49,6 +50,7 @@
     "@types/chai": "4.1.7",
     "@types/mocha": "5.2.5",
     "agadoo": "1.0.1",
+    "bundlesize": "0.17.1",
     "chai": "4.2.0",
     "commitizen": "3.0.5",
     "coveralls": "3.0.2",
@@ -77,5 +79,15 @@
   },
   "files": [
     "lib"
+  ],
+  "bundlesize": [
+    {
+      "path": "./lib/index.js",
+      "maxSize": "1.5 kB"
+    },
+    {
+      "path": "./lib/index.esm.js",
+      "maxSize": "1.5 kB"
+    }
   ]
 }
