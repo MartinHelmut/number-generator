@@ -1,2 +1,2 @@
-import { aleaRNGFactory } from '.';
+import { aleaRNGFactory } from ".";
 export default aleaRNGFactory;
