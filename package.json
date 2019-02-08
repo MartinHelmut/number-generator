@@ -14,7 +14,7 @@
     "test": "nyc mocha --require @babel/register src/__tests__/*.js src/**/__tests__/*.js",
     "test:prod": "npm run build && cross-env NODE_ENV=production nyc mocha --require @babel/register src/**/__tests__/*.js && mocha --require ts-node/register src/**/*.test.ts",
     "test:treeshaking": "agadoo lib/index.esm.js",
-    "ci": "npm run lint && npm run test:prod && npm test && npm run bundlesize",
+    "ci": "npm run format:check && npm run lint && npm run test:prod && npm test && npm run bundlesize",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint --ignore-path .prettierignore ./",
     "bundlesize": "bundlesize",
