@@ -7,12 +7,12 @@
  * @return {number} Unsigned int32
  */
 export function uMul32Getter(x, y) {
-    x = x | 0;
-    y = y | 0;
-    const nonLinear = x & 0xffff;
-    const linearBase = x >>> 16;
+  x = x | 0;
+  y = y | 0;
+  const nonLinear = x & 0xffff;
+  const linearBase = x >>> 16;
 
-    return (nonLinear * y + (((linearBase * y) & 0xffff) << 16)) | 0;
+  return (nonLinear * y + (((linearBase * y) & 0xffff) << 16)) | 0;
 }
 
 /**
@@ -24,12 +24,12 @@ export function uMul32Getter(x, y) {
  * @return {number} Unsigned int32
  */
 export function uInt32Getter(hash, position) {
-    return (
-        hash.charCodeAt(position++) +
-        (hash.charCodeAt(position++) << 8) +
-        (hash.charCodeAt(position++) << 16) +
-        (hash.charCodeAt(position) << 24)
-    );
+  return (
+    hash.charCodeAt(position++) +
+    (hash.charCodeAt(position++) << 8) +
+    (hash.charCodeAt(position++) << 16) +
+    (hash.charCodeAt(position) << 24)
+  );
 }
 
 /**
@@ -39,9 +39,9 @@ export function uInt32Getter(hash, position) {
  * @param {number} seed A number value representing the seed
  */
 export function throwInvalidMurmurSeed(seed) {
-    if (seed !== undefined && seed % 1 !== 0) {
-        throw new TypeError("Expected seed to be an integer, float given");
-    }
+  if (seed !== undefined && seed % 1 !== 0) {
+    throw new TypeError("Expected seed to be an integer, float given");
+  }
 }
 
 /**
@@ -51,11 +51,11 @@ export function throwInvalidMurmurSeed(seed) {
  * @param {number} seed A number value representing the seed
  */
 export function throwInvalidAleaSeed(seed) {
-    if (seed % 1 !== 0 || seed <= 0) {
-        throw new TypeError(
-            `Expected seed to be an unsigned integer greater 1, but got "${seed}"`
-        );
-    }
+  if (seed % 1 !== 0 || seed <= 0) {
+    throw new TypeError(
+      `Expected seed to be an unsigned integer greater 1, but got "${seed}"`
+    );
+  }
 }
 
 /**
@@ -66,10 +66,8 @@ export function throwInvalidAleaSeed(seed) {
  * @param {string} [functionName] An optional function to enhance the error message
  */
 export function throwInvalidStringHash(hash, functionName = "") {
-    if (typeof hash !== "string") {
-        const errorMessagePrefix = functionName ? `${functionName}() ` : "";
-        throw new TypeError(
-            `${errorMessagePrefix}first argument is not a string.`
-        );
-    }
+  if (typeof hash !== "string") {
+    const errorMessagePrefix = functionName ? `${functionName}() ` : "";
+    throw new TypeError(`${errorMessagePrefix}first argument is not a string.`);
+  }
 }

@@ -1,18 +1,18 @@
 "use strict";
 
 module.exports = {
-    extends: ["eslint:recommended", "prettier"],
-    parserOptions: {
-        ecmaVersion: 2017,
-        sourceType: "module"
-    },
-    env: {
-        node: true,
-        browser: true,
-        mocha: true
-    },
-    plugins: ["compat"],
-    rules: {
-        "compat/compat": "error"
-    }
+  extends: ["eslint:recommended", "prettier"],
+  parserOptions: {
+    ecmaVersion: 2017,
+    sourceType: "module"
+  },
+  env: {
+    node: true,
+    browser: true,
+    mocha: true
+  },
+  plugins: ["compat"],
+  rules: {
+    "compat/compat": "error"
+  }
 };
