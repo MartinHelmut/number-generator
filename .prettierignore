@@ -1,6 +1,6 @@
 coverage/
 docs/
+.nyc_output/
 lib/
 node_modules/
 CHANGELOG.md
-package.json

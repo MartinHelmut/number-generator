@@ -1,5 +1,5 @@
 /** @module number-generator/lib/aleaRNGFactory */
-import { throwInvalidAleaSeed } from '../utils';
+import { throwInvalidAleaSeed } from "../utils";
 
 /**
  * Number generator with Alea algorithm

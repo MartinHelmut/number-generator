@@ -1,9 +1,9 @@
-import fs from 'fs';
-import path from 'path';
+import fs from "fs";
+import path from "path";
 
 export function requireFunction(name) {
     const fnPath = path.resolve(
-        process.env.NODE_ENV === 'production'
+        process.env.NODE_ENV === "production"
             ? `lib/${name}.js`
             : `src/fns/${name}.js`
     );

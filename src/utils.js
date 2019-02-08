@@ -40,7 +40,7 @@ export function uInt32Getter(hash, position) {
  */
 export function throwInvalidMurmurSeed(seed) {
     if (seed !== undefined && seed % 1 !== 0) {
-        throw new TypeError('Expected seed to be an integer, float given');
+        throw new TypeError("Expected seed to be an integer, float given");
     }
 }
 
@@ -65,9 +65,9 @@ export function throwInvalidAleaSeed(seed) {
  * @param {string} hash The possible empty hash value
  * @param {string} [functionName] An optional function to enhance the error message
  */
-export function throwInvalidStringHash(hash, functionName = '') {
-    if (typeof hash !== 'string') {
-        const errorMessagePrefix = functionName ? `${functionName}() ` : '';
+export function throwInvalidStringHash(hash, functionName = "") {
+    if (typeof hash !== "string") {
+        const errorMessagePrefix = functionName ? `${functionName}() ` : "";
         throw new TypeError(
             `${errorMessagePrefix}first argument is not a string.`
         );

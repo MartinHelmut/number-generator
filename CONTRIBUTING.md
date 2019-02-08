@@ -5,12 +5,12 @@ are the best!
 
 ## Contents
 
--   [Run tests](#run-tests)
--   [Format the code](#format-the-code)
--   [Build the library](#build-the-library)
--   [Build library documentation](#build-library-documentation)
--   [Commit changes](#commit-changes)
--   [Recommended workflow for release](#recommended-workflow-for-release)
+- [Run tests](#run-tests)
+- [Format the code](#format-the-code)
+- [Build the library](#build-the-library)
+- [Build library documentation](#build-library-documentation)
+- [Commit changes](#commit-changes)
+- [Recommended workflow for release](#recommended-workflow-for-release)
 
 ---
 

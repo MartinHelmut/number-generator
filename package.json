@@ -18,7 +18,8 @@
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint --ignore-path .prettierignore ./",
     "bundlesize": "bundlesize",
-    "format": "prettier --write \"**/*.{js,md}\"",
+    "format": "prettier --write \"**/*.{js,md,json,yml}\"",
+    "format:check": "prettier --list-different \"**/*.{js,md,json,yml}\"",
     "commit": "git-cz",
     "prerelease": "npm run ci",
     "release": "standard-version -a",
@@ -43,6 +44,19 @@
     "url": "https://github.com/MartinHelmut/number-generator/issues"
   },
   "homepage": "https://github.com/MartinHelmut/number-generator#readme",
+  "files": [
+    "lib"
+  ],
+  "bundlesize": [
+    {
+      "path": "./lib/index.js",
+      "maxSize": "1.5 kB"
+    },
+    {
+      "path": "./lib/index.esm.js",
+      "maxSize": "1.5 kB"
+    }
+  ],
   "devDependencies": {
     "@babel/core": "7.2.2",
     "@babel/preset-env": "7.3.1",
@@ -76,18 +90,5 @@
     "standard-version": "4.4.0",
     "ts-node": "8.0.2",
     "typescript": "3.3.3"
-  },
-  "files": [
-    "lib"
-  ],
-  "bundlesize": [
-    {
-      "path": "./lib/index.js",
-      "maxSize": "1.5 kB"
-    },
-    {
-      "path": "./lib/index.esm.js",
-      "maxSize": "1.5 kB"
-    }
-  ]
+  }
 }
