@@ -4,7 +4,7 @@ import {
     uInt32Getter,
     throwInvalidMurmurSeed,
     throwInvalidStringHash
-} from '../utils';
+} from "../utils";
 
 /**
  * Generate a non-cryptic number hash with murmur2 algorithm
@@ -44,7 +44,7 @@ export default (() => {
      * @return {number} Generated number
      */
     function murmurhash2_x86_32(hash, seed = 0) {
-        throwInvalidStringHash(hash, 'murmurhash2_x86_32');
+        throwInvalidStringHash(hash, "murmurhash2_x86_32");
         throwInvalidMurmurSeed(seed);
 
         let currentIndex = 0;

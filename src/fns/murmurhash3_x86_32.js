@@ -4,7 +4,7 @@ import {
     uInt32Getter,
     throwInvalidMurmurSeed,
     throwInvalidStringHash
-} from '../utils';
+} from "../utils";
 
 /**
  * Generate a non-cryptic number hash with murmur3 algorithm
@@ -46,7 +46,7 @@ export default (() => {
      * @return {number} Generated number
      */
     function murmurhash3_x86_32(hash, seed = 0) {
-        throwInvalidStringHash(hash, 'murmurhash3_x86_32');
+        throwInvalidStringHash(hash, "murmurhash3_x86_32");
         throwInvalidMurmurSeed(seed);
 
         const remainder = hash.length % 4;

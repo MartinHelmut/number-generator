@@ -1,13 +1,13 @@
-'use strict';
+"use strict";
 
 module.exports = {
     source: {
-        include: ['src', 'README.md'],
-        includePattern: '.js$',
-        excludePattern: '(node_modules/|.test.js)'
+        include: ["src", "README.md"],
+        includePattern: ".js$",
+        excludePattern: "(node_modules/|.test.js)"
     },
     opts: {
-        destination: 'docs',
+        destination: "docs",
         recurse: true
     }
 };

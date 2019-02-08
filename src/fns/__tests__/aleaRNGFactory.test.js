@@ -1,11 +1,11 @@
-import { assert } from 'chai';
-import { requireFunction } from './helper';
+import { assert } from "chai";
+import { requireFunction } from "./helper";
 
-const aleaRNGFactory = requireFunction('aleaRNGFactory');
+const aleaRNGFactory = requireFunction("aleaRNGFactory");
 
-describe('aleaRNGFactory', () => {
-    describe('uFloat32()', () => {
-        it('should return an unsigned float number without explicit seed', () => {
+describe("aleaRNGFactory", () => {
+    describe("uFloat32()", () => {
+        it("should return an unsigned float number without explicit seed", () => {
             const generator = aleaRNGFactory();
             const value = generator.uFloat32();
 
@@ -14,7 +14,7 @@ describe('aleaRNGFactory', () => {
             assert.isTrue(value % 1 !== 0);
         });
 
-        it('returns multiple different numbers on repeated call', () => {
+        it("returns multiple different numbers on repeated call", () => {
             const generator = aleaRNGFactory();
             const value1 = generator.uFloat32();
             const value2 = generator.uFloat32();
@@ -27,7 +27,7 @@ describe('aleaRNGFactory', () => {
             assert.notStrictEqual(value4, value1);
         });
 
-        it('produces a different result with seed', () => {
+        it("produces a different result with seed", () => {
             const generator1 = aleaRNGFactory(1);
             const value1 = generator1.uFloat32();
             const generator2 = aleaRNGFactory(2);
@@ -36,7 +36,7 @@ describe('aleaRNGFactory', () => {
             assert.notStrictEqual(value1, value2);
         });
 
-        it('produces same result on new instance with default seed', () => {
+        it("produces same result on new instance with default seed", () => {
             const generator1 = aleaRNGFactory();
             const value1 = generator1.uFloat32();
             const generator2 = aleaRNGFactory();
@@ -45,7 +45,7 @@ describe('aleaRNGFactory', () => {
             assert.strictEqual(value1, value2);
         });
 
-        it('produces same result on new instance with custom seed', () => {
+        it("produces same result on new instance with custom seed", () => {
             const generator1 = aleaRNGFactory(1);
             const value1 = generator1.uFloat32();
             const generator2 = aleaRNGFactory(1);
@@ -54,7 +54,7 @@ describe('aleaRNGFactory', () => {
             assert.strictEqual(value1, value2);
         });
 
-        it('[loop] should return unique valid uFloat32 after repeated calls', () => {
+        it("[loop] should return unique valid uFloat32 after repeated calls", () => {
             const generator = aleaRNGFactory();
             const iterations = 1000;
             const stack = [];
@@ -82,7 +82,7 @@ describe('aleaRNGFactory', () => {
             assert.lengthOf(stack, uniqueStack.length);
         });
 
-        it('produces the exact same results (like defined in other implementations)', () => {
+        it("produces the exact same results (like defined in other implementations)", () => {
             const { uFloat32 } = aleaRNGFactory();
             assert.strictEqual(uFloat32(), 0.00048699788749217987);
             assert.strictEqual(uFloat32(), 0.6369280074723065);
@@ -91,8 +91,8 @@ describe('aleaRNGFactory', () => {
         });
     });
 
-    describe('uInt32()', () => {
-        it('should return a unsigned integer without explicit seed', () => {
+    describe("uInt32()", () => {
+        it("should return a unsigned integer without explicit seed", () => {
             const generator = aleaRNGFactory();
             const value = generator.uInt32();
 
@@ -100,7 +100,7 @@ describe('aleaRNGFactory', () => {
             assert.isTrue(value % 1 === 0);
         });
 
-        it('returns multiple different numbers on repeated call', () => {
+        it("returns multiple different numbers on repeated call", () => {
             const generator = aleaRNGFactory();
             const value1 = generator.uInt32();
             const value2 = generator.uInt32();
@@ -113,7 +113,7 @@ describe('aleaRNGFactory', () => {
             assert.notStrictEqual(value4, value1);
         });
 
-        it('produces a different result with seed', () => {
+        it("produces a different result with seed", () => {
             const generator1 = aleaRNGFactory(1);
             const value1 = generator1.uInt32();
             const generator2 = aleaRNGFactory(2);
@@ -122,7 +122,7 @@ describe('aleaRNGFactory', () => {
             assert.notStrictEqual(value1, value2);
         });
 
-        it('produces same result on new instance with default seed', () => {
+        it("produces same result on new instance with default seed", () => {
             const generator1 = aleaRNGFactory();
             const value1 = generator1.uInt32();
             const generator2 = aleaRNGFactory();
@@ -131,7 +131,7 @@ describe('aleaRNGFactory', () => {
             assert.strictEqual(value1, value2);
         });
 
-        it('produces same result on new instance with custom seed', () => {
+        it("produces same result on new instance with custom seed", () => {
             const generator1 = aleaRNGFactory(1);
             const value1 = generator1.uInt32();
             const generator2 = aleaRNGFactory(1);
@@ -140,7 +140,7 @@ describe('aleaRNGFactory', () => {
             assert.strictEqual(value1, value2);
         });
 
-        it('[loop] should return unique valid uInt32 after repeated calls', () => {
+        it("[loop] should return unique valid uInt32 after repeated calls", () => {
             const generator = aleaRNGFactory();
             const iterations = 1000;
             const stack = [];
@@ -166,7 +166,7 @@ describe('aleaRNGFactory', () => {
             assert.lengthOf(stack, uniqueStack.length);
         });
 
-        it('produces the exact same results (like defined in other implementations)', () => {
+        it("produces the exact same results (like defined in other implementations)", () => {
             const { uInt32 } = aleaRNGFactory();
             assert.strictEqual(uInt32(), 2091640);
             assert.strictEqual(uInt32(), 2735584962);
@@ -175,8 +175,8 @@ describe('aleaRNGFactory', () => {
         });
     });
 
-    describe('setSeed()', () => {
-        it('results in different numbers if seed is changed from default', () => {
+    describe("setSeed()", () => {
+        it("results in different numbers if seed is changed from default", () => {
             const generator = aleaRNGFactory();
             const value1 = generator.uInt32();
             generator.setSeed(4);
@@ -185,7 +185,7 @@ describe('aleaRNGFactory', () => {
             assert.notStrictEqual(value1, value2);
         });
 
-        it('results in different numbers if seed is changed from defined', () => {
+        it("results in different numbers if seed is changed from defined", () => {
             const generator = aleaRNGFactory(1);
             const value1 = generator.uInt32();
             generator.setSeed(2);
@@ -194,42 +194,42 @@ describe('aleaRNGFactory', () => {
             assert.notStrictEqual(value1, value2);
         });
 
-        it('throws a TypeError on float seed value', () => {
+        it("throws a TypeError on float seed value", () => {
             assert.throws(() => aleaRNGFactory(0.5), TypeError);
         });
 
-        it('throws a TypeError on negative seed value', () => {
+        it("throws a TypeError on negative seed value", () => {
             assert.throws(() => aleaRNGFactory(-1), TypeError);
         });
 
-        it('throws a TypeError on negative seed of 0', () => {
+        it("throws a TypeError on negative seed of 0", () => {
             assert.throws(() => aleaRNGFactory(0), TypeError);
         });
     });
 
-    describe('getState()', () => {
-        it('gets a representation of the internal state', () => {
+    describe("getState()", () => {
+        it("gets a representation of the internal state", () => {
             const generator = aleaRNGFactory(1);
             const state = generator.getState();
 
             assert.isDefined(state);
         });
 
-        it('returns the correction', () => {
+        it("returns the correction", () => {
             const generator = aleaRNGFactory(2);
             const state = generator.getState();
 
             assert.strictEqual(state.correction, 1);
         });
 
-        it('returns all sequences', () => {
+        it("returns all sequences", () => {
             const generator = aleaRNGFactory(3);
             const state = generator.getState();
 
             assert.lengthOf(state.sequence, 3);
         });
 
-        it('returns the internal state with default settings', () => {
+        it("returns the internal state with default settings", () => {
             const generator = aleaRNGFactory();
             const state = generator.getState();
 
@@ -240,8 +240,8 @@ describe('aleaRNGFactory', () => {
         });
     });
 
-    describe('setState()', () => {
-        it('creates default values if not all defined', () => {
+    describe("setState()", () => {
+        it("creates default values if not all defined", () => {
             const generator = aleaRNGFactory();
             const state = {
                 correction: 1,
@@ -256,7 +256,7 @@ describe('aleaRNGFactory', () => {
             assert.strictEqual(internalState.sequence[2], 0);
         });
 
-        it('ignores unused sequences', () => {
+        it("ignores unused sequences", () => {
             const generator = aleaRNGFactory();
             const state = {
                 correction: 1,
@@ -272,7 +272,7 @@ describe('aleaRNGFactory', () => {
             assert.lengthOf(internalState.sequence, 3);
         });
 
-        it('restores the state on same instance if called without custom state', () => {
+        it("restores the state on same instance if called without custom state", () => {
             const generator = aleaRNGFactory();
             generator.setState();
             const internalState = generator.getState();
@@ -284,7 +284,7 @@ describe('aleaRNGFactory', () => {
             assert.lengthOf(internalState.sequence, 3);
         });
 
-        it('should reset the state if no state object is defined', () => {
+        it("should reset the state if no state object is defined", () => {
             const generator = aleaRNGFactory();
             generator.uInt32();
             generator.uInt32();
