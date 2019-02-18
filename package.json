@@ -74,7 +74,7 @@
     "eslint-config-prettier": "4.0.0",
     "eslint-plugin-compat": "2.7.0",
     "jsdoc": "3.5.5",
-    "mocha": "5.2.0",
+    "mocha": "6.0.0",
     "nyc": "13.3.0",
     "prettier": "1.16.4",
     "regenerator-runtime": "0.13.1",
