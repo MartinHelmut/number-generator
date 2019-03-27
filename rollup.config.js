@@ -1,3 +1,4 @@
+/* eslint-disable compat/compat */
 import babel from "rollup-plugin-babel";
 import clear from "rollup-plugin-clear";
 import copy from "rollup-plugin-cpy";
