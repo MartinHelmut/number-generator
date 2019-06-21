@@ -313,8 +313,8 @@ hashFn2("something", 14);
 
 This library was tested on the following environments:
 
-- Node >= 6
-- All major browsers and IE >= 9
+- Node >= 8
+- All major browsers and IE >= 10
 
 Exceptions for Node are versions that reached the End-of-Life as defined under https://github.com/nodejs/Release#end-of-life-releases.
 
