@@ -1,6 +1,6 @@
 {
   "name": "number-generator",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Generate pseudo random numbers and hashs.",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
