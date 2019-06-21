@@ -1,6 +1,88 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 3.0.0 (2019-06-21)
+
+
+### Bug Fixes
+
+* **state:** Don't use import helpers to resolve smaller compile results ([246a751](https://github.com/MartinHelmut/number-generator/commit/246a751))
+* **test:** Run tests also on Windows ([24e6d3b](https://github.com/MartinHelmut/number-generator/commit/24e6d3b))
+* **travis:** Simplyfied test command ([1f56366](https://github.com/MartinHelmut/number-generator/commit/1f56366))
+* copy all typings to the distribution folder lib ([6fd3ead](https://github.com/MartinHelmut/number-generator/commit/6fd3ead))
+* deactivate minify step ([51dd176](https://github.com/MartinHelmut/number-generator/commit/51dd176))
+* ignore esloint compat option for build script ([7d98b8e](https://github.com/MartinHelmut/number-generator/commit/7d98b8e))
+* murmurhash2_x86_32 do not return 0 for strings length multiply of 4 ([ceb8704](https://github.com/MartinHelmut/number-generator/commit/ceb8704)), closes [#78](https://github.com/MartinHelmut/number-generator/issues/78)
+* remove bundle size based on security and pipeline issues ([480ac94](https://github.com/MartinHelmut/number-generator/commit/480ac94))
+* show esm usage in readme ([7f51be3](https://github.com/MartinHelmut/number-generator/commit/7f51be3))
+
+
+### Build System
+
+* **lint:** Added eslint config to lint js config files (editor only) ([b95845a](https://github.com/MartinHelmut/number-generator/commit/b95845a))
+* run tests against production bundles ([0d87b11](https://github.com/MartinHelmut/number-generator/commit/0d87b11))
+* **release:** Committing generated artifacts in the release commit ([c2c658c](https://github.com/MartinHelmut/number-generator/commit/c2c658c))
+* add browserlist option for maintained node versions ([48a24a7](https://github.com/MartinHelmut/number-generator/commit/48a24a7))
+* Added prettier to format code ([1149b1d](https://github.com/MartinHelmut/number-generator/commit/1149b1d))
+* clean up browser list environment and browser support ([72f3b87](https://github.com/MartinHelmut/number-generator/commit/72f3b87))
+* drop support for node 6 and IE9 ([e17e5e6](https://github.com/MartinHelmut/number-generator/commit/e17e5e6))
+* generate package-lock.json ([474c415](https://github.com/MartinHelmut/number-generator/commit/474c415))
+* remove husky and lint-staged ([3888ea6](https://github.com/MartinHelmut/number-generator/commit/3888ea6))
+* replace closure compiler js with terser ([a0ccab3](https://github.com/MartinHelmut/number-generator/commit/a0ccab3))
+* replaced rollup-plugin-cpy with own version ([77e936b](https://github.com/MartinHelmut/number-generator/commit/77e936b))
+* strip uglifyjs of api v2 cli flags ([e2a1ba1](https://github.com/MartinHelmut/number-generator/commit/e2a1ba1))
+* use prettier as a pre-commit hook for js and md files ([203bdb8](https://github.com/MartinHelmut/number-generator/commit/203bdb8))
+* **rollup:** show correct bundle and gzip size ([5a33988](https://github.com/MartinHelmut/number-generator/commit/5a33988))
+* **rollup:** use clear plugin ([5be81fb](https://github.com/MartinHelmut/number-generator/commit/5be81fb))
+* **rollup:** use cpy plugin to copy d.ts files to lib ([8cf052d](https://github.com/MartinHelmut/number-generator/commit/8cf052d))
+* **tcs:** Use commonjs as target module type ([6c17cf0](https://github.com/MartinHelmut/number-generator/commit/6c17cf0))
+* use rollup and closure to bundle single functions as well ([dc623f3](https://github.com/MartinHelmut/number-generator/commit/dc623f3))
+* use rollup to build target bundle ([d165be7](https://github.com/MartinHelmut/number-generator/commit/d165be7))
+
+
+### Features
+
+* **state:** Added getter and setter for internal state ([94907f9](https://github.com/MartinHelmut/number-generator/commit/94907f9))
+* add tree shaking check to production build step ([64c38c9](https://github.com/MartinHelmut/number-generator/commit/64c38c9))
+* Change implementation from typescript to javascript ([809ed99](https://github.com/MartinHelmut/number-generator/commit/809ed99)), closes [#7](https://github.com/MartinHelmut/number-generator/issues/7)
+* Initial beta release ([0fea451](https://github.com/MartinHelmut/number-generator/commit/0fea451))
+* new function murmurhash3_x86_32 ([9506eab](https://github.com/MartinHelmut/number-generator/commit/9506eab))
+* split methods to single functions ([e578e61](https://github.com/MartinHelmut/number-generator/commit/e578e61))
+* throw a TypeError if hash is not a string for murmur functions ([0b07d34](https://github.com/MartinHelmut/number-generator/commit/0b07d34))
+* use mocha and chai instead of jest ([c4a20b8](https://github.com/MartinHelmut/number-generator/commit/c4a20b8))
+
+
+### refactor
+
+* rename murmurHash function ([23951a8](https://github.com/MartinHelmut/number-generator/commit/23951a8))
+
+
+### Tests
+
+* **alea:** Added tests for incomplete state object ([6a137fd](https://github.com/MartinHelmut/number-generator/commit/6a137fd))
+* add explicit test cases for reference implementations ([ab888de](https://github.com/MartinHelmut/number-generator/commit/ab888de))
+* **karma:** Added test runner for browser tests ([52e7e45](https://github.com/MartinHelmut/number-generator/commit/52e7e45))
+* add check for compatibility and function name export ([25a95f6](https://github.com/MartinHelmut/number-generator/commit/25a95f6))
+* add explicit implementation test ([fa4450c](https://github.com/MartinHelmut/number-generator/commit/fa4450c))
+* add TypeScript typings test ([e35138d](https://github.com/MartinHelmut/number-generator/commit/e35138d))
+* add unit tests for helpful error message on murmur functions hash validation ([bb55991](https://github.com/MartinHelmut/number-generator/commit/bb55991))
+* add utils tests ([4d360ec](https://github.com/MartinHelmut/number-generator/commit/4d360ec))
+* Fixed karma browser test runner ([cf97d33](https://github.com/MartinHelmut/number-generator/commit/cf97d33))
+* increase test loop iteration times 10 ([393ebc7](https://github.com/MartinHelmut/number-generator/commit/393ebc7))
+* Renamed test cases ([0a36768](https://github.com/MartinHelmut/number-generator/commit/0a36768))
+* Run build step before run tests ([b507592](https://github.com/MartinHelmut/number-generator/commit/b507592))
+* scope production test run to functions that get packaged ([10c126a](https://github.com/MartinHelmut/number-generator/commit/10c126a))
+* use dedicated istanbul configuration file ([4763827](https://github.com/MartinHelmut/number-generator/commit/4763827))
+* Use jest as test runner ([2c055ad](https://github.com/MartinHelmut/number-generator/commit/2c055ad)), closes [#6](https://github.com/MartinHelmut/number-generator/issues/6)
+
+
+### BREAKING CHANGES
+
+* murmurHash function is now murmurhash2_x86_32
+* This changes the language the library is implemented in.
+
+
 
 <a name="2.3.1"></a>
 ## [2.3.1](https://github.com/MartinHelmut/number-generator/compare/v2.3.0...v2.3.1) (2019-01-19)
