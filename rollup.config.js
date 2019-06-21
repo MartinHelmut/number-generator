@@ -1,10 +1,11 @@
 /* eslint-disable compat/compat */
 import babel from "rollup-plugin-babel";
 import clear from "rollup-plugin-clear";
-import copy from "rollup-plugin-cpy";
 import filesize from "rollup-plugin-filesize";
 import resolve from "rollup-plugin-node-resolve";
 import { terser } from "rollup-plugin-terser";
+
+import copy from "./build/rollup-plugin-copy";
 
 function createBundleConfig(input, output = {}) {
   const targetDir = "lib";
