@@ -11,6 +11,7 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
 
 ## Contents
 
+- [Version update](#version-update)
 - [Usage](#usage)
   - [Install](#install)
   - [Random numbers](#random-numbers)
@@ -31,6 +32,10 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
 - [Disclaimer](#disclaimer)
 
 ---
+
+## Version update
+
+**Note on updating from v1 or v2 to v3:** It can safely be done 🥳. Compatibility is restored for all versions so that nothing breaks on an major version bump.
 
 ## Usage
 
