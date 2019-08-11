@@ -3,7 +3,8 @@ import {
   uMul32Getter,
   uInt32Getter,
   throwInvalidMurmurSeed,
-  throwInvalidStringHash
+  throwInvalidStringHash,
+  toUtf8Bytes
 } from "../utils";
 
 /**
@@ -27,26 +28,27 @@ export default (() => {
    * Return an unsigned int16 from hash by position
    *
    * @private
-   * @param {string} hash String hash value
+   * @param {number[]} hash String hash value
    * @param {number} position String start position
    * @return {number} Unsigned int16
    */
   const uInt16Getter = (hash, position) =>
-    hash.charCodeAt(position++) + (hash.charCodeAt(position) << 8);
+    hash[position++] + (hash[position] << 8);
 
   /**
    * Generate a non-cryptic number hash with murmur2 algorithm
    *
    * @throws {TypeError} Throws an exception if hash is not a string
    * @throws {TypeError} Throws an exception if seed is a float
-   * @param {string} hash The base string hash to generate number
+   * @param {string} str The base string hash to generate number
    * @param {number} [seed=0] An optional seed value
    * @return {number} Generated number
    */
-  function murmurhash2_x86_32(hash, seed = 0) {
-    throwInvalidStringHash(hash, "murmurhash2_x86_32");
+  function murmurhash2_x86_32(str, seed = 0) {
+    throwInvalidStringHash(str, "murmurhash2_x86_32");
     throwInvalidMurmurSeed(seed);
 
+    const hash = toUtf8Bytes(str);
     let currentIndex = 0;
     let hashSum = seed ^ hash.length;
     let length = hash.length;
@@ -68,7 +70,7 @@ export default (() => {
     switch (length) {
       case 3:
         hashSum ^= uInt16Getter(hash, currentIndex);
-        hashSum ^= hash.charCodeAt(currentIndex + 2) << 16;
+        hashSum ^= hash[currentIndex + 2] << 16;
         hashSum = uMul32Getter(hashSum, MULTIPLIER);
         break;
       case 2:
@@ -76,7 +78,7 @@ export default (() => {
         hashSum = uMul32Getter(hashSum, MULTIPLIER);
         break;
       case 1:
-        hashSum ^= hash.charCodeAt(currentIndex);
+        hashSum ^= hash[currentIndex];
         hashSum = uMul32Getter(hashSum, MULTIPLIER);
         break;
     }

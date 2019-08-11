@@ -9,10 +9,7 @@ module.exports = {
   env: {
     node: true,
     browser: true,
-    mocha: true
-  },
-  plugins: ["compat"],
-  rules: {
-    "compat/compat": "error"
+    mocha: true,
+    es6: true
   }
 };
