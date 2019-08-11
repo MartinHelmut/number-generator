@@ -33,19 +33,56 @@ describe("utils", () => {
   });
 
   describe("uInt32Getter()", () => {
-    it("returns an unsigned integer by a position on a string", () => {
-      assert.strictEqual(uInt32Getter("a", 0), 97);
+    it("returns an unsigned integer by a position on a UTF8 string array", () => {
+      assert.strictEqual(uInt32Getter(["a".charCodeAt(0)], 0), 97);
     });
 
     it("returns an unsigned integer incremented by a left shift of 8 bit", () => {
-      assert.strictEqual(uInt32Getter("ab", 0), 25185);
-      assert.strictEqual(uInt32Getter("abc", 0), 6513249);
-      assert.strictEqual(uInt32Getter("abcd", 0), 1684234849);
+      assert.strictEqual(
+        uInt32Getter(["a".charCodeAt(0), "b".charCodeAt(0)], 0),
+        25185
+      );
+      assert.strictEqual(
+        uInt32Getter(
+          ["a".charCodeAt(0), "b".charCodeAt(0), "c".charCodeAt(0)],
+          0
+        ),
+        6513249
+      );
+      assert.strictEqual(
+        uInt32Getter(
+          [
+            "a".charCodeAt(0),
+            "b".charCodeAt(0),
+            "c".charCodeAt(0),
+            "d".charCodeAt(0)
+          ],
+          0
+        ),
+        1684234849
+      );
     });
 
     it("calculates the unsigned integer for a maximum of 4 characters", () => {
-      const int1 = uInt32Getter("abcd", 0);
-      const int2 = uInt32Getter("abcde", 0);
+      const int1 = uInt32Getter(
+        [
+          "a".charCodeAt(0),
+          "b".charCodeAt(0),
+          "c".charCodeAt(0),
+          "d".charCodeAt(0)
+        ],
+        0
+      );
+      const int2 = uInt32Getter(
+        [
+          "a".charCodeAt(0),
+          "b".charCodeAt(0),
+          "c".charCodeAt(0),
+          "d".charCodeAt(0),
+          "e".charCodeAt(0)
+        ],
+        0
+      );
 
       assert.strictEqual(int1, int2);
     });
@@ -85,30 +122,30 @@ describe("utils", () => {
   describe("throwInvalidStringHash()", () => {
     it("throws a TypeError if hash is undefined", () => {
       assert.throws(
-        () => throwInvalidStringHash(),
+        () => throwInvalidStringHash(undefined, "fn"),
         TypeError,
-        "first argument is not a string."
+        "fn(): first argument is not a string."
       );
     });
 
     it("throws a TypeError if hash is not a string", () => {
       assert.throws(
-        () => throwInvalidStringHash({}),
+        () => throwInvalidStringHash({}, "fn"),
         TypeError,
-        "first argument is not a string."
+        "fn(): first argument is not a string."
       );
     });
 
     it("takes an optional function name to enhance the error message", () => {
       assert.throws(
-        () => throwInvalidStringHash(null, "functionName"),
+        () => throwInvalidStringHash(null, "fn"),
         TypeError,
-        "functionName() first argument is not a string."
+        "fn(): first argument is not a string."
       );
     });
 
     it("does not throw if hash is a string", () => {
-      assert.doesNotThrow(() => throwInvalidStringHash("Hash"));
+      assert.doesNotThrow(() => throwInvalidStringHash("Hash", "fn"));
     });
   });
 });

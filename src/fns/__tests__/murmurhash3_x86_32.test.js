@@ -8,7 +8,7 @@ describe("murmurhash3_x86_32()", () => {
     assert.throws(
       () => murmurhash3_x86_32(),
       TypeError,
-      "murmurhash3_x86_32() first argument is not a string."
+      "murmurhash3_x86_32(): first argument is not a string."
     );
   });
 
@@ -16,7 +16,7 @@ describe("murmurhash3_x86_32()", () => {
     assert.throws(
       () => murmurhash3_x86_32(true),
       TypeError,
-      "murmurhash3_x86_32() first argument is not a string."
+      "murmurhash3_x86_32(): first argument is not a string."
     );
   });
 
@@ -149,5 +149,28 @@ describe("murmurhash3_x86_32()", () => {
     assert.strictEqual(hash1, 2904652459);
     assert.strictEqual(hash2, 1886458758);
     assert.strictEqual(hash3, 2093830963);
+  });
+
+  describe("C++ reference", () => {
+    it("regular text", () => {
+      const testString = "My hovercraft is full of eels.";
+      const hash = murmurhash3_x86_32(testString);
+
+      assert.strictEqual(hash, 2953494853);
+    });
+
+    it("using emojis", () => {
+      const testString = "My 🚀 is full of 🦎.";
+      const hash = murmurhash3_x86_32(testString);
+
+      assert.strictEqual(hash, 1818098979);
+    });
+
+    it("chinese characters", () => {
+      const testString = "吉 星 高 照";
+      const hash = murmurhash3_x86_32(testString);
+
+      assert.strictEqual(hash, 3435142074);
+    });
   });
 });

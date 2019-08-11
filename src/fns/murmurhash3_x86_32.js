@@ -3,7 +3,8 @@ import {
   uMul32Getter,
   uInt32Getter,
   throwInvalidMurmurSeed,
-  throwInvalidStringHash
+  throwInvalidStringHash,
+  toUtf8Bytes
 } from "../utils";
 
 /**
@@ -41,14 +42,15 @@ export default (() => {
    *
    * @throws {TypeError} Throws an exception if hash is not a string
    * @throws {TypeError} Throws an exception if seed is a float
-   * @param {string} hash The base string hash to generate number
+   * @param {string} str The base string hash to generate number
    * @param {number} [seed=0] An optional seed value
    * @return {number} Generated number
    */
-  function murmurhash3_x86_32(hash, seed = 0) {
-    throwInvalidStringHash(hash, "murmurhash3_x86_32");
+  function murmurhash3_x86_32(str, seed = 0) {
+    throwInvalidStringHash(str, "murmurhash3_x86_32");
     throwInvalidMurmurSeed(seed);
 
+    const hash = toUtf8Bytes(str);
     const remainder = hash.length % 4;
     const bytes = hash.length - remainder;
 
@@ -74,13 +76,13 @@ export default (() => {
 
     switch (remainder) {
       case 3:
-        calculated ^= (hash.charCodeAt(currentIndex + 2) & 0xff) << 16;
+        calculated ^= (hash[currentIndex + 2] & 0xff) << 16;
       // eslint-disable-next-line no-fallthrough
       case 2:
-        calculated ^= (hash.charCodeAt(currentIndex + 1) & 0xff) << 8;
+        calculated ^= (hash[currentIndex + 1] & 0xff) << 8;
       // eslint-disable-next-line no-fallthrough
       case 1:
-        calculated ^= hash.charCodeAt(currentIndex) & 0xff;
+        calculated ^= hash[currentIndex];
         calculated = uMul32Getter(calculated, MULTIPLIER_1);
         calculated = uInt32RotateLeft(calculated, 15);
         calculated = uMul32Getter(calculated, MULTIPLIER_2);
