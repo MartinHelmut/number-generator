@@ -79,7 +79,12 @@ describe("aleaRNGFactory", () => {
         (value, index, self) => index === self.indexOf(value)
       );
 
-      assert.lengthOf(stack, uniqueStack.length);
+      assert.lengthOf(
+        stack,
+        uniqueStack.length,
+        `There is/are ${stack.length -
+          uniqueStack.length} duplicate(s) after ${iterations} iterations.`
+      );
     });
 
     it("produces the exact same results (like defined in other implementations)", () => {
@@ -163,7 +168,12 @@ describe("aleaRNGFactory", () => {
         (value, index, self) => index === self.indexOf(value)
       );
 
-      assert.lengthOf(stack, uniqueStack.length);
+      assert.lengthOf(
+        stack,
+        uniqueStack.length,
+        `There is/are ${stack.length -
+          uniqueStack.length} duplicate(s) after ${iterations} iterations.`
+      );
     });
 
     it("produces the exact same results (like defined in other implementations)", () => {
