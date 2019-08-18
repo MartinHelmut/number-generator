@@ -11,9 +11,11 @@
   "scripts": {
     "build": "rollup -c rollup.config.js",
     "build:docs": "jsdoc -c jsdoc.config.js --verbose",
-    "test": "nyc mocha --require @babel/register src/__tests__/*.js src/**/__tests__/*.js",
+    "start:docs": "npm run build:docs && serve ./docs",
+    "test": "nyc mocha --require @babel/register src/__tests__/*.test.js src/**/__tests__/*.test.js",
     "test:prod": "npm run build && cross-env NODE_ENV=production nyc mocha --require @babel/register src/**/__tests__/*.js && mocha --require ts-node/register src/**/*.test.ts",
     "test:treeshaking": "agadoo lib/index.esm.js",
+    "test:benchmark": "node --require @babel/register src/__tests__/murmur.benchmark.js && node --require @babel/register src/__tests__/alea.benchmark.js",
     "ci": "npm run format:check && npm run lint && npm run test:prod && npm test",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint --ignore-path .prettierignore ./",
@@ -53,6 +55,7 @@
     "@types/chai": "4.2.3",
     "@types/mocha": "5.2.7",
     "agadoo": "1.1.0",
+    "benchmark": "2.1.4",
     "chai": "4.2.0",
     "chalk": "2.4.2",
     "commitizen": "4.0.3",
@@ -74,6 +77,7 @@
     "rollup-plugin-filesize": "6.2.0",
     "rollup-plugin-node-resolve": "5.2.0",
     "rollup-plugin-terser": "5.1.2",
+    "serve": "11.1.0",
     "standard-version": "7.0.0",
     "ts-node": "8.4.1",
     "typescript": "3.6.3"
