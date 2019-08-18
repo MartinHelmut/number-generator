@@ -72,9 +72,10 @@ export function throwInvalidStringHash(hash, functionName) {
 }
 
 /**
- * Encode non regular ASCII characters in string
+ * Encode non regular ASCII characters in string to array of chars
  *
- * @param {string} str
+ * @private
+ * @param {string} str Encode a string into a Uint8 array
  * @returns {Uint8Array}
  */
 function encode(str) {
