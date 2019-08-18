@@ -11,7 +11,7 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
 
 ## Contents
 
-- [Version update](#version-update)
+- [Update to version 4](#update-to-version-4)
 - [Usage](#usage)
   - [Install](#install)
   - [Random numbers](#random-numbers)
@@ -36,9 +36,10 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
 
 ---
 
-## Version update
+## Update to version 4
 
-**Note on updating from v1 or v2 to v3:** It can safely be done 🥳. Compatibility is restored for all versions so that nothing breaks on a major version bump.
+- Change `murmurHash` to `murmurhash2_x86_32` (same function since v2, alias now removed).
+- Non ASCII characters (e.g. chinese or emoji) are now handled properly. This can produce different results if these characters where used before inside an input hash.
 
 ## Usage
 
@@ -365,13 +366,14 @@ aleaRNGFactory#uFloat32() x 7,845,369 ops/sec
 
 #### murmurhash
 
-Comparison between `murmurhash2_x86_32`, `murmurhash3_x86_32` and `murmurhash3_x86_128` function:
+Comparison between `murmurhash2_x86_32`, `murmurhash3_x86_32`, `murmurhash3_x86_128` and `murmurhash3_x64_128` function:
 
 ```
 // v4.0.0
-murmurhash2_x86_32  x 579,936 ops/sec
-murmurhash3_x86_32  x 567,614 ops/sec
-murmurhash3_x86_128 x 252,974 ops/sec
+murmurhash2_x86_32  x 560,251 ops/sec
+murmurhash3_x86_32  x 565,309 ops/sec
+murmurhash3_x86_128 x 243,446 ops/sec
+murmurhash3_x64_128 x 153,489 ops/sec
 ```
 
 To run them on your machine execute `pnpm run test:benchmark`.
