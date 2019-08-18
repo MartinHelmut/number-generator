@@ -361,7 +361,7 @@ murmurhash2_x86_32 x 554,433 ops/sec
 murmurhash3_x86_32 x 576,334 ops/sec
 ```
 
-To run them on your machine execute `npm run test:benchmark`.
+To run them on your machine execute `pnpm run test:benchmark`.
 
 ## Development
 

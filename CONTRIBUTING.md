@@ -16,32 +16,36 @@ are the best!
 
 Clone the repo and ...
 
+## Environment
+
+For this repository the package manager pnpm is used as a drop-in replacement for npm. Here you can find a guide on installing pnpm on your machine: [getting started with pnpm](pnurl).
+
 ## Run tests
 
-```shell
+```bash
 # Run tests
-npm test
+pnpm test
 
 # Run production tests
-npm run test:prod
+pnpm run test:prod
 
 # Lint the application
-npm run lint
+pnpm run lint
 
 # Test if the application is tree shakable
-npm run test:treeshaking
+pnpm run test:treeshaking
 ```
 
 ## Format the code
 
-To format the code use `npm run format`. This is command runs automatically before commit.
+To format the code use `pnpm run format`. This is command runs automatically before commit.
 
 ## Build the library
 
 If you want to build the application run
 
-```shell
-npm run build
+```bash
+pnpm run build
 ```
 
 for a minified version.
@@ -50,8 +54,14 @@ for a minified version.
 
 To create an API documentation run:
 
-```shell
-npm run build:docs
+```bash
+pnpm run build:docs
+```
+
+You can also serve the documentation locally or via network with:
+
+```bash
+pnpm run start:docs
 ```
 
 ## Commit changes
@@ -65,9 +75,9 @@ Push the changes and your feature branch and create a "Merge Request" on GitHub.
 ## Recommended workflow for release
 
 1.  Make changes
-2.  Commit those changes with `npm run commit`
+2.  Commit those changes with `pnpx git-cz` (or `pnpm run commit`)
 3.  Make sure all tests turn green
-4.  Create a new release with `npm run release`
+4.  Create a new release with `pnpm run release`
 5.  Push your release `git push --follow-tags origin master`
 6.  Publish: `NPM_CONFIG_OTP=XXXXXX npm publish` (replace `XXXXXX` with a valid 2FA token)
 7.  **Done!**
@@ -77,3 +87,4 @@ For more information on building a release see [https://github.com/conventional-
 [czcli]: http://commitizen.github.io/cz-cli/
 [sv]: https://github.com/conventional-changelog/standard-version
 [karma]: https://karma-runner.github.io/1.0/index.html
+[pnurl]: https://pnpm.js.org/docs/en/installation.html
