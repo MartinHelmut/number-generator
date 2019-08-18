@@ -28,6 +28,9 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
     - [Compatibility to v1](#compatibility-to-v1)
   - [TypeScript](#typescript)
   - [Support](#support)
+  - [Benchmarks](#benchmarks)
+    - [aleaRNGFactory](#alearngfactory)
+    - [murmurhash](#murmurhash)
 - [Development](#development)
 - [Disclaimer](#disclaimer)
 
@@ -333,6 +336,32 @@ This library was tested on the following environments:
 - All major browsers and IE >= 10
 
 Exceptions for Node are versions that reached the End-of-Life as defined under https://github.com/nodejs/Release#end-of-life-releases.
+
+### Benchmarks
+
+**Disclaimer:** The following benchmarks were created on a MacBook Pro, Processor 2,7 GHz Intel Core i5 with 8 GB 1867 MHz DDR3 memory.
+
+#### aleaRNGFactory
+
+Comparison between `uInt32` and `uFloat32` methods:
+
+```
+// v4.0.0
+aleaRNGFactory#uInt32()   x 8,266,683 ops/sec
+aleaRNGFactory#uFloat32() x 7,845,369 ops/sec
+```
+
+#### murmurhash
+
+Comparison between `murmurhash2_x86_32` and `murmurhash3_x86_32` function:
+
+```
+// v4.0.0
+murmurhash2_x86_32 x 554,433 ops/sec
+murmurhash3_x86_32 x 576,334 ops/sec
+```
+
+To run them on your machine execute `npm run test:benchmark`.
 
 ## Development
 
