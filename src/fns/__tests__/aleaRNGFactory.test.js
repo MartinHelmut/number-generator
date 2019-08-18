@@ -95,7 +95,7 @@ describe("aleaRNGFactory", () => {
       assert.strictEqual(uFloat32(), 0.6238283265847713);
     });
 
-    it("tests in the readme used examples", () => {
+    it("tests examples that are used inside documentation (readme)", () => {
       const { uFloat32 } = aleaRNGFactory(5);
       assert.strictEqual(uFloat32(), 0.0024349885061383247);
       assert.strictEqual(uFloat32(), 0.1826920467428863);
@@ -190,7 +190,7 @@ describe("aleaRNGFactory", () => {
       assert.strictEqual(uInt32(), 2679322261);
     });
 
-    it("tests in the readme used examples", () => {
+    it("tests examples that are used inside documentation (readme)", () => {
       const { uInt32 } = aleaRNGFactory(10);
       assert.strictEqual(uInt32(), 20916391);
       assert.strictEqual(uInt32(), 1567221093);
