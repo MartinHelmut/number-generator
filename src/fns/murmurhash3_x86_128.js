@@ -2,14 +2,15 @@
 import {
   throwInvalidMurmurSeed,
   throwInvalidStringHash,
-  uIntx86mix,
+  uInt32mix,
   uInt32RotateLeft,
   uMul32Getter,
-  toUtf8Bytes
+  toUtf8Bytes,
+  createConcatenatedHash
 } from "../utils";
 
 /**
- * Generate a non-cryptic 128 bit number hash with murmur3 algorithm.
+ * Generate a non-cryptic 128 bit number hash for x86 with murmur3 algorithm.
  *
  * From {@link https://github.com/karanlyons/murmurHash3.js}
  * Karan Lyons, 2014
@@ -34,7 +35,7 @@ export default (() => {
   const CORRECTION_4 = 0x32ac3b17;
 
   /**
-   * Generate a non-cryptic 128 bit number hash with murmur3 algorithm
+   * Generate a non-cryptic 128 bit number hash for x86 with murmur3 algorithm.
    *
    * @throws {TypeError} Throws an exception if hash is not a string
    * @throws {TypeError} Throws an exception if seed is a float
@@ -203,10 +204,10 @@ export default (() => {
     hashSum3 += hashSum1;
     hashSum4 += hashSum1;
 
-    hashSum1 = uIntx86mix(hashSum1);
-    hashSum2 = uIntx86mix(hashSum2);
-    hashSum3 = uIntx86mix(hashSum3);
-    hashSum4 = uIntx86mix(hashSum4);
+    hashSum1 = uInt32mix(hashSum1);
+    hashSum2 = uInt32mix(hashSum2);
+    hashSum3 = uInt32mix(hashSum3);
+    hashSum4 = uInt32mix(hashSum4);
 
     hashSum1 += hashSum2;
     hashSum1 += hashSum3;
@@ -215,12 +216,7 @@ export default (() => {
     hashSum3 += hashSum1;
     hashSum4 += hashSum1;
 
-    return (
-      ("00000000" + (hashSum1 >>> 0).toString(16)).slice(-8) +
-      ("00000000" + (hashSum2 >>> 0).toString(16)).slice(-8) +
-      ("00000000" + (hashSum3 >>> 0).toString(16)).slice(-8) +
-      ("00000000" + (hashSum4 >>> 0).toString(16)).slice(-8)
-    );
+    return createConcatenatedHash([hashSum1, hashSum2, hashSum3, hashSum4]);
   }
 
   return murmurhash3_x86_128;

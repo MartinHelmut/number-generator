@@ -2,7 +2,7 @@
 import {
   uMul32Getter,
   uInt32Getter,
-  uIntx86mix,
+  uInt32mix,
   uInt32RotateLeft,
   toUtf8Bytes,
   throwInvalidMurmurSeed,
@@ -10,7 +10,7 @@ import {
 } from "../utils";
 
 /**
- * Generate a non-cryptic 32 bit number hash with murmur3 algorithm.
+ * Generate a non-cryptic 32 bit number hash for x86 with murmur3 algorithm.
  *
  * From {@link https://github.com/karanlyons/murmurHash3.js}
  * Karan Lyons, 2014
@@ -30,7 +30,7 @@ export default (() => {
   const CORRECTION = 0xe6546b64;
 
   /**
-   * Generate a non-cryptic 32 bit number hash with murmur3 algorithm
+   * Generate a non-cryptic 32 bit number hash for x86 with murmur3 algorithm.
    *
    * @throws {TypeError} Throws an exception if hash is not a string
    * @throws {TypeError} Throws an exception if seed is a float
@@ -82,7 +82,7 @@ export default (() => {
     }
 
     hashSum ^= hash.length;
-    hashSum = uIntx86mix(hashSum);
+    hashSum = uInt32mix(hashSum);
 
     return hashSum >>> 0;
   }
