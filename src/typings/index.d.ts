@@ -20,3 +20,7 @@ export declare function aleaRNGFactory(initialSeed?: number): NumberGenerator;
 export declare function murmurhash2_x86_32(hash: string, seed?: number): number;
 export declare function murmurHash(hash: string, seed?: number): number; // Compatibility to v1
 export declare function murmurhash3_x86_32(hash: string, seed?: number): number;
+export declare function murmurhash3_x86_128(
+  hash: string,
+  seed?: number
+): string;
