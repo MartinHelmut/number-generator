@@ -151,7 +151,7 @@ describe("murmurhash3_x86_32()", () => {
     assert.strictEqual(hash3, 2093830963);
   });
 
-  it("tests in the readme used examples", () => {
+  it("tests examples that are used inside documentation (readme)", () => {
     const hash1 = murmurhash3_x86_32("Hello");
     const hash2 = murmurhash3_x86_32("My string.");
     const hash3 = murmurhash3_x86_32("My string.", 0);
