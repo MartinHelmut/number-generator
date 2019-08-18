@@ -151,6 +151,16 @@ describe("murmurhash2_x86_32()", () => {
     assert.strictEqual(hash3, 4098796303);
   });
 
+  it("tests in the readme used examples", () => {
+    const hash1 = murmurhash2_x86_32("Hello");
+    const hash2 = murmurhash2_x86_32("My string.");
+    const hash3 = murmurhash2_x86_32("My string.", 0);
+
+    assert.strictEqual(hash1, 1826530862);
+    assert.strictEqual(hash2, 1836966117);
+    assert.strictEqual(hash3, hash2);
+  });
+
   it("do not return 0 for strings length multiply of 4", () => {
     const hash1 = murmurhash2_x86_32("A");
     const hash2 = murmurhash2_x86_32("AA");

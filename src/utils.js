@@ -33,6 +33,35 @@ export function uInt32Getter(bytes, position) {
 }
 
 /**
+ * Mix hash for x86
+ *
+ * @private
+ * @param {number} hash Base number hash
+ * @returns {number} Mixed number hash
+ */
+export function uIntx86mix(hash) {
+  hash ^= hash >>> 16;
+  hash = uMul32Getter(hash, 0x85ebca6b);
+  hash ^= hash >>> 13;
+  hash = uMul32Getter(hash, 0xc2b2ae35);
+  hash ^= hash >>> 16;
+
+  return hash;
+}
+
+/**
+ * Returns the int32 rotated left by the number of positions
+ *
+ * @private
+ * @param {number} x Unsigned int32
+ * @param {number} y Number representing bit positions
+ * @returns {number}
+ */
+export function uInt32RotateLeft(x, y) {
+  return (x << y) | (x >>> (32 - y));
+}
+
+/**
  * Throw an error if the given seed is invalid for a murmur hash algorithm
  *
  * @private

@@ -22,7 +22,7 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
     - [Get the state](#get-the-state)
     - [Set the state](#set-the-state)
     - [Something like Math.random?](#something-like-mathrandom)
-  - [Generate hash](#generate-hash)
+  - [Murmur hash](#murmur-hash)
     - [Basic hash generation](#basic-hash-generation)
     - [Hash based on different seeds](#hash-based-on-different-seeds)
     - [Compatibility to v1](#compatibility-to-v1)
@@ -42,7 +42,7 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
 
 ## Usage
 
-This library (**2.51 KB, gzipped size: 1.12 KB**) contains the following methods: one PRNG (pseudo random number generator) called _Alea_ and two number hash generators, _MurmurHash2_ and _MurmurHash3_, for unsigned integer with 32bit. The _Alea_ implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal] or alternatively a [direct mirror of Johannes Baagøe's wiki from Nick Quinlan][brnm].
+This library (**4.5 KB, gzipped size: 1.95 KB**) contains the following methods: one PRNG (pseudo random number generator) called _Alea_ and three number hash generators, _MurmurHash2_ and _MurmurHash3_ for 32 and 128 bit hash strings. The _Alea_ implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal] or alternatively a [direct mirror of Johannes Baagøe's wiki from Nick Quinlan][brnm].
 
 More about the hash function _MurmurHash_ can be found [here on wikipedia][mur].
 
@@ -83,13 +83,12 @@ import murmurhash3_x86_32 from "number-generator/lib/murmurhash3_x86_32";
 const aleaRNGFactory = require("number-generator/lib/aleaRNGFactory");
 const murmurhash2_x86_32 = require("number-generator/lib/murmurhash2_x86_32");
 const murmurhash3_x86_32 = require("number-generator/lib/murmurhash3_x86_32");
+const murmurhash3_x86_128 = require("number-generator/lib/murmurhash3_x86_128");
 ```
 
-Also because the library can safely be [tree shaked][trsh] you can import the functions for ESM like:
+Also because the library can safely be [tree shaked][trsh]. If tree shaking is used in e.g. Rollup or Webpack this will only put the used function with helpers in your bundle:
 
 ```javascript
-// If tree shaking is used in e.g. Rollup or Webpack this
-// will only put the used function with helpers in your bundle:
 import { aleaRNGFactory } from "number-generator";
 ```
 
@@ -253,16 +252,24 @@ const { uFloat32: random } = aleaRNGFactory(Date.now());
 random();
 ```
 
-### Generate hash
+### Murmur hash
 
-To generate a number hash there are two functions, `murmurhash2_x86_32` and `murmurhash3_x86_32`. The `murmurhash` functions implement the [MurmurHash algorithm for 32bit integer][mur] in JavaScript (murmurhash2 and 3). They take a string and generate a non-cryptographic hash number as unsigned integer with 32bit.
+To generate a number hash there are three functions, `murmurhash2_x86_32`, `murmurhash3_x86_32` and `murmurhash3_x86_128`. The `murmurhash` functions implement the [MurmurHash algorithm for 32 and 128 bit][mur] in JavaScript (murmurhash2 and 3). They take a string and generate a non-cryptographic hash number as unsigned integer with 32 bit or 128 bit string hash.
 
 You can import the functions directly:
 
 ```javascript
 const murmurhash2_x86_32 = require("number-generator/lib/murmurhash2_x86_32");
-// or
 const murmurhash3_x86_32 = require("number-generator/lib/murmurhash3_x86_32");
+const murmurhash3_x86_128 = require("number-generator/lib/murmurhash3_x86_128");
+```
+
+Both `murmurhash2_x86_32` and `murmurhash3_x86_32` will generate a unsigned 32 bit number. The `murmurhash3_x86_128` function will generate a 128 bit string. To showcase the difference:
+
+```javascript
+murmurhash2_x86_32("Hello"); // 1826530862
+murmurhash3_x86_32("Hello"); // 316307400
+murmurhash3_x86_128("Hello"); // "2360ae465e6336c6ad45b3f4ad45b3f4"
 ```
 
 #### Basic hash generation
@@ -277,7 +284,7 @@ hash1; // 1836966117
 hash1 === hash2; // true
 ```
 
-This should create the exact **same result on your machine**!
+This will create the exact **same result on your machine**!
 
 #### Hash based on different seeds
 
@@ -353,12 +360,13 @@ aleaRNGFactory#uFloat32() x 7,845,369 ops/sec
 
 #### murmurhash
 
-Comparison between `murmurhash2_x86_32` and `murmurhash3_x86_32` function:
+Comparison between `murmurhash2_x86_32`, `murmurhash3_x86_32` and `murmurhash3_x86_128` function:
 
 ```
 // v4.0.0
-murmurhash2_x86_32 x 554,433 ops/sec
-murmurhash3_x86_32 x 576,334 ops/sec
+murmurhash2_x86_32  x 579,936 ops/sec
+murmurhash3_x86_32  x 567,614 ops/sec
+murmurhash3_x86_128 x 252,974 ops/sec
 ```
 
 To run them on your machine execute `pnpm run test:benchmark`.

@@ -2,43 +2,35 @@
 import {
   uMul32Getter,
   uInt32Getter,
+  uIntx86mix,
+  uInt32RotateLeft,
+  toUtf8Bytes,
   throwInvalidMurmurSeed,
-  throwInvalidStringHash,
-  toUtf8Bytes
+  throwInvalidStringHash
 } from "../utils";
 
 /**
- * Generate a non-cryptic number hash with murmur3 algorithm
+ * Generate a non-cryptic 32 bit number hash with murmur3 algorithm.
  *
  * From {@link https://github.com/karanlyons/murmurHash3.js}
  * Karan Lyons, 2014
- * Refactored and extended from Martin Helmut Fieber <info@martin-fieber.de>
+ * Refactored and extended including fixes for edge cases from Martin Helmut Fieber <info@martin-fieber.de>
  *
  * @export number-generator/lib/murmurhash3_x86_32
+ * @throws {TypeError} Throws an exception if hash is not a string
  * @throws {TypeError} Throws an exception if seed is a float
- * @param {string} hash The base string hash to generate number
+ * @param {string} str The base string hash to generate number
  * @param {number} [seed=0] An optional seed value
  * @return {number} Generated number
  */
 export default (() => {
   const MULTIPLIER_1 = 0xcc9e2d51;
   const MULTIPLIER_2 = 0x1b873593;
-  const MULTIPLIER_3 = 0x85ebca6b;
-  const MULTIPLIER_4 = 0xc2b2ae35;
 
   const CORRECTION = 0xe6546b64;
 
   /**
-   * Returns the int32 rotated left by the number of positions
-   *
-   * @param {number} x Unsigned int32
-   * @param {number} y Number representing bit positions
-   * @returns {number}
-   */
-  const uInt32RotateLeft = (x, y) => (x << y) | (x >>> (32 - y));
-
-  /**
-   * Generate a non-cryptic number hash with murmur3 algorithm
+   * Generate a non-cryptic 32 bit number hash with murmur3 algorithm
    *
    * @throws {TypeError} Throws an exception if hash is not a string
    * @throws {TypeError} Throws an exception if seed is a float
@@ -90,11 +82,7 @@ export default (() => {
     }
 
     hashSum ^= hash.length;
-    hashSum ^= hashSum >>> 16;
-    hashSum = uMul32Getter(hashSum, MULTIPLIER_3);
-    hashSum ^= hashSum >>> 13;
-    hashSum = uMul32Getter(hashSum, MULTIPLIER_4);
-    hashSum ^= hashSum >>> 16;
+    hashSum = uIntx86mix(hashSum);
 
     return hashSum >>> 0;
   }
