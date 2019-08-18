@@ -3,5 +3,7 @@ node_js:
   - "node"
   - "10"
   - "8"
-script: npm run ci
-after_success: npm run coverage
+before_install: curl -L https://unpkg.com/@pnpm/self-installer | node
+install: pnpm install
+script: pnpm run ci
+after_success: pnpm run coverage
