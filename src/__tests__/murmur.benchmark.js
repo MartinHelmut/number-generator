@@ -3,6 +3,7 @@ import { Suite } from "benchmark";
 import murmurhash2_x86_32 from "../../lib/murmurhash2_x86_32";
 import murmurhash3_x86_32 from "../../lib/murmurhash3_x86_32";
 import murmurhash3_x86_128 from "../../lib/murmurhash3_x86_128";
+import murmurhash3_x64_128 from "../../lib/murmurhash3_x64_128";
 
 const suite = new Suite("murmur hash");
 
@@ -16,6 +17,10 @@ suite.add("murmurhash3_x86_32", () => {
 
 suite.add("murmurhash3_x86_128", () => {
   murmurhash3_x86_128("This is a decent length string with 🔌");
+});
+
+suite.add("murmurhash3_x64_128", () => {
+  murmurhash3_x64_128("This is a decent length string with 🔌");
 });
 
 suite.on("complete", () => {

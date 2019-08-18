@@ -54,5 +54,6 @@ export default [
   createBundleConfig("fns/aleaRNGFactory"),
   createBundleConfig("fns/murmurhash2_x86_32"),
   createBundleConfig("fns/murmurhash3_x86_32"),
-  createBundleConfig("fns/murmurhash3_x86_128")
+  createBundleConfig("fns/murmurhash3_x86_128"),
+  createBundleConfig("fns/murmurhash3_x64_128")
 ];

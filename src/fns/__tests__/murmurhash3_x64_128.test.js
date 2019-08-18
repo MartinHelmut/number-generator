@@ -1,74 +1,74 @@
 import { assert } from "chai";
 import { requireFunction } from "./helper";
 
-const murmurhash3_x86_128 = requireFunction("murmurhash3_x86_128");
+const murmurhash3_x64_128 = requireFunction("murmurhash3_x64_128");
 
-describe("murmurhash3_x86_128()", () => {
+describe("murmurhash3_x64_128()", () => {
   it("should throw a TypeError if no hash is passed", () => {
     assert.throws(
-      () => murmurhash3_x86_128(),
+      () => murmurhash3_x64_128(),
       TypeError,
-      "murmurhash3_x86_128(): first argument is not a string."
+      "murmurhash3_x64_128(): first argument is not a string."
     );
   });
 
   it("should throw a TypeError if no string as hash is passed", () => {
     assert.throws(
-      () => murmurhash3_x86_128(true),
+      () => murmurhash3_x64_128(true),
       TypeError,
-      "murmurhash3_x86_128(): first argument is not a string."
+      "murmurhash3_x64_128(): first argument is not a string."
     );
   });
 
   it("returns zero on empty string", () => {
     const testString = "";
-    const hash = murmurhash3_x86_128(testString);
+    const hash = murmurhash3_x64_128(testString);
 
     assert.strictEqual(hash, "00000000000000000000000000000000");
   });
 
   it("should generate a 128 bit hash by string", () => {
     const testString = "Awkward code!";
-    const hash = murmurhash3_x86_128(testString);
+    const hash = murmurhash3_x64_128(testString);
 
-    assert.strictEqual(hash, "d3a4b65262ffbba9fac252e832386317");
+    assert.strictEqual(hash, "37c9f076b6a2daf8687526063e0e5415");
   });
 
   it("should generate a 128 bit hash by string of length 1", () => {
     const testString = "a";
-    const hash = murmurhash3_x86_128(testString);
+    const hash = murmurhash3_x64_128(testString);
 
-    assert.strictEqual(hash, "a794933c5556b01b5556b01b5556b01b");
+    assert.strictEqual(hash, "85555565f6597889e6b53a48510e895a");
   });
 
   it("should generate a 128 bit hash by string of length 2", () => {
     const testString = "ab";
-    const hash = murmurhash3_x86_128(testString);
+    const hash = murmurhash3_x64_128(testString);
 
-    assert.strictEqual(hash, "158451df25be301025be301025be3010");
+    assert.strictEqual(hash, "938b11ea16ed1b2ee65ea7019b52d4ad");
   });
 
   it("should generate a 128 bit hash by string of length 3", () => {
     const testString = "abc";
-    const hash = murmurhash3_x86_128(testString);
+    const hash = murmurhash3_x64_128(testString);
 
-    assert.strictEqual(hash, "75cdc6d1a2b006a5a2b006a5a2b006a5");
+    assert.strictEqual(hash, "b4963f3f3fad78673ba2744126ca2d52");
   });
 
   it("produces a different hash with same string but different seed", () => {
     const testString = "This is awesome!";
-    const hash1 = murmurhash3_x86_128(testString, 1);
-    const hash2 = murmurhash3_x86_128(testString, 2);
+    const hash1 = murmurhash3_x64_128(testString, 1);
+    const hash2 = murmurhash3_x64_128(testString, 2);
 
     assert.notStrictEqual(hash1, hash2);
   });
 
   it("produces the same hash with same string and seed", () => {
     const testString = "This is awesome!";
-    const hash1 = murmurhash3_x86_128(testString, 1);
-    const hash2 = murmurhash3_x86_128(testString, 1);
-    const hash3 = murmurhash3_x86_128(testString, 1);
-    const hash4 = murmurhash3_x86_128(testString, 1);
+    const hash1 = murmurhash3_x64_128(testString, 1);
+    const hash2 = murmurhash3_x64_128(testString, 1);
+    const hash3 = murmurhash3_x64_128(testString, 1);
+    const hash4 = murmurhash3_x64_128(testString, 1);
 
     assert.strictEqual(hash1, hash2);
     assert.strictEqual(hash3, hash4);
@@ -77,20 +77,20 @@ describe("murmurhash3_x86_128()", () => {
 
   it("should return a valid result if seed is 0", () => {
     const testString = "This is awesome!";
-    const hash = murmurhash3_x86_128(testString, 0);
+    const hash = murmurhash3_x64_128(testString, 0);
 
-    assert.strictEqual(hash, "3efab6d2bc4313bb5a0174786218515b");
+    assert.strictEqual(hash, "bf9fa1d30ef5f7ec1c3d7a47fe61f04b");
   });
 
   it("should return a valid result on negative seed", () => {
     const testString = "This is awesome!";
-    const hash = murmurhash3_x86_128(testString, -10);
+    const hash = murmurhash3_x64_128(testString, -10);
 
-    assert.strictEqual(hash, "cc7d210d8b66676026648e74f44f2d01");
+    assert.strictEqual(hash, "d99640f141effa5a996336a344824ea6");
   });
 
   it("throws a TypeError on float seed value", () => {
-    assert.throws(() => murmurhash3_x86_128("", 0.2), TypeError);
+    assert.throws(() => murmurhash3_x64_128("", 0.2), TypeError);
   });
 
   it("[loop] should produce unique results on unsigned seeds", () => {
@@ -98,7 +98,7 @@ describe("murmurhash3_x86_128()", () => {
     const stack = [];
 
     for (let i = 0; i <= iterations; i++) {
-      const hash = murmurhash3_x86_128("This is awesome!", i);
+      const hash = murmurhash3_x64_128("This is awesome!", i);
 
       assert.lengthOf(hash, 32);
 
@@ -118,7 +118,7 @@ describe("murmurhash3_x86_128()", () => {
     const stack = [];
 
     for (let i = -100; i <= iterations; i++) {
-      const hash = murmurhash3_x86_128("This is awesome!", i);
+      const hash = murmurhash3_x64_128("This is awesome!", i);
 
       assert.lengthOf(hash, 32);
 
@@ -134,59 +134,59 @@ describe("murmurhash3_x86_128()", () => {
   });
 
   it("produces an exact reproducible hash (like defined in other implementations)", () => {
-    const hash1 = murmurhash3_x86_128("string", 0);
-    const hash2 = murmurhash3_x86_128("string", 13);
-    const hash3 = murmurhash3_x86_128("something", 5);
+    const hash1 = murmurhash3_x64_128("string", 0);
+    const hash2 = murmurhash3_x64_128("string", 13);
+    const hash3 = murmurhash3_x64_128("something", 5);
 
-    assert.strictEqual(hash1, "e3f975734ee675d931a5e87931a5e879");
-    assert.strictEqual(hash2, "cac24e218730ecd2b219057fb219057f");
-    assert.strictEqual(hash3, "0c08333f4495f99af09eefaf0af90040");
+    assert.strictEqual(hash1, "4563abe73b11235dc7c3775d3e34f165");
+    assert.strictEqual(hash2, "0183d85d6a09bcaefe09ff03fd949423");
+    assert.strictEqual(hash3, "de698e585d54db8d9313e4e3b8bebcd9");
   });
 
   it("tests in the readme used examples", () => {
-    const hash1 = murmurhash3_x86_128("Hello");
-    const hash2 = murmurhash3_x86_128("My string.");
-    const hash3 = murmurhash3_x86_128("My string.", 0);
+    const hash1 = murmurhash3_x64_128("Hello");
+    const hash2 = murmurhash3_x64_128("My string.");
+    const hash3 = murmurhash3_x64_128("My string.", 0);
 
-    assert.strictEqual(hash1, "2360ae465e6336c6ad45b3f4ad45b3f4");
-    assert.strictEqual(hash2, "ca7923d5ac241973eb7c1c181cd7a4d1");
+    assert.strictEqual(hash1, "35b974ff55d4c41ca000eacf29125544");
+    assert.strictEqual(hash2, "47e277afe6e776720a20caf1fdd91fe0");
     assert.strictEqual(hash3, hash2);
   });
 
   describe("C++ reference", () => {
     it("regular text 1", () => {
       const testString = "I will not buy this record, it is scratched.";
-      const hash = murmurhash3_x86_128(testString);
+      const hash = murmurhash3_x64_128(testString);
 
-      assert.strictEqual(hash, "a0a9683b25ac5e40d9af2895890dddf5");
+      assert.strictEqual(hash, "c382657f9a06c49d4a71fdc6d9b0d48f");
     });
 
     it("regular text 2", () => {
       const testString = "I will not buy this tobaconnists, it is scratched.";
-      const hash = murmurhash3_x86_128(testString);
+      const hash = murmurhash3_x64_128(testString);
 
-      assert.strictEqual(hash, "0b8149d2f251cfb86756c95a17ff3909");
+      assert.strictEqual(hash, "3806612222fe88e1af1a4b5a59115634");
     });
 
     it("regular text 3", () => {
       const testString = "My hovercraft is full of eels.";
-      const hash = murmurhash3_x86_128(testString);
+      const hash = murmurhash3_x64_128(testString);
 
-      assert.strictEqual(hash, "e3a186aee169ba6c6a8bd9343c68fa9c");
+      assert.strictEqual(hash, "03e5e14d358c16d1e5ae86df7ed5cfcb");
     });
 
     it("using emojis", () => {
       const testString = "My 🚀 is full of 🦎.";
-      const hash = murmurhash3_x86_128(testString);
+      const hash = murmurhash3_x64_128(testString);
 
-      assert.strictEqual(hash, "e616d85ffee7f678dab461995b5bb90f");
+      assert.strictEqual(hash, "d047391e58c6c9dfccde62c92e049f50");
     });
 
     it("chinese characters", () => {
       const testString = "吉 星 高 照";
-      const hash = murmurhash3_x86_128(testString);
+      const hash = murmurhash3_x64_128(testString);
 
-      assert.strictEqual(hash, "bb39ba50e4b2457c738e6d76b66d9304");
+      assert.strictEqual(hash, "bde3d304c55081c5749baf93de78c3bd");
     });
   });
 });

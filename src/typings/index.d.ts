@@ -24,3 +24,7 @@ export declare function murmurhash3_x86_128(
   hash: string,
   seed?: number
 ): string;
+export declare function murmurhash3_x64_128(
+  hash: string,
+  seed?: number
+): string;
