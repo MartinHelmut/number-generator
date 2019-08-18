@@ -1,10 +1,12 @@
 import { assert } from "chai";
+
 import {
   uMul32Getter,
   uInt32Getter,
   throwInvalidMurmurSeed,
   throwInvalidAleaSeed,
-  throwInvalidStringHash
+  throwInvalidStringHash,
+  toUtf8Bytes
 } from "../utils";
 
 describe("utils", () => {
@@ -146,6 +148,48 @@ describe("utils", () => {
 
     it("does not throw if hash is a string", () => {
       assert.doesNotThrow(() => throwInvalidStringHash("Hash", "fn"));
+    });
+  });
+
+  describe("toUtf8Bytes()", () => {
+    it("returns an array of char of a string in ASCII range", () => {
+      const bytes = toUtf8Bytes("Hello World");
+      assert.lengthOf(bytes, 11);
+    });
+
+    it("returns an array of char with encoded non ASCII characters for chinese", () => {
+      const bytes = toUtf8Bytes("你好，世界");
+      assert.lengthOf(bytes, 15);
+    });
+
+    it("returns an array of char with encoded non ASCII characters for emoji", () => {
+      const bytes = toUtf8Bytes("Hello 🌎");
+      assert.lengthOf(bytes, 10);
+    });
+
+    it("returns an array of char with encoded non ASCII characters for emoji", () => {
+      const bytes = toUtf8Bytes("Hello 🌎");
+      assert.lengthOf(bytes, 10);
+    });
+
+    it("handles characters in a large range (>= 127)", () => {
+      const bytes = toUtf8Bytes(String.fromCharCode(2014, 100, 300));
+      assert.lengthOf(bytes, 5);
+    });
+
+    it("handles characters in a larger range (>= 2047)", () => {
+      const bytes = toUtf8Bytes("€100");
+      assert.lengthOf(bytes, 6);
+    });
+
+    it("handles edge case characters in a very large range (>= 50.000 && <= 56.000)", () => {
+      const bytes = toUtf8Bytes(String.fromCharCode(55300, 55301));
+      assert.lengthOf(bytes, 6);
+    });
+
+    it("handles edge case characters in a very large range (>= 56.001)", () => {
+      const bytes = toUtf8Bytes(String.fromCharCode(56318, 56321));
+      assert.lengthOf(bytes, 4);
     });
   });
 });
