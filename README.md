@@ -42,7 +42,7 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
 
 ## Usage
 
-This library (**4.5 KB, gzipped size: 1.95 KB**) contains the following methods: one PRNG (pseudo random number generator) called _Alea_ and three number hash generators, _MurmurHash2_ and _MurmurHash3_ for 32 and 128 bit hash strings. The _Alea_ implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal] or alternatively a [direct mirror of Johannes Baagøe's wiki from Nick Quinlan][brnm].
+This library (**7.39 KB, gzipped size: 2.92 KB**) contains the following methods: one PRNG (pseudo random number generator) called _Alea_ and four number hash generators, _MurmurHash2_ and _MurmurHash3_ for 32 and 128 bit (x86 and x64) hash strings. The _Alea_ implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal] or alternatively a [direct mirror of Johannes Baagøe's wiki from Nick Quinlan][brnm].
 
 More about the hash function _MurmurHash_ can be found [here on wikipedia][mur].
 
@@ -78,12 +78,15 @@ Or as single functions:
 import aleaRNGFactory from "number-generator/lib/aleaRNGFactory";
 import murmurhash2_x86_32 from "number-generator/lib/murmurhash2_x86_32";
 import murmurhash3_x86_32 from "number-generator/lib/murmurhash3_x86_32";
+import murmurhash3_x86_128 from "number-generator/lib/murmurhash3_x86_128";
+import murmurhash3_x64_128 from "number-generator/lib/murmurhash3_x64_128";
 
 // CJS
 const aleaRNGFactory = require("number-generator/lib/aleaRNGFactory");
 const murmurhash2_x86_32 = require("number-generator/lib/murmurhash2_x86_32");
 const murmurhash3_x86_32 = require("number-generator/lib/murmurhash3_x86_32");
 const murmurhash3_x86_128 = require("number-generator/lib/murmurhash3_x86_128");
+const murmurhash3_x64_128 = require("number-generator/lib/murmurhash3_x86_128");
 ```
 
 Also because the library can safely be [tree shaked][trsh]. If tree shaking is used in e.g. Rollup or Webpack this will only put the used function with helpers in your bundle:
@@ -254,7 +257,7 @@ random();
 
 ### Murmur hash
 
-To generate a number hash there are three functions, `murmurhash2_x86_32`, `murmurhash3_x86_32` and `murmurhash3_x86_128`. The `murmurhash` functions implement the [MurmurHash algorithm for 32 and 128 bit][mur] in JavaScript (murmurhash2 and 3). They take a string and generate a non-cryptographic hash number as unsigned integer with 32 bit or 128 bit string hash.
+To generate a number hash there are four functions, `murmurhash2_x86_32`, `murmurhash3_x86_32`, `murmurhash3_x86_128` and `murmurhash3_x64_128`. The `murmurhash` functions implement the [MurmurHash algorithm for 32 and 128 bit][mur] in JavaScript (murmurhash2 and 3) for x86 and x64. They take a string and generate a non-cryptographic hash number as unsigned integer with 32 bit or 128 bit string hash.
 
 You can import the functions directly:
 
@@ -262,14 +265,16 @@ You can import the functions directly:
 const murmurhash2_x86_32 = require("number-generator/lib/murmurhash2_x86_32");
 const murmurhash3_x86_32 = require("number-generator/lib/murmurhash3_x86_32");
 const murmurhash3_x86_128 = require("number-generator/lib/murmurhash3_x86_128");
+const murmurhash3_x64_128 = require("number-generator/lib/murmurhash3_x64_128");
 ```
 
-Both `murmurhash2_x86_32` and `murmurhash3_x86_32` will generate a unsigned 32 bit number. The `murmurhash3_x86_128` function will generate a 128 bit string. To showcase the difference:
+Both `murmurhash2_x86_32` and `murmurhash3_x86_32` will generate a unsigned 32 bit number. The `murmurhash3_x86_128` and `murmurhash3_x64_128` functions will generate a 128 bit string. To showcase the difference:
 
 ```javascript
 murmurhash2_x86_32("Hello"); // 1826530862
 murmurhash3_x86_32("Hello"); // 316307400
 murmurhash3_x86_128("Hello"); // "2360ae465e6336c6ad45b3f4ad45b3f4"
+murmurhash3_x64_128("Hello"); // "35b974ff55d4c41ca000eacf29125544"
 ```
 
 #### Basic hash generation

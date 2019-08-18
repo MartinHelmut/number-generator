@@ -24,5 +24,15 @@ describe("number-generator", () => {
       const { murmurhash3_x86_32 } = require("../index");
       assert.isFunction(murmurhash3_x86_32);
     });
+
+    it("murmurhash3_x86_128", () => {
+      const { murmurhash3_x86_128 } = require("../index");
+      assert.isFunction(murmurhash3_x86_128);
+    });
+
+    it("murmurhash3_x64_128", () => {
+      const { murmurhash3_x64_128 } = require("../index");
+      assert.isFunction(murmurhash3_x64_128);
+    });
   });
 });

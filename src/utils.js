@@ -39,7 +39,7 @@ export function uInt32Getter(bytes, position) {
  * @param {number} hash Base number hash
  * @returns {number} Mixed number hash
  */
-export function uIntx86mix(hash) {
+export function uInt32mix(hash) {
   hash ^= hash >>> 16;
   hash = uMul32Getter(hash, 0x85ebca6b);
   hash ^= hash >>> 13;
@@ -59,6 +59,22 @@ export function uIntx86mix(hash) {
  */
 export function uInt32RotateLeft(x, y) {
   return (x << y) | (x >>> (32 - y));
+}
+
+/**
+ * Create concated and filled hash string
+ *
+ * @private
+ * @param {[number, number, number, number]} hash Array containing hash parts as int
+ * @returns {string} Concatenated and filled hash
+ */
+export function createConcatenatedHash([h1, h2, h3, h4]) {
+  return (
+    ("00000000" + (h1 >>> 0).toString(16)).slice(-8) +
+    ("00000000" + (h2 >>> 0).toString(16)).slice(-8) +
+    ("00000000" + (h3 >>> 0).toString(16)).slice(-8) +
+    ("00000000" + (h4 >>> 0).toString(16)).slice(-8)
+  );
 }
 
 /**

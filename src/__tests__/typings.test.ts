@@ -38,18 +38,28 @@ describe("TypeScript", () => {
       assert.isString(value);
     });
 
+    it("murmurhash3_x64_128.d.ts", () => {
+      const murmurhash3_x64_128 = require("../../lib/murmurhash3_x64_128");
+      const value = murmurhash3_x64_128("Hash");
+
+      assert.isFunction(murmurhash3_x64_128);
+      assert.isString(value);
+    });
+
     it("index.d.ts", () => {
       const {
         aleaRNGFactory,
         murmurhash2_x86_32,
         murmurhash3_x86_32,
-        murmurhash3_x86_128
+        murmurhash3_x86_128,
+        murmurhash3_x64_128
       } = require("../../lib/index");
 
       assert.isFunction(aleaRNGFactory);
       assert.isFunction(murmurhash2_x86_32);
       assert.isFunction(murmurhash3_x86_32);
       assert.isFunction(murmurhash3_x86_128);
+      assert.isFunction(murmurhash3_x64_128);
     });
   });
 });

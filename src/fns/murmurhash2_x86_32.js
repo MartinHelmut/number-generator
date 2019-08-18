@@ -8,7 +8,7 @@ import {
 } from "../utils";
 
 /**
- * Generate a non-cryptic 32 bit number hash with murmur2 algorithm.
+ * Generate a non-cryptic 32 bit number hash for x86 with murmur2 algorithm.
  *
  * From {@link https://gist.github.com/raycmorgan/588423}
  * Ray Morgan, 2011
@@ -37,7 +37,7 @@ export default (() => {
     hash[position++] + (hash[position] << 8);
 
   /**
-   * Generate a non-cryptic 32 bit number hash with murmur2 algorithm
+   * Generate a non-cryptic 32 bit number hash for x86 with murmur2 algorithm.
    *
    * @throws {TypeError} Throws an exception if hash is not a string
    * @throws {TypeError} Throws an exception if seed is a float
