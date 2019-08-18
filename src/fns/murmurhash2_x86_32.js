@@ -8,15 +8,16 @@ import {
 } from "../utils";
 
 /**
- * Generate a non-cryptic number hash with murmur2 algorithm
+ * Generate a non-cryptic 32 bit number hash with murmur2 algorithm.
  *
  * From {@link https://gist.github.com/raycmorgan/588423}
  * Ray Morgan, 2011
- * Refactored and extended from Martin Helmut Fieber <info@martin-fieber.de>
+ * Refactored and extended including fixes for edge cases from Martin Helmut Fieber <info@martin-fieber.de>
  *
  * @export number-generator/lib/murmurhash2_x86_32
+ * @throws {TypeError} Throws an exception if hash is not a string
  * @throws {TypeError} Throws an exception if seed is a float
- * @param {string} hash The base string hash to generate number
+ * @param {string} str The base string hash to generate number
  * @param {number} [seed=0] An optional seed value
  * @return {number} Generated number
  */
@@ -36,7 +37,7 @@ export default (() => {
     hash[position++] + (hash[position] << 8);
 
   /**
-   * Generate a non-cryptic number hash with murmur2 algorithm
+   * Generate a non-cryptic 32 bit number hash with murmur2 algorithm
    *
    * @throws {TypeError} Throws an exception if hash is not a string
    * @throws {TypeError} Throws an exception if seed is a float

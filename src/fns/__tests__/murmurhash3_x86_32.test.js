@@ -151,6 +151,16 @@ describe("murmurhash3_x86_32()", () => {
     assert.strictEqual(hash3, 2093830963);
   });
 
+  it("tests in the readme used examples", () => {
+    const hash1 = murmurhash3_x86_32("Hello");
+    const hash2 = murmurhash3_x86_32("My string.");
+    const hash3 = murmurhash3_x86_32("My string.", 0);
+
+    assert.strictEqual(hash1, 316307400);
+    assert.strictEqual(hash2, 837854434);
+    assert.strictEqual(hash3, hash2);
+  });
+
   describe("C++ reference", () => {
     it("regular text", () => {
       const testString = "My hovercraft is full of eels.";
