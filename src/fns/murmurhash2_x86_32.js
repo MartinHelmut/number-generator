@@ -28,7 +28,7 @@ export default (() => {
    * Return an unsigned int16 from hash by position
    *
    * @private
-   * @param {number[]} hash String hash value
+   * @param {Uint8Array} hash String hash value
    * @param {number} position String start position
    * @return {number} Unsigned int16
    */
