@@ -60,7 +60,7 @@
     "cpy": "7.3.0",
     "cross-env": "5.2.0",
     "cz-conventional-changelog": "3.0.2",
-    "eslint": "6.2.2",
+    "eslint": "6.3.0",
     "eslint-config-prettier": "6.1.0",
     "eslint-plugin-compat": "3.2.0",
     "jsdoc": "3.6.3",
