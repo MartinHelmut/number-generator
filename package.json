@@ -55,7 +55,7 @@
     "@babel/register": "7.6.2",
     "@types/chai": "4.2.3",
     "@types/mocha": "5.2.7",
-    "@types/node": "12.7.2",
+    "@types/node": "12.7.4",
     "agadoo": "1.1.0",
     "benchmark": "2.1.4",
     "chai": "4.2.0",
