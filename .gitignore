@@ -1,52 +1,10 @@
 *.DS_Store
-.AppleDouble
-.LSOverride
-._*
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
 .idea/
-*.iws
-/out/
-.idea_modules/
-atlassian-ide-plugin.xml
-com_crashlytics_export_strings.xml
-crashlytics.properties
-crashlytics-build.properties
-fabric.properties
-*~
-.fuse_hidden*
-.directory
-.Trash-*
-.nfs*
-*.tmlanguage.cache
-*.tmPreferences.cache
-*.stTheme.cache
-*.sublime-workspace
-sftp-config.json
-Package Control.last-run
-Package Control.ca-list
-Package Control.ca-bundle
-Package Control.system-ca-bundle
-Package Control.cache/
-Package Control.ca-certs/
-bh_unicode_properties.cache
-GitHub.sublime-settings
 node_modules/
 coverage/
 lib/
 .nyc_output/
 docs/
-sauce_connect.log
-npm-debug.log
-yarn.lock
 *.log
+src/reference/cpp/main
+src/reference/cpp/cmake-build-debug/

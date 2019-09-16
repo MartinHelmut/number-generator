@@ -143,7 +143,7 @@ describe("murmurhash3_x64_128()", () => {
     assert.strictEqual(hash3, "de698e585d54db8d9313e4e3b8bebcd9");
   });
 
-  it("tests examples that are used inside documentation (readme)", () => {
+  it("test examples that are used inside documentation (readme)", () => {
     const hash1 = murmurhash3_x64_128("Hello");
     const hash2 = murmurhash3_x64_128("My string.");
     const hash3 = murmurhash3_x64_128("My string.", 0);
@@ -154,39 +154,15 @@ describe("murmurhash3_x64_128()", () => {
   });
 
   describe("C++ reference", () => {
-    it("regular text 1", () => {
-      const testString = "I will not buy this record, it is scratched.";
-      const hash = murmurhash3_x64_128(testString);
+    const reference = require("../../reference/cpp/results.json")[
+      "murmurHash3_x64_128"
+    ];
 
-      assert.strictEqual(hash, "c382657f9a06c49d4a71fdc6d9b0d48f");
-    });
-
-    it("regular text 2", () => {
-      const testString = "I will not buy this tobaconnists, it is scratched.";
-      const hash = murmurhash3_x64_128(testString);
-
-      assert.strictEqual(hash, "3806612222fe88e1af1a4b5a59115634");
-    });
-
-    it("regular text 3", () => {
-      const testString = "My hovercraft is full of eels.";
-      const hash = murmurhash3_x64_128(testString);
-
-      assert.strictEqual(hash, "03e5e14d358c16d1e5ae86df7ed5cfcb");
-    });
-
-    it("using emojis", () => {
-      const testString = "My 🚀 is full of 🦎.";
-      const hash = murmurhash3_x64_128(testString);
-
-      assert.strictEqual(hash, "d047391e58c6c9dfccde62c92e049f50");
-    });
-
-    it("chinese characters", () => {
-      const testString = "吉 星 高 照";
-      const hash = murmurhash3_x64_128(testString);
-
-      assert.strictEqual(hash, "bde3d304c55081c5749baf93de78c3bd");
+    Object.entries(reference).forEach(([name, test]) => {
+      it(name, () => {
+        const hash = murmurhash3_x64_128(test.input);
+        assert.strictEqual(hash, test.output);
+      });
     });
   });
 });
