@@ -20,9 +20,19 @@ Clone the repo and ...
 
 For this repository the package manager pnpm is used as a drop-in replacement for npm. Here you can find a guide on installing pnpm on your machine: [getting started with pnpm](pnurl).
 
+## Generate reference data
+
+To generate reference values in C++ please ensure that g++ is setup correctly (check by running `g++ --version` in your terminal).
+
+The following command will generate reference values into a JSON file in `src/reference/cpp/results.json` that will be picked-up by the tests to match results against the C++ implementation.
+
+```shell script
+pnpm run build:reference:code
+```
+
 ## Run tests
 
-```bash
+```shell script
 # Run tests
 pnpm test
 
@@ -44,7 +54,7 @@ To format the code use `pnpm run format`. This is command runs automatically bef
 
 If you want to build the application run
 
-```bash
+```shell script
 pnpm run build
 ```
 
@@ -54,13 +64,13 @@ for a minified version.
 
 To create an API documentation run:
 
-```bash
+```shell script
 pnpm run build:docs
 ```
 
 You can also serve the documentation locally or via network with:
 
-```bash
+```shell script
 pnpm run start:docs
 ```
 

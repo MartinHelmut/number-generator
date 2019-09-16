@@ -1,0 +1,78 @@
+{
+  "murmurHash2_x86_32": {
+    "regular text 1": {
+      "input": "I will not buy this record, it is scratched.",
+      "output": 2899570834
+    },
+    "regular text 2": {
+      "input": "I will not buy this tobaconnists, it is scratched.",
+      "output": 3258918247
+    },
+    "regular text 3": {
+      "input": "My hovercraft is full of eels.",
+      "output": 234258844
+    }
+  },
+  "murmurHash3_x64_128": {
+    "chinese characters": {
+      "input": "吉 星 高 照",
+      "output": "bde3d304c55081c5749baf93de78c3bd"
+    },
+    "regular text 1": {
+      "input": "I will not buy this record, it is scratched.",
+      "output": "c382657f9a06c49d4a71fdc6d9b0d48f"
+    },
+    "regular text 2": {
+      "input": "I will not buy this tobaconnists, it is scratched.",
+      "output": "3806612222fe88e1af1a4b5a59115634"
+    },
+    "regular text 3": {
+      "input": "My hovercraft is full of eels.",
+      "output": "03e5e14d358c16d1e5ae86df7ed5cfcb"
+    },
+    "using emojis": {
+      "input": "My 🚀 is full of 🦎.",
+      "output": "d047391e58c6c9dfccde62c92e049f50"
+    }
+  },
+  "murmurHash3_x86_128": {
+    "chinese characters": {
+      "input": "吉 星 高 照",
+      "output": "bb39ba50e4b2457c738e6d76b66d9304"
+    },
+    "regular text 1": {
+      "input": "I will not buy this record, it is scratched.",
+      "output": "a0a9683b25ac5e40d9af2895890dddf5"
+    },
+    "regular text 2": {
+      "input": "I will not buy this tobaconnists, it is scratched.",
+      "output": "0b8149d2f251cfb86756c95a17ff3909"
+    },
+    "regular text 3": {
+      "input": "My hovercraft is full of eels.",
+      "output": "e3a186aee169ba6c6a8bd9343c68fa9c"
+    },
+    "using emojis": {
+      "input": "My 🚀 is full of 🦎.",
+      "output": "e616d85ffee7f678dab461995b5bb90f"
+    }
+  },
+  "murmurHash3_x86_32": {
+    "chinese characters": {
+      "input": "吉 星 高 照",
+      "output": 3435142074
+    },
+    "regular text 1": {
+      "input": "I will not buy this record, it is scratched.",
+      "output": 2832214938
+    },
+    "regular text 2": {
+      "input": "My hovercraft is full of eels.",
+      "output": 2953494853
+    },
+    "using emojis": {
+      "input": "My 🚀 is full of 🦎.",
+      "output": 1818098979
+    }
+  }
+}

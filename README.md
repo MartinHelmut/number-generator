@@ -25,7 +25,6 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
   - [Murmur hash](#murmur-hash)
     - [Basic hash generation](#basic-hash-generation)
     - [Hash based on different seeds](#hash-based-on-different-seeds)
-    - [Compatibility to v1](#compatibility-to-v1)
   - [TypeScript](#typescript)
   - [Support](#support)
   - [Benchmarks](#benchmarks)
@@ -39,11 +38,11 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
 ## Update to version 4
 
 - Change `murmurHash` to `murmurhash2_x86_32` (same function since v2, alias now removed).
-- Non ASCII characters (e.g. chinese or emoji) are now handled properly. This can produce different results if these characters where used before inside an input hash.
+- Non ASCII characters (e.g. chinese or emoji) are now handled properly. This can produce different results if these characters where used before inside an input hash for all murmur hash functions.
 
 ## Usage
 
-This library (**7.49 KB, gzipped size: 2.96 KB**) contains the following methods: one PRNG (pseudo random number generator) called _Alea_ and four number hash generators, _MurmurHash2_ and _MurmurHash3_ for 32 and 128 bit (x86 and x64) hash strings. The _Alea_ implementation is originally from Johannes Baagøe. Johannes Baagøe site is offline but here is a [Web Archive Link][wal] or alternatively a [direct mirror of Johannes Baagøe's wiki from Nick Quinlan][brnm].
+This library (**7.47 KB, gzipped size: 2.94 KB**) contains the following methods: one PRNG (pseudo random number generator) called _Alea_ and four number hash generators, _MurmurHash2_ and _MurmurHash3_ for 32 and 128 bit (x86 and x64) hash strings.
 
 More about the hash function _MurmurHash_ can be found [here on wikipedia][mur].
 
@@ -258,7 +257,7 @@ random();
 
 ### Murmur hash
 
-To generate a number hash there are four functions, `murmurhash2_x86_32`, `murmurhash3_x86_32`, `murmurhash3_x86_128` and `murmurhash3_x64_128`. The `murmurhash` functions implement the [MurmurHash algorithm for 32 and 128 bit][mur] in JavaScript (murmurhash2 and 3) for x86 and x64. They take a string and generate a non-cryptographic hash number as unsigned integer with 32 bit or 128 bit string hash.
+To generate a hash there are four functions, `murmurhash2_x86_32`, `murmurhash3_x86_32`, `murmurhash3_x86_128` and `murmurhash3_x64_128`. The `murmurhash` functions implement the [MurmurHash algorithm for 32 and 128 bit][mur] in JavaScript (murmurhash2 and 3) for x86 and x64. They take a string and generate a non-cryptographic hash number as unsigned integer with 32 bit or a string hash with 128 bit.
 
 You can import the functions directly:
 
@@ -307,14 +306,6 @@ A float number as a seed throws a `TypeError`:
 
 ```javascript
 const hash = murmurhash2_x86_32("My string.", 0.7); // TypeError!
-```
-
-#### Compatibility to v1
-
-To ensure compatibility to version 1 of this library, the `murmurhash2_x86_32` is also exposed as `murmurHash` function and can be used by importing it from the library:
-
-```javascript
-const { murmurHash } = require("number-generator");
 ```
 
 ### TypeScript
@@ -387,6 +378,13 @@ If you want to contribute see the [CONTRIBUTING.md][cont]
 "Why pseudo random number generators and number hash functions" you may ask? Read more in [this fantastic blog post][unit] about "A primer on repeatable random numbers" from Rune Skovbo Johansen.
 
 Thanks to Johannes Baagøe for the Alea port and Ray Morgan for the MurmurHash2 algorithm implementation in JavaScript. Also thanks to Karan Lyons for the [MurmurHash3 implementation][mur3].
+
+Resources used to tests against implementations in other languages are:
+
+- JSON for modern C++ by Niels Lohmann: https://github.com/nlohmann/json
+- MurmurHash2 and 3 in C++ by Austin Appleby: https://github.com/aappleby/smhasher
+
+Big thanks as well to Alex Ciminian for raising the issue with non ASCII characters: https://cimi.io/murmurhash3js-revisited/
 
 [npmurl]: https://www.npmjs.com/package/number-generator
 [npmimg]: https://img.shields.io/npm/v/number-generator.svg
