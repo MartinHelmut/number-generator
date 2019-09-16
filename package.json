@@ -25,7 +25,8 @@
     "prerelease": "pnpm run ci",
     "release": "standard-version -a",
     "prepare": "pnpm run ci",
-    "preinstall": "node ./scripts/ensure-package-manager.js"
+    "preinstall": "node ./scripts/ensure-package-manager.js",
+    "build:reference:code": "./scripts/generate-reference.sh"
   },
   "repository": {
     "type": "git",
