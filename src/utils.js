@@ -69,11 +69,12 @@ export function uInt32RotateLeft(x, y) {
  * @returns {string} Concatenated and filled hash
  */
 export function createConcatenatedHash([h1, h2, h3, h4]) {
+  const fill = "00000000";
   return (
-    ("00000000" + (h1 >>> 0).toString(16)).slice(-8) +
-    ("00000000" + (h2 >>> 0).toString(16)).slice(-8) +
-    ("00000000" + (h3 >>> 0).toString(16)).slice(-8) +
-    ("00000000" + (h4 >>> 0).toString(16)).slice(-8)
+    (fill + (h1 >>> 0).toString(16)).slice(-8) +
+    (fill + (h2 >>> 0).toString(16)).slice(-8) +
+    (fill + (h3 >>> 0).toString(16)).slice(-8) +
+    (fill + (h4 >>> 0).toString(16)).slice(-8)
   );
 }
 
@@ -131,39 +132,40 @@ function encode(str) {
   // takes up the equivalent space of 3 UTF-8 characters to encode it properly. However, Array's
   // have an auto expanding length and 1.5x should be just the right balance for most uses.
   const resultArray = new Uint8Array(length * 3);
+  let i = 0;
 
-  for (let point = 0, nextCode = 0, i = 0; i !== length; ) {
-    point = str.charCodeAt(i);
+  while (i !== length) {
+    let point = str.charCodeAt(i);
     i += 1;
 
     if (point >= 0xd800 && point <= 0xdbff) {
       if (i === length) {
-        resultArray[(resPos += 1)] = 0xef /*0b11101111*/;
-        resultArray[(resPos += 1)] = 0xbf /*0b10111111*/;
-        resultArray[(resPos += 1)] = 0xbd /*0b10111101*/;
+        resultArray[(resPos += 1)] = 0xef; // 0b11101111
+        resultArray[(resPos += 1)] = 0xbf; // 0b10111111
+        resultArray[(resPos += 1)] = 0xbd; // 0b10111101
         break;
       }
       // https://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae
-      nextCode = str.charCodeAt(i);
+      const nextCode = str.charCodeAt(i);
 
       if (nextCode >= 0xdc00 && nextCode <= 0xdfff) {
         point = (point - 0xd800) * 0x400 + nextCode - 0xdc00 + 0x10000;
         i += 1;
 
         if (point > 0xffff) {
+          // point > 65535
           resultArray[(resPos += 1)] = (0x1e /*0b11110*/ << 3) | (point >>> 18);
           resultArray[(resPos += 1)] =
-            (0x2 /*0b10*/ << 6) | ((point >>> 12) & 0x3f) /*0b00111111*/;
+            (0x2 /*0b10*/ << 6) | ((point >>> 12) & 0x3f); // 0b00111111
           resultArray[(resPos += 1)] =
-            (0x2 /*0b10*/ << 6) | ((point >>> 6) & 0x3f) /*0b00111111*/;
-          resultArray[(resPos += 1)] =
-            (0x2 /*0b10*/ << 6) | (point & 0x3f) /*0b00111111*/;
+            (0x2 /*0b10*/ << 6) | ((point >>> 6) & 0x3f); // 0b00111111
+          resultArray[(resPos += 1)] = (0x2 /*0b10*/ << 6) | (point & 0x3f); // 0b00111111
           continue;
         }
       } else {
-        resultArray[(resPos += 1)] = 0xef /*0b11101111*/;
-        resultArray[(resPos += 1)] = 0xbf /*0b10111111*/;
-        resultArray[(resPos += 1)] = 0xbd /*0b10111101*/;
+        resultArray[(resPos += 1)] = 0xef; // 0b11101111
+        resultArray[(resPos += 1)] = 0xbf; // 0b10111111
+        resultArray[(resPos += 1)] = 0xbd; // 0b10111101
         continue;
       }
     }
@@ -172,14 +174,11 @@ function encode(str) {
       resultArray[(resPos += 1)] = (0x0 /*0b0*/ << 7) | point;
     } else if (point <= 0x07ff) {
       resultArray[(resPos += 1)] = (0x6 /*0b110*/ << 5) | (point >>> 6);
-      resultArray[(resPos += 1)] =
-        (0x2 /*0b10*/ << 6) | (point & 0x3f) /*0b00111111*/;
+      resultArray[(resPos += 1)] = (0x2 /*0b10*/ << 6) | (point & 0x3f); // 0b00111111
     } else {
       resultArray[(resPos += 1)] = (0xe /*0b1110*/ << 4) | (point >>> 12);
-      resultArray[(resPos += 1)] =
-        (0x2 /*0b10*/ << 6) | ((point >>> 6) & 0x3f) /*0b00111111*/;
-      resultArray[(resPos += 1)] =
-        (0x2 /*0b10*/ << 6) | (point & 0x3f) /*0b00111111*/;
+      resultArray[(resPos += 1)] = (0x2 /*0b10*/ << 6) | ((point >>> 6) & 0x3f); // 0b00111111
+      resultArray[(resPos += 1)] = (0x2 /*0b10*/ << 6) | (point & 0x3f); // 0b00111111
     }
   }
 
