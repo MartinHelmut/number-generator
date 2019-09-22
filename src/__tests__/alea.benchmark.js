@@ -1,6 +1,6 @@
-import { Suite } from "benchmark";
+const { Suite } = require("benchmark");
 
-import aleaRNGFactory from "../fns/aleaRNGFactory";
+const aleaRNGFactory = require("../../lib/aleaRNGFactory");
 
 const suite = new Suite("murmurhash");
 
