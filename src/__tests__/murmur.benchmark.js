@@ -1,9 +1,9 @@
-import { Suite } from "benchmark";
+const { Suite } = require("benchmark");
 
-import murmurhash2_x86_32 from "../../lib/murmurhash2_x86_32";
-import murmurhash3_x86_32 from "../../lib/murmurhash3_x86_32";
-import murmurhash3_x86_128 from "../../lib/murmurhash3_x86_128";
-import murmurhash3_x64_128 from "../../lib/murmurhash3_x64_128";
+const murmurhash2_x86_32 = require("../../lib/murmurhash2_x86_32");
+const murmurhash3_x86_32 = require("../../lib/murmurhash3_x86_32");
+const murmurhash3_x86_128 = require("../../lib/murmurhash3_x86_128");
+const murmurhash3_x64_128 = require("../../lib/murmurhash3_x64_128");
 
 const suite = new Suite("murmur hash");
 

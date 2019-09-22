@@ -42,7 +42,7 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
 
 ## Usage
 
-This library (**7.47 KB, gzipped size: 2.94 KB**) contains the following methods: one PRNG (pseudo random number generator) called _Alea_ and four number hash generators, _MurmurHash2_ and _MurmurHash3_ for 32 and 128 bit (x86 and x64) hash strings.
+This library (**7.45 KB, gzipped size: 2.94 KB**) contains the following methods: one PRNG (pseudo random number generator) called _Alea_ and four number hash generators, _MurmurHash2_ and _MurmurHash3_ for 32 and 128 bit (x86 and x64) hash strings.
 
 More about the hash function _MurmurHash_ can be found [here on wikipedia][mur].
 
@@ -343,7 +343,7 @@ Exceptions for Node are versions that reached the End-of-Life as defined under h
 
 ### Benchmarks
 
-**Disclaimer:** The following benchmarks were created on a MacBook Pro, Processor 2,7 GHz Intel Core i5 with 8 GB 1867 MHz DDR3 memory.
+**Disclaimer:** The following benchmarks were created on a MacBook Pro, Processor 2,7 GHz Intel Core i5 with 8 GB 1867 MHz DDR3 memory and run under Node v10.16.3.
 
 #### aleaRNGFactory
 
@@ -351,8 +351,8 @@ Comparison between `uInt32` and `uFloat32` methods:
 
 ```
 // v4.0.0
-aleaRNGFactory#uInt32()   x 8,266,683 ops/sec
-aleaRNGFactory#uFloat32() x 7,845,369 ops/sec
+aleaRNGFactory#uInt32()   x 8,037,159 ops/sec
+aleaRNGFactory#uFloat32() x 7,435,745 ops/sec
 ```
 
 #### murmurhash
@@ -361,10 +361,10 @@ Comparison between `murmurhash2_x86_32`, `murmurhash3_x86_32`, `murmurhash3_x86_
 
 ```
 // v4.0.0
-murmurhash2_x86_32  x 560,251 ops/sec
-murmurhash3_x86_32  x 565,309 ops/sec
-murmurhash3_x86_128 x 243,446 ops/sec
-murmurhash3_x64_128 x 153,489 ops/sec
+murmurhash2_x86_32  x 506,674 ops/sec
+murmurhash3_x86_32  x 510,627 ops/sec
+murmurhash3_x86_128 x 245,012 ops/sec
+murmurhash3_x64_128 x 135,522 ops/sec
 ```
 
 To run them on your machine execute `pnpm run test:benchmark`.
