@@ -1,7 +1,7 @@
 {
   "name": "number-generator",
   "version": "3.0.1",
-  "description": "Generate pseudo random numbers and hashs.",
+  "description": "Generate repeatable pseudo random numbers and non-cryptographic hash numbers for usage in Node.js and browser environments.",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
