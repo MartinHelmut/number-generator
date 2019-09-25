@@ -46,6 +46,14 @@ pnpm run lint
 pnpm run test:treeshaking
 ```
 
+Tests can also be executed in the browser. To generate the browser tests run:
+
+```shell script
+pnpm run build:tests
+```
+
+This will generate the necessary tests files compatible for the browser. After that you can open the `src/__tests__/browser.html` in your browser to view the tests.
+
 ## Format the code
 
 To format the code use `pnpm run format`. This is command runs automatically before commit.
