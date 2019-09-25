@@ -8,3 +8,4 @@ docs/
 *.log
 src/reference/cpp/main
 src/reference/cpp/cmake-build-debug/
+compiled_tests/
