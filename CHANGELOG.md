@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.0.1](https://github.com/MartinHelmut/number-generator/compare/v4.0.0...v4.0.1) (2019-09-26)
+
+
+### Bug Fixes
+
+* small typo in readme file ([3ab6068](https://github.com/MartinHelmut/number-generator/commit/3ab6068))
+
 ## [4.0.0](https://github.com/MartinHelmut/number-generator/compare/v3.0.1...v4.0.0) (2019-09-26)
 
 
