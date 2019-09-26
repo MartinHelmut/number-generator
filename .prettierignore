@@ -3,4 +3,5 @@ docs/
 .nyc_output/
 lib/
 node_modules/
+compiled_tests/
 CHANGELOG.md
