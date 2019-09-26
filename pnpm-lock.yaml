@@ -11,6 +11,7 @@ devDependencies:
   chalk: 2.4.2
   commitizen: 4.0.3
   conventional-changelog: 3.1.10
+  conventional-changelog-conventionalcommits: 4.1.0
   coveralls: 3.0.6
   cpy: 7.3.0
   cross-env: 6.0.0
@@ -6889,6 +6890,7 @@ specifiers:
   chalk: 2.4.2
   commitizen: 4.0.3
   conventional-changelog: 3.1.10
+  conventional-changelog-conventionalcommits: 4.1.0
   coveralls: 3.0.6
   cpy: 7.3.0
   cross-env: 6.0.0
