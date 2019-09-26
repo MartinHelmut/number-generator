@@ -31,7 +31,7 @@ devDependencies:
   rollup-plugin-node-resolve: 5.2.0_rollup@1.21.4
   rollup-plugin-replace: 2.2.0
   rollup-plugin-terser: 5.1.2_rollup@1.21.4
-  serve: 11.1.0
+  serve: 11.2.0
   standard-version: 7.0.0
   ts-node: 8.4.1_typescript@3.6.3
   typescript: 3.6.3
@@ -5807,7 +5807,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-0Vb/54WJ6k5v8sSWN09S0ora+Hnr+cX40r9F170nT+mSkaxltoE/7R3OrIdBSUv1OoiobH1QoWQbCnAO+e8J1A==
-  /serve-handler/6.1.0:
+  /serve-handler/6.1.2:
     dependencies:
       bytes: 3.0.0
       content-disposition: 0.5.2
@@ -5819,8 +5819,8 @@ packages:
       range-parser: 1.2.0
     dev: true
     resolution:
-      integrity: sha512-63N075Tn3PsFYcu0NVV7tb367UbiW3gnC+/50ohL4oqOhAG6bmbaWqiRcXQgbzqc0ALBjSAzg7VTfa0Qw4E3hA==
-  /serve/11.1.0:
+      integrity: sha512-RFh49wX7zJmmOVDcIjiDSJnMH+ItQEvyuYLYuDBVoA/xmQSCuj+uRmk1cmBB5QQlI3qOiWKp6p4DUGY+Z5AB2A==
+  /serve/11.2.0:
     dependencies:
       '@zeit/schemas': 2.6.0
       ajv: 6.5.3
@@ -5829,12 +5829,12 @@ packages:
       chalk: 2.4.1
       clipboardy: 1.2.3
       compression: 1.7.3
-      serve-handler: 6.1.0
+      serve-handler: 6.1.2
       update-check: 1.5.2
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-+4wpDtOSS+4ZLyDWMxThutA3iOTawX2+yDovOI8cjOUOmemyvNlHyFAsezBlSgbZKTYChI3tzA1Mh0z6XZ62qA==
+      integrity: sha512-THZcLzDGk3vJqjhAbLkLag43tiE3V0B7wVe98Xtl+1KyAsr+4iShg+9hke4pLZmrCJu0pUg0TrbhJmdqn/MKoA==
   /set-blocking/2.0.0:
     dev: true
     resolution:
@@ -6870,7 +6870,7 @@ specifiers:
   rollup-plugin-node-resolve: 5.2.0
   rollup-plugin-replace: 2.2.0
   rollup-plugin-terser: 5.1.2
-  serve: 11.1.0
+  serve: 11.2.0
   standard-version: 7.0.0
   ts-node: 8.4.1
   typescript: 3.6.3
