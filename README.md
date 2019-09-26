@@ -89,7 +89,7 @@ const murmurhash3_x86_128 = require("number-generator/lib/murmurhash3_x86_128");
 const murmurhash3_x64_128 = require("number-generator/lib/murmurhash3_x64_128");
 ```
 
-Also because the library can safely be [tree shaked][trsh]. If tree shaking is used in e.g. Rollup or Webpack this will only put the used function with helpers in your bundle:
+Also the library can safely be [tree shaked][trsh]. If tree shaking is used in e.g. Rollup or Webpack this will only put the used function with helpers in your bundle:
 
 ```javascript
 import { aleaRNGFactory } from "number-generator";
