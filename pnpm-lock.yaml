@@ -10,6 +10,7 @@ devDependencies:
   chai: 4.2.0
   chalk: 2.4.2
   commitizen: 4.0.3
+  conventional-changelog: 3.1.10
   coveralls: 3.0.6
   cpy: 7.3.0
   cross-env: 6.0.0
@@ -1787,6 +1788,26 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-LMMX1JlxPIq/Ez5aYAYS5CpuwbOk6QFp8O4HLAcZxe3vxoCtABkhfjetk8IYdRB9CDQGwJFLR3Dr55Za6XKgUQ==
+  /conventional-changelog-core/4.0.0:
+    dependencies:
+      conventional-changelog-writer: 4.0.7
+      conventional-commits-parser: 3.0.3
+      dateformat: 3.0.3
+      get-pkg-repo: 1.4.0
+      git-raw-commits: 2.0.0
+      git-remote-origin-url: 2.0.0
+      git-semver-tags: 3.0.0
+      lodash: 4.17.15
+      normalize-package-data: 2.5.0
+      q: 1.5.1
+      read-pkg: 3.0.0
+      read-pkg-up: 3.0.0
+      through2: 3.0.1
+    dev: true
+    engines:
+      node: '>=6.9.0'
+    resolution:
+      integrity: sha512-+bZMeBUdjKxfyX2w6EST9U7zb85wxrGS3IV4H7SqPya44osNQbm3P+vyqfLs6s57FkoEamC93ioDEiguVLWmSQ==
   /conventional-changelog-ember/2.0.2:
     dependencies:
       q: 1.5.1
@@ -1852,6 +1873,24 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-p/wzs9eYaxhFbrmX/mCJNwJuvvHR+j4Fd0SQa2xyAhYed6KBiZ780LvoqUUvsayP4R1DtC27czalGUhKV2oabw==
+  /conventional-changelog/3.1.10:
+    dependencies:
+      conventional-changelog-angular: 5.0.3
+      conventional-changelog-atom: 2.0.1
+      conventional-changelog-codemirror: 2.0.1
+      conventional-changelog-conventionalcommits: 4.1.0
+      conventional-changelog-core: 4.0.0
+      conventional-changelog-ember: 2.0.2
+      conventional-changelog-eslint: 3.0.2
+      conventional-changelog-express: 2.0.1
+      conventional-changelog-jquery: 3.0.4
+      conventional-changelog-jshint: 2.0.1
+      conventional-changelog-preset-loader: 2.2.0
+    dev: true
+    engines:
+      node: '>=6.9.0'
+    resolution:
+      integrity: sha512-6RDj31hL39HUkpqvPjRlOxAwJRwur8O2qu9m6R0FBNDGwCJyy4SYH9NfyshozxYSeklrauKRf3oSbyoEZVzu9Q==
   /conventional-changelog/3.1.9:
     dependencies:
       conventional-changelog-angular: 5.0.3
@@ -6849,6 +6888,7 @@ specifiers:
   chai: 4.2.0
   chalk: 2.4.2
   commitizen: 4.0.3
+  conventional-changelog: 3.1.10
   coveralls: 3.0.6
   cpy: 7.3.0
   cross-env: 6.0.0
