@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/MartinHelmut/number-generator/compare/v3.0.1...v4.0.0) (2019-09-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* This fix will change the resulting numbers generated with murmurhash2_x86_32 or
+murmurhash3_x86_32 were non regular ASCII characters were used as hash before.
+
+### Bug Fixes
+
+* handle non regular ASCII characters for murmurhash implementation ([cb570f1](https://github.com/MartinHelmut/number-generator/commit/cb570f1))
+* ignore compiled tests output for prettier and lint ([9b477ab](https://github.com/MartinHelmut/number-generator/commit/9b477ab))
+
+
+### Features
+
+* add new function murmurhash3_x64_128 to generate 128 bit hash strings for x64 ([efccc27](https://github.com/MartinHelmut/number-generator/commit/efccc27))
+* add new function murmurhash3_x86_128 to generate 128 bit hash strings for x86 ([f799f89](https://github.com/MartinHelmut/number-generator/commit/f799f89))
+* use C++ reference code to test implementations ([f501d9a](https://github.com/MartinHelmut/number-generator/commit/f501d9a)), closes [#8](https://github.com/MartinHelmut/number-generator/issues/8)
+
 ### [3.0.1](https://github.com/MartinHelmut/number-generator/compare/v3.0.0...v3.0.1) (2019-06-21)
 
 
