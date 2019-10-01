@@ -16,8 +16,8 @@ devDependencies:
   cpy: 7.3.0
   cross-env: 6.0.2
   cz-conventional-changelog: 3.0.2
-  eslint: 6.5.0
-  eslint-config-prettier: 6.3.0_eslint@6.5.0
+  eslint: 6.5.1
+  eslint-config-prettier: 6.3.0_eslint@6.5.1
   jsdoc: 3.6.3
   mocha: 6.2.1
   nyc: 14.1.1
@@ -2472,9 +2472,9 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-UpzcLCXolUWcNu5HtVMHYdXJjArjsF9C0aNnquZYY4uW/Vu0miy5YoWvbV345HauVvcAUnpRuhMMcqTcGOY2+w==
-  /eslint-config-prettier/6.3.0_eslint@6.5.0:
+  /eslint-config-prettier/6.3.0_eslint@6.5.1:
     dependencies:
-      eslint: 6.5.0
+      eslint: 6.5.1
       get-stdin: 6.0.0
     dev: true
     hasBin: true
@@ -2505,7 +2505,7 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-8y9YjtM1JBJU/A9Kc+SbaOV4y29sSWckBwMHa+FGtVj5gN/sbnKDf6xJUl+8g7FAij9LVaP8C24DUiH/f/2Z9A==
-  /eslint/6.5.0:
+  /eslint/6.5.1:
     dependencies:
       '@babel/code-frame': 7.5.5
       ajv: 6.10.2
@@ -2549,7 +2549,7 @@ packages:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
     hasBin: true
     resolution:
-      integrity: sha512-IIbSW+vKOqMatPmS9ayyku4tvWxHY2iricSRtOz6+ZA5IPRlgXzEL0u/j6dr4eha0ugmhMwDTqxtmNu3kj9O4w==
+      integrity: sha512-32h99BoLYStT1iq1v2P9uwpyznQ4M2jRiFB6acitKz52Gqn+vPaMDUTB1bYi1WN4Nquj2w+t+bimYUG83DC55A==
   /espree/6.1.1:
     dependencies:
       acorn: 7.1.0
@@ -6697,7 +6697,7 @@ specifiers:
   cpy: 7.3.0
   cross-env: 6.0.2
   cz-conventional-changelog: 3.0.2
-  eslint: 6.5.0
+  eslint: 6.5.1
   eslint-config-prettier: 6.3.0
   jsdoc: 3.6.3
   mocha: 6.2.1
