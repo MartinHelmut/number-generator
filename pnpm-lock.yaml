@@ -4,7 +4,7 @@ devDependencies:
   '@babel/register': 7.6.2_@babel+core@7.6.2
   '@types/chai': 4.2.3
   '@types/mocha': 5.2.7
-  '@types/node': 12.7.8
+  '@types/node': 12.7.9
   agadoo: 1.1.0
   benchmark: 2.1.4
   chai: 4.2.0
@@ -784,7 +784,7 @@ packages:
       integrity: sha512-EV6PfAY/p83QynNd1llHxJiNxKmp43g8+7dZbyfHFbsGOdokrCnoelAVZ+WGgktXwLN/uXyfkcIAxwac015UYw==
   /@commitlint/resolve-extends/8.2.0:
     dependencies:
-      '@types/node': 12.7.8
+      '@types/node': 12.7.9
       import-fresh: 3.1.0
       lodash: 4.17.14
       resolve-from: 5.0.0
@@ -848,7 +848,7 @@ packages:
       integrity: sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==
   /@types/fs-extra/8.0.0:
     dependencies:
-      '@types/node': 12.7.8
+      '@types/node': 12.7.9
     dev: true
     resolution:
       integrity: sha512-bCtL5v9zdbQW86yexOlXWTEGvLNqWxMFyi7gQA7Gcthbezr2cPSOb8SkESVKA937QD5cIwOFLDFt0MQoXOEr9Q==
@@ -856,7 +856,7 @@ packages:
     dependencies:
       '@types/events': 3.0.0
       '@types/minimatch': 3.0.3
-      '@types/node': 12.7.8
+      '@types/node': 12.7.9
     dev: true
     resolution:
       integrity: sha512-1Bh06cbWJUHMC97acuD6UMG29nMt0Aqz1vF3guLfG+kHHJhy3AyohZFFxYk2f7Q1SQIrNwvncxAE0N/9s70F2w==
@@ -868,13 +868,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-NYrtPht0wGzhwe9+/idPaBB+TqkY9AhTvOLMkThm0IoEfLaiVQZwBwyJ5puCkO3AUCWrmcoePjp2mbFocKy4SQ==
-  /@types/node/12.7.8:
+  /@types/node/12.7.9:
     dev: true
     resolution:
-      integrity: sha512-FMdVn84tJJdV+xe+53sYiZS4R5yn1mAIxfj+DVoNiQjTYz1+OYmjwEZr1ev9nU0axXwda0QDbYl06QHanRVH3A==
+      integrity: sha512-P57oKTJ/vYivL2BCfxCC5tQjlS8qW31pbOL6qt99Yrjm95YdHgNZwjrTTjMBh+C2/y6PXIX4oz253+jUzxKKfQ==
   /@types/resolve/0.0.8:
     dependencies:
-      '@types/node': 12.7.8
+      '@types/node': 12.7.9
     dev: true
     resolution:
       integrity: sha512-auApPaJf3NPfe18hSoJkp8EbZzer2ISk7o8mCC3M9he/a04+gbMF97NkpD2S8riMGvm4BMRI59/SZQSaLTKpsQ==
@@ -1186,10 +1186,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-yba8oI0bwuoA/Ir7Txpf0eHGbk4=
-  /bluebird/3.5.5:
+  /bluebird/3.7.0:
     dev: true
     resolution:
-      integrity: sha512-5am6HnnfN+urzt4yfg7IgTbotDjIT/u8AJpEt0sIU9FtXfVeezXAPKswrG+xKUCOYAINpSdgZVDU6QFh+cuH3w==
+      integrity: sha512-aBQ1FxIa7kSWCcmKHlcHFlT2jt6J/l4FzC7KcPELkOJOsPOb/bccdhmIrKDfXhwFrmc7vDoDrrepFvGqjyXGJg==
   /bn.js/4.11.8:
     dev: true
     resolution:
@@ -1329,7 +1329,7 @@ packages:
   /browserslist/4.7.0:
     dependencies:
       caniuse-lite: 1.0.30000997
-      electron-to-chromium: 1.3.271
+      electron-to-chromium: 1.3.272
       node-releases: 1.1.33
     dev: true
     hasBin: true
@@ -2388,10 +2388,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-OoOpBOVDUyh4dMVkt1SThoSamMk=
-  /electron-to-chromium/1.3.271:
+  /electron-to-chromium/1.3.272:
     dev: true
     resolution:
-      integrity: sha512-c+bEenRFLQrK9tKM7xycKx1aOt6TiLoOujV2LXf1K9zm4kWSMY7BRDBezw2QcYCD0mMwtmbZdhyz9gamRq1J+Q==
+      integrity: sha512-TjsDKYOZGgaD8tUJtRiiBNlIrv2Ol6SxNMy4yeTX0goRmoBhV941m4EN8QjA3vfshs16F5KLDyUv2m7GdTqIgg==
   /elliptic/6.5.1:
     dependencies:
       bn.js: 4.11.8
@@ -3869,7 +3869,7 @@ packages:
   /jsdoc/3.6.3:
     dependencies:
       '@babel/parser': 7.6.2
-      bluebird: 3.5.5
+      bluebird: 3.7.0
       catharsis: 0.8.11
       escape-string-regexp: 2.0.0
       js2xmlparser: 4.0.0
@@ -5660,7 +5660,7 @@ packages:
   /rollup/1.22.0:
     dependencies:
       '@types/estree': 0.0.39
-      '@types/node': 12.7.8
+      '@types/node': 12.7.9
       acorn: 7.1.0
     dev: true
     hasBin: true
@@ -6685,7 +6685,7 @@ specifiers:
   '@babel/register': 7.6.2
   '@types/chai': 4.2.3
   '@types/mocha': 5.2.7
-  '@types/node': 12.7.8
+  '@types/node': 12.7.9
   agadoo: 1.1.0
   benchmark: 2.1.4
   chai: 4.2.0
