@@ -4,7 +4,7 @@ devDependencies:
   '@babel/register': 7.6.2_@babel+core@7.6.2
   '@types/chai': 4.2.3
   '@types/mocha': 5.2.7
-  '@types/node': 12.7.9
+  '@types/node': 12.7.10
   agadoo: 1.1.0
   benchmark: 2.1.4
   chai: 4.2.0
@@ -56,7 +56,7 @@ packages:
       '@babel/types': 7.6.1
       convert-source-map: 1.6.0
       debug: 4.1.1
-      json5: 2.1.0
+      json5: 2.1.1
       lodash: 4.17.15
       resolve: 1.12.0
       semver: 5.7.1
@@ -778,7 +778,7 @@ packages:
       integrity: sha512-EV6PfAY/p83QynNd1llHxJiNxKmp43g8+7dZbyfHFbsGOdokrCnoelAVZ+WGgktXwLN/uXyfkcIAxwac015UYw==
   /@commitlint/resolve-extends/8.2.0:
     dependencies:
-      '@types/node': 12.7.9
+      '@types/node': 12.7.10
       import-fresh: 3.1.0
       lodash: 4.17.14
       resolve-from: 5.0.0
@@ -842,7 +842,7 @@ packages:
       integrity: sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==
   /@types/fs-extra/8.0.0:
     dependencies:
-      '@types/node': 12.7.9
+      '@types/node': 12.7.10
     dev: true
     resolution:
       integrity: sha512-bCtL5v9zdbQW86yexOlXWTEGvLNqWxMFyi7gQA7Gcthbezr2cPSOb8SkESVKA937QD5cIwOFLDFt0MQoXOEr9Q==
@@ -850,7 +850,7 @@ packages:
     dependencies:
       '@types/events': 3.0.0
       '@types/minimatch': 3.0.3
-      '@types/node': 12.7.9
+      '@types/node': 12.7.10
     dev: true
     resolution:
       integrity: sha512-1Bh06cbWJUHMC97acuD6UMG29nMt0Aqz1vF3guLfG+kHHJhy3AyohZFFxYk2f7Q1SQIrNwvncxAE0N/9s70F2w==
@@ -862,13 +862,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-NYrtPht0wGzhwe9+/idPaBB+TqkY9AhTvOLMkThm0IoEfLaiVQZwBwyJ5puCkO3AUCWrmcoePjp2mbFocKy4SQ==
-  /@types/node/12.7.9:
+  /@types/node/12.7.10:
     dev: true
     resolution:
-      integrity: sha512-P57oKTJ/vYivL2BCfxCC5tQjlS8qW31pbOL6qt99Yrjm95YdHgNZwjrTTjMBh+C2/y6PXIX4oz253+jUzxKKfQ==
+      integrity: sha512-ObiPa43kJCkgjG+7usRCoxWhqKCmT5JWvi+8bg54KMkP2CvTliYLmKR9uHLaz+51JDOX/8MjWc6Xz18xHTs7XQ==
   /@types/resolve/0.0.8:
     dependencies:
-      '@types/node': 12.7.9
+      '@types/node': 12.7.10
     dev: true
     resolution:
       integrity: sha512-auApPaJf3NPfe18hSoJkp8EbZzer2ISk7o8mCC3M9he/a04+gbMF97NkpD2S8riMGvm4BMRI59/SZQSaLTKpsQ==
@@ -1324,7 +1324,7 @@ packages:
     dependencies:
       caniuse-lite: 1.0.30000998
       electron-to-chromium: 1.3.273
-      node-releases: 1.1.33
+      node-releases: 1.1.34
     dev: true
     hasBin: true
     resolution:
@@ -1752,7 +1752,7 @@ packages:
   /conventional-changelog-core/3.2.3:
     dependencies:
       conventional-changelog-writer: 4.0.7
-      conventional-commits-parser: 3.0.3
+      conventional-commits-parser: 3.0.5
       dateformat: 3.0.3
       get-pkg-repo: 1.4.0
       git-raw-commits: 2.0.0
@@ -1772,7 +1772,7 @@ packages:
   /conventional-changelog-core/4.0.0:
     dependencies:
       conventional-changelog-writer: 4.0.7
-      conventional-commits-parser: 3.0.3
+      conventional-commits-parser: 3.0.5
       dateformat: 3.0.3
       get-pkg-repo: 1.4.0
       git-raw-commits: 2.0.0
@@ -1797,14 +1797,14 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-qtZbA3XefO/n6DDmkYywDYi6wDKNNc98MMl2F9PKSaheJ25Trpi3336W8fDlBhq0X+EJRuseceAdKLEMmuX2tg==
-  /conventional-changelog-eslint/3.0.2:
+  /conventional-changelog-eslint/3.0.4:
     dependencies:
       q: 1.5.1
     dev: true
     engines:
       node: '>=6.9.0'
     resolution:
-      integrity: sha512-Yi7tOnxjZLXlCYBHArbIAm8vZ68QUSygFS7PgumPRiEk+9NPUeucy5Wg9AAyKoBprSV3o6P7Oghh4IZSLtKCvQ==
+      integrity: sha512-CPwTUENzhLGl3auunrJxiIEWncAGaby7gOFCdj2gslIuOFJ0KPJVOUhRz4Da/I53sdo/7UncUJkiLg94jEsjxg==
   /conventional-changelog-express/2.0.1:
     dependencies:
       q: 1.5.1
@@ -1841,7 +1841,7 @@ packages:
       compare-func: 1.3.2
       conventional-commits-filter: 2.0.2
       dateformat: 3.0.3
-      handlebars: 4.4.0
+      handlebars: 4.4.2
       json-stringify-safe: 5.0.1
       lodash: 4.17.15
       meow: 4.0.1
@@ -1862,7 +1862,7 @@ packages:
       conventional-changelog-conventionalcommits: 4.1.0
       conventional-changelog-core: 4.0.0
       conventional-changelog-ember: 2.0.2
-      conventional-changelog-eslint: 3.0.2
+      conventional-changelog-eslint: 3.0.4
       conventional-changelog-express: 2.0.1
       conventional-changelog-jquery: 3.0.4
       conventional-changelog-jshint: 2.0.1
@@ -1880,7 +1880,7 @@ packages:
       conventional-changelog-conventionalcommits: 4.1.0
       conventional-changelog-core: 3.2.3
       conventional-changelog-ember: 2.0.2
-      conventional-changelog-eslint: 3.0.2
+      conventional-changelog-eslint: 3.0.4
       conventional-changelog-express: 2.0.1
       conventional-changelog-jquery: 3.0.4
       conventional-changelog-jshint: 2.0.1
@@ -1903,7 +1903,7 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-WpGKsMeXfs21m1zIw4s9H5sys2+9JccTzpN6toXtxhpw2VNF2JUXwIakthKBy+LN4DvJm+TzWhxOMWOs1OFCFQ==
-  /conventional-commits-parser/3.0.3:
+  /conventional-commits-parser/3.0.5:
     dependencies:
       JSONStream: 1.3.5
       is-text-path: 2.0.0
@@ -1917,13 +1917,13 @@ packages:
       node: '>=6.9.0'
     hasBin: true
     resolution:
-      integrity: sha512-KaA/2EeUkO4bKjinNfGUyqPTX/6w9JGshuQRik4r/wJz7rUw3+D3fDG6sZSEqJvKILzKXFQuFkpPLclcsAuZcg==
+      integrity: sha512-qVz9+5JwdJzsbt7JbJ6P7NOXBGt8CyLFJYSjKAuPSgO+5UGfcsbk9EMR+lI8Unlvx6qwIc2YDJlrGIfay2ehNA==
   /conventional-recommended-bump/6.0.0:
     dependencies:
       concat-stream: 2.0.0
       conventional-changelog-preset-loader: 2.2.0
       conventional-commits-filter: 2.0.2
-      conventional-commits-parser: 3.0.3
+      conventional-commits-parser: 3.0.5
       git-raw-commits: 2.0.0
       git-semver-tags: 3.0.0
       meow: 4.0.1
@@ -3198,7 +3198,7 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-FNHi6mmoHvs1mxZAds4PpdCS6QG8B4C1krxJsMutgxl5t3+GlRTzzI3NEkifXx2pVsOvJdOGSmIgDhQ55FwdPA==
-  /handlebars/4.4.0:
+  /handlebars/4.4.2:
     dependencies:
       neo-async: 2.6.1
       optimist: 0.6.1
@@ -3210,7 +3210,7 @@ packages:
     optionalDependencies:
       uglify-js: 3.6.0
     resolution:
-      integrity: sha512-xkRtOt3/3DzTKMOt3xahj2M/EqNhY988T+imYSlMgs5fVhLN2fmKVVj0LtEGmb+3UUYV5Qmm1052Mm3dIQxOvw==
+      integrity: sha512-cIv17+GhL8pHHnRJzGu2wwcthL5sb8uDKBHvZ2Dtu5s1YNt0ljbzKbamnc+gr69y7bzwQiBdr5+hOpRd5pnOdg==
   /har-schema/2.0.0:
     dev: true
     engines:
@@ -3816,7 +3816,7 @@ packages:
       integrity: sha512-R47KzMtDJH6X4/YW9XTx+jrLnZnscW4VpNN+1PViSYTejLVPWv7oov+Duf8YQSPyVRUvueQqz1TcsC6mooZTXw==
   /istanbul-reports/2.2.6:
     dependencies:
-      handlebars: 4.4.0
+      handlebars: 4.4.2
     dev: true
     engines:
       node: '>=6'
@@ -3913,7 +3913,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
-  /json5/2.1.0:
+  /json5/2.1.1:
     dependencies:
       minimist: 1.2.0
     dev: true
@@ -3921,7 +3921,7 @@ packages:
       node: '>=6'
     hasBin: true
     resolution:
-      integrity: sha512-8Mh9h6xViijj36g7Dxi+Y4S6hNGV96vcJZr/SrlHh1LR/pEn/8j/+qIBbs44YKl69Lrfctp4QD+AdWLTMqEZAQ==
+      integrity: sha512-l+3HXD0GEI3huGq1njuqtzYK8OYJyXMkOLtQ53pjWh89tvWS2h6l+1zMkYWqlb57+SiQodKZyvMEFb2X+KrFhQ==
   /jsonfile/4.0.0:
     dev: true
     optionalDependencies:
@@ -4578,12 +4578,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-jZ2+KJZKSsVxLpExZCEHxx6Q7EA=
-  /node-releases/1.1.33:
+  /node-releases/1.1.34:
     dependencies:
-      semver: 5.7.1
+      semver: 6.3.0
     dev: true
     resolution:
-      integrity: sha512-I0V30bWQEoHb+10W8oedVoUrdjW5wIkYm0w7vvcrPO95pZY738m1k77GF5sO0vKg5eXYg9oGtrMAETbgZGm11A==
+      integrity: sha512-fNn12JTEfniTuCqo0r9jXgl44+KxRH/huV7zM/KAGOKxDKrHr6EbT7SSs4B+DNxyBE2mks28AD+Jw6PkfY5uwA==
   /normalize-package-data/2.5.0:
     dependencies:
       hosted-git-info: 2.8.4
@@ -5653,7 +5653,7 @@ packages:
   /rollup/1.22.0:
     dependencies:
       '@types/estree': 0.0.39
-      '@types/node': 12.7.9
+      '@types/node': 12.7.10
       acorn: 7.1.0
     dev: true
     hasBin: true
@@ -6678,7 +6678,7 @@ specifiers:
   '@babel/register': 7.6.2
   '@types/chai': 4.2.3
   '@types/mocha': 5.2.7
-  '@types/node': 12.7.9
+  '@types/node': 12.7.10
   agadoo: 1.1.0
   benchmark: 2.1.4
   chai: 4.2.0
