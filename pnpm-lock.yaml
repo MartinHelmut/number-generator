@@ -17,7 +17,7 @@ devDependencies:
   cross-env: 6.0.3
   cz-conventional-changelog: 3.0.2
   eslint: 6.5.1
-  eslint-config-prettier: 6.3.0_eslint@6.5.1
+  eslint-config-prettier: 6.4.0_eslint@6.5.1
   jsdoc: 3.6.3
   mocha: 6.2.1
   nyc: 14.1.1
@@ -798,36 +798,36 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-bPHp6Ji8b41szTOcaP63VlnbbO5Ny6dwAATtY6JTjh5N2OLrb5Qk/Th5cRkRQhkWCt+EJsYrNB0MiL+Gpn6e3g==
-  /@nodelib/fs.scandir/2.1.2:
+  /@nodelib/fs.scandir/2.1.3:
     dependencies:
-      '@nodelib/fs.stat': 2.0.2
+      '@nodelib/fs.stat': 2.0.3
       run-parallel: 1.1.9
     dev: true
     engines:
       node: '>= 8'
     resolution:
-      integrity: sha512-wrIBsjA5pl13f0RN4Zx4FNWmU71lv03meGKnqRUoCyan17s4V3WL92f3w3AIuWbNnpcrQyFBU5qMavJoB8d27w==
+      integrity: sha512-eGmwYQn3gxo4r7jdQnkrrN6bY478C3P+a/y72IJukF8LjB6ZHeB3c+Ehacj3sYeSmUXGlnA67/PmbM9CVwL7Dw==
   /@nodelib/fs.stat/1.1.3:
     dev: true
     engines:
       node: '>= 6'
     resolution:
       integrity: sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
-  /@nodelib/fs.stat/2.0.2:
+  /@nodelib/fs.stat/2.0.3:
     dev: true
     engines:
       node: '>= 8'
     resolution:
-      integrity: sha512-z8+wGWV2dgUhLqrtRYa03yDx4HWMvXKi1z8g3m2JyxAx8F7xk74asqPk5LAETjqDSGLFML/6CDl0+yFunSYicw==
-  /@nodelib/fs.walk/1.2.3:
+      integrity: sha512-bQBFruR2TAwoevBEd/NWMoAAtNGzTRgdrqnYCc7dhzfoNvqPzLyqlEQnzZ3kVnNrSp25iyxE00/3h2fqGAGArA==
+  /@nodelib/fs.walk/1.2.4:
     dependencies:
-      '@nodelib/fs.scandir': 2.1.2
+      '@nodelib/fs.scandir': 2.1.3
       fastq: 1.6.0
     dev: true
     engines:
       node: '>= 8'
     resolution:
-      integrity: sha512-l6t8xEhfK9Sa4YO5mIRdau7XSOADfmh3jCr0evNHdY+HNkW6xuQhgMH7D73VV6WpZOagrW0UludvMTiifiwTfA==
+      integrity: sha512-1V9XOY4rDW0rehzbrcqAmHnz8e7SKvX27gh8Gt2WgB0+pdzdiLV83p72kZPU+jvMbS1qU5mauP2iOvO8rhmurQ==
   /@types/chai/4.2.3:
     dev: true
     resolution:
@@ -1323,7 +1323,7 @@ packages:
   /browserslist/4.7.0:
     dependencies:
       caniuse-lite: 1.0.30000998
-      electron-to-chromium: 1.3.273
+      electron-to-chromium: 1.3.275
       node-releases: 1.1.34
     dev: true
     hasBin: true
@@ -1890,10 +1890,10 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-JbNVm1iGZ3aXxcFZjqKNDNfdgchQjSltWc8rvSniMrkHLsub9Wn20/JLdJNTBM74dt1IA2M+v/mzServ6N37YA==
-  /conventional-commit-types/2.1.1:
+  /conventional-commit-types/2.3.0:
     dev: true
     resolution:
-      integrity: sha512-0Ts+fEdmjqYDOQ1yZ+LNgdSPO335XZw9qC10M7CxtLP3nIMGmeMhmkM8Taffa4+MXN13bRPlp0CtH+QfOzKTzw==
+      integrity: sha512-6iB39PrcGYdz0n3z31kj6/Km6mK9hm9oMRhwcLnKxE7WNoeRKZbTAobliKrbYZ5jqyCvtcVEfjCiaEzhL3AVmQ==
   /conventional-commits-filter/2.0.2:
     dependencies:
       lodash.ismatch: 4.4.0
@@ -2113,7 +2113,7 @@ packages:
   /cz-conventional-changelog/3.0.1:
     dependencies:
       chalk: 2.4.2
-      conventional-commit-types: 2.1.1
+      conventional-commit-types: 2.3.0
       lodash.map: 4.6.0
       longest: 2.0.1
       right-pad: 1.0.1
@@ -2129,7 +2129,7 @@ packages:
     dependencies:
       chalk: 2.4.2
       commitizen: 4.0.3
-      conventional-commit-types: 2.1.1
+      conventional-commit-types: 2.3.0
       lodash.map: 4.6.0
       longest: 2.0.1
       right-pad: 1.0.1
@@ -2381,10 +2381,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-OoOpBOVDUyh4dMVkt1SThoSamMk=
-  /electron-to-chromium/1.3.273:
+  /electron-to-chromium/1.3.275:
     dev: true
     resolution:
-      integrity: sha512-0kUppiHQvHEENHh+nTtvTt4eXMwcPyWmMaj73GPrSEm3ldKhmmHuOH6IjrmuW6YmyS/fpXcLvMQLNVpqRhpNWw==
+      integrity: sha512-/YWtW/VapMnuYA1lNOaa1F4GhR1LBf+CUTp60lzDPEEh0XOzyOAyULyYZVF9vziZ3qSbTqCwmKwsyRXp66STbw==
   /elliptic/6.5.1:
     dependencies:
       bn.js: 4.11.8
@@ -2465,7 +2465,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-UpzcLCXolUWcNu5HtVMHYdXJjArjsF9C0aNnquZYY4uW/Vu0miy5YoWvbV345HauVvcAUnpRuhMMcqTcGOY2+w==
-  /eslint-config-prettier/6.3.0_eslint@6.5.1:
+  /eslint-config-prettier/6.4.0_eslint@6.5.1:
     dependencies:
       eslint: 6.5.1
       get-stdin: 6.0.0
@@ -2474,7 +2474,7 @@ packages:
     peerDependencies:
       eslint: '>=3.14.1'
     resolution:
-      integrity: sha512-EWaGjlDAZRzVFveh2Jsglcere2KK5CJBhkNSa1xs3KfMUGdRiT7lG089eqPdvlzWHpAqaekubOsOMu8W8Yk71A==
+      integrity: sha512-YrKucoFdc7SEko5Sxe4r6ixqXPDP1tunGw91POeZTTRKItf/AMFYt/YLEQtZMkR2LVpAVhcAcZgcWpm1oGPW7w==
   /eslint-scope/5.0.0:
     dependencies:
       esrecurse: 4.2.1
@@ -2730,8 +2730,8 @@ packages:
       integrity: sha512-g1KuQwHOZAmOZMuBtHdxDtju+T2RT8jgCC9aANsbpdiDDTSnjgfuVsIBNKbUeJI3oKMRExcfNDtJl4OhbffMsw==
   /fast-glob/3.0.4:
     dependencies:
-      '@nodelib/fs.stat': 2.0.2
-      '@nodelib/fs.walk': 1.2.3
+      '@nodelib/fs.stat': 2.0.3
+      '@nodelib/fs.walk': 1.2.4
       glob-parent: 5.1.0
       is-glob: 4.0.1
       merge2: 1.3.0
@@ -5594,7 +5594,7 @@ packages:
       deep-assign: 3.0.0
       filesize: 4.2.1
       gzip-size: 5.1.1
-      terser: 4.3.4
+      terser: 4.3.7
     dev: true
     resolution:
       integrity: sha512-YP0oTqk+gYlRp/l+zPxQ/b5kBAoQ2CSmJv0IAULONTyomFc6YuhZXVNXnYurluh2YMdrNnD0YJvd1IbyRsbJkA==
@@ -5634,7 +5634,7 @@ packages:
       rollup: 1.23.0
       rollup-pluginutils: 2.8.2
       serialize-javascript: 1.9.1
-      terser: 4.3.4
+      terser: 4.3.7
     dev: true
     peerDependencies:
       rollup: '>=0.66.0 <2'
@@ -6186,7 +6186,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-I42EWhJ+2aeNQawGx1VtpO0DFI9YcfuvAMNIdKyf/6sRbHJ4P+ZQ/zIT87tE+ln1ymAGcCJds4dolfSAS0AcNg==
-  /terser/4.3.4:
+  /terser/4.3.7:
     dependencies:
       commander: 2.20.1
       source-map: 0.6.1
@@ -6196,7 +6196,7 @@ packages:
       node: '>=6.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-Kcrn3RiW8NtHBP0ssOAzwa2MsIRQ8lJWiBG/K7JgqPlomA3mtb2DEmp4/hrUA+Jujx+WZ02zqd7GYD+QRBB/2Q==
+      integrity: sha512-rJFxzWIzJdgiOwYIPJHu6L3hDegEYJj2cHuKcngMraUfhMXGDEbok9Tqjw7yxzrU4IagvG74uTEKdiqeG6T7bg==
   /test-exclude/5.2.3:
     dependencies:
       glob: 7.1.4
@@ -6691,7 +6691,7 @@ specifiers:
   cross-env: 6.0.3
   cz-conventional-changelog: 3.0.2
   eslint: 6.5.1
-  eslint-config-prettier: 6.3.0
+  eslint-config-prettier: 6.4.0
   jsdoc: 3.6.3
   mocha: 6.2.1
   nyc: 14.1.1
