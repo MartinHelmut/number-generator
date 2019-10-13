@@ -63,7 +63,7 @@
     "chai": "4.2.0",
     "chalk": "2.4.2",
     "commitizen": "4.0.3",
-    "conventional-changelog": "3.1.10",
+    "conventional-changelog": "3.1.12",
     "conventional-changelog-conventionalcommits": "4.1.0",
     "coveralls": "3.0.7",
     "cpy": "7.3.0",
