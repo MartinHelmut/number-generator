@@ -11,7 +11,7 @@ devDependencies:
   chalk: 2.4.2
   commitizen: 4.0.3
   conventional-changelog: 3.1.12
-  conventional-changelog-conventionalcommits: 4.1.0
+  conventional-changelog-conventionalcommits: 4.2.1
   coveralls: 3.0.7
   cpy: 7.3.0
   cross-env: 6.0.3
@@ -1745,15 +1745,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-zQmcBP/pR8tN5MSv+nXG9hOmy+Z6rgEquBerpoEbOKTFPLoxBy/adeUUpshrMpqdZ/ycqbT2AgdTtiIu/9IHGg==
-  /conventional-changelog-conventionalcommits/4.1.0:
-    dependencies:
-      compare-func: 1.3.2
-      q: 1.5.1
-    dev: true
-    engines:
-      node: '>=6.9.0'
-    resolution:
-      integrity: sha512-J3xolGrH8PTxpCqueHOuZtv3Cp73SQOWiBQzlsaugZAZ+hZgcJBonmC+1bQbfGs2neC2S18p2L1Gx+nTEglJTQ==
   /conventional-changelog-conventionalcommits/4.2.1:
     dependencies:
       compare-func: 1.3.2
@@ -1892,7 +1883,7 @@ packages:
       conventional-changelog-angular: 5.0.5
       conventional-changelog-atom: 2.0.3
       conventional-changelog-codemirror: 2.0.3
-      conventional-changelog-conventionalcommits: 4.1.0
+      conventional-changelog-conventionalcommits: 4.2.1
       conventional-changelog-core: 3.2.3
       conventional-changelog-ember: 2.0.4
       conventional-changelog-eslint: 3.0.4
@@ -6722,7 +6713,7 @@ specifiers:
   chalk: 2.4.2
   commitizen: 4.0.3
   conventional-changelog: 3.1.12
-  conventional-changelog-conventionalcommits: 4.1.0
+  conventional-changelog-conventionalcommits: 4.2.1
   coveralls: 3.0.7
   cpy: 7.3.0
   cross-env: 6.0.3
