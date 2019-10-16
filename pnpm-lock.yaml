@@ -28,7 +28,7 @@ devDependencies:
   rollup-plugin-clear: 2.0.7
   rollup-plugin-copy: 3.1.0
   rollup-plugin-external-globals: 0.4.0_rollup@1.24.0
-  rollup-plugin-filesize: 6.2.0
+  rollup-plugin-filesize: 6.2.1
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-node-resolve: 5.2.0_rollup@1.24.0
   rollup-plugin-replace: 2.2.0
@@ -2210,15 +2210,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-JJXduvbrh0q7Dhvp3yLS5aVEMmw=
-  /deep-assign/3.0.0:
-    dependencies:
-      is-obj: 1.0.1
-    deprecated: Check out `lodash.merge` or `merge-options` instead.
-    dev: true
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha512-YX2i9XjJ7h5q/aQ/IM9PEwEnDqETAIYbggmdDB3HLTlSgo1CxPsj6pvhPG68rq6SVE0+p+6Ywsm5fTYNrYtBWw==
   /deep-eql/3.0.1:
     dependencies:
       type-detect: 4.0.8
@@ -4144,6 +4135,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-dx7Hg540c9nEzeKLGTlMNWL09tM=
+  /lodash.merge/4.6.2:
+    dev: true
+    resolution:
+      integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
   /lodash.template/4.5.0:
     dependencies:
       lodash._reinterpolate: 3.0.0
@@ -5591,18 +5586,18 @@ packages:
       rollup: '>=0.60'
     resolution:
       integrity: sha512-HFkOrBtL/i4vK4jOA7/Y0uR+Evus+McnSDBJMWwBgXn0nPFX9yrKXijVqS1xskjmPvt9tguJ9Rf9feKKwTpz+w==
-  /rollup-plugin-filesize/6.2.0:
+  /rollup-plugin-filesize/6.2.1:
     dependencies:
       boxen: 4.1.0
       brotli-size: 4.0.0
       colors: 1.4.0
-      deep-assign: 3.0.0
       filesize: 4.2.1
       gzip-size: 5.1.1
+      lodash.merge: 4.6.2
       terser: 4.3.9
     dev: true
     resolution:
-      integrity: sha512-YP0oTqk+gYlRp/l+zPxQ/b5kBAoQ2CSmJv0IAULONTyomFc6YuhZXVNXnYurluh2YMdrNnD0YJvd1IbyRsbJkA==
+      integrity: sha512-JQ2+NMoka81lCR2caGWyngqMKpvJCl7EkFYU7A+T0dA7U1Aml13FW5Ky0aiZIeU3/13cjsKQLRr35SQVmk6i/A==
   /rollup-plugin-node-builtins/2.1.2:
     dependencies:
       browserify-fs: 1.0.0
@@ -6730,7 +6725,7 @@ specifiers:
   rollup-plugin-clear: 2.0.7
   rollup-plugin-copy: 3.1.0
   rollup-plugin-external-globals: 0.4.0
-  rollup-plugin-filesize: 6.2.0
+  rollup-plugin-filesize: 6.2.1
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-node-resolve: 5.2.0
   rollup-plugin-replace: 2.2.0
