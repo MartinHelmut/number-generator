@@ -4,7 +4,7 @@ devDependencies:
   '@babel/register': 7.6.2_@babel+core@7.6.4
   '@types/chai': 4.2.4
   '@types/mocha': 5.2.7
-  '@types/node': 12.11.7
+  '@types/node': 12.12.0
   agadoo: 1.1.0
   benchmark: 2.1.4
   chai: 4.2.0
@@ -702,7 +702,7 @@ packages:
       '@babel/plugin-transform-unicode-regex': 7.6.2_@babel+core@7.6.4
       '@babel/types': 7.6.3
       browserslist: 4.7.2
-      core-js-compat: 3.3.4
+      core-js-compat: 3.3.5
       invariant: 2.2.4
       js-levenshtein: 1.1.6
       semver: 5.7.1
@@ -718,7 +718,7 @@ packages:
       lodash: 4.17.15
       mkdirp: 0.5.1
       pirates: 4.0.1
-      source-map-support: 0.5.13
+      source-map-support: 0.5.15
     dev: true
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -778,7 +778,7 @@ packages:
       integrity: sha512-EV6PfAY/p83QynNd1llHxJiNxKmp43g8+7dZbyfHFbsGOdokrCnoelAVZ+WGgktXwLN/uXyfkcIAxwac015UYw==
   /@commitlint/resolve-extends/8.2.0:
     dependencies:
-      '@types/node': 12.11.7
+      '@types/node': 12.12.0
       import-fresh: 3.1.0
       lodash: 4.17.14
       resolve-from: 5.0.0
@@ -842,7 +842,7 @@ packages:
       integrity: sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==
   /@types/fs-extra/8.0.1:
     dependencies:
-      '@types/node': 12.11.7
+      '@types/node': 12.12.0
     dev: true
     resolution:
       integrity: sha512-J00cVDALmi/hJOYsunyT52Hva5TnJeKP5yd1r+mH/ZU0mbYZflR0Z5kw5kITtKTRYMhm1JMClOFYdHnQszEvqw==
@@ -850,7 +850,7 @@ packages:
     dependencies:
       '@types/events': 3.0.0
       '@types/minimatch': 3.0.3
-      '@types/node': 12.11.7
+      '@types/node': 12.12.0
     dev: true
     resolution:
       integrity: sha512-1Bh06cbWJUHMC97acuD6UMG29nMt0Aqz1vF3guLfG+kHHJhy3AyohZFFxYk2f7Q1SQIrNwvncxAE0N/9s70F2w==
@@ -862,13 +862,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-NYrtPht0wGzhwe9+/idPaBB+TqkY9AhTvOLMkThm0IoEfLaiVQZwBwyJ5puCkO3AUCWrmcoePjp2mbFocKy4SQ==
-  /@types/node/12.11.7:
+  /@types/node/12.12.0:
     dev: true
     resolution:
-      integrity: sha512-JNbGaHFCLwgHn/iCckiGSOZ1XYHsKFwREtzPwSGCVld1SGhOlmZw2D4ZI94HQCrBHbADzW9m4LER/8olJTRGHA==
+      integrity: sha512-6N8Sa5AaENRtJnpKXZgvc119PKxT1Lk9VPy4kfT8JF23tIe1qDfaGkBR2DRKJFIA7NptMz+fps//C6aLi1Uoug==
   /@types/resolve/0.0.8:
     dependencies:
-      '@types/node': 12.11.7
+      '@types/node': 12.12.0
     dev: true
     resolution:
       integrity: sha512-auApPaJf3NPfe18hSoJkp8EbZzer2ISk7o8mCC3M9he/a04+gbMF97NkpD2S8riMGvm4BMRI59/SZQSaLTKpsQ==
@@ -1858,7 +1858,7 @@ packages:
       compare-func: 1.3.2
       conventional-commits-filter: 2.0.2
       dateformat: 3.0.3
-      handlebars: 4.4.5
+      handlebars: 4.5.1
       json-stringify-safe: 5.0.1
       lodash: 4.17.15
       meow: 4.0.1
@@ -1963,13 +1963,13 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
-  /core-js-compat/3.3.4:
+  /core-js-compat/3.3.5:
     dependencies:
       browserslist: 4.7.2
       semver: 6.3.0
     dev: true
     resolution:
-      integrity: sha512-7OK3/LPP8R3Ovasf3GilEOp+o1w0ZKJ75FMou2RDfTwIV69G5RkKCGFnqgBv/ZhR6xo9GCzlfVALyHmydbE7DA==
+      integrity: sha512-44ZORuapx0MUht0MUk0p9lcQPh7n/LDXehimTmjCs0CYblpKZcqVd5w0OQDUDq5OQjEbazWObHDQJWvvHYPNTg==
   /core-js/2.6.10:
     dev: true
     optional: true
@@ -3224,7 +3224,7 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-FNHi6mmoHvs1mxZAds4PpdCS6QG8B4C1krxJsMutgxl5t3+GlRTzzI3NEkifXx2pVsOvJdOGSmIgDhQ55FwdPA==
-  /handlebars/4.4.5:
+  /handlebars/4.5.1:
     dependencies:
       neo-async: 2.6.1
       optimist: 0.6.1
@@ -3234,9 +3234,9 @@ packages:
       node: '>=0.4.7'
     hasBin: true
     optionalDependencies:
-      uglify-js: 3.6.4
+      uglify-js: 3.6.5
     resolution:
-      integrity: sha512-0Ce31oWVB7YidkaTq33ZxEbN+UDxMMgThvCe8ptgQViymL5DPis9uLdTA13MiRPhgvqyxIegugrP97iK3JeBHg==
+      integrity: sha512-C29UoFzHe9yM61lOsIlCE5/mQVGrnIOrOq7maQl76L7tYPCgC1og0Ajt6uWnX4ZTxBPnjw+CUvawphwCfJgUnA==
   /har-schema/2.0.0:
     dev: true
     engines:
@@ -3842,7 +3842,7 @@ packages:
       integrity: sha512-R47KzMtDJH6X4/YW9XTx+jrLnZnscW4VpNN+1PViSYTejLVPWv7oov+Duf8YQSPyVRUvueQqz1TcsC6mooZTXw==
   /istanbul-reports/2.2.6:
     dependencies:
-      handlebars: 4.4.5
+      handlebars: 4.5.1
     dev: true
     engines:
       node: '>=6'
@@ -5681,6 +5681,7 @@ packages:
     dependencies:
       magic-string: 0.25.4
       rollup-pluginutils: 2.8.2
+    deprecated: This module has moved and is now available at @rollup/plugin-replace. Please update your dependencies. This version is no longer maintained.
     dev: true
     resolution:
       integrity: sha512-/5bxtUPkDHyBJAKketb4NfaeZjL5yLZdeUihSfbF2PQMz+rSTEb8ARKoOl3UBT4m7/X+QOXJo3sLTcq+yMMYTA==
@@ -5710,7 +5711,7 @@ packages:
   /rollup/1.26.0:
     dependencies:
       '@types/estree': 0.0.39
-      '@types/node': 12.11.7
+      '@types/node': 12.12.0
       acorn: 7.1.0
     dev: true
     hasBin: true
@@ -5932,13 +5933,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-MjqsvNwyz1s0k81Goz/9vRBe9SZdB09Bdw+/zYyO+3CuPk6fouTaxscHkgtE8jKvf01kVfl8riHzERQ/kefaSA==
-  /source-map-support/0.5.13:
+  /source-map-support/0.5.15:
     dependencies:
       buffer-from: 1.1.1
       source-map: 0.6.1
     dev: true
     resolution:
-      integrity: sha512-SHSKFHadjVA5oR4PPqhtAVdcBWwRYVd6g6cAXnIbRiIwc2EhPrTuKUBdSLvlEKyIP3GCf89fltvcZiP9MMFA1w==
+      integrity: sha512-wYF5aX1J0+V51BDT3Om7uXNn0ct2FWiV4bvwiGVefxkm+1S1o5jsecE5lb2U28DDblzxzxeIDbTVpXHI9D/9hA==
   /source-map-url/0.4.0:
     dev: true
     resolution:
@@ -6261,7 +6262,7 @@ packages:
     dependencies:
       commander: 2.20.3
       source-map: 0.6.1
-      source-map-support: 0.5.13
+      source-map-support: 0.5.15
     dev: true
     engines:
       node: '>=6.0.0'
@@ -6388,7 +6389,7 @@ packages:
       arg: 4.1.1
       diff: 4.0.1
       make-error: 1.3.5
-      source-map-support: 0.5.13
+      source-map-support: 0.5.15
       typescript: 3.6.4
       yn: 3.1.1
     dev: true
@@ -6452,7 +6453,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==
-  /uglify-js/3.6.4:
+  /uglify-js/3.6.5:
     dependencies:
       commander: 2.20.3
       source-map: 0.6.1
@@ -6462,7 +6463,7 @@ packages:
     hasBin: true
     optional: true
     resolution:
-      integrity: sha512-9Yc2i881pF4BPGhjteCXQNaXx1DCwm3dtOyBaG2hitHjLWOczw/ki8vD1bqyT3u6K0Ms/FpCShkmfg+FtlOfYA==
+      integrity: sha512-7L3W+Npia1OCr5Blp4/Vw83tK1mu5gnoIURtT1fUVfQ3Kf8WStWV6NJz0fdoBJZls0KlweruRTLVe6XLafmy5g==
   /underscore/1.9.1:
     dev: true
     resolution:
@@ -6758,7 +6759,7 @@ specifiers:
   '@babel/register': 7.6.2
   '@types/chai': 4.2.4
   '@types/mocha': 5.2.7
-  '@types/node': 12.11.7
+  '@types/node': 12.12.0
   agadoo: 1.1.0
   benchmark: 2.1.4
   chai: 4.2.0
