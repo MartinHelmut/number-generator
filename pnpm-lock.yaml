@@ -4,7 +4,7 @@ devDependencies:
   '@babel/register': 7.6.2_@babel+core@7.6.4
   '@types/chai': 4.2.4
   '@types/mocha': 5.2.7
-  '@types/node': 12.12.0
+  '@types/node': 12.12.3
   agadoo: 1.1.0
   benchmark: 2.1.4
   chai: 4.2.0
@@ -718,7 +718,7 @@ packages:
       lodash: 4.17.15
       mkdirp: 0.5.1
       pirates: 4.0.1
-      source-map-support: 0.5.15
+      source-map-support: 0.5.16
     dev: true
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -778,7 +778,7 @@ packages:
       integrity: sha512-EV6PfAY/p83QynNd1llHxJiNxKmp43g8+7dZbyfHFbsGOdokrCnoelAVZ+WGgktXwLN/uXyfkcIAxwac015UYw==
   /@commitlint/resolve-extends/8.2.0:
     dependencies:
-      '@types/node': 12.12.0
+      '@types/node': 12.12.3
       import-fresh: 3.1.0
       lodash: 4.17.14
       resolve-from: 5.0.0
@@ -842,7 +842,7 @@ packages:
       integrity: sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==
   /@types/fs-extra/8.0.1:
     dependencies:
-      '@types/node': 12.12.0
+      '@types/node': 12.12.3
     dev: true
     resolution:
       integrity: sha512-J00cVDALmi/hJOYsunyT52Hva5TnJeKP5yd1r+mH/ZU0mbYZflR0Z5kw5kITtKTRYMhm1JMClOFYdHnQszEvqw==
@@ -850,7 +850,7 @@ packages:
     dependencies:
       '@types/events': 3.0.0
       '@types/minimatch': 3.0.3
-      '@types/node': 12.12.0
+      '@types/node': 12.12.3
     dev: true
     resolution:
       integrity: sha512-1Bh06cbWJUHMC97acuD6UMG29nMt0Aqz1vF3guLfG+kHHJhy3AyohZFFxYk2f7Q1SQIrNwvncxAE0N/9s70F2w==
@@ -862,13 +862,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-NYrtPht0wGzhwe9+/idPaBB+TqkY9AhTvOLMkThm0IoEfLaiVQZwBwyJ5puCkO3AUCWrmcoePjp2mbFocKy4SQ==
-  /@types/node/12.12.0:
+  /@types/node/12.12.3:
     dev: true
     resolution:
-      integrity: sha512-6N8Sa5AaENRtJnpKXZgvc119PKxT1Lk9VPy4kfT8JF23tIe1qDfaGkBR2DRKJFIA7NptMz+fps//C6aLi1Uoug==
+      integrity: sha512-opgSsy+cEF9N8MgaVPnWVtdJ3o4mV2aMHvDq7thkQUFt0EuOHJon4rQpJfhjmNHB+ikl0Cd6WhWIErOyQ+f7tw==
   /@types/resolve/0.0.8:
     dependencies:
-      '@types/node': 12.12.0
+      '@types/node': 12.12.3
     dev: true
     resolution:
       integrity: sha512-auApPaJf3NPfe18hSoJkp8EbZzer2ISk7o8mCC3M9he/a04+gbMF97NkpD2S8riMGvm4BMRI59/SZQSaLTKpsQ==
@@ -1330,7 +1330,7 @@ packages:
       integrity: sha1-qk62jl17ZYuqa/alfmMMvXqT0pg=
   /browserslist/4.7.2:
     dependencies:
-      caniuse-lite: 1.0.30001005
+      caniuse-lite: 1.0.30001006
       electron-to-chromium: 1.3.296
       node-releases: 1.1.39
     dev: true
@@ -1466,10 +1466,10 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
-  /caniuse-lite/1.0.30001005:
+  /caniuse-lite/1.0.30001006:
     dev: true
     resolution:
-      integrity: sha512-g78miZm1Z5njjYR216a5812oPiLgV1ssndgGxITHWUopmjUrCswMisA0a2kSB7a0vZRox6JOKhM51+efmYN8Mg==
+      integrity: sha512-MXnUVX27aGs/QINz+QG1sWSLDr3P1A3Hq5EUWoIt0T7K24DuvMxZEnh3Y5aHlJW6Bz2aApJdSewdYLd8zQnUuw==
   /caseless/0.12.0:
     dev: true
     resolution:
@@ -5711,7 +5711,7 @@ packages:
   /rollup/1.26.0:
     dependencies:
       '@types/estree': 0.0.39
-      '@types/node': 12.12.0
+      '@types/node': 12.12.3
       acorn: 7.1.0
     dev: true
     hasBin: true
@@ -5933,13 +5933,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-MjqsvNwyz1s0k81Goz/9vRBe9SZdB09Bdw+/zYyO+3CuPk6fouTaxscHkgtE8jKvf01kVfl8riHzERQ/kefaSA==
-  /source-map-support/0.5.15:
+  /source-map-support/0.5.16:
     dependencies:
       buffer-from: 1.1.1
       source-map: 0.6.1
     dev: true
     resolution:
-      integrity: sha512-wYF5aX1J0+V51BDT3Om7uXNn0ct2FWiV4bvwiGVefxkm+1S1o5jsecE5lb2U28DDblzxzxeIDbTVpXHI9D/9hA==
+      integrity: sha512-efyLRJDr68D9hBBNIPWFjhpFzURh+KJykQwvMyW5UiZzYwoF6l4YMMDIJJEyFWxWCqfyxLzz6tSfUFR+kXXsVQ==
   /source-map-url/0.4.0:
     dev: true
     resolution:
@@ -6262,7 +6262,7 @@ packages:
     dependencies:
       commander: 2.20.3
       source-map: 0.6.1
-      source-map-support: 0.5.15
+      source-map-support: 0.5.16
     dev: true
     engines:
       node: '>=6.0.0'
@@ -6389,7 +6389,7 @@ packages:
       arg: 4.1.1
       diff: 4.0.1
       make-error: 1.3.5
-      source-map-support: 0.5.15
+      source-map-support: 0.5.16
       typescript: 3.6.4
       yn: 3.1.1
     dev: true
@@ -6759,7 +6759,7 @@ specifiers:
   '@babel/register': 7.6.2
   '@types/chai': 4.2.4
   '@types/mocha': 5.2.7
-  '@types/node': 12.12.0
+  '@types/node': 12.12.3
   agadoo: 1.1.0
   benchmark: 2.1.4
   chai: 4.2.0
