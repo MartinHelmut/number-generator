@@ -4,7 +4,7 @@ devDependencies:
   '@babel/register': 7.7.0_@babel+core@7.7.2
   '@types/chai': 4.2.4
   '@types/mocha': 5.2.7
-  '@types/node': 12.12.6
+  '@types/node': 12.12.7
   agadoo: 1.1.0
   benchmark: 2.1.4
   chai: 4.2.0
@@ -793,7 +793,7 @@ packages:
       integrity: sha512-EV6PfAY/p83QynNd1llHxJiNxKmp43g8+7dZbyfHFbsGOdokrCnoelAVZ+WGgktXwLN/uXyfkcIAxwac015UYw==
   /@commitlint/resolve-extends/8.2.0:
     dependencies:
-      '@types/node': 12.12.6
+      '@types/node': 12.12.7
       import-fresh: 3.1.0
       lodash: 4.17.14
       resolve-from: 5.0.0
@@ -857,7 +857,7 @@ packages:
       integrity: sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==
   /@types/fs-extra/8.0.1:
     dependencies:
-      '@types/node': 12.12.6
+      '@types/node': 12.12.7
     dev: true
     resolution:
       integrity: sha512-J00cVDALmi/hJOYsunyT52Hva5TnJeKP5yd1r+mH/ZU0mbYZflR0Z5kw5kITtKTRYMhm1JMClOFYdHnQszEvqw==
@@ -865,7 +865,7 @@ packages:
     dependencies:
       '@types/events': 3.0.0
       '@types/minimatch': 3.0.3
-      '@types/node': 12.12.6
+      '@types/node': 12.12.7
     dev: true
     resolution:
       integrity: sha512-1Bh06cbWJUHMC97acuD6UMG29nMt0Aqz1vF3guLfG+kHHJhy3AyohZFFxYk2f7Q1SQIrNwvncxAE0N/9s70F2w==
@@ -877,13 +877,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-NYrtPht0wGzhwe9+/idPaBB+TqkY9AhTvOLMkThm0IoEfLaiVQZwBwyJ5puCkO3AUCWrmcoePjp2mbFocKy4SQ==
-  /@types/node/12.12.6:
+  /@types/node/12.12.7:
     dev: true
     resolution:
-      integrity: sha512-FjsYUPzEJdGXjwKqSpE0/9QEh6kzhTAeObA54rn6j3rR4C/mzpI9L0KNfoeASSPMMdxIsoJuCLDWcM/rVjIsSA==
+      integrity: sha512-E6Zn0rffhgd130zbCbAr/JdXfXkoOUFAKNs/rF8qnafSJ8KYaA/j3oz7dcwal+lYjLA7xvdd5J4wdYpCTlP8+w==
   /@types/resolve/0.0.8:
     dependencies:
-      '@types/node': 12.12.6
+      '@types/node': 12.12.7
     dev: true
     resolution:
       integrity: sha512-auApPaJf3NPfe18hSoJkp8EbZzer2ISk7o8mCC3M9he/a04+gbMF97NkpD2S8riMGvm4BMRI59/SZQSaLTKpsQ==
@@ -5761,7 +5761,7 @@ packages:
   /rollup/1.26.5:
     dependencies:
       '@types/estree': 0.0.39
-      '@types/node': 12.12.6
+      '@types/node': 12.12.7
       acorn: 7.1.0
     dev: true
     hasBin: true
@@ -6813,7 +6813,7 @@ specifiers:
   '@babel/register': 7.7.0
   '@types/chai': 4.2.4
   '@types/mocha': 5.2.7
-  '@types/node': 12.12.6
+  '@types/node': 12.12.7
   agadoo: 1.1.0
   benchmark: 2.1.4
   chai: 4.2.0
