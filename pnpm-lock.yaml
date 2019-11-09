@@ -21,7 +21,7 @@ devDependencies:
   jsdoc: 3.6.3
   mocha: 6.2.2
   nyc: 14.1.1
-  prettier: 1.18.2
+  prettier: 1.19.1
   regenerator-runtime: 0.13.3
   rollup: 1.26.3
   rollup-plugin-babel: 4.3.3_@babel+core@7.7.2+rollup@1.26.3
@@ -50,7 +50,7 @@ packages:
       '@babel/code-frame': 7.5.5
       '@babel/generator': 7.7.2
       '@babel/helpers': 7.7.0
-      '@babel/parser': 7.7.2
+      '@babel/parser': 7.7.3
       '@babel/template': 7.7.0
       '@babel/traverse': 7.7.2
       '@babel/types': 7.7.2
@@ -237,13 +237,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-7dV4eu9gBxoM0dAnj/BCFDW9LFU0zvTrkq0ugM7pnHEgguOEeOz1so2ZghEdzviYzQEED0r4EAgpsBChKy1TRQ==
-  /@babel/parser/7.7.2:
+  /@babel/parser/7.7.3:
     dev: true
     engines:
       node: '>=6.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-DDaR5e0g4ZTb9aP7cpSZLkACEBdoLGwJDWgHtBhrGX7Q1RjhdoMOfexICj5cqTAtpowjGQWfcvfnQG7G2kAB5w==
+      integrity: sha512-bqv+iCo9i+uLVbI0ILzKkvMorqxouI+GbV13ivcARXn9NNEabi2IEz912IgNpT/60BNXac5dgcfjb94NjsF33A==
   /@babel/plugin-proposal-async-generator-functions/7.7.0_@babel+core@7.7.2:
     dependencies:
       '@babel/core': 7.7.2
@@ -742,7 +742,7 @@ packages:
   /@babel/template/7.7.0:
     dependencies:
       '@babel/code-frame': 7.5.5
-      '@babel/parser': 7.7.2
+      '@babel/parser': 7.7.3
       '@babel/types': 7.7.2
     dev: true
     resolution:
@@ -753,7 +753,7 @@ packages:
       '@babel/generator': 7.7.2
       '@babel/helper-function-name': 7.7.0
       '@babel/helper-split-export-declaration': 7.7.0
-      '@babel/parser': 7.7.2
+      '@babel/parser': 7.7.3
       '@babel/types': 7.7.2
       debug: 4.1.1
       globals: 11.12.0
@@ -1346,7 +1346,7 @@ packages:
   /browserslist/4.7.2:
     dependencies:
       caniuse-lite: 1.0.30001008
-      electron-to-chromium: 1.3.305
+      electron-to-chromium: 1.3.306
       node-releases: 1.1.39
     dev: true
     hasBin: true
@@ -2404,10 +2404,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-OoOpBOVDUyh4dMVkt1SThoSamMk=
-  /electron-to-chromium/1.3.305:
+  /electron-to-chromium/1.3.306:
     dev: true
     resolution:
-      integrity: sha512-jBEhRZ3eeJWf3eAnGYB1vDy09uBQpZWshC5fxiiIRofA9L3vkpa3SxsXleVS2MvuYir15oTVxzWPsOwj7KBzUw==
+      integrity: sha512-frDqXvrIROoYvikSKTIKbHbzO6M3/qC6kCIt/1FOa9kALe++c4VAJnwjSFvf1tYLEUsP2n9XZ4XSCyqc3l7A/A==
   /elliptic/6.5.1:
     dependencies:
       bn.js: 4.11.8
@@ -2447,7 +2447,7 @@ packages:
       integrity: sha512-7dFHNmqeFSEt2ZBsCriorKnn3Z2pj+fd9kmI6QoWw4//DL+icEBfc0U7qJCisqrTsKTjw4fNFy2pW9OqStD84g==
   /es-abstract/1.16.0:
     dependencies:
-      es-to-primitive: 1.2.0
+      es-to-primitive: 1.2.1
       function-bind: 1.1.1
       has: 1.0.3
       has-symbols: 1.0.0
@@ -2462,7 +2462,7 @@ packages:
       node: '>= 0.4'
     resolution:
       integrity: sha512-xdQnfykZ9JMEiasTAJZJdMWCQ1Vm00NBw79/AWi7ELfZuuPCSOMDZbT9mkOfSctVtfhb+sAAzrm+j//GjjLHLg==
-  /es-to-primitive/1.2.0:
+  /es-to-primitive/1.2.1:
     dependencies:
       is-callable: 1.1.4
       is-date-object: 1.0.1
@@ -2471,7 +2471,7 @@ packages:
     engines:
       node: '>= 0.4'
     resolution:
-      integrity: sha512-qZryBOJjV//LaxLTV6UC//WewneB3LcXOL9NP++ozKVXsIIIpm/2c13UDiD9Jp2eThsecw9m3jPqDwTyobcdbg==
+      integrity: sha512-QCOllgZJtaUo9miYBcLChTUaHNjJF3PYs1VidD7AwiEj1kYxKeQTctLAezAOH5ZKRH0g2IgPn6KwB4IT8iRpvA==
   /es6-error/4.1.1:
     dev: true
     resolution:
@@ -3822,7 +3822,7 @@ packages:
   /istanbul-lib-instrument/3.3.0:
     dependencies:
       '@babel/generator': 7.7.2
-      '@babel/parser': 7.7.2
+      '@babel/parser': 7.7.3
       '@babel/template': 7.7.0
       '@babel/traverse': 7.7.2
       '@babel/types': 7.7.2
@@ -3902,7 +3902,7 @@ packages:
       integrity: sha1-peZUwuWi3rXyAdls77yoDA7y9RM=
   /jsdoc/3.6.3:
     dependencies:
-      '@babel/parser': 7.7.2
+      '@babel/parser': 7.7.3
       bluebird: 3.7.1
       catharsis: 0.8.11
       escape-string-regexp: 2.0.0
@@ -5133,13 +5133,13 @@ packages:
       node: '>= 0.8.0'
     resolution:
       integrity: sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
-  /prettier/1.18.2:
+  /prettier/1.19.1:
     dev: true
     engines:
       node: '>=4'
     hasBin: true
     resolution:
-      integrity: sha512-OeHeMc0JhFE9idD4ZdtNibzY0+TPHSpSSb9h8FqtP+YnoZZ1sl8Vc9b1sasjfymH3SonAF4QcA2+mzHPhMvIiw==
+      integrity: sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
   /private/0.1.8:
     dev: true
     engines:
@@ -6787,7 +6787,7 @@ specifiers:
   jsdoc: 3.6.3
   mocha: 6.2.2
   nyc: 14.1.1
-  prettier: 1.18.2
+  prettier: 1.19.1
   regenerator-runtime: 0.13.3
   rollup: 1.26.3
   rollup-plugin-babel: 4.3.3
