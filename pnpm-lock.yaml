@@ -35,7 +35,7 @@ devDependencies:
   rollup-plugin-terser: 5.1.2_rollup@1.27.0
   serve: 11.2.0
   standard-version: 7.0.0
-  ts-node: 8.5.0_typescript@3.7.2
+  ts-node: 8.5.2_typescript@3.7.2
   typescript: 3.7.2
 lockfileVersion: 5.1
 packages:
@@ -794,7 +794,7 @@ packages:
   /@commitlint/resolve-extends/8.2.0:
     dependencies:
       '@types/node': 12.12.7
-      import-fresh: 3.1.0
+      import-fresh: 3.2.1
       lodash: 4.17.14
       resolve-from: 5.0.0
       resolve-global: 1.0.0
@@ -1364,7 +1364,7 @@ packages:
       integrity: sha1-qk62jl17ZYuqa/alfmMMvXqT0pg=
   /browserslist/4.7.2:
     dependencies:
-      caniuse-lite: 1.0.30001009
+      caniuse-lite: 1.0.30001010
       electron-to-chromium: 1.3.306
       node-releases: 1.1.40
     dev: true
@@ -1500,10 +1500,10 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
-  /caniuse-lite/1.0.30001009:
+  /caniuse-lite/1.0.30001010:
     dev: true
     resolution:
-      integrity: sha512-M3rEqHN6SaVjgo4bIik7HsGcWXsi+lI9WA0p51RPMFx5gXfduyOXWJrc0R4xBkSK1pgNf4CNgy5M+6H+WiEP8g==
+      integrity: sha512-RA5GH9YjFNea4ZQszdWgh2SC+dpLiRAg4VDQS2b5JRI45OxmbGrYocYHTa9x0bKMQUE7uvHkNPNffUr+pCxSGw==
   /caseless/0.12.0:
     dev: true
     resolution:
@@ -1913,7 +1913,7 @@ packages:
       compare-func: 1.3.2
       conventional-commits-filter: 2.0.2
       dateformat: 3.0.3
-      handlebars: 4.5.1
+      handlebars: 4.5.2
       json-stringify-safe: 5.0.1
       lodash: 4.17.15
       meow: 4.0.1
@@ -2580,7 +2580,7 @@ packages:
       glob-parent: 5.1.0
       globals: 11.12.0
       ignore: 4.0.6
-      import-fresh: 3.1.0
+      import-fresh: 3.2.1
       imurmurhash: 0.1.4
       inquirer: 7.0.0
       is-glob: 4.0.1
@@ -3279,7 +3279,7 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-FNHi6mmoHvs1mxZAds4PpdCS6QG8B4C1krxJsMutgxl5t3+GlRTzzI3NEkifXx2pVsOvJdOGSmIgDhQ55FwdPA==
-  /handlebars/4.5.1:
+  /handlebars/4.5.2:
     dependencies:
       neo-async: 2.6.1
       optimist: 0.6.1
@@ -3291,7 +3291,7 @@ packages:
     optionalDependencies:
       uglify-js: 3.6.9
     resolution:
-      integrity: sha512-C29UoFzHe9yM61lOsIlCE5/mQVGrnIOrOq7maQl76L7tYPCgC1og0Ajt6uWnX4ZTxBPnjw+CUvawphwCfJgUnA==
+      integrity: sha512-29Zxv/cynYB7mkT1rVWQnV7mGX6v7H/miQ6dbEpYTKq5eJBN7PsRB+ViYJlcT6JINTSu4dVB9kOqEun78h6Exg==
   /har-schema/2.0.0:
     dev: true
     engines:
@@ -3462,7 +3462,7 @@ packages:
     optional: true
     resolution:
       integrity: sha1-2BNVwVYS04bGH53dOSLUMEgipUY=
-  /import-fresh/3.1.0:
+  /import-fresh/3.2.1:
     dependencies:
       parent-module: 1.0.1
       resolve-from: 4.0.0
@@ -3470,7 +3470,7 @@ packages:
     engines:
       node: '>=6'
     resolution:
-      integrity: sha512-PpuksHKGt8rXfWEr9m9EHIpgyyaltBy8+eF6GJM0QCAxMgxCfucMF3mjecK2QsJr0amJW7gTqh5/wht0z2UhEQ==
+      integrity: sha512-6e1q1cnWP2RXD9/keSkxHScg508CdXqXWgWBaETNhyuBFz+kUZlKboh+ISK+bU++DmbHimVBrOz/zzPe0sZ3sQ==
   /imurmurhash/0.1.4:
     dev: true
     engines:
@@ -3903,7 +3903,7 @@ packages:
       integrity: sha512-R47KzMtDJH6X4/YW9XTx+jrLnZnscW4VpNN+1PViSYTejLVPWv7oov+Duf8YQSPyVRUvueQqz1TcsC6mooZTXw==
   /istanbul-reports/2.2.6:
     dependencies:
-      handlebars: 4.5.1
+      handlebars: 4.5.2
     dev: true
     engines:
       node: '>=6'
@@ -6455,7 +6455,7 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-n5up2e+odkw4dpi8v+sshI8RrbM=
-  /ts-node/8.5.0_typescript@3.7.2:
+  /ts-node/8.5.2_typescript@3.7.2:
     dependencies:
       arg: 4.1.1
       diff: 4.0.1
@@ -6470,7 +6470,7 @@ packages:
     peerDependencies:
       typescript: '>=2.0'
     resolution:
-      integrity: sha512-fbG32iZEupNV2E2Fd2m2yt1TdAwR3GTCrJQBHDevIiEBNy1A8kqnyl1fv7jmRmmbtcapFab2glZXHJvfD1ed0Q==
+      integrity: sha512-W1DK/a6BGoV/D4x/SXXm6TSQx6q3blECUzd5TN+j56YEMX3yPVMpHsICLedUw3DvGF3aTQ8hfdR9AKMaHjIi+A==
   /tslib/1.10.0:
     dev: true
     resolution:
@@ -6857,5 +6857,5 @@ specifiers:
   rollup-plugin-terser: 5.1.2
   serve: 11.2.0
   standard-version: 7.0.0
-  ts-node: 8.5.0
+  ts-node: 8.5.2
   typescript: 3.7.2
