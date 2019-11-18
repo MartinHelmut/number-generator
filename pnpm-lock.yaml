@@ -10,7 +10,7 @@ devDependencies:
   chai: 4.2.0
   chalk: 3.0.0
   commitizen: 4.0.3
-  conventional-changelog: 3.1.14
+  conventional-changelog: 3.1.15
   conventional-changelog-conventionalcommits: 4.2.3
   coveralls: 3.0.7
   cpy: 7.3.0
@@ -1926,7 +1926,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-g81GQOR392I+57Cw3IyP1f+f42ME6aEkbR+L7v1FBBWolB0xkjKTeCWVguzRrp6UiT1O6gBpJbEy2eq7AnV1rw==
-  /conventional-changelog/3.1.14:
+  /conventional-changelog/3.1.15:
     dependencies:
       conventional-changelog-angular: 5.0.6
       conventional-changelog-atom: 2.0.3
@@ -1943,7 +1943,7 @@ packages:
     engines:
       node: '>=6.9.0'
     resolution:
-      integrity: sha512-utfeyIrLKBjIhxFW64W425tVjnu/rqpVrI4/ylje2figIEfGHQ1YoMkkT8ZwX65MxzTtqQR1SCl7CX1y0/0JrA==
+      integrity: sha512-CoWM+Z9bYyF00QzNpTnxkCLiuLAeRocJz3C/foFjvhsdltdtkJgMChp7GytQNjm4pT7JFBVJTpqLHTpxNtOzaA==
   /conventional-changelog/3.1.9:
     dependencies:
       conventional-changelog-angular: 5.0.6
@@ -6871,7 +6871,7 @@ specifiers:
   chai: 4.2.0
   chalk: 3.0.0
   commitizen: 4.0.3
-  conventional-changelog: 3.1.14
+  conventional-changelog: 3.1.15
   conventional-changelog-conventionalcommits: 4.2.3
   coveralls: 3.0.7
   cpy: 7.3.0
