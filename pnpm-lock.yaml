@@ -34,7 +34,7 @@ devDependencies:
   rollup-plugin-replace: 2.2.0
   rollup-plugin-terser: 5.1.2_rollup@1.27.1
   serve: 11.2.0
-  standard-version: 7.0.0
+  standard-version: 7.0.1
   ts-node: 8.5.2_typescript@3.7.2
   typescript: 3.7.2
 lockfileVersion: 5.1
@@ -1807,10 +1807,10 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-t2afackdgFV2yBdHhWPqrKbpaQeVnz2hSJKdWqjasPo5EpIB6TBL0er3cOP1mnGQmuzk9JSvimNSuqjWGDtU5Q==
-  /conventional-changelog-config-spec/2.0.0:
+  /conventional-changelog-config-spec/2.1.0:
     dev: true
     resolution:
-      integrity: sha512-zQmcBP/pR8tN5MSv+nXG9hOmy+Z6rgEquBerpoEbOKTFPLoxBy/adeUUpshrMpqdZ/ycqbT2AgdTtiIu/9IHGg==
+      integrity: sha512-IpVePh16EbbB02V+UA+HQnnPIohgXvJRxHcS5+Uwk4AT5LjzCZJm5sp/yqs5C6KZJ1jMsV4paEV13BN1pvDuxQ==
   /conventional-changelog-conventionalcommits/4.2.3:
     dependencies:
       compare-func: 1.3.2
@@ -1821,26 +1821,6 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-atGa+R4vvEhb8N/8v3IoW59gCBJeeFiX6uIbPu876ENAmkMwsenyn0R21kdDHJFLQdy6zW4J6b4xN8KI3b9oww==
-  /conventional-changelog-core/3.2.3:
-    dependencies:
-      conventional-changelog-writer: 4.0.11
-      conventional-commits-parser: 3.0.8
-      dateformat: 3.0.3
-      get-pkg-repo: 1.4.0
-      git-raw-commits: 2.0.0
-      git-remote-origin-url: 2.0.0
-      git-semver-tags: 2.0.3
-      lodash: 4.17.15
-      normalize-package-data: 2.5.0
-      q: 1.5.1
-      read-pkg: 3.0.0
-      read-pkg-up: 3.0.0
-      through2: 3.0.1
-    dev: true
-    engines:
-      node: '>=6.9.0'
-    resolution:
-      integrity: sha512-LMMX1JlxPIq/Ez5aYAYS5CpuwbOk6QFp8O4HLAcZxe3vxoCtABkhfjetk8IYdRB9CDQGwJFLR3Dr55Za6XKgUQ==
   /conventional-changelog-core/4.1.1:
     dependencies:
       conventional-changelog-writer: 4.0.11
@@ -1926,6 +1906,24 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-g81GQOR392I+57Cw3IyP1f+f42ME6aEkbR+L7v1FBBWolB0xkjKTeCWVguzRrp6UiT1O6gBpJbEy2eq7AnV1rw==
+  /conventional-changelog/3.1.12:
+    dependencies:
+      conventional-changelog-angular: 5.0.6
+      conventional-changelog-atom: 2.0.3
+      conventional-changelog-codemirror: 2.0.3
+      conventional-changelog-conventionalcommits: 4.2.3
+      conventional-changelog-core: 4.1.1
+      conventional-changelog-ember: 2.0.4
+      conventional-changelog-eslint: 3.0.4
+      conventional-changelog-express: 2.0.1
+      conventional-changelog-jquery: 3.0.6
+      conventional-changelog-jshint: 2.0.3
+      conventional-changelog-preset-loader: 2.3.0
+    dev: true
+    engines:
+      node: '>=6.9.0'
+    resolution:
+      integrity: sha512-zyGKwii8Z5zOq1nGFm5jn9Ou1jQ6UBoRT0+nqBIU8fEzh64+AcVxrY97tVuK77Ati0xwpBiFHpDXAW7pkq1jEw==
   /conventional-changelog/3.1.15:
     dependencies:
       conventional-changelog-angular: 5.0.6
@@ -1944,24 +1942,6 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-CoWM+Z9bYyF00QzNpTnxkCLiuLAeRocJz3C/foFjvhsdltdtkJgMChp7GytQNjm4pT7JFBVJTpqLHTpxNtOzaA==
-  /conventional-changelog/3.1.9:
-    dependencies:
-      conventional-changelog-angular: 5.0.6
-      conventional-changelog-atom: 2.0.3
-      conventional-changelog-codemirror: 2.0.3
-      conventional-changelog-conventionalcommits: 4.2.3
-      conventional-changelog-core: 3.2.3
-      conventional-changelog-ember: 2.0.4
-      conventional-changelog-eslint: 3.0.4
-      conventional-changelog-express: 2.0.1
-      conventional-changelog-jquery: 3.0.6
-      conventional-changelog-jshint: 2.0.3
-      conventional-changelog-preset-loader: 2.3.0
-    dev: true
-    engines:
-      node: '>=6.9.0'
-    resolution:
-      integrity: sha512-JbNVm1iGZ3aXxcFZjqKNDNfdgchQjSltWc8rvSniMrkHLsub9Wn20/JLdJNTBM74dt1IA2M+v/mzServ6N37YA==
   /conventional-commit-types/2.3.0:
     dev: true
     resolution:
@@ -1990,7 +1970,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-YcBSGkZbYp7d+Cr3NWUeXbPDFUN6g3SaSIzOybi8bjHL5IJ5225OSCxJJ4LgziyEJ7AaJtE9L2/EU6H7Nt/DDQ==
-  /conventional-recommended-bump/6.0.0:
+  /conventional-recommended-bump/6.0.2:
     dependencies:
       concat-stream: 2.0.0
       conventional-changelog-preset-loader: 2.3.0
@@ -2005,7 +1985,7 @@ packages:
       node: '>=6.9.0'
     hasBin: true
     resolution:
-      integrity: sha512-iIHkDOuWCC49J/E4WXvXBCCrO2NoGqwjfhm2iUOHPPEik8TVHxczt/hFaWY+4MXeZ/nC53BNfjmlr8+EXOrlvA==
+      integrity: sha512-9qWhAweJbT6CAHcCprBYzUb3tySsaRrUx0ckpMprHbtWOBfl3gxakUCBNd/4T3m2Iv9Cb8Y4P2Px3cR5ysXPDw==
   /convert-source-map/1.7.0:
     dependencies:
       safe-buffer: 5.1.2
@@ -3116,16 +3096,6 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-UoJlna4hBxRaERJhEq0yFuxfpl8=
-  /git-semver-tags/2.0.3:
-    dependencies:
-      meow: 4.0.1
-      semver: 6.3.0
-    dev: true
-    engines:
-      node: '>=6.9.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-tj4FD4ww2RX2ae//jSrXZzrocla9db5h0V7ikPl1P/WwoZar9epdUhwR7XHXSgc+ZkNq72BEEerqQuicoEQfzA==
   /git-semver-tags/3.0.0:
     dependencies:
       meow: 4.0.1
@@ -6116,12 +6086,12 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-HXXqVUq7+pcKeLqqZj6mHFUMvXtOJt1uoUx09pFW6011inTMxqI8BA8PM95myrIyyKwdnzjdFjLiE6KBPVtJIg==
-  /standard-version/7.0.0:
+  /standard-version/7.0.1:
     dependencies:
       chalk: 2.4.2
-      conventional-changelog: 3.1.9
-      conventional-changelog-config-spec: 2.0.0
-      conventional-recommended-bump: 6.0.0
+      conventional-changelog: 3.1.12
+      conventional-changelog-config-spec: 2.1.0
+      conventional-recommended-bump: 6.0.2
       detect-indent: 6.0.0
       detect-newline: 3.0.0
       dotgitignore: 2.1.0
@@ -6130,14 +6100,14 @@ packages:
       fs-access: 1.0.1
       git-semver-tags: 3.0.0
       semver: 6.3.0
-      stringify-package: 1.0.0
-      yargs: 13.3.0
+      stringify-package: 1.0.1
+      yargs: 14.2.0
     dev: true
     engines:
       node: '>=8.0'
     hasBin: true
     resolution:
-      integrity: sha512-pbFXM9vutnxTkSGkqSWQeYCMYqWmFBaLUNdEc/sJDQnMgwB0Csw3CZeeDhi62VoVS3P8mQiYbvXGZWyOBWxUbw==
+      integrity: sha512-3GR9dPlNpC/osTwb9YsU2KQelGvSORMPUFN7zOUE3HN4yjCTsT57IJAFsyPXPP512QDMSxwwjhxa8Em5vF5F5Q==
   /static-extend/0.1.2:
     dependencies:
       define-property: 0.2.5
@@ -6214,10 +6184,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-hkRX8U1WjJFd8LsDJ2yQ/wWWxaopEsABU1XfkM8A+j0+85JAGppt16cr1Whg6KIbb4okU6Mql6BOj+uup/wKeA==
-  /stringify-package/1.0.0:
+  /stringify-package/1.0.1:
     dev: true
     resolution:
-      integrity: sha512-JIQqiWmLiEozOC0b0BtxZ/AOUtdUZHCBPgqIZ2kSJJqGwgb9neo44XdTHUC4HZSGqi03hOeB7W/E8rAlKnGe9g==
+      integrity: sha512-sa4DUQsYciMP1xhKWGuFM04fB0LG/9DlluZoSVywUMRNvzid6XucHK0/90xGxRoHrAaROrcHK1aPKaijCtSrhg==
   /strip-ansi/4.0.0:
     dependencies:
       ansi-regex: 3.0.0
@@ -6828,6 +6798,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-oVAVsHz6uFrg3XQheFII8ESO2ssAf9luWuAd6Wexsu4F3OtIW0o8IribPXYrD4WC24LWtPrJlGy87y5udK+dxQ==
+  /yargs-parser/15.0.0:
+    dependencies:
+      camelcase: 5.3.1
+      decamelize: 1.2.0
+    dev: true
+    resolution:
+      integrity: sha512-xLTUnCMc4JhxrPEPUYD5IBR1mWCK/aT6+RJ/K29JY2y1vD+FhtgKK0AXRWvI262q3QSffAQuTouFIKUuHX89wQ==
   /yargs-unparser/1.6.0:
     dependencies:
       flat: 4.1.0
@@ -6853,6 +6830,22 @@ packages:
     dev: true
     resolution:
       integrity: sha512-2eehun/8ALW8TLoIl7MVaRUrg+yCnenu8B4kBlRxj3GJGDKU1Og7sMXPNm1BYyM1DOJmTZ4YeN/Nwxv+8XJsUA==
+  /yargs/14.2.0:
+    dependencies:
+      cliui: 5.0.0
+      decamelize: 1.2.0
+      find-up: 3.0.0
+      get-caller-file: 2.0.5
+      require-directory: 2.1.1
+      require-main-filename: 2.0.0
+      set-blocking: 2.0.0
+      string-width: 3.1.0
+      which-module: 2.0.0
+      y18n: 4.0.0
+      yargs-parser: 15.0.0
+    dev: true
+    resolution:
+      integrity: sha512-/is78VKbKs70bVZH7w4YaZea6xcJWOAwkhbR0CFuZBmYtfTYF0xjGJF43AYd8g2Uii1yJwmS5GR2vBmrc32sbg==
   /yn/3.1.1:
     dev: true
     engines:
@@ -6895,6 +6888,6 @@ specifiers:
   rollup-plugin-replace: 2.2.0
   rollup-plugin-terser: 5.1.2
   serve: 11.2.0
-  standard-version: 7.0.0
+  standard-version: 7.0.1
   ts-node: 8.5.2
   typescript: 3.7.2
