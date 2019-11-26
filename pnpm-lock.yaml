@@ -12,7 +12,7 @@ devDependencies:
   commitizen: 4.0.3
   conventional-changelog: 3.1.15
   conventional-changelog-conventionalcommits: 4.2.3
-  coveralls: 3.0.8
+  coveralls: 3.0.9
   cpy: 7.3.0
   cross-env: 6.0.3
   cz-conventional-changelog: 3.0.2
@@ -717,7 +717,7 @@ packages:
       '@babel/plugin-transform-unicode-regex': 7.7.4_@babel+core@7.7.4
       '@babel/types': 7.7.4
       browserslist: 4.7.3
-      core-js-compat: 3.4.2
+      core-js-compat: 3.4.3
       invariant: 2.2.4
       js-levenshtein: 1.1.6
       semver: 5.7.1
@@ -1637,13 +1637,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-YT+2hjmyaklKxTJT4Vsaa9iK2oU=
-  /cobertura-parse/1.0.5:
-    dependencies:
-      mocha: 5.0.5
-      xml2js: 0.4.19
-    dev: true
-    resolution:
-      integrity: sha512-uYJfkGhzw1wibe/8jqqHmSaPNWFguzq/IlSj83u3cSnZho/lUnfj0mLTmZGmB3AiKCOTYr22TYwpR1sXy2JEkg==
   /collection-visit/1.0.0:
     dependencies:
       map-visit: 1.0.0
@@ -1693,10 +1686,6 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==
-  /commander/2.11.0:
-    dev: true
-    resolution:
-      integrity: sha512-b0553uYA5YAEGgyYIGYROzKQ7X5RAqedkfjiZxwi0kL1g3bOaBNNZfYkzt/CL0umgD5wc9Jec2FbB98CjkMRvQ==
   /commander/2.20.3:
     dev: true
     resolution:
@@ -2009,13 +1998,13 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
-  /core-js-compat/3.4.2:
+  /core-js-compat/3.4.3:
     dependencies:
       browserslist: 4.7.3
       semver: 6.3.0
     dev: true
     resolution:
-      integrity: sha512-W0Aj+LM3EAxxjD0Kp2o4be8UlnxIZHNupBv2znqrheR4aY2nOn91794k/xoSp+SxqqriiZpTsSwBtZr60cbkwQ==
+      integrity: sha512-HgW7pxjAdq6EMxT5uOhbTfjgZo8fvWn0D6QXVlWs3z1Eerux7tRrJ4gcgnZNn6S0OMPHlClJuIEPp0hnow44Sg==
   /core-js/2.6.10:
     deprecated: 'core-js@<3.0 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.'
     dev: true
@@ -2039,9 +2028,8 @@ packages:
     optional: true
     resolution:
       integrity: sha512-H65gsXo1SKjf8zmrJ67eJk8aIRKV5ff2D4uKZIBZShbhGSpEmsQOPW/SKMKYhSTrqR7ufy6RP69rPogdaPh/kA==
-  /coveralls/3.0.8:
+  /coveralls/3.0.9:
     dependencies:
-      cobertura-parse: 1.0.5
       js-yaml: 3.13.1
       lcov-parse: 1.0.0
       log-driver: 1.2.7
@@ -2052,7 +2040,7 @@ packages:
       node: '>=6'
     hasBin: true
     resolution:
-      integrity: sha512-lkQlg29RhV9zwB0gDaEAWoap8xPgFxtPsVIpTNiDDtWNrvtP1/RmGJRRAV/Loz2gihmppObkSL0wnptEGUXaOQ==
+      integrity: sha512-nNBg3B1+4iDox5A5zqHKzUTiwl2ey4k2o0NEcVZYvl+GOSJdKBj4AJGKLv6h3SvWch7tABHePAQOSZWM9E2hMg==
   /cp-file/6.2.0:
     dependencies:
       graceful-fs: 4.2.3
@@ -2231,12 +2219,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
-  /debug/3.1.0:
-    dependencies:
-      ms: 2.0.0
-    dev: true
-    resolution:
-      integrity: sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
   /debug/3.2.6:
     dependencies:
       ms: 2.1.2
@@ -3158,17 +3140,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-jFoUlNIGbFcMw7/kSWF1rMTVAqs=
-  /glob/7.1.2:
-    dependencies:
-      fs.realpath: 1.0.0
-      inflight: 1.0.6
-      inherits: 2.0.4
-      minimatch: 3.0.4
-      once: 1.4.0
-      path-is-absolute: 1.0.1
-    dev: true
-    resolution:
-      integrity: sha512-MJTUg1kjuLeQCJ+ccE4Vpa6kKVXkPYJ2mOCQyUuKLcLQsdrMCpBPUi8qVE6+YuaJkozeA9NusTAw3hLr8Xe5EQ==
   /glob/7.1.3:
     dependencies:
       fs.realpath: 1.0.0
@@ -3281,12 +3252,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-a30VEBm4PEdx1dRB7MFK7BejejvCvBronbLjht+sHuGYj8PHs7M/5Z+rt5lw551vZ7yfTCj4Vuyy3mSJytDWRQ==
-  /growl/1.10.3:
-    dev: true
-    engines:
-      node: '>=4.x'
-    resolution:
-      integrity: sha512-hKlsbA5Vu3xsh1Cg3J7jSmX/WaW6A5oBeqzM88oNbCRQFz+zUaXm6yxS4RVytp1scBoJzSYl4YAEOQIt6O8V1Q==
   /growl/1.10.5:
     dev: true
     engines:
@@ -3330,12 +3295,6 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-sNvOCzEQNr/qrvJgc3UG/kD4QtlHycrzwS+6mfTrrSq97BvaYcPZZI1ZSqGSPR73Cxn4LKTD4PttRwfU7jWq5g==
-  /has-flag/2.0.0:
-    dev: true
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha1-6CB68cx7MNRGzHC3NLXovhj4jVE=
   /has-flag/3.0.0:
     dev: true
     engines:
@@ -3421,11 +3380,6 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-UqMvq4Vp1BymmmH/GiFPjrfIvTk=
-  /he/1.1.1:
-    dev: true
-    hasBin: true
-    resolution:
-      integrity: sha1-k0EP0hsAlzUVH4howvJx80J+I/0=
   /he/1.2.0:
     dev: true
     hasBin: true
@@ -4614,24 +4568,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
-  /mocha/5.0.5:
-    dependencies:
-      browser-stdout: 1.3.1
-      commander: 2.11.0
-      debug: 3.1.0
-      diff: 3.5.0
-      escape-string-regexp: 1.0.5
-      glob: 7.1.2
-      growl: 1.10.3
-      he: 1.1.1
-      mkdirp: 0.5.1
-      supports-color: 4.4.0
-    dev: true
-    engines:
-      node: '>= 4.0.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-3MM3UjZ5p8EJrYpG7s+29HAI9G7sTzKEe4+w37Dg0QP7qL4XGsV+Q2xet2cE37AqdgN1OtYQB6Vl98YiPV3PgA==
   /mocha/6.2.2:
     dependencies:
       ansi-colors: 3.2.3
@@ -5879,10 +5815,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
-  /sax/1.2.4:
-    dev: true
-    resolution:
-      integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
   /semver/2.3.2:
     dev: true
     hasBin: true
@@ -6341,14 +6273,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-VTyMAUfdm047mwKl+u79WIdrZxtFtn+nBxHeb844XBQ9uMNTuTHdx2hc5RiAJYqwTj3wc/xe5HLSdJSkJ+WfZw==
-  /supports-color/4.4.0:
-    dependencies:
-      has-flag: 2.0.0
-    dev: true
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha512-rKC3+DyXWgK0ZLKwmRsrkyHVZAjNkfzeehuFWdGGcqGDTZFH73+RH6S/RDAAxl9GusSjZSUWYLmT9N5pzXFOXQ==
   /supports-color/5.5.0:
     dependencies:
       has-flag: 3.0.0
@@ -6822,19 +6746,6 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-/lg70HAjtkUgWPVZhZcm+T4hkL8Zbtp1nFNOn3lRrxnlv50SRBv7cR7RqR+GMsd3hUXy9hWBo4CHTbFTcOYwig==
-  /xml2js/0.4.19:
-    dependencies:
-      sax: 1.2.4
-      xmlbuilder: 9.0.7
-    dev: true
-    resolution:
-      integrity: sha512-esZnJZJOiJR9wWKMyuvSE1y6Dq5LCuJanqhxslH2bxM6duahNZ+HMpCLhBQGZkbX6xRf8x1Y2eJlgt2q3qo49Q==
-  /xmlbuilder/9.0.7:
-    dev: true
-    engines:
-      node: '>=4.0'
-    resolution:
-      integrity: sha1-Ey7mPS7FVlxVfiD0wi35rKaGsQ0=
   /xmlcreate/2.0.1:
     dev: true
     resolution:
@@ -6963,7 +6874,7 @@ specifiers:
   commitizen: 4.0.3
   conventional-changelog: 3.1.15
   conventional-changelog-conventionalcommits: 4.2.3
-  coveralls: 3.0.8
+  coveralls: 3.0.9
   cpy: 7.3.0
   cross-env: 6.0.3
   cz-conventional-changelog: 3.0.2
