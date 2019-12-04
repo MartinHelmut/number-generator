@@ -89,6 +89,6 @@
     "serve": "11.2.0",
     "standard-version": "7.0.1",
     "ts-node": "8.5.4",
-    "typescript": "3.7.2"
+    "typescript": "3.7.3"
   }
 }
