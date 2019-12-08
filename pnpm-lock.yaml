@@ -27,7 +27,7 @@ devDependencies:
   rollup-plugin-babel: 4.3.3_@babel+core@7.7.5+rollup@1.27.8
   rollup-plugin-clear: 2.0.7
   rollup-plugin-copy: 3.1.0
-  rollup-plugin-external-globals: 0.4.0_rollup@1.27.8
+  rollup-plugin-external-globals: 0.5.0_rollup@1.27.8
   rollup-plugin-filesize: 6.2.1
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-node-resolve: 5.2.0_rollup@1.27.8
@@ -2653,10 +2653,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-SqmZANLWS0mnatqbSfRP5g8OXZC12Fgg1IwNtLsyHDzJizORW4khDfjPqJZsemPWBB2uqykUah5YpQ6epsqC/w==
-  /estree-walker/0.8.1:
+  /estree-walker/1.0.0:
     dev: true
     resolution:
-      integrity: sha512-H6cJORkqvrNziu0KX2hqOMAlA2CiuAxHeGJXSIoKA/KLv229Dw806J3II6mKTm5xiDX1At1EXCfsOQPB+tMB+g==
+      integrity: sha512-vY6xMN2j47HfQfVWGRqHshr1olf+XS1Y488NoqjDP1c8E1TcoZr/D3eSGa6akBs76WL1X9nluWjgBsCKdt/qKg==
   /esutils/2.0.3:
     dev: true
     engines:
@@ -5759,18 +5759,18 @@ packages:
       node: '>=8.3'
     resolution:
       integrity: sha512-oVw3ljRV5jv7Yw/6eCEHntVs9Mc+NFglc0iU0J8ei76gldYmtBQ0M/j6WAkZUFVRSrhgfCrEakUllnN87V2f4w==
-  /rollup-plugin-external-globals/0.4.0_rollup@1.27.8:
+  /rollup-plugin-external-globals/0.5.0_rollup@1.27.8:
     dependencies:
-      estree-walker: 0.8.1
+      estree-walker: 1.0.0
       is-reference: 1.1.4
       magic-string: 0.25.4
       rollup: 1.27.8
       rollup-pluginutils: 2.8.2
     dev: true
     peerDependencies:
-      rollup: '>=0.60'
+      rollup: ^1.27.9
     resolution:
-      integrity: sha512-HFkOrBtL/i4vK4jOA7/Y0uR+Evus+McnSDBJMWwBgXn0nPFX9yrKXijVqS1xskjmPvt9tguJ9Rf9feKKwTpz+w==
+      integrity: sha512-v3qjync/2wcqdSesNP3qPnYeOnnV39ydCU+2fTxjlmux8uA1VqM4cUVffkgzoDh3TBOEhN8JWAHrN7Hs9ZD0Sg==
   /rollup-plugin-filesize/6.2.1:
     dependencies:
       boxen: 4.2.0
@@ -6951,7 +6951,7 @@ specifiers:
   rollup-plugin-babel: 4.3.3
   rollup-plugin-clear: 2.0.7
   rollup-plugin-copy: 3.1.0
-  rollup-plugin-external-globals: 0.4.0
+  rollup-plugin-external-globals: 0.5.0
   rollup-plugin-filesize: 6.2.1
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-node-resolve: 5.2.0
