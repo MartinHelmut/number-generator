@@ -23,16 +23,16 @@ devDependencies:
   nyc: 14.1.1
   prettier: 1.19.1
   regenerator-runtime: 0.13.3
-  rollup: 1.27.11
-  rollup-plugin-babel: 4.3.3_@babel+core@7.7.5+rollup@1.27.11
+  rollup: 1.27.12
+  rollup-plugin-babel: 4.3.3_@babel+core@7.7.5+rollup@1.27.12
   rollup-plugin-clear: 2.0.7
   rollup-plugin-copy: 3.1.0
-  rollup-plugin-external-globals: 0.5.0_rollup@1.27.11
+  rollup-plugin-external-globals: 0.5.0_rollup@1.27.12
   rollup-plugin-filesize: 6.2.1
   rollup-plugin-node-builtins: 2.1.2
-  rollup-plugin-node-resolve: 5.2.0_rollup@1.27.11
+  rollup-plugin-node-resolve: 5.2.0_rollup@1.27.12
   rollup-plugin-replace: 2.2.0
-  rollup-plugin-terser: 5.1.3_rollup@1.27.11
+  rollup-plugin-terser: 5.1.3_rollup@1.27.12
   serve: 11.2.0
   standard-version: 7.0.1
   ts-node: 8.5.4_typescript@3.7.3
@@ -939,7 +939,7 @@ packages:
       integrity: sha512-kL5CuoXA/dgxlBbVrflsflzQ3PAas7RYZB52NOm/6839iVYJgKMJ3cQJD+t2i5+qFa8h3MDpEOJiS64E8JLnSQ==
   /agadoo/1.1.0:
     dependencies:
-      rollup: 1.27.11
+      rollup: 1.27.12
       rollup-plugin-virtual: 1.0.1
     dev: true
     hasBin: true
@@ -5518,7 +5518,7 @@ packages:
       regenerate: 1.4.0
       regenerate-unicode-properties: 8.1.0
       regjsgen: 0.5.1
-      regjsparser: 0.6.0
+      regjsparser: 0.6.1
       unicode-match-property-ecmascript: 1.0.4
       unicode-match-property-value-ecmascript: 1.1.0
     dev: true
@@ -5545,13 +5545,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-5qxzGZjDs9w4tzT3TPhCJqWdCc3RLYwy9J2NB0nm5Lz+S273lvWcpjaTGHsT1dc6Hhfq41uSEOw8wBmxrKOuyg==
-  /regjsparser/0.6.0:
+  /regjsparser/0.6.1:
     dependencies:
       jsesc: 0.5.0
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-RQ7YyokLiQBomUJuUG8iGVvkgOLxwyZM8k6d3q5SAXpg4r5TZJZigKFvC6PpD+qQ98bCDC5YelPeA3EucDoNeQ==
+      integrity: sha512-7LutE94sz/NKSYegK+/4E77+8DipxF+Qn2Tmu362AcmsF2NYq/wx3+ObvU90TKEhjf7hQoFXo23ajjrXP7eUgg==
   /release-zalgo/1.0.0:
     dependencies:
       es6-error: 4.1.1
@@ -5729,11 +5729,11 @@ packages:
     dev: true
     resolution:
       integrity: sha512-ii4iagi25WusVoiC4B4lq7pbXfAp3D9v5CwfkY33vffw2+pkDjY1D8GaN7spsxvCSx8dkPqOZCEZyfxcmJG2IA==
-  /rollup-plugin-babel/4.3.3_@babel+core@7.7.5+rollup@1.27.11:
+  /rollup-plugin-babel/4.3.3_@babel+core@7.7.5+rollup@1.27.12:
     dependencies:
       '@babel/core': 7.7.5
       '@babel/helper-module-imports': 7.7.4
-      rollup: 1.27.11
+      rollup: 1.27.12
       rollup-pluginutils: 2.8.2
     dev: true
     peerDependencies:
@@ -5759,12 +5759,12 @@ packages:
       node: '>=8.3'
     resolution:
       integrity: sha512-oVw3ljRV5jv7Yw/6eCEHntVs9Mc+NFglc0iU0J8ei76gldYmtBQ0M/j6WAkZUFVRSrhgfCrEakUllnN87V2f4w==
-  /rollup-plugin-external-globals/0.5.0_rollup@1.27.11:
+  /rollup-plugin-external-globals/0.5.0_rollup@1.27.12:
     dependencies:
       estree-walker: 1.0.0
       is-reference: 1.1.4
       magic-string: 0.25.4
-      rollup: 1.27.11
+      rollup: 1.27.12
       rollup-pluginutils: 2.8.2
     dev: true
     peerDependencies:
@@ -5792,13 +5792,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-JKH+1KQyV7a2Q3HYq8bOGrFFl+k=
-  /rollup-plugin-node-resolve/5.2.0_rollup@1.27.11:
+  /rollup-plugin-node-resolve/5.2.0_rollup@1.27.12:
     dependencies:
       '@types/resolve': 0.0.8
       builtin-modules: 3.1.0
       is-module: 1.0.0
       resolve: 1.13.1
-      rollup: 1.27.11
+      rollup: 1.27.12
       rollup-pluginutils: 2.8.2
     dev: true
     peerDependencies:
@@ -5813,11 +5813,11 @@ packages:
     dev: true
     resolution:
       integrity: sha512-/5bxtUPkDHyBJAKketb4NfaeZjL5yLZdeUihSfbF2PQMz+rSTEb8ARKoOl3UBT4m7/X+QOXJo3sLTcq+yMMYTA==
-  /rollup-plugin-terser/5.1.3_rollup@1.27.11:
+  /rollup-plugin-terser/5.1.3_rollup@1.27.12:
     dependencies:
       '@babel/code-frame': 7.5.5
       jest-worker: 24.9.0
-      rollup: 1.27.11
+      rollup: 1.27.12
       rollup-pluginutils: 2.8.2
       serialize-javascript: 2.1.2
       terser: 4.4.2
@@ -5836,7 +5836,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-EEp9NhnUkwY8aif6bxgovPHMoMoNr2FulJziTndpt5H9RdwC47GSGuII9XxpSdzVGM0GWrNPHV6ie1LTNJPaLQ==
-  /rollup/1.27.11:
+  /rollup/1.27.12:
     dependencies:
       '@types/estree': 0.0.40
       '@types/node': 12.12.17
@@ -5844,7 +5844,7 @@ packages:
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-ENXdvXk8tjtkNTvIvjRzOEu+vv54va7PiDR7VwP8TD+In6J87gKzzFmQMawQixEL2y9rsPEgomUS7ZVkq47Tww==
+      integrity: sha512-51iR7n6NQfdQJlRrIktaGmkdt395A8Vue7CdnlrK6UhY9DY2GaKsTdljWeXisJuZh+w90Gz8VFNh5X+yxP20oQ==
   /run-async/2.3.0:
     dependencies:
       is-promise: 2.1.0
@@ -6947,7 +6947,7 @@ specifiers:
   nyc: 14.1.1
   prettier: 1.19.1
   regenerator-runtime: 0.13.3
-  rollup: 1.27.11
+  rollup: 1.27.12
   rollup-plugin-babel: 4.3.3
   rollup-plugin-clear: 2.0.7
   rollup-plugin-copy: 3.1.0
