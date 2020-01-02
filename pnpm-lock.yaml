@@ -5,7 +5,7 @@ devDependencies:
   '@types/chai': 4.2.7
   '@types/mocha': 5.2.7
   '@types/node': 12.12.22
-  agadoo: 1.1.0
+  agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.2.0
   chalk: 3.0.0
@@ -982,14 +982,15 @@ packages:
     dev: true
     resolution:
       integrity: sha1-anmQQ3ynNtXhKI25K9MmbV9csqo=
-  /agadoo/1.1.0:
+  /agadoo/2.0.0:
     dependencies:
-      rollup: 1.27.13
+      acorn: 7.1.0
+      rollup: 1.27.14
       rollup-plugin-virtual: 1.0.1
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-MiTXQ3As5jARRXa0eZF+ObtzsseQurCXOc1RB19NOGDsimEvoT8DB8iQiC0zAGTfsF/nBhzEle+eV9UpXyWnbw==
+      integrity: sha512-68aFhseH51ZBKYKkQNxwDi1hJwTnywBjHWg068qFnMkpXShhOazNzJUPRvaLQjrqhT3EOUth5G9mt1A0/dGhOw==
   /aggregate-error/3.0.1:
     dependencies:
       clean-stack: 2.2.0
@@ -5950,6 +5951,7 @@ packages:
     resolution:
       integrity: sha512-FuFuXE5QUJ7snyxHLPp/0LFXJhdomKlIx/aK7Tg88Yubsx/UU/lmInoJafXJ4jwVVNcORJ1wRUC5T9cy5yk0wA==
   /rollup-plugin-virtual/1.0.1:
+    deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-virtual.
     dev: true
     resolution:
       integrity: sha512-HCTBpV8MwP5lNzZrHD2moVxHIToHU1EkzkKGVj6Z0DcgUfxrxrZmeQirQeLz2yhnkJqRjwiVywK9CS8jDYakrw==
@@ -5959,15 +5961,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-EEp9NhnUkwY8aif6bxgovPHMoMoNr2FulJziTndpt5H9RdwC47GSGuII9XxpSdzVGM0GWrNPHV6ie1LTNJPaLQ==
-  /rollup/1.27.13:
-    dependencies:
-      '@types/estree': 0.0.40
-      '@types/node': 12.12.18
-      acorn: 7.1.0
-    dev: true
-    hasBin: true
-    resolution:
-      integrity: sha512-hDi7M07MpmNSDE8YVwGVFA8L7n8jTLJ4lG65nMAijAyqBe//rtu4JdxjUBE7JqXfdpqxqDTbCDys9WcqdpsQvw==
   /rollup/1.27.14:
     dependencies:
       '@types/estree': 0.0.40
@@ -7107,7 +7100,7 @@ specifiers:
   '@types/chai': 4.2.7
   '@types/mocha': 5.2.7
   '@types/node': 12.12.22
-  agadoo: 1.1.0
+  agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.2.0
   chalk: 3.0.0
