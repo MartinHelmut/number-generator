@@ -35,7 +35,7 @@ devDependencies:
   rollup-plugin-terser: 5.1.3_rollup@1.29.0
   serve: 11.3.0
   standard-version: 7.0.1
-  ts-node: 8.5.4_typescript@3.7.4
+  ts-node: 8.6.1_typescript@3.7.4
   typescript: 3.7.4
 lockfileVersion: 5.1
 packages:
@@ -6733,22 +6733,22 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-n5up2e+odkw4dpi8v+sshI8RrbM=
-  /ts-node/8.5.4_typescript@3.7.4:
+  /ts-node/8.6.1_typescript@3.7.4:
     dependencies:
       arg: 4.1.2
       diff: 4.0.1
       make-error: 1.3.5
       source-map-support: 0.5.16
       typescript: 3.7.4
-      yn: 3.1.1
+      yn: 4.0.0
     dev: true
     engines:
-      node: '>=4.2.0'
+      node: '>=6.0.0'
     hasBin: true
     peerDependencies:
-      typescript: '>=2.0'
+      typescript: '>=2.7'
     resolution:
-      integrity: sha512-izbVCRV68EasEPQ8MSIGBNK9dc/4sYJJKYA+IarMQct1RtEot6Xp0bXuClsbUSnKpg50ho+aOAx8en5c+y4OFw==
+      integrity: sha512-KqPbO7/UuOPE4ANAOV9geZjk6tet6rK2K+DFeEJq6kIXUi0nLkrOMksozGkIlFopOorkStlwar3DdWYrdl7zCw==
   /tslib/1.10.0:
     dev: true
     resolution:
@@ -7161,12 +7161,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-GH/X/hYt+x5hOat4LMnCqMd8r5Cv78heOMIJn1hr7QPPBqfeC6p89Y78+WB9yGDvfpCvgasfmWLzNzEioOUD9Q==
-  /yn/3.1.1:
+  /yn/4.0.0:
     dev: true
     engines:
-      node: '>=6'
+      node: '>=10'
     resolution:
-      integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
+      integrity: sha512-huWiiCS4TxKc4SfgmTwW1K7JmXPPAmuXWYy4j9qjQo4+27Kni8mGhAAi1cloRWmBe2EqcLgt3IGqQoRL/MtPgg==
 specifiers:
   '@babel/core': 7.7.7
   '@babel/preset-env': 7.7.7
@@ -7204,5 +7204,5 @@ specifiers:
   rollup-plugin-terser: 5.1.3
   serve: 11.3.0
   standard-version: 7.0.1
-  ts-node: 8.5.4
+  ts-node: 8.6.1
   typescript: 3.7.4
