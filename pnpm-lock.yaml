@@ -26,7 +26,7 @@ devDependencies:
   rollup: 1.29.0
   rollup-plugin-babel: 4.3.3_@babel+core@7.8.3+rollup@1.29.0
   rollup-plugin-clear: 2.0.7
-  rollup-plugin-copy: 3.1.0
+  rollup-plugin-copy: 3.2.1
   rollup-plugin-external-globals: 0.5.0_rollup@1.29.0
   rollup-plugin-filesize: 6.2.1
   rollup-plugin-node-builtins: 2.1.2
@@ -1084,7 +1084,7 @@ packages:
       integrity: sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==
   /@types/fs-extra/8.0.1:
     dependencies:
-      '@types/node': 12.12.18
+      '@types/node': 12.12.24
     dev: true
     resolution:
       integrity: sha512-J00cVDALmi/hJOYsunyT52Hva5TnJeKP5yd1r+mH/ZU0mbYZflR0Z5kw5kITtKTRYMhm1JMClOFYdHnQszEvqw==
@@ -4843,7 +4843,7 @@ packages:
   /micromatch/4.0.2:
     dependencies:
       braces: 3.0.2
-      picomatch: 2.1.1
+      picomatch: 2.2.1
     dev: true
     engines:
       node: '>=8'
@@ -5544,6 +5544,12 @@ packages:
       node: '>=8.6'
     resolution:
       integrity: sha512-OYMyqkKzK7blWO/+XZYP6w8hH0LDvkBvdvKukti+7kqYFCiEAk+gI3DWnryapc0Dau05ugGTy0foQ6mqn4AHYA==
+  /picomatch/2.2.1:
+    dev: true
+    engines:
+      node: '>=8.6'
+    resolution:
+      integrity: sha512-ISBaA8xQNmwELC7eOjqFKMESB2VIqt4PPDD0nsS95b/9dZXvVKOlz9keMSnoGGKcOHXfTvDD6WMaRoSc9UuhRA==
   /pify/2.3.0:
     dev: true
     engines:
@@ -6142,7 +6148,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-Hg8NC3JcJBO1ofgyQC0IACpyKn/yhHPGZ3C7R3ubNGWUXy9JXHQrewk4J4hVcZznw6SOKayLsaNae596Rwt8Vg==
-  /rollup-plugin-copy/3.1.0:
+  /rollup-plugin-copy/3.2.1:
     dependencies:
       '@types/fs-extra': 8.0.1
       colorette: 1.1.0
@@ -6153,7 +6159,7 @@ packages:
     engines:
       node: '>=8.3'
     resolution:
-      integrity: sha512-oVw3ljRV5jv7Yw/6eCEHntVs9Mc+NFglc0iU0J8ei76gldYmtBQ0M/j6WAkZUFVRSrhgfCrEakUllnN87V2f4w==
+      integrity: sha512-HuMrwIBAJUpy0MCCdRJLbxLJVyha+HrHbJCLyXm5gilSKplDDLOHpue4dyQS2xFDtxg278DlZtK26BlhDXvd3w==
   /rollup-plugin-external-globals/0.5.0_rollup@1.29.0:
     dependencies:
       estree-walker: 1.0.0
@@ -7412,7 +7418,7 @@ specifiers:
   rollup: 1.29.0
   rollup-plugin-babel: 4.3.3
   rollup-plugin-clear: 2.0.7
-  rollup-plugin-copy: 3.1.0
+  rollup-plugin-copy: 3.2.1
   rollup-plugin-external-globals: 0.5.0
   rollup-plugin-filesize: 6.2.1
   rollup-plugin-node-builtins: 2.1.2
