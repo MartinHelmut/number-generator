@@ -26,7 +26,7 @@ devDependencies:
   rollup: 1.29.1
   rollup-plugin-babel: 4.3.3_@babel+core@7.8.3+rollup@1.29.1
   rollup-plugin-clear: 2.0.7
-  rollup-plugin-copy: 3.2.1
+  rollup-plugin-copy: 3.3.0
   rollup-plugin-external-globals: 0.5.0_rollup@1.29.1
   rollup-plugin-filesize: 6.2.1
   rollup-plugin-node-builtins: 2.1.2
@@ -1084,7 +1084,7 @@ packages:
       integrity: sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==
   /@types/fs-extra/8.0.1:
     dependencies:
-      '@types/node': 12.12.24
+      '@types/node': 12.12.25
     dev: true
     resolution:
       integrity: sha512-J00cVDALmi/hJOYsunyT52Hva5TnJeKP5yd1r+mH/ZU0mbYZflR0Z5kw5kITtKTRYMhm1JMClOFYdHnQszEvqw==
@@ -1112,10 +1112,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-8sRGhbpU+ck1n0PGAUgVrWrWdjSW2aqNeyC15W88GRsMpSwzv6RJGlLhE7s2RhVSOdyDmxbqlWSeThq4/7xqlA==
-  /@types/node/12.12.24:
-    dev: true
-    resolution:
-      integrity: sha512-1Ciqv9pqwVtW6FsIUKSZNB82E5Cu1I2bBTj1xuIHXLe/1zYLl3956Nbhg2MzSYHVfl9/rmanjbQIb7LibfCnug==
   /@types/node/12.12.25:
     dev: true
     resolution:
@@ -6140,7 +6136,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-Hg8NC3JcJBO1ofgyQC0IACpyKn/yhHPGZ3C7R3ubNGWUXy9JXHQrewk4J4hVcZznw6SOKayLsaNae596Rwt8Vg==
-  /rollup-plugin-copy/3.2.1:
+  /rollup-plugin-copy/3.3.0:
     dependencies:
       '@types/fs-extra': 8.0.1
       colorette: 1.1.0
@@ -6151,7 +6147,7 @@ packages:
     engines:
       node: '>=8.3'
     resolution:
-      integrity: sha512-HuMrwIBAJUpy0MCCdRJLbxLJVyha+HrHbJCLyXm5gilSKplDDLOHpue4dyQS2xFDtxg278DlZtK26BlhDXvd3w==
+      integrity: sha512-euDjCUSBXZa06nqnwCNADbkAcYDfzwowfZQkto9K/TFhiH+QG7I4PUsEMwM9tDgomGWJc//z7KLW8t+tZwxADA==
   /rollup-plugin-external-globals/0.5.0_rollup@1.29.1:
     dependencies:
       estree-walker: 1.0.0
@@ -7388,7 +7384,7 @@ specifiers:
   rollup: 1.29.1
   rollup-plugin-babel: 4.3.3
   rollup-plugin-clear: 2.0.7
-  rollup-plugin-copy: 3.2.1
+  rollup-plugin-copy: 3.3.0
   rollup-plugin-external-globals: 0.5.0
   rollup-plugin-filesize: 6.2.1
   rollup-plugin-node-builtins: 2.1.2
