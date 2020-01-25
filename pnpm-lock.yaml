@@ -14,7 +14,7 @@ devDependencies:
   conventional-changelog-conventionalcommits: 4.2.3
   coveralls: 3.0.9
   cpy: 8.0.0
-  cross-env: 6.0.3
+  cross-env: 7.0.0
   cz-conventional-changelog: 3.0.2
   eslint: 6.8.0
   eslint-config-prettier: 6.9.0_eslint@6.8.0
@@ -2391,15 +2391,17 @@ packages:
     dev: true
     resolution:
       integrity: sha512-MJG9liiZ+ogc4TzUwuvbER1JRdgvUFSB5+VR/g5h82fGaIRWMWddtKBHi7/sVhfjQZ6SehlyhvQYrcYkaUIpLg==
-  /cross-env/6.0.3:
+  /cross-env/7.0.0:
     dependencies:
       cross-spawn: 7.0.1
     dev: true
     engines:
-      node: '>=8.0'
+      node: '>=10.14'
+      npm: '>=6'
+      yarn: '>=1'
     hasBin: true
     resolution:
-      integrity: sha512-+KqxF6LCvfhWvADcDPqo64yVIB31gv/jQulX2NGzKS/g3GEVz6/pt4wjHFtFWsHMddebWD/sDthJemzM4MaAag==
+      integrity: sha512-rV6M9ldNgmwP7bx5u6rZsTbYidzwvrwIYZnT08hSGLcQCcggofgFW+sNe7IhA1SRauPS0QuLbbX+wdNtpqE5CQ==
   /cross-spawn/5.1.0:
     dependencies:
       lru-cache: 4.1.5
@@ -7366,7 +7368,7 @@ specifiers:
   conventional-changelog-conventionalcommits: 4.2.3
   coveralls: 3.0.9
   cpy: 8.0.0
-  cross-env: 6.0.3
+  cross-env: 7.0.0
   cz-conventional-changelog: 3.0.2
   eslint: 6.8.0
   eslint-config-prettier: 6.9.0
