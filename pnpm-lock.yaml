@@ -19,7 +19,7 @@ devDependencies:
   eslint: 6.8.0
   eslint-config-prettier: 6.9.0_eslint@6.8.0
   jsdoc: 3.6.3
-  mocha: 7.0.0
+  mocha: 7.0.1
   nyc: 15.0.0
   prettier: 1.19.1
   regenerator-runtime: 0.13.3
@@ -1274,7 +1274,7 @@ packages:
   /anymatch/3.1.1:
     dependencies:
       normalize-path: 3.0.0
-      picomatch: 2.1.1
+      picomatch: 2.2.1
     dev: true
     engines:
       node: '>= 8'
@@ -2757,7 +2757,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-7dFHNmqeFSEt2ZBsCriorKnn3Z2pj+fd9kmI6QoWw4//DL+icEBfc0U7qJCisqrTsKTjw4fNFy2pW9OqStD84g==
-  /es-abstract/1.17.0:
+  /es-abstract/1.17.4:
     dependencies:
       es-to-primitive: 1.2.1
       function-bind: 1.1.1
@@ -2774,7 +2774,7 @@ packages:
     engines:
       node: '>= 0.4'
     resolution:
-      integrity: sha512-yYkE07YF+6SIBmg1MsJ9dlub5L48Ek7X0qz+c/CPCHS9EBXfESorzng4cJQjJW5/pB6vDF41u7F8vUhLVDqIug==
+      integrity: sha512-Ae3um/gb8F0mui/jPL+QiqmglkUsaQf7FwBEHYIFkztkneosu9imhqHpBzQ3h1vit8t5iQ74t6PEVvphBZiuiQ==
   /es-to-primitive/1.2.1:
     dependencies:
       is-callable: 1.1.5
@@ -4926,7 +4926,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
-  /mocha/7.0.0:
+  /mocha/7.0.1:
     dependencies:
       ansi-colors: 3.2.3
       browser-stdout: 1.3.1
@@ -4957,7 +4957,7 @@ packages:
       node: '>= 8.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-CirsOPbO3jU86YKjjMzFLcXIb5YiGLUrjrXFHoJ3e2z9vWiaZVCZQ2+gtRGMPWF+nFhN6AWwLM/juzAQ6KRkbA==
+      integrity: sha512-9eWmWTdHLXh72rGrdZjNbG3aa1/3NRPpul1z0D979QpEnFdCG0Q5tv834N+94QEN2cysfV72YocQ3fn87s70fg==
   /modify-values/1.0.1:
     dev: true
     engines:
@@ -5187,7 +5187,7 @@ packages:
   /object.getownpropertydescriptors/2.1.0:
     dependencies:
       define-properties: 1.1.3
-      es-abstract: 1.17.0
+      es-abstract: 1.17.4
     dev: true
     engines:
       node: '>= 0.8'
@@ -5516,12 +5516,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
-  /picomatch/2.1.1:
-    dev: true
-    engines:
-      node: '>=8.6'
-    resolution:
-      integrity: sha512-OYMyqkKzK7blWO/+XZYP6w8hH0LDvkBvdvKukti+7kqYFCiEAk+gI3DWnryapc0Dau05ugGTy0foQ6mqn4AHYA==
   /picomatch/2.2.1:
     dev: true
     engines:
@@ -5810,7 +5804,7 @@ packages:
       integrity: sha512-gSz026xs2LfxBPudDuI41V1lka8cxg64E66SGe78zJlsUofOg/yqwezdIcdfwik6B4h8LFmWPA9ef9X3FiNFLA==
   /readdirp/3.2.0:
     dependencies:
-      picomatch: 2.1.1
+      picomatch: 2.2.1
     dev: true
     engines:
       node: '>= 8'
@@ -7377,7 +7371,7 @@ specifiers:
   eslint: 6.8.0
   eslint-config-prettier: 6.9.0
   jsdoc: 3.6.3
-  mocha: 7.0.0
+  mocha: 7.0.1
   nyc: 15.0.0
   prettier: 1.19.1
   regenerator-runtime: 0.13.3
