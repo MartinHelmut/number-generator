@@ -15,7 +15,7 @@ devDependencies:
   coveralls: 3.0.9
   cpy: 8.0.0
   cross-env: 7.0.0
-  cz-conventional-changelog: 3.0.2
+  cz-conventional-changelog: 3.1.0
   eslint: 6.8.0
   eslint-config-prettier: 6.10.0_eslint@6.8.0
   jsdoc: 3.6.3
@@ -974,6 +974,13 @@ packages:
     optional: true
     resolution:
       integrity: sha512-9MBRthHaulbWTa8ReG2Oii2qc117NuvzhZdnkuKuYLhker7sUXGFcVhLanuWUKGyfyI2o9zVr/NHsNbCCsTzAA==
+  /@commitlint/execute-rule/8.3.4:
+    dev: true
+    engines:
+      node: '>=4'
+    optional: true
+    resolution:
+      integrity: sha512-f4HigYjeIBn9f7OuNv5zh2y5vWaAhNFrfeul8CRJDy82l3Y+09lxOTGxfF3uMXKrZq4LmuK6qvvRCZ8mUrVvzQ==
   /@commitlint/load/8.2.0:
     dependencies:
       '@commitlint/execute-rule': 8.2.0
@@ -989,6 +996,21 @@ packages:
     optional: true
     resolution:
       integrity: sha512-EV6PfAY/p83QynNd1llHxJiNxKmp43g8+7dZbyfHFbsGOdokrCnoelAVZ+WGgktXwLN/uXyfkcIAxwac015UYw==
+  /@commitlint/load/8.3.5:
+    dependencies:
+      '@commitlint/execute-rule': 8.3.4
+      '@commitlint/resolve-extends': 8.3.5
+      babel-runtime: 6.26.0
+      chalk: 2.4.2
+      cosmiconfig: 5.2.1
+      lodash: 4.17.15
+      resolve-from: 5.0.0
+    dev: true
+    engines:
+      node: '>=4'
+    optional: true
+    resolution:
+      integrity: sha512-poF7R1CtQvIXRmVIe63FjSQmN9KDqjRtU5A6hxqXBga87yB2VUJzic85TV6PcQc+wStk52cjrMI+g0zFx+Zxrw==
   /@commitlint/resolve-extends/8.2.0:
     dependencies:
       '@types/node': 12.12.18
@@ -1002,6 +1024,18 @@ packages:
     optional: true
     resolution:
       integrity: sha512-cwi0HUsDcD502HBP8huXfTkVuWmeo1Fiz3GKxNwMBBsJV4+bKa7QrtxbNpXhVuarX7QjWfNTvmW6KmFS7YK9uw==
+  /@commitlint/resolve-extends/8.3.5:
+    dependencies:
+      import-fresh: 3.2.1
+      lodash: 4.17.15
+      resolve-from: 5.0.0
+      resolve-global: 1.0.0
+    dev: true
+    engines:
+      node: '>=4'
+    optional: true
+    resolution:
+      integrity: sha512-nHhFAK29qiXNe6oH6uG5wqBnCR+BQnxlBW/q5fjtxIaQALgfoNLHwLS9exzbIRFqwJckpR6yMCfgMbmbAOtklQ==
   /@istanbuljs/load-nyc-config/1.0.0:
     dependencies:
       camelcase: 5.3.1
@@ -2243,6 +2277,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-6iB39PrcGYdz0n3z31kj6/Km6mK9hm9oMRhwcLnKxE7WNoeRKZbTAobliKrbYZ5jqyCvtcVEfjCiaEzhL3AVmQ==
+  /conventional-commit-types/3.0.0:
+    dev: true
+    resolution:
+      integrity: sha512-SmmCYnOniSsAa9GqWOeLqc179lfr5TRu5b4QFDkbsrJ5TZjPJx85wtOr3zn+1dbeNiXDKGPbZ72IKbPhLXh/Lg==
   /conventional-commits-filter/2.0.2:
     dependencies:
       lodash.ismatch: 4.4.0
@@ -2471,11 +2509,11 @@ packages:
       '@commitlint/load': 8.2.0
     resolution:
       integrity: sha512-7KASIwB8/ClEyCRvQrCPbN7WkQnUSjSSVNyPM+gDJ0jskLi8h8N2hrdpyeCk7fIqKMRzziqVSOBTB8yyLTMHGQ==
-  /cz-conventional-changelog/3.0.2:
+  /cz-conventional-changelog/3.1.0:
     dependencies:
       chalk: 2.4.2
       commitizen: 4.0.3
-      conventional-commit-types: 2.3.0
+      conventional-commit-types: 3.0.0
       lodash.map: 4.6.0
       longest: 2.0.1
       right-pad: 1.0.1
@@ -2484,9 +2522,9 @@ packages:
     engines:
       node: '>= 10'
     optionalDependencies:
-      '@commitlint/load': 8.2.0
+      '@commitlint/load': 8.3.5
     resolution:
-      integrity: sha512-MPxERbtQyVp0nnpCBiwzKGKmMBSswmCV3Jpef3Axqd5f3c/SOc6VFiSUlclOyZXBn3Xtf4snzt4O15hBTRb2gA==
+      integrity: sha512-SCwPPOF+7qMh1DZkJhrwaxCvZzPaz2E9BwQzcZwBuHlpcJj9zzz7K5vADQRhHuxStaHZFSLbDlZEdcls4bKu7Q==
   /dargs/4.1.0:
     dependencies:
       number-is-nan: 1.0.1
@@ -7369,7 +7407,7 @@ specifiers:
   coveralls: 3.0.9
   cpy: 8.0.0
   cross-env: 7.0.0
-  cz-conventional-changelog: 3.0.2
+  cz-conventional-changelog: 3.1.0
   eslint: 6.8.0
   eslint-config-prettier: 6.10.0
   jsdoc: 3.6.3
