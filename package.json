@@ -55,7 +55,7 @@
     "@babel/core": "7.8.4",
     "@babel/preset-env": "7.8.4",
     "@babel/register": "7.8.3",
-    "@types/chai": "4.2.8",
+    "@types/chai": "4.2.9",
     "@types/mocha": "7.0.1",
     "@types/node": "12.12.27",
     "agadoo": "2.0.0",
