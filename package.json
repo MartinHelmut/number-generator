@@ -42,7 +42,7 @@
     "generator",
     "prng"
   ],
-  "author": "Martin Helmut Fieber <info@martin-fieber.de>",
+  "author": "Martin Helmut Fieber <info@martin-fieber.se>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/MartinHelmut/number-generator/issues"
