@@ -2,7 +2,7 @@
 import { throwInvalidAleaSeed } from "../utils";
 
 /**
- * Number generator with Alea algorithm
+ * Number generator with Alea algorithm.
  *
  * From {@link http://baagoe.com/en/RandomMusings/javascript/}
  * Johannes Baagøe <baagoe@baagoe.com>, 2010
