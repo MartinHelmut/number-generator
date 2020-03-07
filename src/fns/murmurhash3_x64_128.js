@@ -30,9 +30,9 @@ export default (() => {
    * Multiple two 64 bit int (as an array with two 32 bit int)
    *
    * @private
-   * @param {[number, number]} x 64 bit int as two 32 bit int
-   * @param {[number, number]} y 64 bit int as two 32 bit int
-   * @returns {[number, number]} Multiplied 64 bit int as two 32 bit int
+   * @param {number[]} x 64 bit int as two 32 bit int, represented as tuple of 2
+   * @param {number[]} y 64 bit int as two 32 bit int, represented as tuple of 2
+   * @returns {number[]} Multiplied 64 bit int as two 32 bit int, represented as tuple of 2
    */
   function uInt64Multiply(x, y) {
     const o = [0, 0, 0, 0];
@@ -74,9 +74,9 @@ export default (() => {
    * Add two 64 bit int together (as an array with two 32 bit int)
    *
    * @private
-   * @param {[number, number]} x 64 bit int as two 32 bit int
-   * @param {[number, number]} y 64 bit int as two 32 bit int
-   * @returns {[number, number]} Added 64 bit int as two 32 bit int
+   * @param {number[]} x 64 bit int as two 32 bit int, represented as tuple of 2
+   * @param {number[]} y 64 bit int as two 32 bit int, represented as tuple of 2
+   * @returns {number[]} Added 64 bit int as two 32 bit int, represented as tuple of 2
    */
   function uInt64Add(x, y) {
     const o = [0, 0, 0, 0];
@@ -106,9 +106,9 @@ export default (() => {
    * Returns the 64 int rotated left by the number of positions
    *
    * @private
-   * @param {[number, number]} bytes 64 bit int as two 32 bit int
+   * @param {number[]} bytes 64 bit int as two 32 bit int, represented as tuple of 2
    * @param {number} position Positions to rotate int
-   * @returns {[number, number]} Left rotated 64 bit int as two 32 bit int
+   * @returns {number[]} Left rotated 64 bit int as two 32 bit int, represented as tuple of 2
    */
   function uInt64RotateLeft(bytes, position) {
     position %= 64;
@@ -131,9 +131,9 @@ export default (() => {
    * Returns the 64 int with left shift by the number of positions
    *
    * @private
-   * @param {[number, number]} bytes 64 bit int as two 32 bit int
+   * @param {number[]} bytes 64 bit int as two 32 bit int, represented as tuple of 2
    * @param {number} position Positions to shift int
-   * @returns {[number, number]} Multiplied 64 bit int as two 32 bit int
+   * @returns {number[]} Multiplied 64 bit int as two 32 bit int, represented as tuple of 2
    */
   function uInt64LeftShift(bytes, position) {
     position %= 64;
@@ -152,9 +152,9 @@ export default (() => {
    * Returns the 64 int xor-ed together from two 64 int
    *
    * @private
-   * @param {[number, number]} x 64 bit int as two 32 bit int
-   * @param {[number, number]} y 64 bit int as two 32 bit int
-   * @returns {[number, number]} Xor-ed 64 bit int
+   * @param {number[]} x 64 bit int as two 32 bit int, represented as tuple of 2
+   * @param {number[]} y 64 bit int as two 32 bit int, represented as tuple of 2
+   * @returns {number[]} Xor-ed 64 bit int, represented as tuple of 2
    */
   function uInt64Xor(x, y) {
     return [x[0] ^ y[0], x[1] ^ y[1]];
@@ -164,8 +164,8 @@ export default (() => {
    * Mix hash for x64
    *
    * @private
-   * @param {number[]} hash 64 bit int as two 32 bit int
-   * @returns {number[]} Mixed 64 bit int as two 32 bit int
+   * @param {number[]} hash 64 bit int as two 32 bit int, represented as tuple of 2
+   * @returns {number[]} Mixed 64 bit int as two 32 bit int, represented as tuple of 2
    */
   function uInt64mix(hash) {
     hash = uInt64Xor(hash, [0, hash[0] >>> 1]);

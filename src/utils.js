@@ -65,7 +65,7 @@ export function uInt32RotateLeft(x, y) {
  * Create concated and filled hash string
  *
  * @private
- * @param {[number, number, number, number]} hash Array containing hash parts as int
+ * @param {number[]} hash Array containing hash parts as int, represented as tuple of 4
  * @returns {string} Concatenated and filled hash
  */
 export function createConcatenatedHash([h1, h2, h3, h4]) {
