@@ -51,6 +51,74 @@
   "files": [
     "lib"
   ],
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "Last 2 versions",
+    "IE >= 10",
+    "maintained node versions"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2017,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true,
+      "browser": true,
+      "mocha": true,
+      "es6": true
+    }
+  },
+  "nyc": {
+    "reporter": [
+      "html",
+      "text"
+    ]
+  },
+  "babel": {
+    "exclude": "node_modules/**",
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "renovate": {
+    "extends": [
+      "config:base"
+    ],
+    "supportPolicy": [
+      "lts_latest"
+    ],
+    "dependencies": {
+      "semanticPrefix": "chore:",
+      "semanticCommitScope": ""
+    },
+    "pin": {
+      "semanticPrefix": "chore:",
+      "semanticCommitScope": ""
+    },
+    "semanticPrefix": "chore:",
+    "semanticCommitScope": "",
+    "packageRules": [
+      {
+        "updateTypes": [
+          "minor",
+          "patch",
+          "pin",
+          "digest"
+        ],
+        "automerge": true
+      }
+    ]
+  },
   "devDependencies": {
     "@babel/core": "7.8.7",
     "@babel/preset-env": "7.8.7",
