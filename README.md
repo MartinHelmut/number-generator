@@ -42,7 +42,7 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
 
 ## Usage
 
-This library (**7.45 KB, gzipped size: 2.94 KB**) contains the following methods: one PRNG (pseudo random number generator) called _Alea_ and four number hash generators, _MurmurHash2_ and _MurmurHash3_ for 32 and 128 bit (x86 and x64) hash strings.
+This library (**7.55 KB, gzipped size: 2.84 KB**) contains the following methods: one PRNG (pseudo random number generator) called _Alea_ and four number hash generators, _MurmurHash2_ and _MurmurHash3_ for 32 and 128 bit (x86 and x64) hash strings.
 
 More about the hash function _MurmurHash_ can be found [here on wikipedia][mur].
 
