@@ -343,16 +343,16 @@ Exceptions for Node are versions that reached the End-of-Life as defined under h
 
 ### Benchmarks
 
-**Disclaimer:** The following benchmarks were created on a MacBook Pro, Processor 2,7 GHz Intel Core i5 with 8 GB 1867 MHz DDR3 memory and run under Node v10.16.3.
+**Disclaimer:** The following benchmarks were created on a MacBook Pro, Processor 2,7 GHz Intel Core i5 with 8 GB 1867 MHz DDR3 memory and run under Node v12.14.1.
 
 #### aleaRNGFactory
 
 Comparison between `uInt32` and `uFloat32` methods:
 
 ```
-// v4.0.0
-aleaRNGFactory#uInt32()   x 8,037,159 ops/sec
-aleaRNGFactory#uFloat32() x 7,435,745 ops/sec
+// v4.0.1
+aleaRNGFactory#uInt32()   x 23,094,220 ops/sec
+aleaRNGFactory#uFloat32() x 20,571,821 ops/sec
 ```
 
 #### murmurhash
@@ -360,11 +360,11 @@ aleaRNGFactory#uFloat32() x 7,435,745 ops/sec
 Comparison between `murmurhash2_x86_32`, `murmurhash3_x86_32`, `murmurhash3_x86_128` and `murmurhash3_x64_128` function:
 
 ```
-// v4.0.0
-murmurhash2_x86_32  x 506,674 ops/sec
-murmurhash3_x86_32  x 510,627 ops/sec
-murmurhash3_x86_128 x 245,012 ops/sec
-murmurhash3_x64_128 x 135,522 ops/sec
+// v4.0.1
+murmurhash2_x86_32  x 834,241 ops/sec
+murmurhash3_x86_32  x 827,462 ops/sec
+murmurhash3_x86_128 x 300,153 ops/sec
+murmurhash3_x64_128 x 188,581 ops/sec
 ```
 
 To run them on your machine execute `pnpm run test:benchmark`.
