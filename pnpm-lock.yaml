@@ -13,7 +13,7 @@ devDependencies:
   conventional-changelog: 3.1.18
   conventional-changelog-conventionalcommits: 4.2.3
   coveralls: 3.0.9
-  cpy: 8.0.1
+  cpy: 8.1.0
   cross-env: 7.0.2
   cz-conventional-changelog: 3.1.0
   eslint: 6.8.0
@@ -2389,7 +2389,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-0Cbj7gyvFVApzpK/uhCtQ/9kE9UnYpxMzaq5nQQC/Dh4iaj5fxp7iEFIullrYwzj8nf0qnsI1Qsx34hAeAebvw==
-  /cpy/8.0.1:
+  /cpy/8.1.0:
     dependencies:
       arrify: 2.0.1
       cp-file: 7.0.0
@@ -2398,11 +2398,13 @@ packages:
       junk: 3.1.0
       nested-error-stacks: 2.1.0
       p-all: 2.1.0
+      p-filter: 2.1.0
+      p-map: 3.0.0
     dev: true
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-XplonbFkGld3KST+wKFutU+Al3srtT9RaeLTJeRY47QzzLDlA5kpK4s+o0DdgRx7W0cdkifOehGnCBCGIFfdeg==
+      integrity: sha512-XwlImkjPxMr01qXqC564VD4rfcDQ2eKtYmFlCy0ixsLRJ1cwYVUBh+v47jsQTO1IrmvdjqO813VpDQ0JiTuOdA==
   /create-ecdh/4.0.3:
     dependencies:
       bn.js: 4.11.8
@@ -5335,6 +5337,14 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-4vAd06GCsgflX4wHN1JqrMzBh/8QZ4j+rzp0cd2scXRwuBEv+QR3wrVA5aLhWDLw4y2WgDKvzWF3CCLmVM1UgA==
+  /p-filter/2.1.0:
+    dependencies:
+      p-map: 2.1.0
+    dev: true
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-ZBxxZ5sL2HghephhpGAQdoskxplTwr7ICaehZwLIlfL6acuVgZPm8yBNuRAFBGEqtD/hmUeq9eqLg2ys9Xr/yw==
   /p-finally/1.0.0:
     dev: true
     engines:
@@ -7430,7 +7440,7 @@ specifiers:
   conventional-changelog: 3.1.18
   conventional-changelog-conventionalcommits: 4.2.3
   coveralls: 3.0.9
-  cpy: 8.0.1
+  cpy: 8.1.0
   cross-env: 7.0.2
   cz-conventional-changelog: 3.1.0
   eslint: 6.8.0
