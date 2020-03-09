@@ -32,7 +32,7 @@ devDependencies:
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-node-resolve: 5.2.0_rollup@2.0.2
   rollup-plugin-replace: 2.2.0
-  rollup-plugin-terser: 5.2.0_rollup@2.0.2
+  rollup-plugin-terser: 5.3.0_rollup@2.0.2
   serve: 11.3.0
   standard-version: 7.1.0
   ts-node: 8.6.2_typescript@3.8.3
@@ -6271,19 +6271,19 @@ packages:
     dev: true
     resolution:
       integrity: sha512-/5bxtUPkDHyBJAKketb4NfaeZjL5yLZdeUihSfbF2PQMz+rSTEb8ARKoOl3UBT4m7/X+QOXJo3sLTcq+yMMYTA==
-  /rollup-plugin-terser/5.2.0_rollup@2.0.2:
+  /rollup-plugin-terser/5.3.0_rollup@2.0.2:
     dependencies:
-      '@babel/code-frame': 7.5.5
+      '@babel/code-frame': 7.8.3
       jest-worker: 24.9.0
       rollup: 2.0.2
       rollup-pluginutils: 2.8.2
       serialize-javascript: 2.1.2
-      terser: 4.6.2
+      terser: 4.6.6
     dev: true
     peerDependencies:
-      rollup: '>=0.66.0 <2'
+      rollup: '>=0.66.0 <3'
     resolution:
-      integrity: sha512-jQI+nYhtDBc9HFRBz8iGttQg7li9klmzR62RG2W2nN6hJ/FI2K2ItYQ7kJ7/zn+vs+BP1AEccmVRjRN989I+Nw==
+      integrity: sha512-XGMJihTIO3eIBsVGq7jiNYOdDMb3pVxuzY0uhOE/FM4x/u9nQgr3+McsjzqBn3QfHIpNSZmFnpoKAwHBEcsT7g==
   /rollup-plugin-virtual/1.0.1:
     deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-virtual.
     dev: true
@@ -6889,7 +6889,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-Uufrsvhj9O1ikwgITGsZ5EZS6qPokUOkCegS7fYOdGTv+OA90vndUbU6PEjr5ePqHfNUbGyMO7xyIZv2MhsALQ==
-  /terser/4.6.2:
+  /terser/4.6.6:
     dependencies:
       commander: 2.20.3
       source-map: 0.6.1
@@ -6899,7 +6899,7 @@ packages:
       node: '>=6.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-6FUjJdY2i3WZAtYBtnV06OOcOfzl+4hSKYE9wgac8rkLRBToPDDrBB2AcHwQD/OKDxbnvhVy2YgOPWO2SsKWqg==
+      integrity: sha512-4lYPyeNmstjIIESr/ysHg2vUPRGf2tzF9z2yYwnowXVuVzLEamPN1Gfrz7f8I9uEPuHcbFlW4PLIAsJoxXyJ1g==
   /test-exclude/6.0.0:
     dependencies:
       '@istanbuljs/schema': 0.1.2
@@ -7459,7 +7459,7 @@ specifiers:
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-node-resolve: 5.2.0
   rollup-plugin-replace: 2.2.0
-  rollup-plugin-terser: 5.2.0
+  rollup-plugin-terser: 5.3.0
   serve: 11.3.0
   standard-version: 7.1.0
   ts-node: 8.6.2
