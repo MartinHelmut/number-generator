@@ -22,7 +22,7 @@ devDependencies:
   mocha: 7.1.0
   nyc: 15.0.0
   prettier: 1.19.1
-  regenerator-runtime: 0.13.3
+  regenerator-runtime: 0.13.5
   rollup: 2.0.5
   rollup-plugin-babel: 4.4.0_@babel+core@7.8.7+rollup@2.0.5
   rollup-plugin-clear: 2.0.7
@@ -5923,14 +5923,14 @@ packages:
     optional: true
     resolution:
       integrity: sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
-  /regenerator-runtime/0.13.3:
-    dev: true
-    resolution:
-      integrity: sha512-naKIZz2GQ8JWh///G7L3X6LaQUAMp2lvb1rvwwsURe/VXwD6VMfr+/1NuNw3ag8v2kY1aQ/go5SNn79O9JU7yw==
   /regenerator-runtime/0.13.4:
     dev: true
     resolution:
       integrity: sha512-plpwicqEzfEyTQohIKktWigcLzmNStMGwbOUbykx51/29Z3JOGYldaaNGK7ngNXV+UcoqvIMmloZ48Sr74sd+g==
+  /regenerator-runtime/0.13.5:
+    dev: true
+    resolution:
+      integrity: sha512-ZS5w8CpKFinUzOwW3c83oPeVXoNsrLsaCoLtJvAClH135j/R77RuymhiSErhm2lKcwSCIpmvIWSbDkIfAqKQlA==
   /regenerator-transform/0.14.2:
     dependencies:
       '@babel/runtime': 7.8.7
@@ -7449,7 +7449,7 @@ specifiers:
   mocha: 7.1.0
   nyc: 15.0.0
   prettier: 1.19.1
-  regenerator-runtime: 0.13.3
+  regenerator-runtime: 0.13.5
   rollup: 2.0.5
   rollup-plugin-babel: 4.4.0
   rollup-plugin-clear: 2.0.7
