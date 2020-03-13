@@ -58,7 +58,7 @@
     "> 1%",
     "Last 2 versions",
     "IE >= 10",
-    "maintained node versions"
+    "node >= 8"
   ],
   "eslintConfig": {
     "extends": [
