@@ -10,7 +10,6 @@
   },
   "scripts": {
     "build": "rollup -c rollup.config.js",
-    "build:docs": "jsdoc -c jsdoc.config.js --verbose",
     "build:reference:code": "./scripts/generate-reference.sh",
     "build:tests": "rollup -c rollup-tests.config.js",
     "ci": "pnpm run format:check && pnpm run lint && pnpm run test:prod && pnpm test",
@@ -22,7 +21,7 @@
     "preinstall": "node ./scripts/ensure-package-manager.js",
     "prerelease": "pnpm run ci",
     "release": "standard-version -a",
-    "start:docs": "pnpm run build:docs && serve ./docs",
+    "docs": "jsdoc -c jsdoc.config.js --verbose && serve ./docs",
     "test": "nyc mocha --require @babel/register src/__tests__/*.test.js src/**/__tests__/*.test.js",
     "test:benchmark": "node --require @babel/register src/__tests__/murmur.benchmark.js && node --require @babel/register src/__tests__/alea.benchmark.js",
     "test:prod": "pnpm run build && cross-env NODE_ENV=production nyc mocha --require @babel/register src/**/__tests__/*.js && mocha --require ts-node/register src/**/*.test.ts",
