@@ -7,7 +7,7 @@
 [![Standard Version][stdimg]][stdurl]
 [![styled with prettier][prtimg]][prturl]
 
-Generate repeatable pseudo random numbers and non-cryptographic hash numbers for usage in Node.js and browser environments.
+Generate repeatable pseudo random numbers and non-cryptographic hash numbers for usage in Node.js (>= 8) and browser environments (major browsers and IE >= 10).
 
 ## Contents
 
@@ -19,8 +19,7 @@ Generate repeatable pseudo random numbers and non-cryptographic hash numbers for
     - [Create an unsigned integer](#create-an-unsigned-integer)
     - [Create an unsigned float](#create-an-unsigned-float)
     - [Change the seed](#change-the-seed)
-    - [Get the state](#get-the-state)
-    - [Set the state](#set-the-state)
+    - [Get and restore the state](#get-and-restore-the-state)
     - [Something like Math.random?](#something-like-mathrandom)
   - [Murmur hash](#murmur-hash)
     - [Basic hash generation](#basic-hash-generation)
@@ -110,17 +109,17 @@ All supported environments are listed under the [support section](#support).
 
 You can use the `aleaRNGFactory` method to generate (pseudo) random numbers based an a seed (**default seed is** `1`). Every seed produces the same result for the created getter method.
 
-**Attention:** The default seed `1` should not be used! It produces one duplicate at 4370 calls. This can be avoided by using a seed larger or equal to 2.
+⚠️ **Attention:** The default seed `1` should not be used! It produces one duplicate at 4370 calls. This can be avoided by using a seed larger or equal to 2. Nevertheless, this is still included in the library to not break applications using the default behavior.
 
 #### Create a new random number generator
 
-First step is to [include the library](#install) functions you want to use in your application. If you only want to use the Alea implementation you can import it directly by:
+First step is to [include the library](#install) functions you want to use in your application. If you only want to use the Alea implementation you can import it directly:
 
 ```javascript
 const aleaRNGFactory = require("number-generator/lib/aleaRNGFactory");
 ```
 
-Now you can create a new generator by calling the function with a seed **equal or larger to 2**. The number `0`, float or negative numbers are not valid and will throw a `TypeError`.
+Now you can create a new generator by calling the function with a seed **equal or larger to 2**. The number `0`, float or negative numbers are not valid and will throw a `TypeError`. See the remark [at the beginning of this section](#random-numbers) on why to avoid 1 as a seed.
 
 ```javascript
 // Valid:
@@ -143,7 +142,7 @@ uInt32(); // 20916391
 uInt32(); // 1567221093
 ```
 
-This will create the exact **same result on your machine**! You get always the same values for the same seed used.
+This will create the exact **same result on your machine**! You will always get the same value for the same seed.
 
 This means if you create multiple generators with the same seed, you get the same result for the n-th call:
 
@@ -159,7 +158,7 @@ value1 === value2; // true
 
 #### Create an unsigned float
 
-The same that works for [the uInt32 method](#create-an-unsigned-integer) applies to the `uFloat32` method. But this time you get an unsigned float.
+The same that works for [the uInt32 method](#create-an-unsigned-integer) applies to the `uFloat32` method, but this time you get an unsigned float.
 
 ```javascript
 const { uFloat32 } = aleaRNGFactory(5);
@@ -167,7 +166,7 @@ uFloat32(); // 0.0024349885061383247
 uFloat32(); // 0.1826920467428863
 ```
 
-Again, this should create the exact **same result on your machine**!
+Again, this will create the exact **same result on your machine**!
 
 If you create multiple generators with the same seed, you get the same result for the n-th call:
 
@@ -200,7 +199,7 @@ generator.uInt32();
 generator.uInt32();
 ```
 
-#### Get the state
+#### Get and restore the state
 
 You can get and restore the internal state with `getState` and `setState`.
 
@@ -229,8 +228,6 @@ generator.uInt32();
 const state: NumberGeneratorState = generator.getState();
 ```
 
-#### Set the state
-
 You can set the state with `setState` on two ways. Either you don't pass any parameter to the state function, where it will reset the state to the initial state. Or you can pass a state object to restore a previous state:
 
 ```javascript
@@ -246,7 +243,7 @@ generator.setState(state); // Restore saved state
 
 #### Something like Math.random?
 
-If you want something similar to `Math.random()` (without duplicate values) you can use the [JavaScript Date API][date] with a timestamp and combine it with the `uFloat32` method from the `aleaRNGFactory` e.g.:
+If you want something similar to `Math.random()` (without generating duplicated values) you can use the [JavaScript Date API][date] with a timestamp and combine it with the `uFloat32` method from the `aleaRNGFactory` e.g.:
 
 ```javascript
 const { uFloat32: random } = aleaRNGFactory(Date.now());
@@ -257,7 +254,7 @@ random();
 
 ### Murmur hash
 
-To generate a hash there are four functions, `murmurhash2_x86_32`, `murmurhash3_x86_32`, `murmurhash3_x86_128` and `murmurhash3_x64_128`. The `murmurhash` functions implement the [MurmurHash algorithm for 32 and 128 bit][mur] in JavaScript (murmurhash2 and 3) for x86 and x64. They take a string and generate a non-cryptographic hash number as unsigned integer with 32 bit or a string hash with 128 bit.
+To generate a hash there are four functions, `murmurhash2_x86_32`, `murmurhash3_x86_32`, `murmurhash3_x86_128` and `murmurhash3_x64_128`. The "murmur hash" functions implement the [MurmurHash algorithm for 32 and 128 bit][mur] in JavaScript (murmurhash2 and 3) for x86 and x64. They take a string and generate a non-cryptographic hash number as unsigned integer with 32 bit or a string hash with 128 bit.
 
 You can import the functions directly:
 
@@ -338,8 +335,6 @@ This library was tested on the following environments:
 
 - Node >= 8
 - All major browsers and IE >= 10
-
-Exceptions for Node are versions that reached the End-of-Life as defined under https://github.com/nodejs/Release#end-of-life-releases.
 
 ### Benchmarks
 
