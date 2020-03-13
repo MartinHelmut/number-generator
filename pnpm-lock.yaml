@@ -4,7 +4,7 @@ devDependencies:
   '@babel/register': 7.8.6_@babel+core@7.8.7
   '@types/chai': 4.2.10
   '@types/mocha': 7.0.2
-  '@types/node': 12.12.29
+  '@types/node': 12.12.30
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.2.0
@@ -1148,10 +1148,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-nf1LMGZvgFX186geVZR1xMZKKblJiRfiASTHw85zED2kI1yDKHDwTKMdkaCbTlXoRKlGKaDfYywt+V0As30q3w==
-  /@types/node/12.12.29:
+  /@types/node/12.12.30:
     dev: true
     resolution:
-      integrity: sha512-yo8Qz0ygADGFptISDj3pOC9wXfln/5pQaN/ysDIzOaAWXt73cNHmtEC8zSO2Y+kse/txmwIAJzkYZ5fooaS5DQ==
+      integrity: sha512-sz9MF/zk6qVr3pAnM0BSQvYIBK44tS75QC5N+VbWSE4DjCV/pJ+UzCW/F+vVnl7TkOPcuwQureKNtSSwjBTaMg==
   /@types/resolve/0.0.8:
     dependencies:
       '@types/node': 12.12.18
@@ -7431,7 +7431,7 @@ specifiers:
   '@babel/register': 7.8.6
   '@types/chai': 4.2.10
   '@types/mocha': 7.0.2
-  '@types/node': 12.12.29
+  '@types/node': 12.12.30
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.2.0
