@@ -20,7 +20,6 @@
     "format:check": "prettier --list-different \"**/*.{js,ts,md,json,yml}\"",
     "lint": "eslint --ignore-path .prettierignore ./",
     "preinstall": "node ./scripts/ensure-package-manager.js",
-    "prepare": "pnpm run ci",
     "prerelease": "pnpm run ci",
     "release": "standard-version -a",
     "start:docs": "pnpm run build:docs && serve ./docs",
