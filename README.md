@@ -58,7 +58,7 @@ npm install number-generator
 yarn add number-generator
 
 # pnpm
-pnpm install number-generator
+pnpm add number-generator
 ```
 
 After that you can import it either as a library, e.g.:
