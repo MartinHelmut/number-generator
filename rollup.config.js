@@ -2,7 +2,7 @@ import babel from "rollup-plugin-babel";
 import clear from "rollup-plugin-clear";
 import copy from "rollup-plugin-copy";
 import filesize from "rollup-plugin-filesize";
-import resolve from "rollup-plugin-node-resolve";
+import resolve from "@rollup/plugin-node-resolve";
 import { terser } from "rollup-plugin-terser";
 
 function createBundleConfig(input, output = {}) {
