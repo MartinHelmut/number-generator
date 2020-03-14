@@ -123,7 +123,7 @@
     "@babel/register": "7.8.6",
     "@rollup/plugin-node-resolve": "7.1.1",
     "@rollup/plugin-replace": "2.3.1",
-    "@types/chai": "4.2.10",
+    "@types/chai": "4.2.11",
     "@types/mocha": "7.0.2",
     "@types/node": "12.12.30",
     "agadoo": "2.0.0",
