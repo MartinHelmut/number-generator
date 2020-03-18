@@ -18,7 +18,7 @@ devDependencies:
   eslint: 6.8.0
   eslint-config-prettier: 6.10.0_eslint@6.8.0
   jsdoc: 3.6.3
-  mocha: 7.1.0
+  mocha: 7.1.1
   nyc: 15.0.0
   prettier: 1.19.1
   rollup: 2.1.0
@@ -2340,7 +2340,7 @@ packages:
       integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
   /debug/3.2.6:
     dependencies:
-      ms: 2.1.1
+      ms: 2.1.2
     dev: true
     resolution:
       integrity: sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
@@ -4698,7 +4698,15 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
-  /mocha/7.1.0:
+  /mkdirp/0.5.3:
+    dependencies:
+      minimist: 1.2.5
+    deprecated: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+    dev: true
+    hasBin: true
+    resolution:
+      integrity: sha512-P+2gwrFqx8lhew375MQHHeTlY8AuOJSrGf0R5ddkEndUkmwpgUob/vQuBD1V22/Cw1/lJr4x+EjllSezBThzBg==
+  /mocha/7.1.1:
     dependencies:
       ansi-colors: 3.2.3
       browser-stdout: 1.3.1
@@ -4713,7 +4721,7 @@ packages:
       js-yaml: 3.13.1
       log-symbols: 3.0.0
       minimatch: 3.0.4
-      mkdirp: 0.5.1
+      mkdirp: 0.5.3
       ms: 2.1.1
       node-environment-flags: 1.0.6
       object.assign: 4.1.0
@@ -4721,15 +4729,15 @@ packages:
       supports-color: 6.0.0
       which: 1.3.1
       wide-align: 1.1.3
-      yargs: 13.3.0
-      yargs-parser: 13.1.1
+      yargs: 13.3.2
+      yargs-parser: 13.1.2
       yargs-unparser: 1.6.0
     dev: true
     engines:
       node: '>= 8.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-MymHK8UkU0K15Q/zX7uflZgVoRWiTjy0fXE/QjKts6mowUvGxOdPhZ2qj3b0iZdUrNZlW9LAIMFHB4IW+2b3EQ==
+      integrity: sha512-3qQsu3ijNS3GkWcccT5Zw0hf/rWvu1fTN9sPvEd81hlwsr30GX2GcDSSoBxo24IR8FelmrAydGC6/1J5QQP4WA==
   /modify-values/1.0.1:
     dev: true
     engines:
@@ -6971,13 +6979,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-VCIyR1wJoEBZUqk5PA+oOBF6ypbwh5aNB3I50guxAL/quggdfs4TtNHQrSazFA3fYZ+tEqfs0zIGlv0c/rgjbQ==
-  /yargs-parser/13.1.1:
+  /yargs-parser/13.1.2:
     dependencies:
       camelcase: 5.3.1
       decamelize: 1.2.0
     dev: true
     resolution:
-      integrity: sha512-oVAVsHz6uFrg3XQheFII8ESO2ssAf9luWuAd6Wexsu4F3OtIW0o8IribPXYrD4WC24LWtPrJlGy87y5udK+dxQ==
+      integrity: sha512-3lbsNRf/j+A4QuSZfDRA7HRSfWrzO0YjqTJd5kjAq37Zep1CEgaYmrH9Q3GwPiB9cHyd1Y1UwggGhJGoxipbzg==
   /yargs-parser/16.1.0:
     dependencies:
       camelcase: 5.3.1
@@ -6998,13 +7006,13 @@ packages:
     dependencies:
       flat: 4.1.0
       lodash: 4.17.15
-      yargs: 13.3.0
+      yargs: 13.3.2
     dev: true
     engines:
       node: '>=6'
     resolution:
       integrity: sha512-W9tKgmSn0DpSatfri0nx52Joq5hVXgeLiqR/5G0sZNDoLZFOr/xjBUDcShCOGNsBnEMNo1KAMBkTej1Hm62HTw==
-  /yargs/13.3.0:
+  /yargs/13.3.2:
     dependencies:
       cliui: 5.0.0
       find-up: 3.0.0
@@ -7015,10 +7023,10 @@ packages:
       string-width: 3.1.0
       which-module: 2.0.0
       y18n: 4.0.0
-      yargs-parser: 13.1.1
+      yargs-parser: 13.1.2
     dev: true
     resolution:
-      integrity: sha512-2eehun/8ALW8TLoIl7MVaRUrg+yCnenu8B4kBlRxj3GJGDKU1Og7sMXPNm1BYyM1DOJmTZ4YeN/Nwxv+8XJsUA==
+      integrity: sha512-AX3Zw5iPruN5ie6xGRIDgqkT+ZhnRlZMLMHAs8tg7nRruy2Nb+i5o9bwghAogtM08q1dpr2LVoS8KSTMYpWXUw==
   /yargs/15.0.2:
     dependencies:
       cliui: 6.0.0
@@ -7079,7 +7087,7 @@ specifiers:
   eslint: 6.8.0
   eslint-config-prettier: 6.10.0
   jsdoc: 3.6.3
-  mocha: 7.1.0
+  mocha: 7.1.1
   nyc: 15.0.0
   prettier: 1.19.1
   rollup: 2.1.0
