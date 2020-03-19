@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.0.3](https://github.com/MartinHelmut/number-generator/compare/v4.0.2...v4.0.3) (2020-03-19)
+
+
+### Bug Fixes
+
+* use prepare script in package.json to check for package manager ([5d1fd5a](https://github.com/MartinHelmut/number-generator/commit/5d1fd5ad052faa79526c396333bc6028b9e7e7f0)), closes [#591](https://github.com/MartinHelmut/number-generator/issues/591)
+
 ### [4.0.2](https://github.com/MartinHelmut/number-generator/compare/v4.0.1...v4.0.2) (2020-03-07)
 
 ### [4.0.1](https://github.com/MartinHelmut/number-generator/compare/v4.0.0...v4.0.1) (2019-09-26)
