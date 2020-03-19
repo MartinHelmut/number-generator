@@ -18,7 +18,7 @@
     "format": "prettier --write \"**/*.{js,ts,md,json,yml}\"",
     "format:check": "prettier --list-different \"**/*.{js,ts,md,json,yml}\"",
     "lint": "eslint --ignore-path .prettierignore ./",
-    "preinstall": "node ./scripts/ensure-package-manager.js",
+    "prepare": "node ./scripts/ensure-package-manager.js",
     "prerelease": "pnpm run ci",
     "release": "standard-version -a",
     "docs": "jsdoc -c jsdoc.config.js --verbose && serve ./docs",
