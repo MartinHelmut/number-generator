@@ -16,7 +16,7 @@ function createBundleConfig(input, output = {}) {
         file: `${targetDir}/${fileName}.js`,
         format: "cjs",
         sourcemap: true,
-        sourcemapFile: `${targetDir}/${fileName}.js.map`
+        sourcemapFile: `${targetDir}/${fileName}.js.map`,
       },
       output
     ),
@@ -27,33 +27,33 @@ function createBundleConfig(input, output = {}) {
       terser(),
       filesize({
         render: (_, __, { bundleSize, gzipSize }) =>
-          `Bundle size: ${bundleSize}, Gzipped size: ${gzipSize}`
+          `Bundle size: ${bundleSize}, Gzipped size: ${gzipSize}`,
       }),
       copy({
         targets: [
           {
             src: ["src/typings/*.d.ts"],
-            dest: targetDir
-          }
-        ]
-      })
-    ]
+            dest: targetDir,
+          },
+        ],
+      }),
+    ],
   };
 }
 
 export default [
   createBundleConfig("index", {
     format: "umd",
-    name: "numberGenerator"
+    name: "numberGenerator",
   }),
   createBundleConfig("index", {
     format: "esm",
     file: "lib/index.esm.js",
-    sourcemapFile: "lib/index.esm.js.map"
+    sourcemapFile: "lib/index.esm.js.map",
   }),
   createBundleConfig("fns/aleaRNGFactory"),
   createBundleConfig("fns/murmurhash2_x86_32"),
   createBundleConfig("fns/murmurhash3_x86_32"),
   createBundleConfig("fns/murmurhash3_x86_128"),
-  createBundleConfig("fns/murmurhash3_x64_128")
+  createBundleConfig("fns/murmurhash3_x64_128"),
 ];

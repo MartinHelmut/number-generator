@@ -3,7 +3,7 @@ import {
   createConcatenatedHash,
   throwInvalidMurmurSeed,
   throwInvalidStringHash,
-  toUtf8Bytes
+  toUtf8Bytes,
 } from "../utils";
 
 /**
@@ -116,14 +116,14 @@ export default (() => {
     if (position < 32) {
       return [
         (bytes[0] << position) | (bytes[1] >>> (32 - position)),
-        (bytes[1] << position) | (bytes[0] >>> (32 - position))
+        (bytes[1] << position) | (bytes[0] >>> (32 - position)),
       ];
     }
 
     position -= 32;
     return [
       (bytes[1] << position) | (bytes[0] >>> (32 - position)),
-      (bytes[0] << position) | (bytes[1] >>> (32 - position))
+      (bytes[0] << position) | (bytes[1] >>> (32 - position)),
     ];
   }
 
@@ -141,7 +141,7 @@ export default (() => {
     if (position < 32) {
       return [
         (bytes[0] << position) | (bytes[1] >>> (32 - position)),
-        bytes[1] << position
+        bytes[1] << position,
       ];
     }
 
@@ -211,7 +211,7 @@ export default (() => {
         (hash[currentIndex] & 0xff) |
           ((hash[currentIndex + 1] & 0xff) << 8) |
           ((hash[currentIndex + 2] & 0xff) << 16) |
-          ((hash[currentIndex + 3] & 0xff) << 24)
+          ((hash[currentIndex + 3] & 0xff) << 24),
       ];
       calculated2 = [
         (hash[currentIndex + 12] & 0xff) |
@@ -221,7 +221,7 @@ export default (() => {
         (hash[currentIndex + 8] & 0xff) |
           ((hash[currentIndex + 9] & 0xff) << 8) |
           ((hash[currentIndex + 10] & 0xff) << 16) |
-          ((hash[currentIndex + 11] & 0xff) << 24)
+          ((hash[currentIndex + 11] & 0xff) << 24),
       ];
 
       calculated1 = uInt64Multiply(calculated1, MULTIPLIER_1);
@@ -358,7 +358,7 @@ export default (() => {
       hashSum1[0],
       hashSum1[1],
       hashSum2[0],
-      hashSum2[1]
+      hashSum2[1],
     ]);
   }
 

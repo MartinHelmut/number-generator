@@ -15,7 +15,7 @@ function createTestConfig(input) {
       file: `${targetDir}/${input}.test.js`,
       format: "iife",
       sourcemap: true,
-      sourcemapFile: `compiled_tests/${input}.test.js.map`
+      sourcemapFile: `compiled_tests/${input}.test.js.map`,
     },
     plugins: [
       clear({ targets: [targetDir] }),
@@ -24,16 +24,16 @@ function createTestConfig(input) {
         'require("../../reference/cpp/results.json")': `(${JSON.stringify(
           require("./src/reference/cpp/results.json")
         )})`,
-        delimiters: ["", ""]
+        delimiters: ["", ""],
       }),
       externalGlobals({
-        chai: "chai"
+        chai: "chai",
       }),
       builtins(),
       resolve(),
       babel(),
-      terser()
-    ]
+      terser(),
+    ],
   };
 }
 
@@ -42,5 +42,5 @@ export default [
   createTestConfig("murmurhash2_x86_32"),
   createTestConfig("murmurhash3_x64_128"),
   createTestConfig("murmurhash3_x86_32"),
-  createTestConfig("murmurhash3_x86_128")
+  createTestConfig("murmurhash3_x86_128"),
 ];

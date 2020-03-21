@@ -6,7 +6,7 @@ import {
   uInt32RotateLeft,
   toUtf8Bytes,
   throwInvalidMurmurSeed,
-  throwInvalidStringHash
+  throwInvalidStringHash,
 } from "../utils";
 
 /**

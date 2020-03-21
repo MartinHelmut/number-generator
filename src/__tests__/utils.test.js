@@ -6,7 +6,7 @@ import {
   throwInvalidMurmurSeed,
   throwInvalidAleaSeed,
   throwInvalidStringHash,
-  toUtf8Bytes
+  toUtf8Bytes,
 } from "../utils";
 
 describe("utils", () => {
@@ -57,7 +57,7 @@ describe("utils", () => {
             "a".charCodeAt(0),
             "b".charCodeAt(0),
             "c".charCodeAt(0),
-            "d".charCodeAt(0)
+            "d".charCodeAt(0),
           ],
           0
         ),
@@ -71,7 +71,7 @@ describe("utils", () => {
           "a".charCodeAt(0),
           "b".charCodeAt(0),
           "c".charCodeAt(0),
-          "d".charCodeAt(0)
+          "d".charCodeAt(0),
         ],
         0
       );
@@ -81,7 +81,7 @@ describe("utils", () => {
           "b".charCodeAt(0),
           "c".charCodeAt(0),
           "d".charCodeAt(0),
-          "e".charCodeAt(0)
+          "e".charCodeAt(0),
         ],
         0
       );
