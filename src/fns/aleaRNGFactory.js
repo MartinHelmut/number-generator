@@ -140,7 +140,7 @@ export default (() => {
     function getState() {
       return {
         correction,
-        sequence: [sequence0, sequence1, sequence2]
+        sequence: [sequence0, sequence1, sequence2],
       };
     }
 
@@ -152,7 +152,7 @@ export default (() => {
     function setState(state) {
       const defaultState = {
         correction: CORRECTION_DEFAULT,
-        sequence: [START_SEQUENCE_0, START_SEQUENCE_1, START_SEQUENCE_2]
+        sequence: [START_SEQUENCE_0, START_SEQUENCE_1, START_SEQUENCE_2],
       };
 
       state = state || defaultState;

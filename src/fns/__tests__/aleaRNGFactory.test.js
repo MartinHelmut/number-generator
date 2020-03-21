@@ -82,8 +82,9 @@ describe("aleaRNGFactory", () => {
       assert.lengthOf(
         stack,
         uniqueStack.length,
-        `There is/are ${stack.length -
-          uniqueStack.length} duplicate(s) after ${iterations} iterations.`
+        `There is/are ${
+          stack.length - uniqueStack.length
+        } duplicate(s) after ${iterations} iterations.`
       );
     });
 
@@ -177,8 +178,9 @@ describe("aleaRNGFactory", () => {
       assert.lengthOf(
         stack,
         uniqueStack.length,
-        `There is/are ${stack.length -
-          uniqueStack.length} duplicate(s) after ${iterations} iterations.`
+        `There is/are ${
+          stack.length - uniqueStack.length
+        } duplicate(s) after ${iterations} iterations.`
       );
     });
 
@@ -267,7 +269,7 @@ describe("aleaRNGFactory", () => {
       const generator = aleaRNGFactory();
       const state = {
         correction: 1,
-        sequence: []
+        sequence: [],
       };
       generator.setState(state);
       const internalState = generator.getState();
@@ -282,7 +284,7 @@ describe("aleaRNGFactory", () => {
       const generator = aleaRNGFactory();
       const state = {
         correction: 1,
-        sequence: [5, 4, 3, 2, 1, 0]
+        sequence: [5, 4, 3, 2, 1, 0],
       };
       generator.setState(state);
       const internalState = generator.getState();
@@ -325,7 +327,7 @@ describe("aleaRNGFactory", () => {
     it('should reset the state object is passed without "correction"', () => {
       const generator = aleaRNGFactory();
       const state = {
-        sequence: [1, 2, 3]
+        sequence: [1, 2, 3],
       };
       generator.setState(state);
       const internalState = generator.getState();
@@ -340,7 +342,7 @@ describe("aleaRNGFactory", () => {
     it('should reset the state object is passed without "sequence"', () => {
       const generator = aleaRNGFactory();
       const state = {
-        correction: 5
+        correction: 5,
       };
       generator.setState(state);
       const internalState = generator.getState();

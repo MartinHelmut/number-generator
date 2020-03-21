@@ -315,7 +315,7 @@ import {
   NumberHashGenerator,
   aleaRNGFactory,
   murmurhash2_x86_32,
-  murmurhash3_x86_32
+  murmurhash3_x86_32,
 } from "number-generator";
 
 const generator: NumberGenerator = aleaRNGFactory(2);

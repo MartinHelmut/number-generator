@@ -27,7 +27,7 @@ suite.on("complete", () => {
   console.log(`Fastest is: ${suite.filter("fastest").map("name")}\n`);
 });
 
-suite.on("cycle", event => {
+suite.on("cycle", (event) => {
   console.log(String(event.target));
 });
 

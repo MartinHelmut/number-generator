@@ -52,7 +52,7 @@ describe("TypeScript", () => {
         murmurhash2_x86_32,
         murmurhash3_x86_32,
         murmurhash3_x86_128,
-        murmurhash3_x64_128
+        murmurhash3_x64_128,
       } = require("../../lib/index");
 
       assert.isFunction(aleaRNGFactory);

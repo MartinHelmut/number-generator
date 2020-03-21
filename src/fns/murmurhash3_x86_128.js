@@ -6,7 +6,7 @@ import {
   uInt32RotateLeft,
   uMul32Getter,
   toUtf8Bytes,
-  createConcatenatedHash
+  createConcatenatedHash,
 } from "../utils";
 
 /**

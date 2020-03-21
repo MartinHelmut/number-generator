@@ -4,7 +4,7 @@ import {
   uInt32Getter,
   throwInvalidMurmurSeed,
   throwInvalidStringHash,
-  toUtf8Bytes
+  toUtf8Bytes,
 } from "../utils";
 
 /**

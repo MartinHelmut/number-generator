@@ -20,7 +20,7 @@ devDependencies:
   jsdoc: 3.6.3
   mocha: 7.1.1
   nyc: 15.0.0
-  prettier: 1.19.1
+  prettier: 2.0.1
   rollup: 2.1.0
   rollup-plugin-babel: 4.4.0_@babel+core@7.9.0+rollup@2.1.0
   rollup-plugin-clear: 2.0.7
@@ -5468,13 +5468,13 @@ packages:
       node: '>= 0.8.0'
     resolution:
       integrity: sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
-  /prettier/1.19.1:
+  /prettier/2.0.1:
     dev: true
     engines:
-      node: '>=4'
+      node: '>=10.13.0'
     hasBin: true
     resolution:
-      integrity: sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
+      integrity: sha512-piXGBcY1zoFOG0MvHpNE5reAGseLmaCRifQ/fmfF49BcYkInEs/naD/unxGNAeOKFA5+JxVrPyMvMlpzcd20UA==
   /private/0.1.8:
     dev: true
     engines:
@@ -7221,7 +7221,7 @@ specifiers:
   jsdoc: 3.6.3
   mocha: 7.1.1
   nyc: 15.0.0
-  prettier: 1.19.1
+  prettier: 2.0.1
   rollup: 2.1.0
   rollup-plugin-babel: 4.4.0
   rollup-plugin-clear: 2.0.7
