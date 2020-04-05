@@ -38,14 +38,12 @@ json generate_murmurHash3_x86_32() {
   };
 
   for (int i = 0; i < 5; i++) {
-    uint32_t *out = new uint32_t[1];
+    uint32_t out[1];
     MurmurHash3_x86_32(test_strings[i][1].c_str(), test_strings[i][1].size(), 0, out);
     result[test_strings[i][0]] = {
       {"input", test_strings[i][1]},
       {"output", *out}
     };
-
-    delete[] out;
   }
 
   return result;
