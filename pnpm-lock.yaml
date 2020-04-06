@@ -26,7 +26,7 @@ devDependencies:
   rollup-plugin-clear: 2.0.7
   rollup-plugin-copy: 3.3.0
   rollup-plugin-external-globals: 0.5.0_rollup@2.3.3
-  rollup-plugin-filesize: 6.2.1
+  rollup-plugin-filesize: 7.0.0
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-terser: 5.3.0_rollup@2.3.3
   serve: 11.3.0
@@ -5951,7 +5951,7 @@ packages:
       rollup: ^1.27.9
     resolution:
       integrity: sha512-v3qjync/2wcqdSesNP3qPnYeOnnV39ydCU+2fTxjlmux8uA1VqM4cUVffkgzoDh3TBOEhN8JWAHrN7Hs9ZD0Sg==
-  /rollup-plugin-filesize/6.2.1:
+  /rollup-plugin-filesize/7.0.0:
     dependencies:
       boxen: 4.2.0
       brotli-size: 4.0.0
@@ -5959,10 +5959,10 @@ packages:
       filesize: 4.2.1
       gzip-size: 5.1.1
       lodash.merge: 4.6.2
-      terser: 4.6.6
+      terser: 4.6.10
     dev: true
     resolution:
-      integrity: sha512-JQ2+NMoka81lCR2caGWyngqMKpvJCl7EkFYU7A+T0dA7U1Aml13FW5Ky0aiZIeU3/13cjsKQLRr35SQVmk6i/A==
+      integrity: sha512-uRlEtW0OdAsz9/LPzXklSG4ouPgvK06xT8J31EhlwycFOQD8c0RVJnJk80RygTYd0timVlFenWlJLMy5mFPQsA==
   /rollup-plugin-node-builtins/2.1.2:
     dependencies:
       browserify-fs: 1.0.0
@@ -6577,6 +6577,17 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-a6sumDlzyHVJWb8+YofY4TW112G6p2FCPEAFk+59gIYHv3XHRhm9ltVQ9kli4hNWeQBwSpe8cRN25x0ROunMOw==
+  /terser/4.6.10:
+    dependencies:
+      commander: 2.20.3
+      source-map: 0.6.1
+      source-map-support: 0.5.16
+    dev: true
+    engines:
+      node: '>=6.0.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-qbF/3UOo11Hggsbsqm2hPa6+L4w7bkr+09FNseEe8xrcVD3APGLFqE+Oz1ZKAxjYnFsj80rLOfgAtJ0LNJjtTA==
   /terser/4.6.6:
     dependencies:
       commander: 2.20.3
@@ -7174,7 +7185,7 @@ specifiers:
   rollup-plugin-clear: 2.0.7
   rollup-plugin-copy: 3.3.0
   rollup-plugin-external-globals: 0.5.0
-  rollup-plugin-filesize: 6.2.1
+  rollup-plugin-filesize: 7.0.0
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-terser: 5.3.0
   serve: 11.3.0
