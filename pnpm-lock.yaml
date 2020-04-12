@@ -2,7 +2,7 @@ devDependencies:
   '@babel/core': 7.9.0
   '@babel/preset-env': 7.9.5_@babel+core@7.9.0
   '@babel/register': 7.9.0_@babel+core@7.9.0
-  '@rollup/plugin-node-resolve': 7.1.1_rollup@2.6.0
+  '@rollup/plugin-node-resolve': 7.1.2_rollup@2.6.0
   '@rollup/plugin-replace': 2.3.1_rollup@2.6.0
   '@types/chai': 4.2.11
   '@types/mocha': 7.0.2
@@ -1012,9 +1012,9 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-1V9XOY4rDW0rehzbrcqAmHnz8e7SKvX27gh8Gt2WgB0+pdzdiLV83p72kZPU+jvMbS1qU5mauP2iOvO8rhmurQ==
-  /@rollup/plugin-node-resolve/7.1.1_rollup@2.6.0:
+  /@rollup/plugin-node-resolve/7.1.2_rollup@2.6.0:
     dependencies:
-      '@rollup/pluginutils': 3.0.8_rollup@2.6.0
+      '@rollup/pluginutils': 3.0.9_rollup@2.6.0
       '@types/resolve': 0.0.8
       builtin-modules: 3.1.0
       is-module: 1.0.0
@@ -1024,9 +1024,9 @@ packages:
     engines:
       node: '>= 8.0.0'
     peerDependencies:
-      rollup: ^1.20.0
+      rollup: ^1.20.0||^2.0.0
     resolution:
-      integrity: sha512-14ddhD7TnemeHE97a4rLOhobfYvUVcaYuqTnL8Ti7Jxi9V9Jr5LY7Gko4HZ5k4h4vqQM0gBQt6tsp9xXW94WPA==
+      integrity: sha512-wDx9CYYY5L8c7aa7m1KAEET1KY+D56gqkdIiIhS/pKdPbEuYRhaMkbLDHFNH/ppnijg3Pv0Ugbx6G1ChXhsGPw==
   /@rollup/plugin-replace/2.3.1_rollup@2.6.0:
     dependencies:
       '@rollup/pluginutils': 3.0.8_rollup@2.6.0
@@ -1048,6 +1048,19 @@ packages:
       rollup: ^1.20.0
     resolution:
       integrity: sha512-rYGeAc4sxcZ+kPG/Tw4/fwJODC3IXHYDH4qusdN/b6aLw5LPUbzpecYbEJh4sVQGPFJxd2dBU4kc1H3oy9/bnw==
+  /@rollup/pluginutils/3.0.9_rollup@2.6.0:
+    dependencies:
+      '@types/estree': 0.0.39
+      estree-walker: 1.0.1
+      micromatch: 4.0.2
+      rollup: 2.6.0
+    dev: true
+    engines:
+      node: '>= 8.0.0'
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0
+    resolution:
+      integrity: sha512-TLZavlfPAZYI7v33wQh4mTP6zojne14yok3DNSLcjoG/Hirxfkonn6icP5rrNWRn8nZsirJBFFpijVOJzkUHDg==
   /@types/chai/4.2.11:
     dev: true
     resolution:
@@ -7234,7 +7247,7 @@ specifiers:
   '@babel/core': 7.9.0
   '@babel/preset-env': 7.9.5
   '@babel/register': 7.9.0
-  '@rollup/plugin-node-resolve': 7.1.1
+  '@rollup/plugin-node-resolve': 7.1.2
   '@rollup/plugin-replace': 2.3.1
   '@types/chai': 4.2.11
   '@types/mocha': 7.0.2
