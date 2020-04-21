@@ -13,7 +13,7 @@ devDependencies:
   commitizen: 4.0.4
   conventional-changelog: 3.1.18
   conventional-changelog-conventionalcommits: 4.2.3
-  coveralls: 3.0.12
+  coveralls: 3.0.13
   cz-conventional-changelog: 3.1.0
   eslint: 6.8.0
   eslint-config-prettier: 6.11.0_eslint@6.8.0
@@ -2318,7 +2318,7 @@ packages:
     optional: true
     resolution:
       integrity: sha512-H65gsXo1SKjf8zmrJ67eJk8aIRKV5ff2D4uKZIBZShbhGSpEmsQOPW/SKMKYhSTrqR7ufy6RP69rPogdaPh/kA==
-  /coveralls/3.0.12:
+  /coveralls/3.0.13:
     dependencies:
       js-yaml: 3.13.1
       lcov-parse: 1.0.0
@@ -2330,7 +2330,7 @@ packages:
       node: '>=6'
     hasBin: true
     resolution:
-      integrity: sha512-cDOGf4JFb1XKxT811GuLixVgJc3ZFElCLtgxkrdo0hm9Q8lmJ3cP4cZqlQTRE45MvwJNlHYwwzHPuWEv1f4f4Q==
+      integrity: sha512-Bch6FJI4ebK6Mwr+DjFCJbb/RayNwn5pscSDE4Ux6cgjNkAcjdgGZBRfQnuYTt5tY81MqGK8m2r+xc5FDF513A==
   /create-ecdh/4.0.3:
     dependencies:
       bn.js: 4.11.8
@@ -7263,7 +7263,7 @@ specifiers:
   commitizen: 4.0.4
   conventional-changelog: 3.1.18
   conventional-changelog-conventionalcommits: 4.2.3
-  coveralls: 3.0.12
+  coveralls: 3.0.13
   cz-conventional-changelog: 3.1.0
   eslint: 6.8.0
   eslint-config-prettier: 6.11.0
