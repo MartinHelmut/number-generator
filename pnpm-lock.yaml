@@ -10,7 +10,7 @@ devDependencies:
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.2.0
-  commitizen: 4.0.4
+  commitizen: 4.0.5
   conventional-changelog: 3.1.18
   conventional-changelog-conventionalcommits: 4.2.3
   coveralls: 3.1.0
@@ -2022,7 +2022,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-lxu0F/Iq4dudoFeIl5pY3h3CQJzkmQuh3ygnaOvqhAD8Wu2pYBI17ofqSuPHNsBTEOh1r1AVa9kR4Hp0FAHKcQ==
-  /commitizen/4.0.4:
+  /commitizen/4.0.5:
     dependencies:
       cachedir: 2.2.0
       cz-conventional-changelog: 3.0.1
@@ -2035,7 +2035,7 @@ packages:
       inquirer: 6.5.0
       is-utf8: 0.2.1
       lodash: 4.17.15
-      minimist: 1.2.3
+      minimist: 1.2.5
       shelljs: 0.7.6
       strip-bom: 4.0.0
       strip-json-comments: 3.0.1
@@ -2044,7 +2044,7 @@ packages:
       node: '>= 10'
     hasBin: true
     resolution:
-      integrity: sha512-gfEt1rDE9VqKif+LE3cAThpqiW/1K3c2Nx83jSU6ohZjQd2CAmz1rMIlgmbPrPagOkKZw7USzSVubS758ZTWdA==
+      integrity: sha512-+aMqiHJSpUSHsVlxI1Jm3UUlbsx6GsxuKSkeVavG/Y3XkUxsZZczV79JPSFs3DYvZXgrRVXIFkh+Iafxs6hclQ==
   /commondir/1.0.1:
     dev: true
     resolution:
@@ -4894,10 +4894,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=
-  /minimist/1.2.3:
-    dev: true
-    resolution:
-      integrity: sha512-+bMdgqjMN/Z77a6NlY/I3U5LlRDbnmaAk6lDveAPKwSpcPM4tKAuYsvYF8xjhOPXhOYGe/73vVLVez5PW+jqhw==
   /minimist/1.2.5:
     dev: true
     resolution:
@@ -7365,7 +7361,7 @@ specifiers:
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.2.0
-  commitizen: 4.0.4
+  commitizen: 4.0.5
   conventional-changelog: 3.1.18
   conventional-changelog-conventionalcommits: 4.2.3
   coveralls: 3.1.0
