@@ -26,7 +26,7 @@ devDependencies:
   rollup-plugin-clear: 2.0.7
   rollup-plugin-copy: 3.3.0
   rollup-plugin-external-globals: 0.5.0_rollup@2.7.6
-  rollup-plugin-filesize: 8.0.0
+  rollup-plugin-filesize: 8.0.1
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-terser: 5.3.0_rollup@2.7.6
   serve: 11.3.0
@@ -4923,7 +4923,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==
-  /make-fetch-happen/8.0.4:
+  /make-fetch-happen/8.0.5:
     dependencies:
       agentkeepalive: 4.1.2
       cacache: 15.0.3
@@ -4944,7 +4944,7 @@ packages:
     engines:
       node: '>= 10'
     resolution:
-      integrity: sha512-hIFoqGq1db0QMiy/Atr/pI1Rs4rDV+ZdGSey2SQyF3KK3u1z4aj9mS5UdNnZkdQpA+H3pGn0J3KlEwsi2x4EqA==
+      integrity: sha512-01z8ZJSvzECQ5XzeUbRY9dDh1h69LHU/dWaZdLwJPIJ4Mi4XjQp+muOsNP0pcqNvINkkl7/KjobEb83sR2Nshw==
   /map-cache/0.2.2:
     dev: true
     engines:
@@ -5535,7 +5535,7 @@ packages:
     dependencies:
       '@npmcli/ci-detect': 1.2.0
       lru-cache: 5.1.1
-      make-fetch-happen: 8.0.4
+      make-fetch-happen: 8.0.5
       minipass: 3.1.1
       minipass-fetch: 1.2.1
       minipass-json-stream: 1.0.1
@@ -5844,7 +5844,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-whdkPIooSu/bASggZ96BWVvZTRMOFxnyUG5PnTSGKoJE2gd5mbVNmR2Nj20QFzxYYgAXpoqC+AiXzl+UMRh7zQ==
-  /pacote/11.1.6:
+  /pacote/11.1.8:
     dependencies:
       '@npmcli/git': 2.0.2
       '@npmcli/installed-package-contents': 1.0.5
@@ -5870,7 +5870,7 @@ packages:
       node: '>=10'
     hasBin: true
     resolution:
-      integrity: sha512-0feWktUCz1DMBfSFYfEIr2C21+KpUmQcMA2AqmOQPMbv0NfLd7X7TiGFZWulVoVw8de15V9PMTtZkNji4aF7CQ==
+      integrity: sha512-oBXbdsqA0pnk4lNmWDHMm20uSbZiYCjE0MHeSFG3esxw1mubhSJizVc1rKVI0KMkYTMz4M7OTEqY1h2lx+wbPw==
   /parent-module/1.0.1:
     dependencies:
       callsites: 3.1.0
@@ -6688,20 +6688,20 @@ packages:
       rollup: ^1.27.9
     resolution:
       integrity: sha512-v3qjync/2wcqdSesNP3qPnYeOnnV39ydCU+2fTxjlmux8uA1VqM4cUVffkgzoDh3TBOEhN8JWAHrN7Hs9ZD0Sg==
-  /rollup-plugin-filesize/8.0.0:
+  /rollup-plugin-filesize/8.0.1:
     dependencies:
       boxen: 4.2.0
       brotli-size: 4.0.0
       colors: 1.4.0
       filesize: 6.1.0
       gzip-size: 5.1.1
-      pacote: 11.1.6
+      pacote: 11.1.8
       terser: 4.6.13
     dev: true
     engines:
       node: '>=8.0.0'
     resolution:
-      integrity: sha512-rCt9YQY5sgCN2u5EfnuH6W5Cj+AoUJS/thCkR9RckKbF4KVDtUwlzU8maiA4OXfiHkGO4VVHqQUq5rvC0cjK8Q==
+      integrity: sha512-gbRaRRY7dqCldHJNAzOcYs1s7R3DGF3WruO7pND0VqiBuRvF833XQCtJY4PGwhnt+C23Hmic/HsoezGExpyWMg==
   /rollup-plugin-node-builtins/2.1.2:
     dependencies:
       browserify-fs: 1.0.0
@@ -8066,7 +8066,7 @@ specifiers:
   rollup-plugin-clear: 2.0.7
   rollup-plugin-copy: 3.3.0
   rollup-plugin-external-globals: 0.5.0
-  rollup-plugin-filesize: 8.0.0
+  rollup-plugin-filesize: 8.0.1
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-terser: 5.3.0
   serve: 11.3.0
