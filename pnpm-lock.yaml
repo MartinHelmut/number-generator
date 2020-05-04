@@ -14,7 +14,7 @@ devDependencies:
   conventional-changelog: 3.1.18
   conventional-changelog-conventionalcommits: 4.2.3
   coveralls: 3.1.0
-  cz-conventional-changelog: 3.1.0
+  cz-conventional-changelog: 3.2.0
   eslint: 6.8.0
   eslint-config-prettier: 6.11.0_eslint@6.8.0
   jsdoc: 3.6.4
@@ -2137,29 +2137,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
-  /commitizen/4.0.3:
-    dependencies:
-      cachedir: 2.2.0
-      cz-conventional-changelog: 3.0.1
-      dedent: 0.7.0
-      detect-indent: 6.0.0
-      find-node-modules: 2.0.0
-      find-root: 1.1.0
-      fs-extra: 8.1.0
-      glob: 7.1.4
-      inquirer: 6.5.0
-      is-utf8: 0.2.1
-      lodash: 4.17.15
-      minimist: 1.2.0
-      shelljs: 0.7.6
-      strip-bom: 4.0.0
-      strip-json-comments: 3.0.1
-    dev: true
-    engines:
-      node: '>= 10'
-    hasBin: true
-    resolution:
-      integrity: sha512-lxu0F/Iq4dudoFeIl5pY3h3CQJzkmQuh3ygnaOvqhAD8Wu2pYBI17ofqSuPHNsBTEOh1r1AVa9kR4Hp0FAHKcQ==
   /commitizen/4.0.5:
     dependencies:
       cachedir: 2.2.0
@@ -2617,14 +2594,13 @@ packages:
       '@commitlint/load': 8.3.5
     resolution:
       integrity: sha512-7KASIwB8/ClEyCRvQrCPbN7WkQnUSjSSVNyPM+gDJ0jskLi8h8N2hrdpyeCk7fIqKMRzziqVSOBTB8yyLTMHGQ==
-  /cz-conventional-changelog/3.1.0:
+  /cz-conventional-changelog/3.2.0:
     dependencies:
       chalk: 2.4.2
-      commitizen: 4.0.3
+      commitizen: 4.0.5
       conventional-commit-types: 3.0.0
       lodash.map: 4.6.0
       longest: 2.0.1
-      right-pad: 1.0.1
       word-wrap: 1.2.3
     dev: true
     engines:
@@ -2632,7 +2608,7 @@ packages:
     optionalDependencies:
       '@commitlint/load': 8.3.5
     resolution:
-      integrity: sha512-SCwPPOF+7qMh1DZkJhrwaxCvZzPaz2E9BwQzcZwBuHlpcJj9zzz7K5vADQRhHuxStaHZFSLbDlZEdcls4bKu7Q==
+      integrity: sha512-yAYxeGpVi27hqIilG1nh4A9Bnx4J3Ov+eXy4koL3drrR+IO9GaWPsKjik20ht608Asqi8TQPf0mczhEeyAtMzg==
   /dargs/4.1.0:
     dependencies:
       number-is-nan: 1.0.1
@@ -5194,10 +5170,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-hX/Kv8M5fSYluCKCYuhqp6ARsF0=
-  /minimist/1.2.0:
-    dev: true
-    resolution:
-      integrity: sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=
   /minimist/1.2.5:
     dev: true
     resolution:
@@ -8054,7 +8026,7 @@ specifiers:
   conventional-changelog: 3.1.18
   conventional-changelog-conventionalcommits: 4.2.3
   coveralls: 3.1.0
-  cz-conventional-changelog: 3.1.0
+  cz-conventional-changelog: 3.2.0
   eslint: 6.8.0
   eslint-config-prettier: 6.11.0
   jsdoc: 3.6.4
