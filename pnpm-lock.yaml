@@ -10,7 +10,7 @@ devDependencies:
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.2.0
-  commitizen: 4.1.0
+  commitizen: 4.1.1
   conventional-changelog: 3.1.18
   conventional-changelog-conventionalcommits: 4.2.3
   coveralls: 3.1.0
@@ -2160,10 +2160,10 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-+aMqiHJSpUSHsVlxI1Jm3UUlbsx6GsxuKSkeVavG/Y3XkUxsZZczV79JPSFs3DYvZXgrRVXIFkh+Iafxs6hclQ==
-  /commitizen/4.1.0:
+  /commitizen/4.1.1:
     dependencies:
       cachedir: 2.2.0
-      cz-conventional-changelog: 3.0.1
+      cz-conventional-changelog: 3.2.0
       dedent: 0.7.0
       detect-indent: 6.0.0
       find-node-modules: 2.0.0
@@ -2181,7 +2181,7 @@ packages:
       node: '>= 10'
     hasBin: true
     resolution:
-      integrity: sha512-AG58G01FSiYFISFDEILzUsULWfal9KBEEzj1D+u8IbaAshouTKRYUk8AE5EcyZ/Q9c+I/fEEfL09Tp4uuibrwg==
+      integrity: sha512-hgNCxwP4RqScaQWyV1sYNlXs+QhKg4QVeASLKI1U217MIptnwVpN+2slQvWe5+wISNQzJQLEOPvEjRLcS6hORg==
   /commondir/1.0.1:
     dev: true
     resolution:
@@ -8044,7 +8044,7 @@ specifiers:
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.2.0
-  commitizen: 4.1.0
+  commitizen: 4.1.1
   conventional-changelog: 3.1.18
   conventional-changelog-conventionalcommits: 4.2.3
   coveralls: 3.1.0
