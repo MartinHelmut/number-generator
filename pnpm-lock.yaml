@@ -30,7 +30,7 @@ devDependencies:
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-terser: 5.3.0_rollup@2.8.0
   serve: 11.3.0
-  standard-version: 7.1.0
+  standard-version: 8.0.0
   ts-node: 8.10.1_typescript@3.8.3
   typescript: 3.8.3
 lockfileVersion: 5.1
@@ -2380,24 +2380,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-g81GQOR392I+57Cw3IyP1f+f42ME6aEkbR+L7v1FBBWolB0xkjKTeCWVguzRrp6UiT1O6gBpJbEy2eq7AnV1rw==
-  /conventional-changelog/3.1.15:
-    dependencies:
-      conventional-changelog-angular: 5.0.6
-      conventional-changelog-atom: 2.0.3
-      conventional-changelog-codemirror: 2.0.3
-      conventional-changelog-conventionalcommits: 4.2.3
-      conventional-changelog-core: 4.1.4
-      conventional-changelog-ember: 2.0.4
-      conventional-changelog-eslint: 3.0.4
-      conventional-changelog-express: 2.0.1
-      conventional-changelog-jquery: 3.0.6
-      conventional-changelog-jshint: 2.0.3
-      conventional-changelog-preset-loader: 2.3.0
-    dev: true
-    engines:
-      node: '>=6.9.0'
-    resolution:
-      integrity: sha512-CoWM+Z9bYyF00QzNpTnxkCLiuLAeRocJz3C/foFjvhsdltdtkJgMChp7GytQNjm4pT7JFBVJTpqLHTpxNtOzaA==
   /conventional-changelog/3.1.18:
     dependencies:
       conventional-changelog-angular: 5.0.6
@@ -6805,6 +6787,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-+GB6zVA9LWh6zovYQLALHwv5rb2PHGlJi3lfiqIHxR0uuwCgefcOJc59v9fv1w8GbStwxuuqqAjI9NMAOOgq1A==
+  /semver/7.1.1:
+    dev: true
+    engines:
+      node: '>=10'
+    hasBin: true
+    resolution:
+      integrity: sha512-WfuG+fl6eh3eZ2qAf6goB7nhiCd7NPXhmyFxigB/TOkQyeLP8w8GsVehvtGNtnNmyboz4TgeK40B1Kbql/8c5A==
   /semver/7.3.2:
     dev: true
     engines:
@@ -7118,10 +7107,10 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-aq/pz989nxVYwn16Tsbj1TqFpD5LLrQxHf5zaHuieFV+R0Bbr4y8qUsOA45hXT/N4/9UNXTarBjnjVmjSOVaAA==
-  /standard-version/7.1.0:
+  /standard-version/8.0.0:
     dependencies:
       chalk: 2.4.2
-      conventional-changelog: 3.1.15
+      conventional-changelog: 3.1.18
       conventional-changelog-config-spec: 2.1.0
       conventional-changelog-conventionalcommits: 4.2.3
       conventional-recommended-bump: 6.0.5
@@ -7132,15 +7121,15 @@ packages:
       find-up: 4.1.0
       fs-access: 1.0.1
       git-semver-tags: 3.0.1
-      semver: 6.3.0
+      semver: 7.1.1
       stringify-package: 1.0.1
-      yargs: 15.0.2
+      yargs: 15.3.1
     dev: true
     engines:
       node: '>=8.0'
     hasBin: true
     resolution:
-      integrity: sha512-bHY2E/1tYGeVl+0XSXFivb+54h2fA4pWJocXAd6FGbtSFUvGsnfmMbIXYDxrYErpq7oEqoKreV8xTAp78WoATA==
+      integrity: sha512-cS/U9yhYPHfyokFce6e/H3U8MaKwZKSGzH25J776sChrae/doDQjsl3vCQ0hW1MSzdrUTb7pir4ApjnbDt/TAg==
   /static-extend/0.1.2:
     dependencies:
       define-property: 0.2.5
@@ -7951,13 +7940,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-3lbsNRf/j+A4QuSZfDRA7HRSfWrzO0YjqTJd5kjAq37Zep1CEgaYmrH9Q3GwPiB9cHyd1Y1UwggGhJGoxipbzg==
-  /yargs-parser/16.1.0:
-    dependencies:
-      camelcase: 5.3.1
-      decamelize: 1.2.0
-    dev: true
-    resolution:
-      integrity: sha512-H/V41UNZQPkUMIT5h5hiwg4QKIY1RPvoBV4XcjUbRM8Bk2oKqqyZ0DIEbTFZB0XjbtSPG8SAa/0DxCQmiRgzKg==
   /yargs-parser/18.1.2:
     dependencies:
       camelcase: 5.3.1
@@ -7992,22 +7974,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-AX3Zw5iPruN5ie6xGRIDgqkT+ZhnRlZMLMHAs8tg7nRruy2Nb+i5o9bwghAogtM08q1dpr2LVoS8KSTMYpWXUw==
-  /yargs/15.0.2:
-    dependencies:
-      cliui: 6.0.0
-      decamelize: 1.2.0
-      find-up: 4.1.0
-      get-caller-file: 2.0.5
-      require-directory: 2.1.1
-      require-main-filename: 2.0.0
-      set-blocking: 2.0.0
-      string-width: 4.2.0
-      which-module: 2.0.0
-      y18n: 4.0.0
-      yargs-parser: 16.1.0
-    dev: true
-    resolution:
-      integrity: sha512-GH/X/hYt+x5hOat4LMnCqMd8r5Cv78heOMIJn1hr7QPPBqfeC6p89Y78+WB9yGDvfpCvgasfmWLzNzEioOUD9Q==
   /yargs/15.3.1:
     dependencies:
       cliui: 6.0.0
@@ -8064,6 +8030,6 @@ specifiers:
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-terser: 5.3.0
   serve: 11.3.0
-  standard-version: 7.1.0
+  standard-version: 8.0.0
   ts-node: 8.10.1
   typescript: 3.8.3
