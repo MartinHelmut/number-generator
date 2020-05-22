@@ -29,7 +29,7 @@ devDependencies:
   rollup-plugin-filesize: 9.0.0
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-terser: 5.3.0_rollup@2.10.7
-  serve: 11.3.0
+  serve: 11.3.1
   standard-version: 8.0.0
   ts-node: 8.10.1_typescript@3.9.3
   typescript: 3.9.3
@@ -1247,7 +1247,7 @@ packages:
       integrity: sha1-KeGOYy5g5OIh1YECR4UqY9ey5BA=
   /accepts/1.3.7:
     dependencies:
-      mime-types: 2.1.26
+      mime-types: 2.1.27
       negotiator: 0.6.2
     dev: true
     engines:
@@ -1421,10 +1421,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-Y9J6ZjXtoYh8RnXVCMOU/ttDmk1aBjunq9vO0ta5x85WDQiQfUF9sIPBITdbiiIVcBo03Hi3jMxigBtsddlXRw==
-  /arch/2.1.1:
+  /arch/2.1.2:
     dev: true
     resolution:
-      integrity: sha512-BLM56aPo9vLLFVa8+/+pJLnrZ7QGGTVHWsCwieAWT9o9K8UeGaQbzZbGoabWLOo2ksBCztoXdqBZBplqLDDCSg==
+      integrity: sha512-NTBIIbAfkJeIletyABbVtdPgeKfDafR+1mZV/AyyfC1UkVkp9iUjV+wwmqtUgphHYajbI86jejBJp5e+jkGTiQ==
   /archy/1.0.0:
     dev: true
     resolution:
@@ -1630,7 +1630,7 @@ packages:
     dependencies:
       ansi-align: 2.0.0
       camelcase: 4.1.0
-      chalk: 2.4.1
+      chalk: 2.4.2
       cli-boxes: 1.0.0
       string-width: 2.1.1
       term-size: 1.2.0
@@ -2094,7 +2094,7 @@ packages:
       integrity: sha512-GRMWDxpOB6Dgk2E5Uo+3eEBvtOOlimMmpbFiKuLFnQzYDavtLFY3K5ona41jgN/WdRZtG7utuVSVTL4HbZHGkw==
   /clipboardy/1.2.3:
     dependencies:
-      arch: 2.1.1
+      arch: 2.1.2
       execa: 0.8.0
     dev: true
     engines:
@@ -2242,7 +2242,7 @@ packages:
       integrity: sha512-Rd3se6QB+sO1TwqZjscQrurpEPIfO0/yYnSin6Q/rD3mOutHvUrCAhJub3r90uNb+SESBuE0QYoB90YdfatsRg==
   /compressible/2.0.18:
     dependencies:
-      mime-db: 1.43.0
+      mime-db: 1.44.0
     dev: true
     engines:
       node: '>= 0.6'
@@ -3324,7 +3324,7 @@ packages:
       is-stream: 1.1.0
       npm-run-path: 2.0.2
       p-finally: 1.0.0
-      signal-exit: 3.0.2
+      signal-exit: 3.0.3
       strip-eof: 1.0.0
     dev: true
     engines:
@@ -3338,7 +3338,7 @@ packages:
       is-stream: 1.1.0
       npm-run-path: 2.0.2
       p-finally: 1.0.0
-      signal-exit: 3.0.2
+      signal-exit: 3.0.3
       strip-eof: 1.0.0
     dev: true
     engines:
@@ -5374,12 +5374,6 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-BHJ/EKruNIqJf/QahvxwQZXKygOQ256myeN/Ew+THcAa5q+PjyTTMMeNQC4DZw5AwfvelsUrA6B67NKMqXDbzQ==
-  /mime-db/1.43.0:
-    dev: true
-    engines:
-      node: '>= 0.6'
-    resolution:
-      integrity: sha512-+5dsGEEovYbT8UY9yD7eE4XTc4UwJ1jBYlgaQQF38ENsKR3wj/8q8RFZrF9WIZpB2V1ArTVFUva8sAul1NzRzQ==
   /mime-db/1.44.0:
     dev: true
     engines:
@@ -5394,14 +5388,6 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-lc/aahn+t4/SWV/qcmumYjymLsWfN3ELhpmVuUFjgsORruuZPVSwAQryq+HHGvO/SI2KVX26bx+En+zhM8g8hQ==
-  /mime-types/2.1.26:
-    dependencies:
-      mime-db: 1.43.0
-    dev: true
-    engines:
-      node: '>= 0.6'
-    resolution:
-      integrity: sha512-01paPWYgLrkqAyrlDorC1uDwl2p3qZT7yl806vW7DvDoxwXi46jsjFbg+WdwotBIk6/MbEhO/dh5aZ5sNj/dWQ==
   /mime-types/2.1.27:
     dependencies:
       mime-db: 1.44.0
@@ -6731,7 +6717,7 @@ packages:
   /registry-auth-token/3.3.2:
     dependencies:
       rc: 1.2.8
-      safe-buffer: 5.2.0
+      safe-buffer: 5.2.1
     dev: true
     resolution:
       integrity: sha512-JL39c60XlzCVgNrO+qq68FoNb56w/m7JYvGR2jT5iR1xBrUA3Mfx5Twk5rqTThPmQKMWydGmq8oFtDlxfrmxnQ==
@@ -7163,7 +7149,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-RFh49wX7zJmmOVDcIjiDSJnMH+ItQEvyuYLYuDBVoA/xmQSCuj+uRmk1cmBB5QQlI3qOiWKp6p4DUGY+Z5AB2A==
-  /serve/11.3.0:
+  /serve/11.3.1:
     dependencies:
       '@zeit/schemas': 2.6.0
       ajv: 6.5.3
@@ -7177,7 +7163,7 @@ packages:
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-AU0g50Q1y5EVFX56bl0YX5OtVjUX1N737/Htj93dQGKuHiuLvVB45PD8Muar70W6Kpdlz8aNJfoUqTyAq9EE/A==
+      integrity: sha512-+tcx5eybTZT0scsp1PCb7HYjzBSfRF9fQIwyEU8ZYLioVuhHwywRYBBTF5WYlTXvC62eumK2bloDXAd7+9blGQ==
   /set-blocking/2.0.0:
     dev: true
     resolution:
@@ -8438,7 +8424,7 @@ specifiers:
   rollup-plugin-filesize: 9.0.0
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-terser: 5.3.0
-  serve: 11.3.0
+  serve: 11.3.1
   standard-version: 8.0.0
   ts-node: 8.10.1
   typescript: 3.9.3
