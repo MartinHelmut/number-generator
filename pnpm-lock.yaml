@@ -3,7 +3,7 @@ devDependencies:
   '@babel/preset-env': 7.10.2_@babel+core@7.10.2
   '@babel/register': 7.10.1_@babel+core@7.10.2
   '@rollup/plugin-node-resolve': 8.0.0_rollup@2.13.1
-  '@rollup/plugin-replace': 2.3.2_rollup@2.13.1
+  '@rollup/plugin-replace': 2.3.3_rollup@2.13.1
   '@types/chai': 4.2.11
   '@types/mocha': 7.0.2
   '@types/node': 12.12.30
@@ -1100,16 +1100,16 @@ packages:
       rollup: ^1.20.0||^2.0.0
     resolution:
       integrity: sha512-5poJCChrkVggXXND/sQ7yNqwjUNT4fP31gpRWCnSNnlXuUXTCMHT33xZrTGxgjm5Rl18MHj7iEzlCT8rYWwQSA==
-  /@rollup/plugin-replace/2.3.2_rollup@2.13.1:
+  /@rollup/plugin-replace/2.3.3_rollup@2.13.1:
     dependencies:
-      '@rollup/pluginutils': 3.0.9_rollup@2.13.1
+      '@rollup/pluginutils': 3.0.10_rollup@2.13.1
       magic-string: 0.25.7
       rollup: 2.13.1
     dev: true
     peerDependencies:
       rollup: ^1.20.0 || ^2.0.0
     resolution:
-      integrity: sha512-KEEL7V2tMNOsbAoNMKg91l1sNXBDoiP31GFlqXVOuV5691VQKzKBh91+OKKOG4uQWYqcFskcjFyh1d5YnZd0Zw==
+      integrity: sha512-XPmVXZ7IlaoWaJLkSCDaa0Y6uVo5XQYHhiMFzOd5qSv5rE+t/UJToPIOE56flKIxBFQI27ONsxb7dqHnwSsjKQ==
   /@rollup/pluginutils/3.0.10_rollup@2.13.1:
     dependencies:
       '@types/estree': 0.0.39
@@ -1123,19 +1123,6 @@ packages:
       rollup: ^1.20.0||^2.0.0
     resolution:
       integrity: sha512-d44M7t+PjmMrASHbhgpSbVgtL6EFyX7J4mYxwQ/c5eoaE6N2VgCgEcWVzNnwycIloti+/MpwFr8qfw+nRw00sw==
-  /@rollup/pluginutils/3.0.9_rollup@2.13.1:
-    dependencies:
-      '@types/estree': 0.0.39
-      estree-walker: 1.0.1
-      micromatch: 4.0.2
-      rollup: 2.13.1
-    dev: true
-    engines:
-      node: '>= 8.0.0'
-    peerDependencies:
-      rollup: ^1.20.0||^2.0.0
-    resolution:
-      integrity: sha512-TLZavlfPAZYI7v33wQh4mTP6zojne14yok3DNSLcjoG/Hirxfkonn6icP5rrNWRn8nZsirJBFFpijVOJzkUHDg==
   /@tootallnate/once/1.1.2:
     dev: true
     engines:
@@ -8364,7 +8351,7 @@ specifiers:
   '@babel/preset-env': 7.10.2
   '@babel/register': 7.10.1
   '@rollup/plugin-node-resolve': 8.0.0
-  '@rollup/plugin-replace': 2.3.2
+  '@rollup/plugin-replace': 2.3.3
   '@types/chai': 4.2.11
   '@types/mocha': 7.0.2
   '@types/node': 12.12.30
