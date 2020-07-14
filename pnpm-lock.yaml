@@ -30,7 +30,7 @@ devDependencies:
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-terser: 6.1.0_rollup@2.21.0
   serve: 11.3.2
-  standard-version: 8.0.1
+  standard-version: 8.0.2
   ts-node: 8.10.2_typescript@3.9.6
   typescript: 3.9.6
 lockfileVersion: 5.1
@@ -7327,7 +7327,7 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-aq/pz989nxVYwn16Tsbj1TqFpD5LLrQxHf5zaHuieFV+R0Bbr4y8qUsOA45hXT/N4/9UNXTarBjnjVmjSOVaAA==
-  /standard-version/8.0.1:
+  /standard-version/8.0.2:
     dependencies:
       chalk: 2.4.2
       conventional-changelog: 3.1.21
@@ -7349,7 +7349,7 @@ packages:
       node: '>=8.0'
     hasBin: true
     resolution:
-      integrity: sha512-FLZdjvL2tBdwlctfQeyBf4+dX+SFljwdWfUA0F3wPiU9Rn0+FSuD3I0WXuzC1RmcaWwU5WL3EyV4Aanejc8Pqg==
+      integrity: sha512-L8X9KFq2SmVmaeZgUmWHFJMOsEWpjgFAwqic6yIIoveM1kdw1vH4Io03WWxUDjypjGqGU6qUtcJoR8UvOv5w3g==
   /static-extend/0.1.2:
     dependencies:
       define-property: 0.2.5
@@ -8258,6 +8258,6 @@ specifiers:
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-terser: 6.1.0
   serve: 11.3.2
-  standard-version: 8.0.1
+  standard-version: 8.0.2
   ts-node: 8.10.2
   typescript: 3.9.6
