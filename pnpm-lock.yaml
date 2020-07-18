@@ -2,8 +2,8 @@ devDependencies:
   '@babel/core': 7.10.5
   '@babel/preset-env': 7.10.4_@babel+core@7.10.5
   '@babel/register': 7.10.5_@babel+core@7.10.5
-  '@rollup/plugin-node-resolve': 8.4.0_rollup@2.21.0
-  '@rollup/plugin-replace': 2.3.3_rollup@2.21.0
+  '@rollup/plugin-node-resolve': 8.4.0_rollup@2.22.0
+  '@rollup/plugin-replace': 2.3.3_rollup@2.22.0
   '@types/chai': 4.2.11
   '@types/mocha': 8.0.0
   '@types/node': 12.12.30
@@ -21,14 +21,14 @@ devDependencies:
   mocha: 8.0.1
   nyc: 15.1.0
   prettier: 2.0.5
-  rollup: 2.21.0
-  rollup-plugin-babel: 4.4.0_@babel+core@7.10.5+rollup@2.21.0
+  rollup: 2.22.0
+  rollup-plugin-babel: 4.4.0_@babel+core@7.10.5+rollup@2.22.0
   rollup-plugin-clear: 2.0.7
   rollup-plugin-copy: 3.3.0
-  rollup-plugin-external-globals: 0.5.0_rollup@2.21.0
+  rollup-plugin-external-globals: 0.5.0_rollup@2.22.0
   rollup-plugin-filesize: 9.0.2
   rollup-plugin-node-builtins: 2.1.2
-  rollup-plugin-terser: 6.1.0_rollup@2.21.0
+  rollup-plugin-terser: 6.1.0_rollup@2.22.0
   serve: 11.3.2
   standard-version: 8.0.2
   ts-node: 8.10.2_typescript@3.9.7
@@ -1293,16 +1293,16 @@ packages:
     dev: true
     resolution:
       integrity: sha512-9Ea57XJjNLtBFRAaiKqqdoqRrL2QkM0vvCbMjPecljhog5IHupStPtZULbl0CoGN00N3lhLWJ4PaIEC0MGjqJw==
-  /@rollup/plugin-node-resolve/8.4.0_rollup@2.21.0:
+  /@rollup/plugin-node-resolve/8.4.0_rollup@2.22.0:
     dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.21.0
+      '@rollup/pluginutils': 3.1.0_rollup@2.22.0
       '@types/resolve': 1.17.1
       builtin-modules: 3.1.0
       deep-freeze: 0.0.1
       deepmerge: 4.2.2
       is-module: 1.0.0
       resolve: 1.17.0
-      rollup: 2.21.0
+      rollup: 2.22.0
     dev: true
     engines:
       node: '>= 8.0.0'
@@ -1310,22 +1310,22 @@ packages:
       rollup: ^1.20.0||^2.0.0
     resolution:
       integrity: sha512-LFqKdRLn0ShtQyf6SBYO69bGE1upV6wUhBX0vFOUnLAyzx5cwp8svA0eHUnu8+YU57XOkrMtfG63QOpQx25pHQ==
-  /@rollup/plugin-replace/2.3.3_rollup@2.21.0:
+  /@rollup/plugin-replace/2.3.3_rollup@2.22.0:
     dependencies:
-      '@rollup/pluginutils': 3.0.10_rollup@2.21.0
+      '@rollup/pluginutils': 3.0.10_rollup@2.22.0
       magic-string: 0.25.7
-      rollup: 2.21.0
+      rollup: 2.22.0
     dev: true
     peerDependencies:
       rollup: ^1.20.0 || ^2.0.0
     resolution:
       integrity: sha512-XPmVXZ7IlaoWaJLkSCDaa0Y6uVo5XQYHhiMFzOd5qSv5rE+t/UJToPIOE56flKIxBFQI27ONsxb7dqHnwSsjKQ==
-  /@rollup/pluginutils/3.0.10_rollup@2.21.0:
+  /@rollup/pluginutils/3.0.10_rollup@2.22.0:
     dependencies:
       '@types/estree': 0.0.39
       estree-walker: 1.0.1
       picomatch: 2.2.2
-      rollup: 2.21.0
+      rollup: 2.22.0
     dev: true
     engines:
       node: '>= 8.0.0'
@@ -1333,12 +1333,12 @@ packages:
       rollup: ^1.20.0||^2.0.0
     resolution:
       integrity: sha512-d44M7t+PjmMrASHbhgpSbVgtL6EFyX7J4mYxwQ/c5eoaE6N2VgCgEcWVzNnwycIloti+/MpwFr8qfw+nRw00sw==
-  /@rollup/pluginutils/3.1.0_rollup@2.21.0:
+  /@rollup/pluginutils/3.1.0_rollup@2.22.0:
     dependencies:
       '@types/estree': 0.0.39
       estree-walker: 1.0.1
       picomatch: 2.2.2
-      rollup: 2.21.0
+      rollup: 2.22.0
     dev: true
     engines:
       node: '>= 8.0.0'
@@ -6894,11 +6894,11 @@ packages:
     dev: true
     resolution:
       integrity: sha512-ii4iagi25WusVoiC4B4lq7pbXfAp3D9v5CwfkY33vffw2+pkDjY1D8GaN7spsxvCSx8dkPqOZCEZyfxcmJG2IA==
-  /rollup-plugin-babel/4.4.0_@babel+core@7.10.5+rollup@2.21.0:
+  /rollup-plugin-babel/4.4.0_@babel+core@7.10.5+rollup@2.22.0:
     dependencies:
       '@babel/core': 7.10.5
       '@babel/helper-module-imports': 7.8.3
-      rollup: 2.21.0
+      rollup: 2.22.0
       rollup-pluginutils: 2.8.2
     dev: true
     peerDependencies:
@@ -6924,12 +6924,12 @@ packages:
       node: '>=8.3'
     resolution:
       integrity: sha512-euDjCUSBXZa06nqnwCNADbkAcYDfzwowfZQkto9K/TFhiH+QG7I4PUsEMwM9tDgomGWJc//z7KLW8t+tZwxADA==
-  /rollup-plugin-external-globals/0.5.0_rollup@2.21.0:
+  /rollup-plugin-external-globals/0.5.0_rollup@2.22.0:
     dependencies:
       estree-walker: 1.0.1
       is-reference: 1.1.4
       magic-string: 0.25.7
-      rollup: 2.21.0
+      rollup: 2.22.0
       rollup-pluginutils: 2.8.2
     dev: true
     peerDependencies:
@@ -6960,11 +6960,11 @@ packages:
     dev: true
     resolution:
       integrity: sha1-JKH+1KQyV7a2Q3HYq8bOGrFFl+k=
-  /rollup-plugin-terser/6.1.0_rollup@2.21.0:
+  /rollup-plugin-terser/6.1.0_rollup@2.22.0:
     dependencies:
       '@babel/code-frame': 7.8.3
       jest-worker: 26.0.0
-      rollup: 2.21.0
+      rollup: 2.22.0
       serialize-javascript: 3.0.0
       terser: 4.7.0
     dev: true
@@ -6992,7 +6992,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-/2HA0Ec70TvQnXdzynFffkjA6XN+1e2pEv/uKS5Ulca40g2L7KuOE3riasHoNVHOsFD5KKZgDsMk1CP3Tw9s+A==
-  /rollup/2.21.0:
+  /rollup/2.22.0:
     dev: true
     engines:
       node: '>=10.0.0'
@@ -7000,7 +7000,7 @@ packages:
     optionalDependencies:
       fsevents: 2.1.3
     resolution:
-      integrity: sha512-BEGgy+wSzux7Ycq58pRiWEOBZaXRXTuvzl1gsm7gqmsAHxkWf9nyA5V2LN9fGSHhhDQd0/C13iRzSh4bbIpWZQ==
+      integrity: sha512-TNuj5gQTwMu3hcM65HcBTx62N04/7v+4LRH6HOWe497hG0ic5RRfe+Vr88km8XfeApd/AIIQtVfRVNHk92Knmg==
   /run-async/2.4.0:
     dependencies:
       is-promise: 2.1.0
@@ -8302,7 +8302,7 @@ specifiers:
   mocha: 8.0.1
   nyc: 15.1.0
   prettier: 2.0.5
-  rollup: 2.21.0
+  rollup: 2.22.0
   rollup-plugin-babel: 4.4.0
   rollup-plugin-clear: 2.0.7
   rollup-plugin-copy: 3.3.0
