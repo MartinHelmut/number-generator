@@ -17,7 +17,7 @@ devDependencies:
   cz-conventional-changelog: 3.2.0
   eslint: 7.5.0
   eslint-config-prettier: 6.11.0_eslint@7.5.0
-  jsdoc: 3.6.4
+  jsdoc: 3.6.5
   mocha: 8.0.1
   nyc: 15.1.0
   prettier: 2.0.5
@@ -453,13 +453,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-wfryxy4bE1UivvQKSQDU4/X6dr+i8bctjUjj8Zyt3DQy7NtPizJXT8M52nqpNKL+nq2PW8lxk4ZqLj0fD4B4hQ==
-  /@babel/parser/7.9.4:
-    dev: true
-    engines:
-      node: '>=6.0.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-bC49otXX6N0/VYhgOMh4gnP26E9xnDZK3TmbNpxYzzz9BQLBosQwfyOe9/cXUU3txYhTzLCbcqd5c8y/OmCjHA==
   /@babel/plugin-proposal-async-generator-functions/7.10.4_@babel+core@7.10.5:
     dependencies:
       '@babel/core': 7.10.5
@@ -2146,7 +2139,7 @@ packages:
       integrity: sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
   /catharsis/0.8.11:
     dependencies:
-      lodash: 4.17.15
+      lodash: 4.17.19
     dev: true
     engines:
       node: '>= 8'
@@ -4773,9 +4766,9 @@ packages:
     dev: true
     resolution:
       integrity: sha1-peZUwuWi3rXyAdls77yoDA7y9RM=
-  /jsdoc/3.6.4:
+  /jsdoc/3.6.5:
     dependencies:
-      '@babel/parser': 7.9.4
+      '@babel/parser': 7.10.5
       bluebird: 3.7.2
       catharsis: 0.8.11
       escape-string-regexp: 2.0.0
@@ -4794,7 +4787,7 @@ packages:
       node: '>=8.15.0'
     hasBin: true
     resolution:
-      integrity: sha512-3G9d37VHv7MFdheviDCjUfQoIjdv4TC5zTTf5G9VODLtOnVS6La1eoYBDlbWfsRT3/Xo+j2MIqki2EV12BZfwA==
+      integrity: sha512-SbY+i9ONuxSK35cgVHaI8O9senTE4CDYAmGSDJ5l3+sfe62Ff4gy96osy6OW84t4K4A8iGnMrlRrsSItSNp3RQ==
   /jsesc/0.5.0:
     dev: true
     hasBin: true
@@ -4893,7 +4886,7 @@ packages:
       integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
   /klaw/3.0.0:
     dependencies:
-      graceful-fs: 4.2.3
+      graceful-fs: 4.2.4
     dev: true
     resolution:
       integrity: sha512-0Fo5oir+O9jnXu5EefYbVK+mHMBeEVEy2cmctR1O1NECcCkPRreJKrS6Qt/j3KC2C148Dfo9i3pCmCMsdqGr0g==
@@ -6777,7 +6770,7 @@ packages:
       integrity: sha512-NKN5kMDylKuldxYLSUfrbo5Tuzh4hd+2E8NPPX02mZtn1VuREQToYe/ZdlJy+J3uCpfaiGF05e7B8W0iXbQHmg==
   /requizzle/0.2.3:
     dependencies:
-      lodash: 4.17.15
+      lodash: 4.17.19
     dev: true
     resolution:
       integrity: sha512-YanoyJjykPxGHii0fZP0uUPEXpvqfBDxWV7s6GKAiiOsiqhX6vHNyW3Qzdmqp/iq/ExbhaGbVrjB4ruEVSM4GQ==
@@ -8298,7 +8291,7 @@ specifiers:
   cz-conventional-changelog: 3.2.0
   eslint: 7.5.0
   eslint-config-prettier: 6.11.0
-  jsdoc: 3.6.4
+  jsdoc: 3.6.5
   mocha: 8.0.1
   nyc: 15.1.0
   prettier: 2.0.5
