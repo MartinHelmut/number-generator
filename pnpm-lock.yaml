@@ -28,7 +28,7 @@ devDependencies:
   rollup-plugin-external-globals: 0.5.0_rollup@2.23.1
   rollup-plugin-filesize: 9.0.2
   rollup-plugin-node-builtins: 2.1.2
-  rollup-plugin-terser: 6.1.0_rollup@2.23.1
+  rollup-plugin-terser: 7.0.0_rollup@2.23.1
   serve: 11.3.2
   standard-version: 8.0.2
   ts-node: 8.10.2_typescript@3.9.7
@@ -4765,15 +4765,16 @@ packages:
     dev: true
     resolution:
       integrity: sha512-A6fMAio4D2ot2r/TYzr4yUWrmwNdsN5xL7+HUiyACE4DXm+q8HtPcnFTp+NnW3k4N05tZ7FVYFFb2CR13NxyHQ==
-  /jest-worker/26.0.0:
+  /jest-worker/26.2.1:
     dependencies:
+      '@types/node': 12.12.30
       merge-stream: 2.0.0
       supports-color: 7.1.0
     dev: true
     engines:
       node: '>= 10.14.2'
     resolution:
-      integrity: sha512-pPaYa2+JnwmiZjK9x7p9BoZht+47ecFCDFA/CJxspHzeDvQcfVBLWzCiWyo+EGrSiQMWZtCFo9iSvMZnAAo8vw==
+      integrity: sha512-+XcGMMJDTeEGncRb5M5Zq9P7K4sQ1sirhjdOxsN1462h6lFo9w59bl2LVQmdGEEeU3m+maZCkS2Tcc9SfCHO4A==
   /js-tokens/4.0.0:
     dev: true
     resolution:
@@ -6991,18 +6992,18 @@ packages:
     dev: true
     resolution:
       integrity: sha1-JKH+1KQyV7a2Q3HYq8bOGrFFl+k=
-  /rollup-plugin-terser/6.1.0_rollup@2.23.1:
+  /rollup-plugin-terser/7.0.0_rollup@2.23.1:
     dependencies:
-      '@babel/code-frame': 7.8.3
-      jest-worker: 26.0.0
+      '@babel/code-frame': 7.10.4
+      jest-worker: 26.2.1
       rollup: 2.23.1
-      serialize-javascript: 3.0.0
-      terser: 4.7.0
+      serialize-javascript: 4.0.0
+      terser: 5.0.0
     dev: true
     peerDependencies:
       rollup: ^2.0.0
     resolution:
-      integrity: sha512-4fB3M9nuoWxrwm39habpd4hvrbrde2W2GG4zEGPQg1YITNkM3Tqur5jSuXlWNzbv/2aMLJ+dZJaySc3GCD8oDw==
+      integrity: sha512-p/N3lLiFusCjYTLfVkoaiRTOGr5AESEaljMPH12MhOtoMkmTBhIAfuadrcWy4am1U0vU4WTxO9fi0K09O4CboQ==
   /rollup-plugin-virtual/1.0.1:
     deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-virtual.
     dev: true
@@ -7101,10 +7102,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-OrOb32TeeambH6UrhtShmF7CRDqhL6/5XpPNp2DuRH6+9QLw/orhp72j87v8Qa1ScDkvrrBNpZcDejAirJmfXQ==
-  /serialize-javascript/3.0.0:
-    dev: true
-    resolution:
-      integrity: sha512-skZcHYw2vEX4bw90nAr2iTTsz6x2SrHEnfxgKYmZlvJYBEZrvbKtobJWlQ20zczKb3bsHHXXTYt48zBA7ni9cw==
   /serialize-javascript/4.0.0:
     dependencies:
       randombytes: 2.1.0
@@ -7717,17 +7714,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-a6sumDlzyHVJWb8+YofY4TW112G6p2FCPEAFk+59gIYHv3XHRhm9ltVQ9kli4hNWeQBwSpe8cRN25x0ROunMOw==
-  /terser/4.7.0:
-    dependencies:
-      commander: 2.20.3
-      source-map: 0.6.1
-      source-map-support: 0.5.19
-    dev: true
-    engines:
-      node: '>=6.0.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-Lfb0RiZcjRDXCC3OSHJpEkxJ9Qeqs6mp2v4jf2MHfy8vGERmVDuvjXdd/EnP5Deme5F2yBRBymKmKHCBg2echw==
   /terser/4.8.0:
     dependencies:
       commander: 2.20.3
@@ -7739,6 +7725,17 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-EAPipTNeWsb/3wLPeup1tVPaXfIaU68xMnVdPafIL1TV05OhASArYyIfFvnvJCNrR2NIOvDVNNTFRa+Re2MWyw==
+  /terser/5.0.0:
+    dependencies:
+      commander: 2.20.3
+      source-map: 0.6.1
+      source-map-support: 0.5.19
+    dev: true
+    engines:
+      node: '>=6.0.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-olH2DwGINoSuEpSGd+BsPuAQaA3OrHnHnFL/rDB2TVNc3srUbz/rq/j2BlF4zDXI+JqAvGr86bIm1R2cJgZ3FA==
   /test-exclude/6.0.0:
     dependencies:
       '@istanbuljs/schema': 0.1.2
@@ -8371,7 +8368,7 @@ specifiers:
   rollup-plugin-external-globals: 0.5.0
   rollup-plugin-filesize: 9.0.2
   rollup-plugin-node-builtins: 2.1.2
-  rollup-plugin-terser: 6.1.0
+  rollup-plugin-terser: 7.0.0
   serve: 11.3.2
   standard-version: 8.0.2
   ts-node: 8.10.2
