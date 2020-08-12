@@ -131,7 +131,7 @@
     "chai": "4.2.0",
     "commitizen": "4.1.2",
     "conventional-changelog": "3.1.23",
-    "conventional-changelog-conventionalcommits": "4.3.1",
+    "conventional-changelog-conventionalcommits": "4.4.0",
     "coveralls": "3.1.0",
     "cz-conventional-changelog": "3.2.0",
     "eslint": "7.6.0",
