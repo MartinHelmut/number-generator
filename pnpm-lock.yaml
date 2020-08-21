@@ -10,7 +10,7 @@ devDependencies:
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.2.0
-  commitizen: 4.1.4
+  commitizen: 4.1.5
   conventional-changelog: 3.1.23
   conventional-changelog-conventionalcommits: 4.4.0
   coveralls: 3.1.0
@@ -2398,7 +2398,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-+aMqiHJSpUSHsVlxI1Jm3UUlbsx6GsxuKSkeVavG/Y3XkUxsZZczV79JPSFs3DYvZXgrRVXIFkh+Iafxs6hclQ==
-  /commitizen/4.1.4:
+  /commitizen/4.1.5:
     dependencies:
       cachedir: 2.2.0
       cz-conventional-changelog: 3.2.0
@@ -2408,7 +2408,7 @@ packages:
       find-root: 1.1.0
       fs-extra: 8.1.0
       glob: 7.1.4
-      inquirer: 6.5.0
+      inquirer: 6.5.2
       is-utf8: 0.2.1
       lodash: 4.17.20
       minimist: 1.2.5
@@ -2419,7 +2419,7 @@ packages:
       node: '>= 10'
     hasBin: true
     resolution:
-      integrity: sha512-3Rr7m9O6sittgClOYdSxMypLQl0Qj+o0kJKr+aNVm++QA88UKpCvF+GasCk4/qM4iWBfAVZZ/u/MQ31IQhG+oA==
+      integrity: sha512-oGNNeOARhunAPi5VF7FnLJAUPwajgt7DaC9hrDXFVo+qFlHaCtMtjY+iXOvfIrMBV3qmDZZyjgBsrTQMN5u1rg==
   /commondir/1.0.1:
     dev: true
     resolution:
@@ -4305,6 +4305,26 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-scfHejeG/lVZSpvCXpsB4j/wQNPM5JC8kiElOI0OUTwmc1RTpXr4H32/HOlQHcZiYl2z2VElwuCVDRG8vFmbnA==
+  /inquirer/6.5.2:
+    dependencies:
+      ansi-escapes: 3.2.0
+      chalk: 2.4.2
+      cli-cursor: 2.1.0
+      cli-width: 2.2.0
+      external-editor: 3.1.0
+      figures: 2.0.0
+      lodash: 4.17.20
+      mute-stream: 0.0.7
+      run-async: 2.4.0
+      rxjs: 6.5.4
+      string-width: 2.1.1
+      strip-ansi: 5.2.0
+      through: 2.3.8
+    dev: true
+    engines:
+      node: '>=6.0.0'
+    resolution:
+      integrity: sha512-cntlB5ghuB0iuO65Ovoi8ogLHiWGs/5yNrtUcKjFhSSiVeAIVpD7koaSU9RM8mpXw5YDi9RdYXGQMaOURB7ycQ==
   /interpret/1.2.0:
     dev: true
     engines:
@@ -8319,7 +8339,7 @@ specifiers:
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.2.0
-  commitizen: 4.1.4
+  commitizen: 4.1.5
   conventional-changelog: 3.1.23
   conventional-changelog-conventionalcommits: 4.4.0
   coveralls: 3.1.0
