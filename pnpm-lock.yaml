@@ -10,7 +10,7 @@ devDependencies:
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.2.0
-  commitizen: 4.1.2
+  commitizen: 4.1.3
   conventional-changelog: 3.1.23
   conventional-changelog-conventionalcommits: 4.4.0
   coveralls: 3.1.0
@@ -2398,7 +2398,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-+aMqiHJSpUSHsVlxI1Jm3UUlbsx6GsxuKSkeVavG/Y3XkUxsZZczV79JPSFs3DYvZXgrRVXIFkh+Iafxs6hclQ==
-  /commitizen/4.1.2:
+  /commitizen/4.1.3:
     dependencies:
       cachedir: 2.2.0
       cz-conventional-changelog: 3.2.0
@@ -2410,7 +2410,7 @@ packages:
       glob: 7.1.4
       inquirer: 6.5.0
       is-utf8: 0.2.1
-      lodash: 4.17.15
+      lodash: 4.17.20
       minimist: 1.2.5
       strip-bom: 4.0.0
       strip-json-comments: 3.0.1
@@ -2419,7 +2419,7 @@ packages:
       node: '>= 10'
     hasBin: true
     resolution:
-      integrity: sha512-LBxTQKHbVgroMz9ohpm86N+GfJobonGyvDc3zBGdZazbwCLz2tqLa48Rf2TnAdKx7/06W1i1R3SXUt5QW97qVQ==
+      integrity: sha512-ia82r6N171BSPXfW7YiAJPxurpU7dS3fvPfmZKlR1k4yq9+OznTZujHaw/pY0FGCt/zPPxe9MkSNyroQoALUuw==
   /commondir/1.0.1:
     dev: true
     resolution:
@@ -3707,7 +3707,7 @@ packages:
       integrity: sha1-1qh/JiJxzv6+wwxVNAf7mV2od3o=
   /fs-extra/8.1.0:
     dependencies:
-      graceful-fs: 4.2.3
+      graceful-fs: 4.2.4
       jsonfile: 4.0.0
       universalify: 0.1.2
     dev: true
@@ -3968,10 +3968,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-sSs4inE1FB2YQiymcmTv6NWENryABjUNPeWhOvmn4SjtKybglsyPZxFB3U1/+L1bYi0rNZDqCLlHyLYDl1Pq5A==
-  /graceful-fs/4.2.3:
-    dev: true
-    resolution:
-      integrity: sha512-a30VEBm4PEdx1dRB7MFK7BejejvCvBronbLjht+sHuGYj8PHs7M/5Z+rt5lw551vZ7yfTCj4Vuyy3mSJytDWRQ==
   /graceful-fs/4.2.4:
     dev: true
     resolution:
@@ -4297,7 +4293,7 @@ packages:
       cli-width: 2.2.0
       external-editor: 3.1.0
       figures: 2.0.0
-      lodash: 4.17.15
+      lodash: 4.17.20
       mute-stream: 0.0.7
       run-async: 2.4.0
       rxjs: 6.5.4
@@ -4846,7 +4842,7 @@ packages:
   /jsonfile/4.0.0:
     dev: true
     optionalDependencies:
-      graceful-fs: 4.2.3
+      graceful-fs: 4.2.4
     resolution:
       integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
   /jsonparse/1.3.1:
@@ -5100,6 +5096,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
+  /lodash/4.17.20:
+    dev: true
+    resolution:
+      integrity: sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
   /log-driver/1.2.7:
     dev: true
     engines:
@@ -6822,6 +6822,7 @@ packages:
     resolution:
       integrity: sha512-zFa12V4OLtT5XUX/Q4VLvTfBf+Ok0SPc1FNGM/z9ctUdiU618qwKpWnd0CHs3+RqROfyEg/DhuHbMWYqcgljEw==
   /resolve-url/0.2.1:
+    deprecated: 'https://github.com/lydell/resolve-url#deprecated'
     dev: true
     resolution:
       integrity: sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
@@ -6840,7 +6841,7 @@ packages:
   /restore-cursor/2.0.0:
     dependencies:
       onetime: 2.0.1
-      signal-exit: 3.0.2
+      signal-exit: 3.0.3
     dev: true
     engines:
       node: '>=4'
@@ -7180,10 +7181,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-7gk3UZ9kOfPLIAbslLzyWeGiEqx9e3rxwZM0KE6EL8GlGwjym9Mrlx5/p33bWTu9YG6vcS4MBxYZDHYr5lr8BQ==
-  /signal-exit/3.0.2:
-    dev: true
-    resolution:
-      integrity: sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
   /signal-exit/3.0.3:
     dev: true
     resolution:
@@ -8007,6 +8004,7 @@ packages:
     resolution:
       integrity: sha512-KY9Frmirql91X2Qgjry0Wd4Y+YTdrdZheS8TFwvkbLWf/G5KNJDCh6pKL5OZctEW4+0Baa5idK2ZQuELRwPznQ==
   /urix/0.1.0:
+    deprecated: 'Please see https://github.com/lydell/urix#deprecated'
     dev: true
     resolution:
       integrity: sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
@@ -8321,7 +8319,7 @@ specifiers:
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.2.0
-  commitizen: 4.1.2
+  commitizen: 4.1.3
   conventional-changelog: 3.1.23
   conventional-changelog-conventionalcommits: 4.4.0
   coveralls: 3.1.0
