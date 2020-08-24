@@ -14,7 +14,7 @@ devDependencies:
   conventional-changelog: 3.1.23
   conventional-changelog-conventionalcommits: 4.4.0
   coveralls: 3.1.0
-  cz-conventional-changelog: 3.2.0
+  cz-conventional-changelog: 3.2.1
   eslint: 7.7.0
   eslint-config-prettier: 6.11.0_eslint@7.7.0
   jsdoc: 3.6.5
@@ -2719,7 +2719,7 @@ packages:
     dependencies:
       import-fresh: 2.0.0
       is-directory: 0.3.1
-      js-yaml: 3.13.1
+      js-yaml: 3.14.0
       parse-json: 4.0.0
     dev: true
     engines:
@@ -2840,6 +2840,21 @@ packages:
       '@commitlint/load': 8.3.5
     resolution:
       integrity: sha512-yAYxeGpVi27hqIilG1nh4A9Bnx4J3Ov+eXy4koL3drrR+IO9GaWPsKjik20ht608Asqi8TQPf0mczhEeyAtMzg==
+  /cz-conventional-changelog/3.2.1:
+    dependencies:
+      chalk: 2.4.2
+      commitizen: 4.2.0
+      conventional-commit-types: 3.0.0
+      lodash.map: 4.6.0
+      longest: 2.0.1
+      word-wrap: 1.2.3
+    dev: true
+    engines:
+      node: '>= 10'
+    optionalDependencies:
+      '@commitlint/load': 8.3.5
+    resolution:
+      integrity: sha512-MroXCfO8sahklT0KSwZ1oaNwKxZaZ2A8ONc+MH+is8QDZ2zBhGOFFiAXuWpcWFJLpxlGPvnYlhvOlYiSOAGc7w==
   /dargs/4.1.0:
     dependencies:
       number-is-nan: 1.0.1
@@ -8343,7 +8358,7 @@ specifiers:
   conventional-changelog: 3.1.23
   conventional-changelog-conventionalcommits: 4.4.0
   coveralls: 3.1.0
-  cz-conventional-changelog: 3.2.0
+  cz-conventional-changelog: 3.2.1
   eslint: 7.7.0
   eslint-config-prettier: 6.11.0
   jsdoc: 3.6.5
