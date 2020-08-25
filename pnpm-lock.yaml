@@ -10,7 +10,7 @@ devDependencies:
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.2.0
-  commitizen: 4.2.0
+  commitizen: 4.2.1
   conventional-changelog: 3.1.23
   conventional-changelog-conventionalcommits: 4.4.0
   coveralls: 3.1.0
@@ -2375,29 +2375,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
-  /commitizen/4.0.5:
-    dependencies:
-      cachedir: 2.2.0
-      cz-conventional-changelog: 3.0.1
-      dedent: 0.7.0
-      detect-indent: 6.0.0
-      find-node-modules: 2.0.0
-      find-root: 1.1.0
-      fs-extra: 8.1.0
-      glob: 7.1.4
-      inquirer: 6.5.0
-      is-utf8: 0.2.1
-      lodash: 4.17.15
-      minimist: 1.2.5
-      shelljs: 0.7.6
-      strip-bom: 4.0.0
-      strip-json-comments: 3.0.1
-    dev: true
-    engines:
-      node: '>= 10'
-    hasBin: true
-    resolution:
-      integrity: sha512-+aMqiHJSpUSHsVlxI1Jm3UUlbsx6GsxuKSkeVavG/Y3XkUxsZZczV79JPSFs3DYvZXgrRVXIFkh+Iafxs6hclQ==
   /commitizen/4.2.0:
     dependencies:
       cachedir: 2.2.0
@@ -2420,6 +2397,28 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-dMTgCkmxDOaH32HViVyvoGqVzCAyvBsgMViWnIDQxVHlEwHS1d6d8rweCGE7fjCROryBZmHRQrWVWN9GTw2F/g==
+  /commitizen/4.2.1:
+    dependencies:
+      cachedir: 2.2.0
+      cz-conventional-changelog: 3.2.0
+      dedent: 0.7.0
+      detect-indent: 6.0.0
+      find-node-modules: 2.0.0
+      find-root: 1.1.0
+      fs-extra: 8.1.0
+      glob: 7.1.4
+      inquirer: 6.5.2
+      is-utf8: 0.2.1
+      lodash: 4.17.20
+      minimist: 1.2.5
+      strip-bom: 4.0.0
+      strip-json-comments: 3.0.1
+    dev: true
+    engines:
+      node: '>= 10'
+    hasBin: true
+    resolution:
+      integrity: sha512-nZsp8IThkDu7C+93BFD/mLShb9Gd6Wsaf90tpKE3x/6u5y/Q52kzanIJpGr0qvIsJ5bCMpgKtr3Lbu3miEJfaA==
   /commondir/1.0.1:
     dev: true
     resolution:
@@ -2637,10 +2636,6 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-sScUu2NHusjRC1dPc5p8/b3kT78OYr95/Bx7Vl8CPB8tF2mG1xei5iylDTRjONV5hTlzt+Cn/tBWrKdd299b7A==
-  /conventional-commit-types/2.3.0:
-    dev: true
-    resolution:
-      integrity: sha512-6iB39PrcGYdz0n3z31kj6/Km6mK9hm9oMRhwcLnKxE7WNoeRKZbTAobliKrbYZ5jqyCvtcVEfjCiaEzhL3AVmQ==
   /conventional-commit-types/3.0.0:
     dev: true
     resolution:
@@ -2810,25 +2805,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-mI3zP+qxke95mmE2nddsF635V+o=
-  /cz-conventional-changelog/3.0.1:
-    dependencies:
-      chalk: 2.4.2
-      conventional-commit-types: 2.3.0
-      lodash.map: 4.6.0
-      longest: 2.0.1
-      right-pad: 1.0.1
-      word-wrap: 1.2.3
-    dev: true
-    engines:
-      node: '>= 10'
-    optionalDependencies:
-      '@commitlint/load': 8.3.5
-    resolution:
-      integrity: sha512-7KASIwB8/ClEyCRvQrCPbN7WkQnUSjSSVNyPM+gDJ0jskLi8h8N2hrdpyeCk7fIqKMRzziqVSOBTB8yyLTMHGQ==
   /cz-conventional-changelog/3.2.0:
     dependencies:
       chalk: 2.4.2
-      commitizen: 4.0.5
+      commitizen: 4.2.1
       conventional-commit-types: 3.0.0
       lodash.map: 4.6.0
       longest: 2.0.1
@@ -4310,26 +4290,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
-  /inquirer/6.5.0:
-    dependencies:
-      ansi-escapes: 3.2.0
-      chalk: 2.4.2
-      cli-cursor: 2.1.0
-      cli-width: 2.2.0
-      external-editor: 3.1.0
-      figures: 2.0.0
-      lodash: 4.17.20
-      mute-stream: 0.0.7
-      run-async: 2.4.0
-      rxjs: 6.5.4
-      string-width: 2.1.1
-      strip-ansi: 5.2.0
-      through: 2.3.8
-    dev: true
-    engines:
-      node: '>=6.0.0'
-    resolution:
-      integrity: sha512-scfHejeG/lVZSpvCXpsB4j/wQNPM5JC8kiElOI0OUTwmc1RTpXr4H32/HOlQHcZiYl2z2VElwuCVDRG8vFmbnA==
   /inquirer/6.5.2:
     dependencies:
       ansi-escapes: 3.2.0
@@ -6933,12 +6893,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
-  /right-pad/1.0.1:
-    dev: true
-    engines:
-      node: '>= 0.10'
-    resolution:
-      integrity: sha1-jKCMLLtbVedNr6lr9/0aJ9VoyNA=
   /rimraf/2.6.3:
     dependencies:
       glob: 7.1.6
@@ -7228,17 +7182,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
-  /shelljs/0.7.6:
-    dependencies:
-      glob: 7.1.4
-      interpret: 1.2.0
-      rechoir: 0.6.2
-    dev: true
-    engines:
-      node: '>=0.11.0'
-    hasBin: true
-    resolution:
-      integrity: sha1-N5zM+1a5HIYB5HkzVutTgpJN6a0=
   /shelljs/0.8.4:
     dependencies:
       glob: 7.1.6
@@ -8388,7 +8331,7 @@ specifiers:
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.2.0
-  commitizen: 4.2.0
+  commitizen: 4.2.1
   conventional-changelog: 3.1.23
   conventional-changelog-conventionalcommits: 4.4.0
   coveralls: 3.1.0
