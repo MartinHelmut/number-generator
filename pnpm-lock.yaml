@@ -14,7 +14,7 @@ devDependencies:
   conventional-changelog: 3.1.23
   conventional-changelog-conventionalcommits: 4.4.0
   coveralls: 3.1.0
-  cz-conventional-changelog: 3.2.1
+  cz-conventional-changelog: 3.3.0
   eslint: 7.7.0
   eslint-config-prettier: 6.11.0_eslint@7.7.0
   jsdoc: 3.6.5
@@ -2375,28 +2375,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
-  /commitizen/4.2.0:
-    dependencies:
-      cachedir: 2.2.0
-      cz-conventional-changelog: 3.2.0
-      dedent: 0.7.0
-      detect-indent: 6.0.0
-      find-node-modules: 2.0.0
-      find-root: 1.1.0
-      fs-extra: 8.1.0
-      glob: 7.1.4
-      inquirer: 6.5.2
-      is-utf8: 0.2.1
-      lodash: 4.17.20
-      minimist: 1.2.5
-      strip-bom: 4.0.0
-      strip-json-comments: 3.0.1
-    dev: true
-    engines:
-      node: '>= 10'
-    hasBin: true
-    resolution:
-      integrity: sha512-dMTgCkmxDOaH32HViVyvoGqVzCAyvBsgMViWnIDQxVHlEwHS1d6d8rweCGE7fjCROryBZmHRQrWVWN9GTw2F/g==
   /commitizen/4.2.1:
     dependencies:
       cachedir: 2.2.0
@@ -2820,10 +2798,10 @@ packages:
       '@commitlint/load': 8.3.5
     resolution:
       integrity: sha512-yAYxeGpVi27hqIilG1nh4A9Bnx4J3Ov+eXy4koL3drrR+IO9GaWPsKjik20ht608Asqi8TQPf0mczhEeyAtMzg==
-  /cz-conventional-changelog/3.2.1:
+  /cz-conventional-changelog/3.3.0:
     dependencies:
       chalk: 2.4.2
-      commitizen: 4.2.0
+      commitizen: 4.2.1
       conventional-commit-types: 3.0.0
       lodash.map: 4.6.0
       longest: 2.0.1
@@ -2834,7 +2812,7 @@ packages:
     optionalDependencies:
       '@commitlint/load': 8.3.5
     resolution:
-      integrity: sha512-MroXCfO8sahklT0KSwZ1oaNwKxZaZ2A8ONc+MH+is8QDZ2zBhGOFFiAXuWpcWFJLpxlGPvnYlhvOlYiSOAGc7w==
+      integrity: sha512-U466fIzU5U22eES5lTNiNbZ+d8dfcHcssH4o7QsdWaCcRs/feIPCxKYSWkYBNs5mny7MvEfwpTLWjvbm94hecw==
   /dargs/4.1.0:
     dependencies:
       number-is-nan: 1.0.1
@@ -8335,7 +8313,7 @@ specifiers:
   conventional-changelog: 3.1.23
   conventional-changelog-conventionalcommits: 4.4.0
   coveralls: 3.1.0
-  cz-conventional-changelog: 3.2.1
+  cz-conventional-changelog: 3.3.0
   eslint: 7.7.0
   eslint-config-prettier: 6.11.0
   jsdoc: 3.6.5
