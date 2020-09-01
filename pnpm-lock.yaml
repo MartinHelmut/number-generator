@@ -15,8 +15,8 @@ devDependencies:
   conventional-changelog-conventionalcommits: 4.4.0
   coveralls: 3.1.0
   cz-conventional-changelog: 3.3.0
-  eslint: 7.8.0
-  eslint-config-prettier: 6.11.0_eslint@7.8.0
+  eslint: 7.8.1
+  eslint-config-prettier: 6.11.0_eslint@7.8.1
   jsdoc: 3.6.5
   mocha: 8.1.3
   nyc: 15.1.0
@@ -1193,15 +1193,23 @@ packages:
     optional: true
     resolution:
       integrity: sha512-nHhFAK29qiXNe6oH6uG5wqBnCR+BQnxlBW/q5fjtxIaQALgfoNLHwLS9exzbIRFqwJckpR6yMCfgMbmbAOtklQ==
-  /@eslint/eslintrc/0.1.0:
+  /@eslint/eslintrc/0.1.3:
     dependencies:
       ajv: 6.12.4
       debug: 4.1.1
+      espree: 7.3.0
+      globals: 12.4.0
+      ignore: 4.0.6
       import-fresh: 3.2.1
+      js-yaml: 3.14.0
+      lodash: 4.17.20
+      minimatch: 3.0.4
       strip-json-comments: 3.1.1
     dev: true
+    engines:
+      node: ^10.12.0 || >=12.0.0
     resolution:
-      integrity: sha512-bfL5365QSCmH6cPeFT7Ywclj8C7LiF7sO6mUGzZhtAMV7iID1Euq6740u/SRi4C80NOnVz/CEfK8/HO+nCAPJg==
+      integrity: sha512-4YVwPkANLeNtRjMekzux1ci8hIaH5eGKktGqR0d3LWsKNn5B2X/1Z6Trxy7jQXl9EBGE6Yj02O+t09FMeRllaA==
   /@istanbuljs/load-nyc-config/1.0.0:
     dependencies:
       camelcase: 5.3.1
@@ -3201,9 +3209,9 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
-  /eslint-config-prettier/6.11.0_eslint@7.8.0:
+  /eslint-config-prettier/6.11.0_eslint@7.8.1:
     dependencies:
-      eslint: 7.8.0
+      eslint: 7.8.1
       get-stdin: 6.0.0
     dev: true
     hasBin: true
@@ -3234,11 +3242,11 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-6J72N8UNa462wa/KFODt/PJ3IU60SDpC3QXC1Hjc1BXXpfL2C9R5+AU7jhe0F6GREqVMh4Juu+NY7xn+6dipUQ==
-  /eslint/7.8.0:
+  /eslint/7.8.1:
     dependencies:
       '@babel/code-frame': 7.10.4
-      '@eslint/eslintrc': 0.1.0
-      ajv: 6.12.2
+      '@eslint/eslintrc': 0.1.3
+      ajv: 6.12.4
       chalk: 4.0.0
       cross-spawn: 7.0.2
       debug: 4.1.1
@@ -3269,7 +3277,7 @@ packages:
       regexpp: 3.1.0
       semver: 7.3.2
       strip-ansi: 6.0.0
-      strip-json-comments: 3.1.0
+      strip-json-comments: 3.1.1
       table: 5.4.6
       text-table: 0.2.0
       v8-compile-cache: 2.1.0
@@ -3278,7 +3286,7 @@ packages:
       node: ^10.12.0 || >=12.0.0
     hasBin: true
     resolution:
-      integrity: sha512-qgtVyLZqKd2ZXWnLQA4NtVbOyH56zivOAdBFWE54RFkSZjokzNrcP4Z0eVWsZ+84ByXv+jL9k/wE1ENYe8xRFw==
+      integrity: sha512-/2rX2pfhyUG0y+A123d0ccXtMm7DV7sH1m3lk9nk2DZ2LReq39FXHueR9xZwshE5MdfSf0xunSaMWRqyIA6M1w==
   /espree/7.3.0:
     dependencies:
       acorn: 7.4.0
@@ -8339,7 +8347,7 @@ specifiers:
   conventional-changelog-conventionalcommits: 4.4.0
   coveralls: 3.1.0
   cz-conventional-changelog: 3.3.0
-  eslint: 7.8.0
+  eslint: 7.8.1
   eslint-config-prettier: 6.11.0
   jsdoc: 3.6.5
   mocha: 8.1.3
