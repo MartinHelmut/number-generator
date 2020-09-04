@@ -28,7 +28,7 @@ devDependencies:
   rollup-plugin-external-globals: 0.6.0_rollup@2.26.10
   rollup-plugin-filesize: 9.0.2
   rollup-plugin-node-builtins: 2.1.2
-  rollup-plugin-terser: 7.0.1_rollup@2.26.10
+  rollup-plugin-terser: 7.0.2_rollup@2.26.10
   serve: 11.3.2
   standard-version: 9.0.0
   ts-node: 9.0.0_typescript@4.0.2
@@ -6992,7 +6992,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-JKH+1KQyV7a2Q3HYq8bOGrFFl+k=
-  /rollup-plugin-terser/7.0.1_rollup@2.26.10:
+  /rollup-plugin-terser/7.0.2_rollup@2.26.10:
     dependencies:
       '@babel/code-frame': 7.10.4
       jest-worker: 26.2.1
@@ -7003,7 +7003,7 @@ packages:
     peerDependencies:
       rollup: ^2.0.0
     resolution:
-      integrity: sha512-HL0dgzSxBYG/Ly9i/E5Sc+PuKKZ0zBzk11VmLCfdUtpqH4yYqkLclPkTqRy85FU9246yetImOClaQ/ufnj08vg==
+      integrity: sha512-w3iIaU4OxcF52UUXiZNsNeuXIMDvFrr+ZXK6bFZ0Q60qyVfq4uLptoS4bbq3paG3x216eQllFZX7zt6TIImguQ==
   /rollup-plugin-virtual/1.0.1:
     deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-virtual.
     dev: true
@@ -8360,7 +8360,7 @@ specifiers:
   rollup-plugin-external-globals: 0.6.0
   rollup-plugin-filesize: 9.0.2
   rollup-plugin-node-builtins: 2.1.2
-  rollup-plugin-terser: 7.0.1
+  rollup-plugin-terser: 7.0.2
   serve: 11.3.2
   standard-version: 9.0.0
   ts-node: 9.0.0
