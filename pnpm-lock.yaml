@@ -17,7 +17,7 @@ devDependencies:
   cz-conventional-changelog: 3.3.0
   eslint: 7.9.0
   eslint-config-prettier: 6.11.0_eslint@7.9.0
-  jsdoc: 3.6.5
+  jsdoc: 3.6.6
   mocha: 8.1.3
   nyc: 15.1.0
   prettier: 2.1.2
@@ -410,13 +410,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-PApSXlNMJyB4JiGVhCOlzKIif+TKFTvu0aQAhnTvfP/z3vVSN6ZypH5bfUNwFXXjRQtUEBNFd2PtmCmG2Py3qQ==
-  /@babel/parser/7.10.5:
-    dev: true
-    engines:
-      node: '>=6.0.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-wfryxy4bE1UivvQKSQDU4/X6dr+i8bctjUjj8Zyt3DQy7NtPizJXT8M52nqpNKL+nq2PW8lxk4ZqLj0fD4B4hQ==
   /@babel/parser/7.11.5:
     dev: true
     engines:
@@ -2174,7 +2167,7 @@ packages:
       integrity: sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
   /catharsis/0.8.11:
     dependencies:
-      lodash: 4.17.19
+      lodash: 4.17.20
     dev: true
     engines:
       node: '>= 8'
@@ -4782,9 +4775,9 @@ packages:
     dev: true
     resolution:
       integrity: sha1-peZUwuWi3rXyAdls77yoDA7y9RM=
-  /jsdoc/3.6.5:
+  /jsdoc/3.6.6:
     dependencies:
-      '@babel/parser': 7.10.5
+      '@babel/parser': 7.11.5
       bluebird: 3.7.2
       catharsis: 0.8.11
       escape-string-regexp: 2.0.0
@@ -4795,7 +4788,7 @@ packages:
       marked: 0.8.2
       mkdirp: 1.0.4
       requizzle: 0.2.3
-      strip-json-comments: 3.1.0
+      strip-json-comments: 3.1.1
       taffydb: 2.6.2
       underscore: 1.10.2
     dev: true
@@ -4803,7 +4796,7 @@ packages:
       node: '>=8.15.0'
     hasBin: true
     resolution:
-      integrity: sha512-SbY+i9ONuxSK35cgVHaI8O9senTE4CDYAmGSDJ5l3+sfe62Ff4gy96osy6OW84t4K4A8iGnMrlRrsSItSNp3RQ==
+      integrity: sha512-znR99e1BHeyEkSvgDDpX0sTiTu+8aQyDl9DawrkOGZTTW8hv0deIFXx87114zJ7gRaDZKVQD/4tr1ifmJp9xhQ==
   /jsesc/0.5.0:
     dev: true
     hasBin: true
@@ -6814,7 +6807,7 @@ packages:
       integrity: sha512-NKN5kMDylKuldxYLSUfrbo5Tuzh4hd+2E8NPPX02mZtn1VuREQToYe/ZdlJy+J3uCpfaiGF05e7B8W0iXbQHmg==
   /requizzle/0.2.3:
     dependencies:
-      lodash: 4.17.19
+      lodash: 4.17.20
     dev: true
     resolution:
       integrity: sha512-YanoyJjykPxGHii0fZP0uUPEXpvqfBDxWV7s6GKAiiOsiqhX6vHNyW3Qzdmqp/iq/ExbhaGbVrjB4ruEVSM4GQ==
@@ -7621,12 +7614,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-VTyMAUfdm047mwKl+u79WIdrZxtFtn+nBxHeb844XBQ9uMNTuTHdx2hc5RiAJYqwTj3wc/xe5HLSdJSkJ+WfZw==
-  /strip-json-comments/3.1.0:
-    dev: true
-    engines:
-      node: '>=8'
-    resolution:
-      integrity: sha512-e6/d0eBu7gHtdCqFt0xJr642LdToM5/cN4Qb9DbHjVx1CP5RyeM+zH7pbecEmDv/lBqb0QH+6Uqq75rxFPkM0w==
   /strip-json-comments/3.1.1:
     dev: true
     engines:
@@ -8349,7 +8336,7 @@ specifiers:
   cz-conventional-changelog: 3.3.0
   eslint: 7.9.0
   eslint-config-prettier: 6.11.0
-  jsdoc: 3.6.5
+  jsdoc: 3.6.6
   mocha: 8.1.3
   nyc: 15.1.0
   prettier: 2.1.2
