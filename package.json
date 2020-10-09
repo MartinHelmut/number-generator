@@ -92,6 +92,9 @@
     "extends": [
       "config:base"
     ],
+    "baseBranches": [
+      "main"
+    ],
     "supportPolicy": [
       "lts_latest"
     ],
