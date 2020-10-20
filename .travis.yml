@@ -1,8 +1,6 @@
 language: node_js
 node_js:
-  - "node"
-  - "12"
-  - "10"
+  - "14"
 before_install: curl -L https://unpkg.com/@pnpm/self-installer | node
 install: pnpm install
 script: pnpm run ci
