@@ -132,7 +132,7 @@
     "agadoo": "2.0.0",
     "benchmark": "2.1.4",
     "chai": "4.2.0",
-    "commitizen": "4.2.1",
+    "commitizen": "4.2.2",
     "conventional-changelog": "3.1.23",
     "conventional-changelog-conventionalcommits": "4.4.0",
     "coveralls": "3.1.0",
