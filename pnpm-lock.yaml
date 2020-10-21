@@ -16,7 +16,7 @@ devDependencies:
   coveralls: 3.1.0
   cz-conventional-changelog: 3.3.0
   eslint: 7.11.0
-  eslint-config-prettier: 6.13.0_eslint@7.11.0
+  eslint-config-prettier: 6.14.0_eslint@7.11.0
   jsdoc: 3.6.6
   mocha: 8.2.0
   nyc: 15.1.0
@@ -3203,7 +3203,7 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
-  /eslint-config-prettier/6.13.0_eslint@7.11.0:
+  /eslint-config-prettier/6.14.0_eslint@7.11.0:
     dependencies:
       eslint: 7.11.0
       get-stdin: 6.0.0
@@ -3212,7 +3212,7 @@ packages:
     peerDependencies:
       eslint: '>=3.14.1'
     resolution:
-      integrity: sha512-LcT0i0LSmnzqK2t764pyIt7kKH2AuuqKRTtJTdddWxOiUja9HdG5GXBVF2gmCTvVYWVsTu8J2MhJLVGRh+pj8w==
+      integrity: sha512-DbVwh0qZhAC7CNDWcq8cBdK6FcVHiMTKmCypOPWeZkp9hJ8xYwTaWSa6bb6cjfi8KOeJy0e9a8Izxyx+O4+gCQ==
   /eslint-scope/5.1.1:
     dependencies:
       esrecurse: 4.3.0
@@ -8188,7 +8188,7 @@ specifiers:
   coveralls: 3.1.0
   cz-conventional-changelog: 3.3.0
   eslint: 7.11.0
-  eslint-config-prettier: 6.13.0
+  eslint-config-prettier: 6.14.0
   jsdoc: 3.6.6
   mocha: 8.2.0
   nyc: 15.1.0
