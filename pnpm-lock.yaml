@@ -26,7 +26,7 @@ devDependencies:
   rollup-plugin-clear: 2.0.7
   rollup-plugin-copy: 3.3.0
   rollup-plugin-external-globals: 0.6.1_rollup@2.34.1
-  rollup-plugin-filesize: 9.0.2
+  rollup-plugin-filesize: 9.1.0
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-terser: 7.0.2_rollup@2.34.1
   serve: 11.3.2
@@ -1500,7 +1500,7 @@ packages:
       integrity: sha512-68aFhseH51ZBKYKkQNxwDi1hJwTnywBjHWg068qFnMkpXShhOazNzJUPRvaLQjrqhT3EOUth5G9mt1A0/dGhOw==
   /agent-base/6.0.0:
     dependencies:
-      debug: 4.1.1
+      debug: 4.2.0
     dev: true
     engines:
       node: '>= 6.0.0'
@@ -1508,7 +1508,7 @@ packages:
       integrity: sha512-j1Q7cSCqN+AwrmDd+pzgqc0/NpC655x2bUf5ZjRIO77DcNBFmh+OgRNzF6OKdCC9RSCb19fGd99+bhXFdkRNqw==
   /agentkeepalive/4.1.2:
     dependencies:
-      debug: 4.1.1
+      debug: 4.2.0
       depd: 1.1.2
       humanize-ms: 1.2.1
     dev: true
@@ -2215,7 +2215,7 @@ packages:
   /chalk/3.0.0:
     dependencies:
       ansi-styles: 4.2.1
-      supports-color: 7.1.0
+      supports-color: 7.2.0
     dev: true
     engines:
       node: '>=8'
@@ -4342,12 +4342,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-f/wzC2QaWBs7t9IYqB4T3sR1xviIViXJRJTWBlx2Gf3g0Xi5vI7Yy4koXQ1c9OYDGHN9sBy1DQ2AB8fqZBWhUg==
-  /hosted-git-info/3.0.4:
-    dependencies:
-      lru-cache: 5.1.1
-    dev: true
-    resolution:
-      integrity: sha512-4oT62d2jwSDBbLLFLZE+1vPuQ1h8p9wjrJ8Mqx5TjsyWmBMV5B13eJqn8pvluqubLf3cJPTfiYCIwNwDNmzScQ==
   /hosted-git-info/3.0.7:
     dependencies:
       lru-cache: 6.0.0
@@ -4368,7 +4362,7 @@ packages:
     dependencies:
       '@tootallnate/once': 1.1.2
       agent-base: 6.0.0
-      debug: 4.1.1
+      debug: 4.2.0
     dev: true
     engines:
       node: '>= 6'
@@ -4388,7 +4382,7 @@ packages:
   /https-proxy-agent/5.0.0:
     dependencies:
       agent-base: 6.0.0
-      debug: 4.1.1
+      debug: 4.2.0
     dev: true
     engines:
       node: '>= 6'
@@ -5918,7 +5912,7 @@ packages:
       integrity: sha512-EPfafl6JL5/rU+ot6P3gRSCpPDW5VmIzX959Ob1+ySFUuuYHWHekXpwdUZcKP5C+DS4GEtdJluwBjnsNDl+fSA==
   /npm-package-arg/8.0.1:
     dependencies:
-      hosted-git-info: 3.0.4
+      hosted-git-info: 3.0.7
       semver: 7.3.2
       validate-npm-package-name: 3.0.0
     dev: true
@@ -7124,7 +7118,7 @@ packages:
       rollup: ^2.25.0
     resolution:
       integrity: sha512-mlp3KNa5sE4Sp9UUR2rjBrxjG79OyZAh/QC18RHIjM+iYkbBwNXSo8DHRMZWtzJTrH8GxQ+SJvCTN3i14uMXIA==
-  /rollup-plugin-filesize/9.0.2:
+  /rollup-plugin-filesize/9.1.0:
     dependencies:
       '@babel/runtime': 7.10.3
       boxen: 4.2.0
@@ -7133,12 +7127,12 @@ packages:
       filesize: 6.1.0
       gzip-size: 5.1.1
       pacote: 11.1.10
-      terser: 4.8.0
+      terser: 5.5.1
     dev: true
     engines:
       node: '>=10.0.0'
     resolution:
-      integrity: sha512-UB+pMETOAxo79aINL+Lt7NmUJa6x6vJjtlmBco9NhSHhpnYaKdGGSx1QuuUuo5LlBXhQxrUURYJbF/B95Vt6Hg==
+      integrity: sha512-3umx+e2AzYH4lJaBtyeWk2kC7JafzZhy5AJwj2amudWWgqIFpI/QH7s2+9LWBwIvjK5ty6K6eM3i6dw7qF4GrQ==
   /rollup-plugin-node-builtins/2.1.2:
     dependencies:
       browserify-fs: 1.0.0
@@ -7423,7 +7417,7 @@ packages:
   /socks-proxy-agent/5.0.0:
     dependencies:
       agent-base: 6.0.0
-      debug: 4.1.1
+      debug: 4.2.0
       socks: 2.3.3
     dev: true
     engines:
@@ -7473,6 +7467,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
+  /source-map/0.7.3:
+    dev: true
+    engines:
+      node: '>= 8'
+    resolution:
+      integrity: sha512-CkCj6giN3S+n9qrYiBTX5gystlENnRW5jZeNLHpe6aue+SrHcG5VYwujhW9s4dY31mEGsxBDrHR6oI69fTXsaQ==
   /sourcemap-codec/1.4.8:
     dev: true
     resolution:
@@ -7835,17 +7835,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-a6sumDlzyHVJWb8+YofY4TW112G6p2FCPEAFk+59gIYHv3XHRhm9ltVQ9kli4hNWeQBwSpe8cRN25x0ROunMOw==
-  /terser/4.8.0:
-    dependencies:
-      commander: 2.20.3
-      source-map: 0.6.1
-      source-map-support: 0.5.19
-    dev: true
-    engines:
-      node: '>=6.0.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-EAPipTNeWsb/3wLPeup1tVPaXfIaU68xMnVdPafIL1TV05OhASArYyIfFvnvJCNrR2NIOvDVNNTFRa+Re2MWyw==
   /terser/5.0.0:
     dependencies:
       commander: 2.20.3
@@ -7857,6 +7846,17 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-olH2DwGINoSuEpSGd+BsPuAQaA3OrHnHnFL/rDB2TVNc3srUbz/rq/j2BlF4zDXI+JqAvGr86bIm1R2cJgZ3FA==
+  /terser/5.5.1:
+    dependencies:
+      commander: 2.20.3
+      source-map: 0.7.3
+      source-map-support: 0.5.19
+    dev: true
+    engines:
+      node: '>=10'
+    hasBin: true
+    resolution:
+      integrity: sha512-6VGWZNVP2KTUcltUQJ25TtNjx/XgdDsBDKGt8nN0MpydU36LmbPPcMBd2kmtZNNGVVDLg44k7GKeHHj+4zPIBQ==
   /test-exclude/6.0.0:
     dependencies:
       '@istanbuljs/schema': 0.1.2
@@ -8483,7 +8483,7 @@ specifiers:
   rollup-plugin-clear: 2.0.7
   rollup-plugin-copy: 3.3.0
   rollup-plugin-external-globals: 0.6.1
-  rollup-plugin-filesize: 9.0.2
+  rollup-plugin-filesize: 9.1.0
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-terser: 7.0.2
   serve: 11.3.2
