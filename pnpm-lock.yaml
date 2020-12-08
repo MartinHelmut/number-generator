@@ -5,7 +5,7 @@ devDependencies:
   '@rollup/plugin-node-resolve': 11.0.0_rollup@2.34.2
   '@rollup/plugin-replace': 2.3.4_rollup@2.34.2
   '@types/chai': 4.2.14
-  '@types/mocha': 8.0.4
+  '@types/mocha': 8.2.0
   '@types/node': 12.19.8
   agadoo: 2.0.0
   benchmark: 2.1.4
@@ -1406,10 +1406,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-aaI6OtKcrwCX8G7aWbNh7i8GOfY=
-  /@types/mocha/8.0.4:
+  /@types/mocha/8.2.0:
     dev: true
     resolution:
-      integrity: sha512-M4BwiTJjHmLq6kjON7ZoI2JMlBvpY3BYSdiP6s/qCT3jb1s9/DeJF0JELpAxiVSIxXDzfNKe+r7yedMIoLbknQ==
+      integrity: sha512-/Sge3BymXo4lKc31C8OINJgXLaw+7vL1/L1pGiBNpGrBiT8FQiaFpSYV0uhTaG4y78vcMBTMFsWaHDvuD+xGzQ==
   /@types/node/12.12.30:
     dev: true
     resolution:
@@ -8441,7 +8441,7 @@ specifiers:
   '@rollup/plugin-node-resolve': 11.0.0
   '@rollup/plugin-replace': 2.3.4
   '@types/chai': 4.2.14
-  '@types/mocha': 8.0.4
+  '@types/mocha': 8.2.0
   '@types/node': 12.19.8
   agadoo: 2.0.0
   benchmark: 2.1.4
