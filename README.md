@@ -383,10 +383,10 @@ Big thanks as well to Alex Ciminian for raising the issue with non ASCII charact
 
 [npmurl]: https://www.npmjs.com/package/number-generator
 [npmimg]: https://img.shields.io/npm/v/number-generator.svg
-[travisimg]: https://travis-ci.org/MartinHelmut/number-generator.svg?branch=master
-[travisorg]: https://travis-ci.org/MartinHelmut/number-generator
-[covimg]: https://coveralls.io/repos/github/MartinHelmut/number-generator/badge.svg?branch=master
-[covurl]: https://coveralls.io/github/MartinHelmut/number-generator?branch=master
+[travisimg]: https://travis-ci.com/MartinHelmut/number-generator.svg?branch=main
+[travisorg]: https://travis-ci.com/MartinHelmut/number-generator
+[covimg]: https://coveralls.io/repos/github/MartinHelmut/number-generator/badge.svg?branch=main
+[covurl]: https://coveralls.io/github/MartinHelmut/number-generator?branch=main
 [czimg]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
 [czcli]: http://commitizen.github.io/cz-cli/
 [stdimg]: https://img.shields.io/badge/release-standard%20version-brightgreen.svg

@@ -1,4 +1,4 @@
-import babel from "rollup-plugin-babel";
+import babel from "@rollup/plugin-babel";
 import builtins from "rollup-plugin-node-builtins";
 import clear from "rollup-plugin-clear";
 import externalGlobals from "rollup-plugin-external-globals";
@@ -16,6 +16,7 @@ function createTestConfig(input) {
       format: "iife",
       sourcemap: true,
       sourcemapFile: `compiled_tests/${input}.test.js.map`,
+      exports: "auto",
     },
     plugins: [
       clear({ targets: [targetDir] }),
@@ -31,7 +32,7 @@ function createTestConfig(input) {
       }),
       builtins(),
       resolve(),
-      babel(),
+      babel({ babelHelpers: "bundled" }),
       terser(),
     ],
   };

@@ -1,6 +1,6 @@
 # Contributing
 
-You want do contribute to this repo? Nice! And of course: **you are the best!** Here is a guide on how to work with it and what to expect.
+You want to contribute to this repo? Nice! **You are the best!** Here is a guide on how to work with it and what to expect.
 
 ## Contents
 
@@ -65,7 +65,7 @@ pnpm run format
 
 ## Build the library
 
-If you want to build the project run
+To build the project run:
 
 ```shell script
 pnpm run build
@@ -75,7 +75,7 @@ to generate a minified version of the library under `lib/`.
 
 ## View local library documentation
 
-You can serve the documentation locally or via network with by running:
+You can serve the documentation locally or via your local network by running:
 
 ```shell script
 pnpm run docs
@@ -85,11 +85,11 @@ This will use [JSDoc][jsdoc] to generate the documentation.
 
 ## Commit changes
 
-**This repo is is Commitizen-friendly!** (read more in the [official commitizen documentation][czcli])
+**This repo is Commitizen-friendly!** (read more in the [official commitizen documentation][czcli])
 
 Checkout a new branch, there is no naming convention for branches, only for commits. Add your changes and run `pnpx git-cz` (or `pnpm run commit`) to start the commitizen cli to create a proper commit message.
 
-Push the changes and your feature branch and create a "Pull Request" on GitHub.
+Push the changes with your feature branch and create a "Pull Request" on GitHub.
 
 ## Recommended workflow for release
 

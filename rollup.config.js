@@ -1,4 +1,4 @@
-import babel from "rollup-plugin-babel";
+import babel from "@rollup/plugin-babel";
 import clear from "rollup-plugin-clear";
 import copy from "rollup-plugin-copy";
 import filesize from "rollup-plugin-filesize";
@@ -17,16 +17,17 @@ function createBundleConfig(input, output = {}) {
         format: "cjs",
         sourcemap: true,
         sourcemapFile: `${targetDir}/${fileName}.js.map`,
+        exports: "auto",
       },
       output
     ),
     plugins: [
       clear({ targets: [targetDir] }),
       resolve(),
-      babel(),
+      babel({ babelHelpers: "bundled" }),
       terser(),
       filesize({
-        render: (_, __, { bundleSize, gzipSize }) =>
+        reporter: (_, __, { bundleSize, gzipSize }) =>
           `Bundle size: ${bundleSize}, Gzipped size: ${gzipSize}`,
       }),
       copy({
