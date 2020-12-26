@@ -96,7 +96,7 @@ Push the changes with your feature branch and create a "Pull Request" on GitHub.
 1.  Make changes
 2.  Commit those changes with `pnpx git-cz` (or `pnpm run commit`)
 3.  Create a new release with `pnpm run release`
-4.  Push your release `git push --follow-tags origin master`
+4.  Push your release `git push --follow-tags origin main`
 5.  Publish: `NPM_CONFIG_OTP=XXXXXX npm publish` (replace `XXXXXX` with a valid 2FA token)
 6.  **Done!**
 

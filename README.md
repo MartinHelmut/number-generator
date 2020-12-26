@@ -338,7 +338,7 @@ This library was tested on the following environments:
 
 ### Benchmarks
 
-**Disclaimer:** The following benchmarks were created on a MacBook Pro, Processor 2,7 GHz Intel Core i5 with 8 GB 1867 MHz DDR3 memory and run under Node v12.14.1.
+**Disclaimer:** The following benchmarks were created on a MacBook Pro, Processor 2,7 GHz Intel Core i5 with 8 GB 1867 MHz DDR3 memory and run under Node v14.15.1.
 
 #### aleaRNGFactory
 
@@ -366,7 +366,7 @@ To run them on your machine execute `pnpm run test:benchmark`.
 
 ## Development
 
-If you want to contribute see the [CONTRIBUTING.md][cont]
+Do you want to contribute have a look at [CONTRIBUTING.md][cont]
 
 ## Disclaimer
 
@@ -374,7 +374,7 @@ If you want to contribute see the [CONTRIBUTING.md][cont]
 
 Thanks to Johannes Baagøe for the Alea port and Ray Morgan for the MurmurHash2 algorithm implementation in JavaScript. Also thanks to Karan Lyons for the [MurmurHash3 implementation][mur3].
 
-Resources used to tests against implementations in other languages are:
+Resources used to test against implementations in other languages are:
 
 - JSON for modern C++ by Niels Lohmann: https://github.com/nlohmann/json
 - MurmurHash2 and 3 in C++ by Austin Appleby: https://github.com/aappleby/smhasher
