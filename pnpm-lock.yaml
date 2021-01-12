@@ -7,7 +7,7 @@ devDependencies:
   '@rollup/plugin-replace': 2.3.4_rollup@2.36.1
   '@types/chai': 4.2.14
   '@types/mocha': 8.2.0
-  '@types/node': 12.19.12
+  '@types/node': 12.19.13
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.2.0
@@ -1235,10 +1235,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-bwVfNTFZOrGXyiQ6t4B9sZerMSShWNsGRw8tC5DY1qImUNczS9SjT4G6PnzjCnxsu5Ubj6xjL2lgwddkxtQl5w==
-  /@types/node/12.19.12:
+  /@types/node/12.19.13:
     dev: true
     resolution:
-      integrity: sha512-UwfL2uIU9arX/+/PRcIkT08/iBadGN2z6ExOROA2Dh5mAuWTBj6iJbQX4nekiV5H8cTrEG569LeX+HRco9Cbxw==
+      integrity: sha512-qdixo2f0U7z6m0UJUugTJqVF94GNDkdgQhfBtMs8t5898JE7G/D2kJYw4rc1nzjIPLVAsDkY2MdABnLAP5lM1w==
   /@types/normalize-package-data/2.4.0:
     dev: true
     resolution:
@@ -2625,7 +2625,7 @@ packages:
     dependencies:
       ms: 2.1.2
       supports-color: 7.2.0
-    deprecated: 'Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)'
+    deprecated: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
     dev: true
     engines:
       node: '>=6.0'
@@ -6366,7 +6366,7 @@ packages:
       tough-cookie: 2.5.0
       tunnel-agent: 0.6.0
       uuid: 3.4.0
-    deprecated: 'request has been deprecated, see https://github.com/request/request/issues/3142'
+    deprecated: request has been deprecated, see https://github.com/request/request/issues/3142
     dev: true
     engines:
       node: '>= 6'
@@ -6419,7 +6419,7 @@ packages:
     resolution:
       integrity: sha512-zFa12V4OLtT5XUX/Q4VLvTfBf+Ok0SPc1FNGM/z9ctUdiU618qwKpWnd0CHs3+RqROfyEg/DhuHbMWYqcgljEw==
   /resolve-url/0.2.1:
-    deprecated: 'https://github.com/lydell/resolve-url#deprecated'
+    deprecated: https://github.com/lydell/resolve-url#deprecated
     dev: true
     resolution:
       integrity: sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
@@ -7502,7 +7502,7 @@ packages:
     resolution:
       integrity: sha512-B0yRTzYdUCCn9n+F4+Gh4yIDtMQcaJsmYBDsTSG8g/OejKBodLQ2IHfN3bM7jUsRXndopT7OIXWdYqc1fjmV6g==
   /urix/0.1.0:
-    deprecated: 'Please see https://github.com/lydell/urix#deprecated'
+    deprecated: Please see https://github.com/lydell/urix#deprecated
     dev: true
     resolution:
       integrity: sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
@@ -7788,7 +7788,7 @@ specifiers:
   '@rollup/plugin-replace': 2.3.4
   '@types/chai': 4.2.14
   '@types/mocha': 8.2.0
-  '@types/node': 12.19.12
+  '@types/node': 12.19.13
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.2.0
