@@ -11,7 +11,7 @@ devDependencies:
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.2.0
-  commitizen: 4.2.2
+  commitizen: 4.2.3
   conventional-changelog: 3.1.24
   conventional-changelog-conventionalcommits: 4.5.0
   coveralls: 3.1.0
@@ -2196,6 +2196,28 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-uz+E6lGsDBDI2mYA4QfOxFeqdWUYwR1ky11YmLgg2BnEEP3YbeejpT4lxzGjkYqumnXr062qTOGavR9NtX/iwQ==
+  /commitizen/4.2.3:
+    dependencies:
+      cachedir: 2.2.0
+      cz-conventional-changelog: 3.2.0
+      dedent: 0.7.0
+      detect-indent: 6.0.0
+      find-node-modules: 2.0.0
+      find-root: 1.1.0
+      fs-extra: 8.1.0
+      glob: 7.1.4
+      inquirer: 6.5.2
+      is-utf8: 0.2.1
+      lodash: 4.17.20
+      minimist: 1.2.5
+      strip-bom: 4.0.0
+      strip-json-comments: 3.0.1
+    dev: true
+    engines:
+      node: '>= 10'
+    hasBin: true
+    resolution:
+      integrity: sha512-pYlYEng7XMV2TW4xtjDKBGqeJ0Teq2zyRSx2S3Ml1XAplHSlJZK8vm1KdGclpMEZuGafbS5TeHXIVnHk8RWIzQ==
   /commondir/1.0.1:
     dev: true
     resolution:
@@ -2580,6 +2602,21 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-mI3zP+qxke95mmE2nddsF635V+o=
+  /cz-conventional-changelog/3.2.0:
+    dependencies:
+      chalk: 2.4.2
+      commitizen: 4.2.3
+      conventional-commit-types: 3.0.0
+      lodash.map: 4.6.0
+      longest: 2.0.1
+      word-wrap: 1.2.3
+    dev: true
+    engines:
+      node: '>= 10'
+    optionalDependencies:
+      '@commitlint/load': 11.0.0
+    resolution:
+      integrity: sha512-yAYxeGpVi27hqIilG1nh4A9Bnx4J3Ov+eXy4koL3drrR+IO9GaWPsKjik20ht608Asqi8TQPf0mczhEeyAtMzg==
   /cz-conventional-changelog/3.3.0:
     dependencies:
       chalk: 2.4.2
@@ -7792,7 +7829,7 @@ specifiers:
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.2.0
-  commitizen: 4.2.2
+  commitizen: 4.2.3
   conventional-changelog: 3.1.24
   conventional-changelog-conventionalcommits: 4.5.0
   coveralls: 3.1.0
