@@ -16,8 +16,8 @@ devDependencies:
   conventional-changelog-conventionalcommits: 4.5.0
   coveralls: 3.1.0
   cz-conventional-changelog: 3.3.0
-  eslint: 7.17.0
-  eslint-config-prettier: 7.1.0_eslint@7.17.0
+  eslint: 7.18.0
+  eslint-config-prettier: 7.1.0_eslint@7.18.0
   jsdoc: 3.6.6
   mocha: 8.2.1
   nyc: 15.1.0
@@ -1001,7 +1001,7 @@ packages:
     optional: true
     resolution:
       integrity: sha512-VoNqai1vR5anRF5Tuh/+SWDFk7xi7oMwHrHrbm1BprYXjB2RJsWLhUrStMssDxEl5lW/z3EUdg8RvH/IUBccSQ==
-  /@eslint/eslintrc/0.2.2:
+  /@eslint/eslintrc/0.3.0:
     dependencies:
       ajv: 6.12.6
       debug: 4.3.1
@@ -1017,7 +1017,7 @@ packages:
     engines:
       node: ^10.12.0 || >=12.0.0
     resolution:
-      integrity: sha512-EfB5OHNYp1F4px/LI/FEnGylop7nOqkQ1LRzCM0KccA2U8tvV8w01KBv37LbO7nW4H+YhKyo2LcJhRwjjV17QQ==
+      integrity: sha512-1JTKgrOKAHVivSvOYw+sJOunkBjUOvjqWk1DPja7ZFhIS2mX/4EgTT8M7eTK9jrKhL/FvXXEbQwIs3pg1xp3dg==
   /@istanbuljs/load-nyc-config/1.1.0:
     dependencies:
       camelcase: 5.3.1
@@ -2996,9 +2996,9 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
-  /eslint-config-prettier/7.1.0_eslint@7.17.0:
+  /eslint-config-prettier/7.1.0_eslint@7.18.0:
     dependencies:
-      eslint: 7.17.0
+      eslint: 7.18.0
     dev: true
     hasBin: true
     peerDependencies:
@@ -3034,10 +3034,10 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-QudtT6av5WXels9WjIM7qz1XD1cWGvX4gGXvp/zBn9nXG02D0utdU3Em2m/QjTnrsk6bBjmCygl3rmj118msQQ==
-  /eslint/7.17.0:
+  /eslint/7.18.0:
     dependencies:
       '@babel/code-frame': 7.12.11
-      '@eslint/eslintrc': 0.2.2
+      '@eslint/eslintrc': 0.3.0
       ajv: 6.12.6
       chalk: 4.1.0
       cross-spawn: 7.0.3
@@ -3078,7 +3078,7 @@ packages:
       node: ^10.12.0 || >=12.0.0
     hasBin: true
     resolution:
-      integrity: sha512-zJk08MiBgwuGoxes5sSQhOtibZ75pz0J35XTRlZOk9xMffhpA9BTbQZxoXZzOl5zMbleShbGwtw+1kGferfFwQ==
+      integrity: sha512-fbgTiE8BfUJZuBeq2Yi7J3RB3WGUQ9PNuNbmgi6jt9Iv8qrkxfy19Ds3OpL1Pm7zg3BtTVhvcUZbIRQ0wmSjAQ==
   /espree/7.3.1:
     dependencies:
       acorn: 7.4.1
@@ -7834,7 +7834,7 @@ specifiers:
   conventional-changelog-conventionalcommits: 4.5.0
   coveralls: 3.1.0
   cz-conventional-changelog: 3.3.0
-  eslint: 7.17.0
+  eslint: 7.18.0
   eslint-config-prettier: 7.1.0
   jsdoc: 3.6.6
   mocha: 8.2.1
