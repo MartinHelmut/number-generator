@@ -3,7 +3,7 @@ devDependencies:
   '@babel/preset-env': 7.12.11_@babel+core@7.12.10
   '@babel/register': 7.12.10_@babel+core@7.12.10
   '@rollup/plugin-babel': 5.2.3_57a4204096147715fe7a600f8dae8e6e
-  '@rollup/plugin-node-resolve': 11.1.0_rollup@2.38.1
+  '@rollup/plugin-node-resolve': 11.1.1_rollup@2.38.1
   '@rollup/plugin-replace': 2.3.4_rollup@2.38.1
   '@types/chai': 4.2.14
   '@types/mocha': 8.2.0
@@ -1137,7 +1137,7 @@ packages:
         optional: true
     resolution:
       integrity: sha512-DOMc7nx6y5xFi86AotrFssQqCen6CxYn+zts5KSI879d4n1hggSb4TH3mjVgG17Vc3lZziWWfcXzrEmVdzPMdw==
-  /@rollup/plugin-node-resolve/11.1.0_rollup@2.38.1:
+  /@rollup/plugin-node-resolve/11.1.1_rollup@2.38.1:
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.38.1
       '@types/resolve': 1.17.1
@@ -1152,7 +1152,7 @@ packages:
     peerDependencies:
       rollup: ^1.20.0||^2.0.0
     resolution:
-      integrity: sha512-ouBBppRdWJKCllDXGzJ7ZIkYbaq+5TmyP0smt1vdJCFfoZhLi31vhpmjLhyo8lreHf4RoeSNllaWrvSqHpHRog==
+      integrity: sha512-zlBXR4eRS+2m79TsUZWhsd0slrHUYdRx4JF+aVQm+MI0wsKdlpC2vlDVjmlGvtZY1vsefOT9w3JxvmWSBei+Lg==
   /@rollup/plugin-replace/2.3.4_rollup@2.38.1:
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.38.1
@@ -1235,10 +1235,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-bwVfNTFZOrGXyiQ6t4B9sZerMSShWNsGRw8tC5DY1qImUNczS9SjT4G6PnzjCnxsu5Ubj6xjL2lgwddkxtQl5w==
-  /@types/node/12.19.14:
-    dev: true
-    resolution:
-      integrity: sha512-2U9uLN46+7dv9PiS8VQJcHhuoOjiDPZOLAt0WuA1EanEknIMae+2QbMhayF7cgGqjvRVIfNpt+6jLPczJZFiRw==
   /@types/node/12.19.15:
     dev: true
     resolution:
@@ -1254,7 +1250,7 @@ packages:
       integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
   /@types/resolve/1.17.1:
     dependencies:
-      '@types/node': 12.19.14
+      '@types/node': 12.19.15
     dev: true
     resolution:
       integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==
@@ -7825,7 +7821,7 @@ specifiers:
   '@babel/preset-env': 7.12.11
   '@babel/register': 7.12.10
   '@rollup/plugin-babel': 5.2.3
-  '@rollup/plugin-node-resolve': 11.1.0
+  '@rollup/plugin-node-resolve': 11.1.1
   '@rollup/plugin-replace': 2.3.4
   '@types/chai': 4.2.14
   '@types/mocha': 8.2.0
