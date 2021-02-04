@@ -10,7 +10,7 @@ devDependencies:
   '@types/node': 12.19.16
   agadoo: 2.0.0
   benchmark: 2.1.4
-  chai: 4.2.0
+  chai: 4.3.0
   commitizen: 4.2.3
   conventional-changelog: 3.1.24
   conventional-changelog-conventionalcommits: 4.5.0
@@ -2108,7 +2108,7 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-a+xUyMV7hD1BrDQA/3iPV7oc+6W26BgVJO05PGEoatMyIuPScQKsde6i3YorWX1qs+AZjnJ18NqdKoCtKiNh1g==
-  /chai/4.2.0:
+  /chai/4.3.0:
     dependencies:
       assertion-error: 1.1.0
       check-error: 1.0.2
@@ -2118,9 +2118,9 @@ packages:
       type-detect: 4.0.8
     dev: true
     engines:
-      node: '>=4'
+      node: '>=8'
     resolution:
-      integrity: sha512-XQU3bhBukrOsQCuwZndwGcCVQHyZi53fQ6Ys1Fym7E4olpIqqZZhhoFJoaKVvV17lWQoXYwgWN2nF5crA8J2jw==
+      integrity: sha512-/BFd2J30EcOwmdOgXvVsmM48l0Br0nmZPlO0uOW4XKh6kpsUumRXBgPV+IlaqFaqr9cYbeoZAM1Npx0i4A+aiA==
   /chalk/2.4.1:
     dependencies:
       ansi-styles: 3.2.1
@@ -7988,7 +7988,7 @@ specifiers:
   '@types/node': 12.19.16
   agadoo: 2.0.0
   benchmark: 2.1.4
-  chai: 4.2.0
+  chai: 4.3.0
   commitizen: 4.2.3
   conventional-changelog: 3.1.24
   conventional-changelog-conventionalcommits: 4.5.0
