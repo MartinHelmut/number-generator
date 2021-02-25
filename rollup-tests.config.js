@@ -26,6 +26,7 @@ function createTestConfig(input) {
           require("./src/reference/cpp/results.json")
         )})`,
         delimiters: ["", ""],
+        preventAssignment: true,
       }),
       externalGlobals({
         chai: "chai",
