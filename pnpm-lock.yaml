@@ -1,6 +1,6 @@
 devDependencies:
   '@babel/core': 7.13.8
-  '@babel/preset-env': 7.13.8_@babel+core@7.13.8
+  '@babel/preset-env': 7.13.9_@babel+core@7.13.8
   '@babel/register': 7.13.8_@babel+core@7.13.8
   '@rollup/plugin-babel': 5.3.0_@babel+core@7.13.8+rollup@2.40.0
   '@rollup/plugin-node-resolve': 11.2.0_rollup@2.40.0
@@ -953,7 +953,7 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-mDRzSNY7/zopwisPZ5kM9XKCfhchqIYwAKRERtEnhYscZB79VRekuRSoYbN0+KVe3y8+q1h6A4svXtP7N+UoCA==
-  /@babel/preset-env/7.13.8_@babel+core@7.13.8:
+  /@babel/preset-env/7.13.9_@babel+core@7.13.8:
     dependencies:
       '@babel/compat-data': 7.13.8
       '@babel/core': 7.13.8
@@ -1028,7 +1028,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
     resolution:
-      integrity: sha512-Sso1xOpV4S3ofnxW2DsWTE5ziRk62jEAKLGuQ+EJHC+YHTbFG38QUTixO3JVa1cYET9gkJhO1pMu+/+2dDhKvw==
+      integrity: sha512-mcsHUlh2rIhViqMG823JpscLMesRt3QbMsv1+jhopXEb3W2wXvQ9QoiOlZI9ZbR3XqPtaFpZwEZKYqGJnGMZTQ==
   /@babel/preset-modules/0.1.4_@babel+core@7.13.8:
     dependencies:
       '@babel/core': 7.13.8
@@ -1055,12 +1055,6 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-yCVtABcmvQjRsX2elcZFUV5Q5kDDpHdtXKKku22hNDma60lYuhKmtp1ykZ/okRCPLT2bR5S+cA1kvtBdAFlDTQ==
-  /@babel/runtime/7.12.5:
-    dependencies:
-      regenerator-runtime: 0.13.7
-    dev: true
-    resolution:
-      integrity: sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
   /@babel/runtime/7.13.8:
     dependencies:
       regenerator-runtime: 0.13.7
@@ -6512,7 +6506,7 @@ packages:
       integrity: sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==
   /regenerator-transform/0.14.5:
     dependencies:
-      '@babel/runtime': 7.12.5
+      '@babel/runtime': 7.13.8
     dev: true
     resolution:
       integrity: sha512-eOf6vka5IO151Jfsw2NO9WpGX58W6wWmefK3I1zEGr0lOD0u8rwPaNqQL1aRxUaxLeKO3ArNh3VYg1KbaD+FFw==
@@ -8064,7 +8058,7 @@ packages:
       integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 specifiers:
   '@babel/core': 7.13.8
-  '@babel/preset-env': 7.13.8
+  '@babel/preset-env': 7.13.9
   '@babel/register': 7.13.8
   '@rollup/plugin-babel': 5.3.0
   '@rollup/plugin-node-resolve': 11.2.0
