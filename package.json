@@ -132,7 +132,7 @@
     "@types/node": "12.20.5",
     "agadoo": "2.0.0",
     "benchmark": "2.1.4",
-    "chai": "4.3.3",
+    "chai": "4.3.4",
     "commitizen": "4.2.3",
     "conventional-changelog": "3.1.24",
     "conventional-changelog-conventionalcommits": "4.5.0",
