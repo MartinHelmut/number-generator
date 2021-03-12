@@ -19,7 +19,7 @@ devDependencies:
   eslint: 7.21.0
   eslint-config-prettier: 8.1.0_eslint@7.21.0
   jsdoc: 3.6.6
-  mocha: 8.3.1
+  mocha: 8.3.2
   nyc: 15.1.0
   prettier: 2.2.1
   rollup: 2.41.1
@@ -5430,7 +5430,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
-  /mocha/8.3.1:
+  /mocha/8.3.2:
     dependencies:
       '@ungap/promise-all-settled': 1.1.2
       ansi-colors: 4.1.1
@@ -5462,7 +5462,7 @@ packages:
       node: '>= 10.12.0'
     hasBin: true
     resolution:
-      integrity: sha512-5SBMxANWqOv5bw3Hx+HVgaWlcWcFEQDUdaUAr1AUU+qwtx6cowhn7gEDT/DwQP7uYxnvShdUOVLbTYAHOEGfDQ==
+      integrity: sha512-UdmISwr/5w+uXLPKspgoV7/RXZwKRTiTjJ2/AC5ZiEztIoOYdfKb19+9jNmEInzx5pBsCyJQzarAxqIGBNYJhg==
   /modify-values/1.0.1:
     dev: true
     engines:
@@ -8081,7 +8081,7 @@ specifiers:
   eslint: 7.21.0
   eslint-config-prettier: 8.1.0
   jsdoc: 3.6.6
-  mocha: 8.3.1
+  mocha: 8.3.2
   nyc: 15.1.0
   prettier: 2.2.1
   rollup: 2.41.1
