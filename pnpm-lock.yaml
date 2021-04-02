@@ -5,7 +5,7 @@ devDependencies:
   '@rollup/plugin-babel': 5.3.0_5e7fd6efeecd0601cdf62a5dd59ff63a
   '@rollup/plugin-node-resolve': 11.2.1_rollup@2.44.0
   '@rollup/plugin-replace': 2.4.2_rollup@2.44.0
-  '@types/chai': 4.2.15
+  '@types/chai': 4.2.16
   '@types/mocha': 8.2.2
   '@types/node': 12.20.7
   agadoo: 2.0.0
@@ -1459,10 +1459,10 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
-  /@types/chai/4.2.15:
+  /@types/chai/4.2.16:
     dev: true
     resolution:
-      integrity: sha512-rYff6FI+ZTKAPkJUoyz7Udq3GaoDZnxYDEvdEdFZASiA7PoErltHezDishqQiSDWrGxvxmplH304jyzQmjp0AQ==
+      integrity: sha512-vI5iOAsez9+roLS3M3+Xx7w+WRuDtSmF8bQkrbcIJ2sC1PcDgVoA0WGpa+bIrJ+y8zqY2oi//fUctkxtIcXJCw==
   /@types/estree/0.0.39:
     dev: true
     resolution:
@@ -8178,7 +8178,7 @@ specifiers:
   '@rollup/plugin-babel': 5.3.0
   '@rollup/plugin-node-resolve': 11.2.1
   '@rollup/plugin-replace': 2.4.2
-  '@types/chai': 4.2.15
+  '@types/chai': 4.2.16
   '@types/mocha': 8.2.2
   '@types/node': 12.20.7
   agadoo: 2.0.0
