@@ -18,7 +18,7 @@ specifiers:
   conventional-changelog-conventionalcommits: 4.5.0
   coveralls: 3.1.0
   cz-conventional-changelog: 3.3.0
-  eslint: 7.24.0
+  eslint: 7.25.0
   eslint-config-prettier: 8.2.0
   jsdoc: 3.6.6
   mocha: 8.3.2
@@ -54,8 +54,8 @@ devDependencies:
   conventional-changelog-conventionalcommits: 4.5.0
   coveralls: 3.1.0
   cz-conventional-changelog: 3.3.0
-  eslint: 7.24.0
-  eslint-config-prettier: 8.2.0_eslint@7.24.0
+  eslint: 7.25.0
+  eslint-config-prettier: 8.2.0_eslint@7.25.0
   jsdoc: 3.6.6
   mocha: 8.3.2
   nyc: 15.1.0
@@ -3196,13 +3196,13 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-config-prettier/8.2.0_eslint@7.24.0:
+  /eslint-config-prettier/8.2.0_eslint@7.25.0:
     resolution: {integrity: sha512-dWV9EVeSo2qodOPi1iBYU/x6F6diHv8uujxbxr77xExs3zTAlNXvVZKiyLsQGNz7yPV2K49JY5WjPzNIuDc2Bw==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
     dependencies:
-      eslint: 7.24.0
+      eslint: 7.25.0
     dev: true
 
   /eslint-scope/5.1.1:
@@ -3230,8 +3230,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint/7.24.0:
-    resolution: {integrity: sha512-k9gaHeHiFmGCDQ2rEfvULlSLruz6tgfA8DEn+rY9/oYPFFTlz55mM/Q/Rij1b2Y42jwZiK3lXvNTw6w6TXzcKQ==}
+  /eslint/7.25.0:
+    resolution: {integrity: sha512-TVpSovpvCNpLURIScDRB6g5CYu/ZFq9GfX2hLNIV4dSBKxIWojeDODvYl3t0k0VtMxYeR8OXPCFE5+oHMlGfhw==}
     engines: {node: ^10.12.0 || >=12.0.0}
     hasBin: true
     dependencies:
