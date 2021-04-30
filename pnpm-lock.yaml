@@ -15,7 +15,7 @@ specifiers:
   chai: 4.3.4
   commitizen: 4.2.3
   conventional-changelog: 3.1.24
-  conventional-changelog-conventionalcommits: 4.5.0
+  conventional-changelog-conventionalcommits: 4.6.0
   coveralls: 3.1.0
   cz-conventional-changelog: 3.3.0
   eslint: 7.25.0
@@ -51,7 +51,7 @@ devDependencies:
   chai: 4.3.4
   commitizen: 4.2.3
   conventional-changelog: 3.1.24
-  conventional-changelog-conventionalcommits: 4.5.0
+  conventional-changelog-conventionalcommits: 4.6.0
   coveralls: 3.1.0
   cz-conventional-changelog: 3.3.0
   eslint: 7.25.0
@@ -2615,6 +2615,15 @@ packages:
     dependencies:
       compare-func: 2.0.0
       lodash: 4.17.20
+      q: 1.5.1
+    dev: true
+
+  /conventional-changelog-conventionalcommits/4.6.0:
+    resolution: {integrity: sha512-sj9tj3z5cnHaSJCYObA9nISf7eq/YjscLPoq6nmew4SiOjxqL2KRpK20fjnjVbpNDjJ2HR3MoVcWKXwbVvzS0A==}
+    engines: {node: '>=10'}
+    dependencies:
+      compare-func: 2.0.0
+      lodash: 4.17.21
       q: 1.5.1
     dev: true
 
