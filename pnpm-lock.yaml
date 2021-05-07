@@ -13,7 +13,7 @@ specifiers:
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.3.4
-  commitizen: 4.2.3
+  commitizen: 4.2.4
   conventional-changelog: 3.1.24
   conventional-changelog-conventionalcommits: 4.6.0
   coveralls: 3.1.0
@@ -49,7 +49,7 @@ devDependencies:
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.3.4
-  commitizen: 4.2.3
+  commitizen: 4.2.4
   conventional-changelog: 3.1.24
   conventional-changelog-conventionalcommits: 4.6.0
   coveralls: 3.1.0
@@ -2486,8 +2486,8 @@ packages:
       strip-json-comments: 3.0.1
     dev: true
 
-  /commitizen/4.2.3:
-    resolution: {integrity: sha512-pYlYEng7XMV2TW4xtjDKBGqeJ0Teq2zyRSx2S3Ml1XAplHSlJZK8vm1KdGclpMEZuGafbS5TeHXIVnHk8RWIzQ==}
+  /commitizen/4.2.4:
+    resolution: {integrity: sha512-LlZChbDzg3Ir3O2S7jSo/cgWp5/QwylQVr59K4xayVq8S4/RdKzSyJkghAiZZHfhh5t4pxunUoyeg0ml1q/7aw==}
     engines: {node: '>= 10'}
     hasBin: true
     dependencies:
@@ -2495,13 +2495,13 @@ packages:
       cz-conventional-changelog: 3.2.0
       dedent: 0.7.0
       detect-indent: 6.0.0
-      find-node-modules: 2.0.0
+      find-node-modules: 2.1.2
       find-root: 1.1.0
       fs-extra: 8.1.0
       glob: 7.1.4
       inquirer: 6.5.2
       is-utf8: 0.2.1
-      lodash: 4.17.20
+      lodash: 4.17.21
       minimist: 1.2.5
       strip-bom: 4.0.0
       strip-json-comments: 3.0.1
@@ -2879,7 +2879,7 @@ packages:
     engines: {node: '>= 10'}
     dependencies:
       chalk: 2.4.2
-      commitizen: 4.2.3
+      commitizen: 4.2.4
       conventional-commit-types: 3.0.0
       lodash.map: 4.6.0
       longest: 2.0.1
@@ -3576,6 +3576,13 @@ packages:
       merge: 1.2.1
     dev: true
 
+  /find-node-modules/2.1.2:
+    resolution: {integrity: sha512-x+3P4mbtRPlSiVE1Qco0Z4YLU8WFiFcuWTf3m75OV9Uzcfs2Bg+O9N+r/K0AnmINBW06KpfqKwYJbFlFq4qNug==}
+    dependencies:
+      findup-sync: 4.0.0
+      merge: 2.1.1
+    dev: true
+
   /find-root/1.1.0:
     resolution: {integrity: sha512-NKfW6bec6GfKc0SGx1e07QZY9PE99u0Bft/0rzSD5k3sO/vwkVUpDUKVm5Gpp5Ue3YfShPFTX2070tDs5kB9Ng==}
     dev: true
@@ -3625,6 +3632,16 @@ packages:
       detect-file: 1.0.0
       is-glob: 4.0.1
       micromatch: 3.1.10
+      resolve-dir: 1.0.1
+    dev: true
+
+  /findup-sync/4.0.0:
+    resolution: {integrity: sha512-6jvvn/12IC4quLBL1KNokxC7wWTvYncaVUYSoxWw7YykPLuRrnv4qdHcSOywOI5RpkOVGeQRtWM8/q+G6W6qfQ==}
+    engines: {node: '>= 8'}
+    dependencies:
+      detect-file: 1.0.0
+      is-glob: 4.0.1
+      micromatch: 4.0.2
       resolve-dir: 1.0.1
     dev: true
 
@@ -4245,7 +4262,7 @@ packages:
       cli-width: 2.2.1
       external-editor: 3.1.0
       figures: 2.0.0
-      lodash: 4.17.20
+      lodash: 4.17.21
       mute-stream: 0.0.7
       run-async: 2.4.1
       rxjs: 6.6.3
@@ -5117,6 +5134,10 @@ packages:
 
   /merge/1.2.1:
     resolution: {integrity: sha512-VjFo4P5Whtj4vsLzsYBu5ayHhoHJ0UqNm7ibvShmbmoz7tGi0vXaoJbGdB+GmDMLUdg8DpQXEIeVDAe8MaABvQ==}
+    dev: true
+
+  /merge/2.1.1:
+    resolution: {integrity: sha512-jz+Cfrg9GWOZbQAnDQ4hlVnQky+341Yk5ru8bZSe6sIDTCIg8n9i/u7hSQGSVOF3C7lH6mGtqjkiT9G4wFLL0w==}
     dev: true
 
   /merge2/1.4.1:
