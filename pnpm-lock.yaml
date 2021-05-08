@@ -18,7 +18,7 @@ specifiers:
   conventional-changelog-conventionalcommits: 4.6.0
   coveralls: 3.1.0
   cz-conventional-changelog: 3.3.0
-  eslint: 7.25.0
+  eslint: 7.26.0
   eslint-config-prettier: 8.3.0
   jsdoc: 3.6.6
   mocha: 8.4.0
@@ -54,8 +54,8 @@ devDependencies:
   conventional-changelog-conventionalcommits: 4.6.0
   coveralls: 3.1.0
   cz-conventional-changelog: 3.3.0
-  eslint: 7.25.0
-  eslint-config-prettier: 8.3.0_eslint@7.25.0
+  eslint: 7.26.0
+  eslint-config-prettier: 8.3.0_eslint@7.26.0
   jsdoc: 3.6.6
   mocha: 8.4.0
   nyc: 15.1.0
@@ -1324,8 +1324,8 @@ packages:
     dev: true
     optional: true
 
-  /@eslint/eslintrc/0.4.0:
-    resolution: {integrity: sha512-2ZPCc+uNbjV5ERJr+aKSPRwZgKd2z11x0EgLvb1PURmUrn9QNRXFqje0Ldq454PfAVyaJYyrDvvIKSFP4NnBog==}
+  /@eslint/eslintrc/0.4.1:
+    resolution: {integrity: sha512-5v7TDE9plVhvxQeWLXDTvFvJBdH6pEsdnl2g/dAptmuFEPedQ4Erq5rsDsX+mvAM610IhNaO2W5V1dOOnDKxkQ==}
     engines: {node: ^10.12.0 || >=12.0.0}
     dependencies:
       ajv: 6.12.6
@@ -3236,13 +3236,13 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-config-prettier/8.3.0_eslint@7.25.0:
+  /eslint-config-prettier/8.3.0_eslint@7.26.0:
     resolution: {integrity: sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
     dependencies:
-      eslint: 7.25.0
+      eslint: 7.26.0
     dev: true
 
   /eslint-scope/5.1.1:
@@ -3270,13 +3270,13 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint/7.25.0:
-    resolution: {integrity: sha512-TVpSovpvCNpLURIScDRB6g5CYu/ZFq9GfX2hLNIV4dSBKxIWojeDODvYl3t0k0VtMxYeR8OXPCFE5+oHMlGfhw==}
+  /eslint/7.26.0:
+    resolution: {integrity: sha512-4R1ieRf52/izcZE7AlLy56uIHHDLT74Yzz2Iv2l6kDaYvEu9x+wMB5dZArVL8SYGXSYV2YAg70FcW5Y5nGGNIg==}
     engines: {node: ^10.12.0 || >=12.0.0}
     hasBin: true
     dependencies:
       '@babel/code-frame': 7.12.11
-      '@eslint/eslintrc': 0.4.0
+      '@eslint/eslintrc': 0.4.1
       ajv: 6.12.6
       chalk: 4.1.0
       cross-spawn: 7.0.3
