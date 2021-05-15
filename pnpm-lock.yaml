@@ -20,7 +20,7 @@ specifiers:
   cz-conventional-changelog: 3.3.0
   eslint: 7.26.0
   eslint-config-prettier: 8.3.0
-  jsdoc: 3.6.6
+  jsdoc: 3.6.7
   mocha: 8.4.0
   nyc: 15.1.0
   prettier: 2.3.0
@@ -56,7 +56,7 @@ devDependencies:
   cz-conventional-changelog: 3.3.0
   eslint: 7.26.0
   eslint-config-prettier: 8.3.0_eslint@7.26.0
-  jsdoc: 3.6.6
+  jsdoc: 3.6.7
   mocha: 8.4.0
   nyc: 15.1.0
   prettier: 2.3.0
@@ -2251,11 +2251,11 @@ packages:
     resolution: {integrity: sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=}
     dev: true
 
-  /catharsis/0.8.11:
-    resolution: {integrity: sha512-a+xUyMV7hD1BrDQA/3iPV7oc+6W26BgVJO05PGEoatMyIuPScQKsde6i3YorWX1qs+AZjnJ18NqdKoCtKiNh1g==}
-    engines: {node: '>= 8'}
+  /catharsis/0.9.0:
+    resolution: {integrity: sha512-prMTQVpcns/tzFgFVkVp6ak6RykZyWb3gu8ckUpd6YkTlacOd3DXGJjIpD4Q6zJirizvaiAjSSHlOsA+6sNh2A==}
+    engines: {node: '>= 10'}
     dependencies:
-      lodash: 4.17.20
+      lodash: 4.17.21
     dev: true
 
   /chai/4.3.4:
@@ -4612,25 +4612,25 @@ packages:
     resolution: {integrity: sha1-peZUwuWi3rXyAdls77yoDA7y9RM=}
     dev: true
 
-  /jsdoc/3.6.6:
-    resolution: {integrity: sha512-znR99e1BHeyEkSvgDDpX0sTiTu+8aQyDl9DawrkOGZTTW8hv0deIFXx87114zJ7gRaDZKVQD/4tr1ifmJp9xhQ==}
+  /jsdoc/3.6.7:
+    resolution: {integrity: sha512-sxKt7h0vzCd+3Y81Ey2qinupL6DpRSZJclS04ugHDNmRUXGzqicMJ6iwayhSA0S0DwwX30c5ozyUthr1QKF6uw==}
     engines: {node: '>=8.15.0'}
     hasBin: true
     dependencies:
-      '@babel/parser': 7.12.11
+      '@babel/parser': 7.14.2
       bluebird: 3.7.2
-      catharsis: 0.8.11
+      catharsis: 0.9.0
       escape-string-regexp: 2.0.0
       js2xmlparser: 4.0.1
       klaw: 3.0.0
       markdown-it: 10.0.0
       markdown-it-anchor: 5.3.0_markdown-it@10.0.0
-      marked: 0.8.2
+      marked: 2.0.3
       mkdirp: 1.0.4
       requizzle: 0.2.3
       strip-json-comments: 3.1.1
       taffydb: 2.6.2
-      underscore: 1.10.2
+      underscore: 1.13.1
     dev: true
 
   /jsesc/0.5.0:
@@ -5055,8 +5055,8 @@ packages:
       uc.micro: 1.0.6
     dev: true
 
-  /marked/0.8.2:
-    resolution: {integrity: sha512-EGwzEeCcLniFX51DhTpmTom+dSA/MG/OBUDjnWtHbEnjAH180VzUeAw+oE4+Zv+CoYBWyRlYOTR0N8SO9R1PVw==}
+  /marked/2.0.3:
+    resolution: {integrity: sha512-5otztIIcJfPc2qGTN8cVtOJEjNJZ0jwa46INMagrYfk0EvqtRuEHLsEe0LrFS0/q+ZRKT0+kXK7P2T1AN5lWRA==}
     engines: {node: '>= 8.16.2'}
     hasBin: true
     dev: true
@@ -6428,7 +6428,7 @@ packages:
   /requizzle/0.2.3:
     resolution: {integrity: sha512-YanoyJjykPxGHii0fZP0uUPEXpvqfBDxWV7s6GKAiiOsiqhX6vHNyW3Qzdmqp/iq/ExbhaGbVrjB4ruEVSM4GQ==}
     dependencies:
-      lodash: 4.17.20
+      lodash: 4.17.21
     dev: true
 
   /resolve-dir/1.0.1:
@@ -7416,8 +7416,8 @@ packages:
     dev: true
     optional: true
 
-  /underscore/1.10.2:
-    resolution: {integrity: sha512-N4P+Q/BuyuEKFJ43B9gYuOj4TQUHXX+j2FqguVOpjkssLUUrnJofCcBccJSCoeturDoZU6GorDTHSvUDlSQbTg==}
+  /underscore/1.13.1:
+    resolution: {integrity: sha512-hzSoAVtJF+3ZtiFX0VgfFPHEDRm7Y/QPjGyNo4TVdnDTdft3tr8hEkD25a1jC+TjTuE7tkHGKkhwCgs9dgBB2g==}
     dev: true
 
   /unicode-canonical-property-names-ecmascript/1.0.4:
