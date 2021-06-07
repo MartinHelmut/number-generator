@@ -129,7 +129,7 @@
     "@rollup/plugin-replace": "2.4.2",
     "@types/chai": "4.2.18",
     "@types/mocha": "8.2.2",
-    "@types/node": "12.20.14",
+    "@types/node": "12.20.15",
     "agadoo": "2.0.0",
     "benchmark": "2.1.4",
     "chai": "4.3.4",
