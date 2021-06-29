@@ -16,7 +16,7 @@ specifiers:
   commitizen: 4.2.4
   conventional-changelog: 3.1.24
   conventional-changelog-conventionalcommits: 4.6.0
-  coveralls: 3.1.0
+  coveralls: 3.1.1
   cz-conventional-changelog: 3.3.0
   eslint: 7.29.0
   eslint-config-prettier: 8.3.0
@@ -52,7 +52,7 @@ devDependencies:
   commitizen: 4.2.4
   conventional-changelog: 3.1.24
   conventional-changelog-conventionalcommits: 4.6.0
-  coveralls: 3.1.0
+  coveralls: 3.1.1
   cz-conventional-changelog: 3.3.0
   eslint: 7.29.0
   eslint-config-prettier: 8.3.0_eslint@7.29.0
@@ -2911,8 +2911,8 @@ packages:
     dev: true
     optional: true
 
-  /coveralls/3.1.0:
-    resolution: {integrity: sha512-sHxOu2ELzW8/NC1UP5XVLbZDzO4S3VxfFye3XYCznopHy02YjNkHcj5bKaVw2O7hVaBdBjEdQGpie4II1mWhuQ==}
+  /coveralls/3.1.1:
+    resolution: {integrity: sha512-+dxnG2NHncSD1NrqbSM3dn/lE57O6Qf/koe9+I7c+wzkqRmEvcp0kgJdxKInzYzkICKkFMZsX3Vct3++tsF9ww==}
     engines: {node: '>=6'}
     hasBin: true
     dependencies:
@@ -7734,6 +7734,7 @@ packages:
 
   /uuid/3.4.0:
     resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}
+    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
     hasBin: true
     dev: true
 
