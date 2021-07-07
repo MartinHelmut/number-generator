@@ -128,7 +128,7 @@
     "@rollup/plugin-node-resolve": "13.0.0",
     "@rollup/plugin-replace": "2.4.2",
     "@types/chai": "4.2.20",
-    "@types/mocha": "8.2.2",
+    "@types/mocha": "8.2.3",
     "@types/node": "12.20.15",
     "agadoo": "2.0.0",
     "benchmark": "2.1.4",
