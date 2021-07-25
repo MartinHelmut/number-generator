@@ -21,7 +21,7 @@ specifiers:
   eslint: 7.31.0
   eslint-config-prettier: 8.3.0
   jsdoc: 3.6.7
-  mocha: 9.0.2
+  mocha: 9.0.3
   nyc: 15.1.0
   prettier: 2.3.2
   rollup: 2.54.0
@@ -57,7 +57,7 @@ devDependencies:
   eslint: 7.31.0
   eslint-config-prettier: 8.3.0_eslint@7.31.0
   jsdoc: 3.6.7
-  mocha: 9.0.2
+  mocha: 9.0.3
   nyc: 15.1.0
   prettier: 2.3.2
   rollup: 2.54.0
@@ -5542,8 +5542,8 @@ packages:
     hasBin: true
     dev: true
 
-  /mocha/9.0.2:
-    resolution: {integrity: sha512-FpspiWU+UT9Sixx/wKimvnpkeW0mh6ROAKkIaPokj3xZgxeRhcna/k5X57jJghEr8X+Cgu/Vegf8zCX5ugSuTA==}
+  /mocha/9.0.3:
+    resolution: {integrity: sha512-hnYFrSefHxYS2XFGtN01x8un0EwNu2bzKvhpRFhgoybIvMaOkkL60IVPmkb5h6XDmUl4IMSB+rT5cIO4/4bJgg==}
     engines: {node: '>= 12.0.0'}
     hasBin: true
     dependencies:
