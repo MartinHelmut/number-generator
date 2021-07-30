@@ -1,7 +1,7 @@
 # Number Generator
 
 [![npm][npmimg]][npmurl]
-[![Build Status][travisimg]][travisorg]
+[![Build Status][circleimg]][circle]
 [![Coverage Status][covimg]][covurl]
 [![Commitizen friendly][czimg]][czcli]
 [![Standard Version][stdimg]][stdurl]
@@ -383,8 +383,8 @@ Big thanks as well to Alex Ciminian for raising the issue with non ASCII charact
 
 [npmurl]: https://www.npmjs.com/package/number-generator
 [npmimg]: https://img.shields.io/npm/v/number-generator.svg
-[travisimg]: https://travis-ci.com/MartinHelmut/number-generator.svg?branch=main
-[travisorg]: https://travis-ci.com/MartinHelmut/number-generator
+[circleimg]: https://circleci.com/gh/MartinHelmut/number-generator/tree/main.svg?style=shield
+[circle]: https://circleci.com/gh/MartinHelmut/number-generator/tree/main
 [covimg]: https://coveralls.io/repos/github/MartinHelmut/number-generator/badge.svg?branch=main
 [covurl]: https://coveralls.io/github/MartinHelmut/number-generator?branch=main
 [czimg]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
