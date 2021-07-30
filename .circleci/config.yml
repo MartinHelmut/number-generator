@@ -1,0 +1,29 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: "krieselreihe/node-pnpm:0.3.0"
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "pnpm-lock.yaml" }}
+      - run:
+          name: install
+          command: pnpm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "pnpm-lock.yaml" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: lint
+          command: pnpm lint
+      - run:
+          name: format
+          command: pnpm format:check
+      - run:
+          name: test
+          command: pnpm test:prod && pnpm test
+      - run:
+          name: coverage
+          command: pnpm coverage
