@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@babel/core': 7.15.0
   '@babel/preset-env': 7.15.0
-  '@babel/register': 7.14.5
+  '@babel/register': 7.15.3
   '@rollup/plugin-babel': 5.3.0
   '@rollup/plugin-node-resolve': 13.0.4
   '@rollup/plugin-replace': 3.0.0
@@ -39,7 +39,7 @@ specifiers:
 devDependencies:
   '@babel/core': 7.15.0
   '@babel/preset-env': 7.15.0_@babel+core@7.15.0
-  '@babel/register': 7.14.5_@babel+core@7.15.0
+  '@babel/register': 7.15.3_@babel+core@7.15.0
   '@rollup/plugin-babel': 5.3.0_@babel+core@7.15.0+rollup@2.56.2
   '@rollup/plugin-node-resolve': 13.0.4_rollup@2.56.2
   '@rollup/plugin-replace': 3.0.0_rollup@2.56.2
@@ -1293,8 +1293,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /@babel/register/7.14.5_@babel+core@7.15.0:
-    resolution: {integrity: sha512-TjJpGz/aDjFGWsItRBQMOFTrmTI9tr79CHOK+KIvLeCkbxuOAk2M5QHjvruIMGoo9OuccMh5euplPzc5FjAKGg==}
+  /@babel/register/7.15.3_@babel+core@7.15.0:
+    resolution: {integrity: sha512-mj4IY1ZJkorClxKTImccn4T81+UKTo4Ux0+OFSV9hME1ooqS9UV+pJ6BjD0qXPK4T3XW/KNa79XByjeEMZz+fw==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
