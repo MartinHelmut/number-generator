@@ -31,7 +31,7 @@ specifiers:
   rollup-plugin-filesize: 9.1.1
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-terser: 7.0.2
-  serve: 12.0.0
+  serve: 12.0.1
   standard-version: 9.3.1
   ts-node: 10.2.1
   typescript: 4.4.2
@@ -67,7 +67,7 @@ devDependencies:
   rollup-plugin-filesize: 9.1.1
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-terser: 7.0.2_rollup@2.56.3
-  serve: 12.0.0
+  serve: 12.0.1
   standard-version: 9.3.1
   ts-node: 10.2.1_30c328ac9173af87096ae0915a66cb11
   typescript: 4.4.2
@@ -6951,8 +6951,8 @@ packages:
       range-parser: 1.2.0
     dev: true
 
-  /serve/12.0.0:
-    resolution: {integrity: sha512-BkTsETQYynAZ7rXX414kg4X6EvuZQS3UVs1NY0VQYdRHSTYWPYcH38nnDh48D0x6ONuislgjag8uKlU2gTBImA==}
+  /serve/12.0.1:
+    resolution: {integrity: sha512-CQ4ikLpxg/wmNM7yivulpS6fhjRiFG6OjmP8ty3/c1SBnSk23fpKmLAV4HboTA2KrZhkUPlDfjDhnRmAjQ5Phw==}
     hasBin: true
     dependencies:
       '@zeit/schemas': 2.6.0
