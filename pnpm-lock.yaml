@@ -9,7 +9,7 @@ specifiers:
   '@rollup/plugin-replace': 3.0.0
   '@types/chai': 4.2.21
   '@types/mocha': 9.0.0
-  '@types/node': 14.17.15
+  '@types/node': 14.17.16
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.3.4
@@ -45,7 +45,7 @@ devDependencies:
   '@rollup/plugin-replace': 3.0.0_rollup@2.56.3
   '@types/chai': 4.2.21
   '@types/mocha': 9.0.0
-  '@types/node': 14.17.15
+  '@types/node': 14.17.16
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.3.4
@@ -69,7 +69,7 @@ devDependencies:
   rollup-plugin-terser: 7.0.2_rollup@2.56.3
   serve: 12.0.1
   standard-version: 9.3.1
-  ts-node: 10.2.1_91d7040b2316c81455e367292ad70221
+  ts-node: 10.2.1_8819252bdc5f26e5767446edef4251b2
   typescript: 4.4.3
 
 packages:
@@ -1404,6 +1404,7 @@ packages:
   /@commitlint/load/11.0.0:
     resolution: {integrity: sha512-t5ZBrtgvgCwPfxmG811FCp39/o3SJ7L+SNsxFL92OR4WQxPcu6c8taD0CG2lzOHGuRyuMxZ7ps3EbngT2WpiCg==}
     engines: {node: '>=v10.22.0'}
+    requiresBuild: true
     dependencies:
       '@commitlint/execute-rule': 11.0.0
       '@commitlint/resolve-extends': 11.0.0
@@ -1703,8 +1704,8 @@ packages:
     resolution: {integrity: sha512-xRCgeE0Q4pT5UZ189TJ3SpYuX/QGl6QIAOAIeDSbAVAd2gX1NxSZup4jNVK7cxIeP8KDSbJgcckun495isP1jQ==}
     dev: true
 
-  /@types/node/14.17.15:
-    resolution: {integrity: sha512-D1sdW0EcSCmNdLKBGMYb38YsHUS6JcM7yQ6sLQ9KuZ35ck7LYCKE7kYFHOO59ayFOY3zobWVZxf4KXhYHcHYFA==}
+  /@types/node/14.17.16:
+    resolution: {integrity: sha512-WiFf2izl01P1CpeY8WqFAeKWwByMueBEkND38EcN8N68qb0aDG3oIS1P5MhAX5kUdr469qRyqsY/MjanLjsFbQ==}
     dev: true
 
   /@types/normalize-package-data/2.4.0:
@@ -3348,6 +3349,7 @@ packages:
 
   /encoding/0.1.13:
     resolution: {integrity: sha512-ETBauow1T35Y/WZMkio9jiM0Z5xjHHmJ4XmjZOq1l/dXz3lr2sRn87nJy20RupqSh1F2m3HHPSp8ShIPQJrJ3A==}
+    requiresBuild: true
     dependencies:
       iconv-lite: 0.6.2
     dev: true
@@ -3917,6 +3919,7 @@ packages:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -7584,7 +7587,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /ts-node/10.2.1_91d7040b2316c81455e367292ad70221:
+  /ts-node/10.2.1_8819252bdc5f26e5767446edef4251b2:
     resolution: {integrity: sha512-hCnyOyuGmD5wHleOQX6NIjJtYVIO8bPP8F2acWkB4W06wdlkgyvJtubO/I9NkI88hCFECbsEgoLc0VNkYmcSfw==}
     engines: {node: '>=12.0.0'}
     hasBin: true
@@ -7604,7 +7607,7 @@ packages:
       '@tsconfig/node12': 1.0.7
       '@tsconfig/node14': 1.0.0
       '@tsconfig/node16': 1.0.2
-      '@types/node': 14.17.15
+      '@types/node': 14.17.16
       acorn: 8.4.1
       acorn-walk: 8.1.1
       arg: 4.1.3
@@ -7689,6 +7692,7 @@ packages:
     resolution: {integrity: sha512-feZzR+kIcSVuLi3s/0x0b2Tx4Iokwqt+8PJM7yRHKuldg4MLdam4TCFeICv+lgDtuYiCtdmrtIP+uN9LWvDasw==}
     engines: {node: '>=0.8.0'}
     hasBin: true
+    requiresBuild: true
     dev: true
     optional: true
 
