@@ -5,7 +5,7 @@ specifiers:
   '@babel/preset-env': 7.15.6
   '@babel/register': 7.15.3
   '@rollup/plugin-babel': 5.3.0
-  '@rollup/plugin-node-resolve': 13.0.4
+  '@rollup/plugin-node-resolve': 13.0.5
   '@rollup/plugin-replace': 3.0.0
   '@types/chai': 4.2.22
   '@types/mocha': 9.0.0
@@ -41,7 +41,7 @@ devDependencies:
   '@babel/preset-env': 7.15.6_@babel+core@7.15.5
   '@babel/register': 7.15.3_@babel+core@7.15.5
   '@rollup/plugin-babel': 5.3.0_@babel+core@7.15.5+rollup@2.56.3
-  '@rollup/plugin-node-resolve': 13.0.4_rollup@2.56.3
+  '@rollup/plugin-node-resolve': 13.0.5_rollup@2.56.3
   '@rollup/plugin-replace': 3.0.0_rollup@2.56.3
   '@types/chai': 4.2.22
   '@types/mocha': 9.0.0
@@ -1586,8 +1586,8 @@ packages:
       rollup: 2.56.3
     dev: true
 
-  /@rollup/plugin-node-resolve/13.0.4_rollup@2.56.3:
-    resolution: {integrity: sha512-eYq4TFy40O8hjeDs+sIxEH/jc9lyuI2k9DM557WN6rO5OpnC2qXMBNj4IKH1oHrnAazL49C5p0tgP0/VpqJ+/w==}
+  /@rollup/plugin-node-resolve/13.0.5_rollup@2.56.3:
+    resolution: {integrity: sha512-mVaw6uxtvuGx/XCI4qBQXsDZJUfyx5vp39iE0J/7Hd6wDhEbjHr6aES7Nr9yWbuE0BY+oKp6N7Bq6jX5NCGNmQ==}
     engines: {node: '>= 10.0.0'}
     peerDependencies:
       rollup: ^2.42.0
@@ -1696,10 +1696,6 @@ packages:
     resolution: {integrity: sha512-bwVfNTFZOrGXyiQ6t4B9sZerMSShWNsGRw8tC5DY1qImUNczS9SjT4G6PnzjCnxsu5Ubj6xjL2lgwddkxtQl5w==}
     dev: true
 
-  /@types/node/12.20.17:
-    resolution: {integrity: sha512-so8EHl4S6MmatPS0f9sE1ND94/ocbcEshW5OpyYthRqeRpiYyW2uXYTo/84kmfdfeNrDycARkvuiXl6nO40NGg==}
-    dev: true
-
   /@types/node/12.20.4:
     resolution: {integrity: sha512-xRCgeE0Q4pT5UZ189TJ3SpYuX/QGl6QIAOAIeDSbAVAd2gX1NxSZup4jNVK7cxIeP8KDSbJgcckun495isP1jQ==}
     dev: true
@@ -1720,7 +1716,7 @@ packages:
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 12.20.17
+      '@types/node': 14.17.18
     dev: true
 
   /@ungap/promise-all-settled/1.1.2:
