@@ -7,7 +7,7 @@ specifiers:
   '@rollup/plugin-babel': 5.3.0
   '@rollup/plugin-node-resolve': 13.0.4
   '@rollup/plugin-replace': 3.0.0
-  '@types/chai': 4.2.21
+  '@types/chai': 4.2.22
   '@types/mocha': 9.0.0
   '@types/node': 14.17.18
   agadoo: 2.0.0
@@ -43,7 +43,7 @@ devDependencies:
   '@rollup/plugin-babel': 5.3.0_@babel+core@7.15.5+rollup@2.56.3
   '@rollup/plugin-node-resolve': 13.0.4_rollup@2.56.3
   '@rollup/plugin-replace': 3.0.0_rollup@2.56.3
-  '@types/chai': 4.2.21
+  '@types/chai': 4.2.22
   '@types/mocha': 9.0.0
   '@types/node': 14.17.18
   agadoo: 2.0.0
@@ -1655,8 +1655,8 @@ packages:
     resolution: {integrity: sha512-eZxlbI8GZscaGS7kkc/trHTT5xgrjH3/1n2JDwusC9iahPKWMRvRjJSAN5mCXviuTGQ/lHnhvv8Q1YTpnfz9gA==}
     dev: true
 
-  /@types/chai/4.2.21:
-    resolution: {integrity: sha512-yd+9qKmJxm496BOV9CMNaey8TWsikaZOwMRwPHQIjcOJM9oV+fi9ZMNw3JsVnbEEbo2gRTDnGEBv8pjyn67hNg==}
+  /@types/chai/4.2.22:
+    resolution: {integrity: sha512-tFfcE+DSTzWAgifkjik9AySNqIyNoYwmR+uecPwwD/XRNfvOjmC/FjCxpiUGDkDVDphPfCUecSQVFw+lN3M3kQ==}
     dev: true
 
   /@types/estree/0.0.39:
