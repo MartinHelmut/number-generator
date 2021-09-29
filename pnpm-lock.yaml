@@ -9,7 +9,7 @@ specifiers:
   '@rollup/plugin-replace': 3.0.0
   '@types/chai': 4.2.22
   '@types/mocha': 9.0.0
-  '@types/node': 14.17.19
+  '@types/node': 14.17.20
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.3.4
@@ -45,7 +45,7 @@ devDependencies:
   '@rollup/plugin-replace': 3.0.0_rollup@2.57.0
   '@types/chai': 4.2.22
   '@types/mocha': 9.0.0
-  '@types/node': 14.17.19
+  '@types/node': 14.17.20
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.3.4
@@ -69,7 +69,7 @@ devDependencies:
   rollup-plugin-terser: 7.0.2_rollup@2.57.0
   serve: 12.0.1
   standard-version: 9.3.1
-  ts-node: 10.2.1_939a8946a34f58c4fd62eef48ed7c2d9
+  ts-node: 10.2.1_ddf0beaba3e4c42b0be7fbba82e51a9d
   typescript: 4.4.3
 
 packages:
@@ -1704,8 +1704,8 @@ packages:
     resolution: {integrity: sha512-haYyibw4pbteEhkSg0xdDLAI3679L75EJ799ymVrPxOA922bPx3ML59SoDsQ//rHlvqpu+e36kcbR3XRQtFblA==}
     dev: true
 
-  /@types/node/14.17.19:
-    resolution: {integrity: sha512-jjYI6NkyfXykucU6ELEoT64QyKOdvaA6enOqKtP4xUsGY0X0ZUZz29fUmrTRo+7v7c6TgDu82q3GHHaCEkqZwA==}
+  /@types/node/14.17.20:
+    resolution: {integrity: sha512-gI5Sl30tmhXsqkNvopFydP7ASc4c2cLfGNQrVKN3X90ADFWFsPEsotm/8JHSUJQKTHbwowAHtcJPeyVhtKv0TQ==}
     dev: true
 
   /@types/normalize-package-data/2.4.0:
@@ -7586,7 +7586,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /ts-node/10.2.1_939a8946a34f58c4fd62eef48ed7c2d9:
+  /ts-node/10.2.1_ddf0beaba3e4c42b0be7fbba82e51a9d:
     resolution: {integrity: sha512-hCnyOyuGmD5wHleOQX6NIjJtYVIO8bPP8F2acWkB4W06wdlkgyvJtubO/I9NkI88hCFECbsEgoLc0VNkYmcSfw==}
     engines: {node: '>=12.0.0'}
     hasBin: true
@@ -7606,7 +7606,7 @@ packages:
       '@tsconfig/node12': 1.0.7
       '@tsconfig/node14': 1.0.0
       '@tsconfig/node16': 1.0.2
-      '@types/node': 14.17.19
+      '@types/node': 14.17.20
       acorn: 8.4.1
       acorn-walk: 8.1.1
       arg: 4.1.3
