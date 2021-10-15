@@ -21,7 +21,7 @@ specifiers:
   eslint: 8.0.1
   eslint-config-prettier: 8.3.0
   jsdoc: 3.6.7
-  mocha: 9.1.2
+  mocha: 9.1.3
   nyc: 15.1.0
   prettier: 2.4.1
   rollup: 2.58.0
@@ -57,7 +57,7 @@ devDependencies:
   eslint: 8.0.1
   eslint-config-prettier: 8.3.0_eslint@8.0.1
   jsdoc: 3.6.7
-  mocha: 9.1.2
+  mocha: 9.1.3
   nyc: 15.1.0
   prettier: 2.4.1
   rollup: 2.58.0
@@ -2481,7 +2481,7 @@ packages:
       braces: 3.0.2
       glob-parent: 5.1.2
       is-binary-path: 2.1.0
-      is-glob: 4.0.1
+      is-glob: 4.0.3
       normalize-path: 3.0.0
       readdirp: 3.6.0
     optionalDependencies:
@@ -4092,7 +4092,7 @@ packages:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
     engines: {node: '>= 6'}
     dependencies:
-      is-glob: 4.0.1
+      is-glob: 4.0.3
     dev: true
 
   /glob-parent/6.0.2:
@@ -5588,8 +5588,8 @@ packages:
     hasBin: true
     dev: true
 
-  /mocha/9.1.2:
-    resolution: {integrity: sha512-ta3LtJ+63RIBP03VBjMGtSqbe6cWXRejF9SyM9Zyli1CKZJZ+vfCTj3oW24V7wAphMJdpOFLoMI3hjJ1LWbs0w==}
+  /mocha/9.1.3:
+    resolution: {integrity: sha512-Xcpl9FqXOAYqI3j79pEtHBBnQgVXIhpULjGQa7DVb0Po+VzmSIK9kanAiWLHoRR/dbZ2qpdPshuXr8l1VaHCzw==}
     engines: {node: '>= 12.0.0'}
     hasBin: true
     dependencies:
