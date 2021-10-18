@@ -32,7 +32,7 @@ specifiers:
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-terser: 7.0.2
   serve: 12.0.1
-  standard-version: 9.3.1
+  standard-version: 9.3.2
   ts-node: 10.3.0
   typescript: 4.4.4
 
@@ -68,7 +68,7 @@ devDependencies:
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-terser: 7.0.2_rollup@2.58.0
   serve: 12.0.1
-  standard-version: 9.3.1
+  standard-version: 9.3.2
   ts-node: 10.3.0_64c822b0f0ef3f125d8d3681dcee4e14
   typescript: 4.4.4
 
@@ -322,7 +322,7 @@ packages:
       '@babel/template': 7.12.7
       '@babel/traverse': 7.12.12
       '@babel/types': 7.12.12
-      lodash: 4.17.20
+      lodash: 4.17.21
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1346,7 +1346,7 @@ packages:
       '@babel/types': 7.12.12
       debug: 4.3.1
       globals: 11.12.0
-      lodash: 4.17.20
+      lodash: 4.17.21
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1372,7 +1372,7 @@ packages:
     resolution: {integrity: sha512-lnIX7piTxOH22xE7fDXDbSHg9MM1/6ORnafpJmov5rs0kX5g4BZxeXNJLXsMRiO0U5Rb8/FvMS6xlTnTHvxonQ==}
     dependencies:
       '@babel/helper-validator-identifier': 7.12.11
-      lodash: 4.17.20
+      lodash: 4.17.21
       to-fast-properties: 2.0.0
     dev: true
 
@@ -2858,7 +2858,7 @@ packages:
       dateformat: 3.0.3
       handlebars: 4.7.6
       json-stringify-safe: 5.0.1
-      lodash: 4.17.20
+      lodash: 4.17.21
       meow: 8.1.0
       semver: 6.3.0
       split: 1.0.1
@@ -7243,15 +7243,15 @@ packages:
       minipass: 3.1.3
     dev: true
 
-  /standard-version/9.3.1:
-    resolution: {integrity: sha512-5qMxXw/FxLouC5nANyx/5RY1kiorJx9BppUso8gN07MG64q2uLRmrPb4KfXp3Ql4s/gxjZwZ89e0FwxeLubGww==}
+  /standard-version/9.3.2:
+    resolution: {integrity: sha512-u1rfKP4o4ew7Yjbfycv80aNMN2feTiqseAhUhrrx2XtdQGmu7gucpziXe68Z4YfHVqlxVEzo4aUA0Iu3VQOTgQ==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
       chalk: 2.4.2
       conventional-changelog: 3.1.24
       conventional-changelog-config-spec: 2.1.0
-      conventional-changelog-conventionalcommits: 4.5.0
+      conventional-changelog-conventionalcommits: 4.6.1
       conventional-recommended-bump: 6.1.0
       detect-indent: 6.0.0
       detect-newline: 3.1.0
