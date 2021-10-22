@@ -9,7 +9,7 @@ specifiers:
   '@rollup/plugin-replace': 3.0.0
   '@types/chai': 4.2.22
   '@types/mocha': 9.0.0
-  '@types/node': 14.17.28
+  '@types/node': 14.17.29
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.3.4
@@ -45,7 +45,7 @@ devDependencies:
   '@rollup/plugin-replace': 3.0.0_rollup@2.58.0
   '@types/chai': 4.2.22
   '@types/mocha': 9.0.0
-  '@types/node': 14.17.28
+  '@types/node': 14.17.29
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.3.4
@@ -69,7 +69,7 @@ devDependencies:
   rollup-plugin-terser: 7.0.2_rollup@2.58.0
   serve: 12.0.1
   standard-version: 9.3.2
-  ts-node: 10.3.1_2ffd90076e2c9e55b025ec2c8025c4ae
+  ts-node: 10.3.1_d9abf62f3cb737d118ed7e21529cf1ba
   typescript: 4.4.4
 
 packages:
@@ -1667,14 +1667,14 @@ packages:
   /@types/fs-extra/8.1.1:
     resolution: {integrity: sha512-TcUlBem321DFQzBNuz8p0CLLKp0VvF/XH9E4KHNmgwyp4E3AfgI5cjiIVZWlbfThBop2qxFIh4+LeY6hVWWZ2w==}
     dependencies:
-      '@types/node': 14.17.28
+      '@types/node': 14.17.29
     dev: true
 
   /@types/glob/7.1.3:
     resolution: {integrity: sha512-SEYeGAIQIQX8NN6LDKprLjbrd5dARM5EXsd8GI/A5l0apYI1fGMWgPHSe4ZKL4eozlAyI+doUE9XbYS4xCkQ1w==}
     dependencies:
       '@types/minimatch': 3.0.3
-      '@types/node': 14.17.28
+      '@types/node': 14.17.29
     dev: true
 
   /@types/minimatch/3.0.3:
@@ -1689,8 +1689,8 @@ packages:
     resolution: {integrity: sha512-scN0hAWyLVAvLR9AyW7HoFF5sJZglyBsbPuHO4fv7JRvfmPBMfp1ozWqOf/e4wwPNxezBZXRfWzMb6iFLgEVRA==}
     dev: true
 
-  /@types/node/14.17.28:
-    resolution: {integrity: sha512-1Nh2wEWN8y9hyC4yTDPccUnRunqNeBEFmmTU+K5FpGZOEixqAzMhUXzrBwajNYCZq5uoGaztaMN9Yy1PDMMB6Q==}
+  /@types/node/14.17.29:
+    resolution: {integrity: sha512-sd4CHI9eTJXTH2vF3RGtGkqvWRwhsSSUFsXD4oG38GZzSZ0tNPbWikd2AbOAcKxCXhOg57fL8FPxjpfSzb2pIQ==}
     dev: true
 
   /@types/normalize-package-data/2.4.0:
@@ -1705,7 +1705,7 @@ packages:
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 14.17.28
+      '@types/node': 14.17.29
     dev: true
 
   /@ungap/promise-all-settled/1.1.2:
@@ -4827,7 +4827,7 @@ packages:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 14.17.28
+      '@types/node': 14.17.29
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -6865,7 +6865,7 @@ packages:
     hasBin: true
     dependencies:
       '@types/estree': 0.0.45
-      '@types/node': 14.17.28
+      '@types/node': 14.17.29
       acorn: 7.4.1
     dev: true
 
@@ -7576,7 +7576,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /ts-node/10.3.1_2ffd90076e2c9e55b025ec2c8025c4ae:
+  /ts-node/10.3.1_d9abf62f3cb737d118ed7e21529cf1ba:
     resolution: {integrity: sha512-Yw3W2mYzhHfCHOICGNJqa0i+rbL0rAyg7ZIHxU+K4pgY8gd2Lh1j+XbHCusJMykbj6RZMJVOY0MlHVd+GOivcw==}
     hasBin: true
     peerDependencies:
@@ -7595,7 +7595,7 @@ packages:
       '@tsconfig/node12': 1.0.7
       '@tsconfig/node14': 1.0.0
       '@tsconfig/node16': 1.0.2
-      '@types/node': 14.17.28
+      '@types/node': 14.17.29
       acorn: 8.5.0
       acorn-walk: 8.1.1
       arg: 4.1.3
