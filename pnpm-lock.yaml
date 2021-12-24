@@ -14,7 +14,7 @@ specifiers:
   benchmark: 2.1.4
   chai: 4.3.4
   commitizen: 4.2.4
-  conventional-changelog: 3.1.24
+  conventional-changelog: 3.1.25
   conventional-changelog-conventionalcommits: 4.6.1
   coveralls: 3.1.1
   cz-conventional-changelog: 3.3.0
@@ -50,7 +50,7 @@ devDependencies:
   benchmark: 2.1.4
   chai: 4.3.4
   commitizen: 4.2.4
-  conventional-changelog: 3.1.24
+  conventional-changelog: 3.1.25
   conventional-changelog-conventionalcommits: 4.6.1
   coveralls: 3.1.1
   cz-conventional-changelog: 3.3.0
@@ -2583,15 +2583,6 @@ packages:
     resolution: {integrity: sha512-IpVePh16EbbB02V+UA+HQnnPIohgXvJRxHcS5+Uwk4AT5LjzCZJm5sp/yqs5C6KZJ1jMsV4paEV13BN1pvDuxQ==}
     dev: true
 
-  /conventional-changelog-conventionalcommits/4.5.0:
-    resolution: {integrity: sha512-buge9xDvjjOxJlyxUnar/+6i/aVEVGA7EEh4OafBCXPlLUQPGbRUBhBUveWRxzvR8TEjhKEP4BdepnpG2FSZXw==}
-    engines: {node: '>=10'}
-    dependencies:
-      compare-func: 2.0.0
-      lodash: 4.17.21
-      q: 1.5.1
-    dev: true
-
   /conventional-changelog-conventionalcommits/4.6.1:
     resolution: {integrity: sha512-lzWJpPZhbM1R0PIzkwzGBCnAkH5RKJzJfFQZcl/D+2lsJxAwGnDKBqn/F4C1RD31GJNn8NuKWQzAZDAVXPp2Mw==}
     engines: {node: '>=10'}
@@ -2613,7 +2604,7 @@ packages:
       git-raw-commits: 2.0.0
       git-remote-origin-url: 2.0.0
       git-semver-tags: 4.1.1
-      lodash: 4.17.20
+      lodash: 4.17.21
       normalize-package-data: 3.0.0
       q: 1.5.1
       read-pkg: 3.0.0
@@ -2687,7 +2678,24 @@ packages:
       conventional-changelog-angular: 5.0.12
       conventional-changelog-atom: 2.0.8
       conventional-changelog-codemirror: 2.0.8
-      conventional-changelog-conventionalcommits: 4.5.0
+      conventional-changelog-conventionalcommits: 4.6.1
+      conventional-changelog-core: 4.2.1
+      conventional-changelog-ember: 2.0.9
+      conventional-changelog-eslint: 3.0.9
+      conventional-changelog-express: 2.0.6
+      conventional-changelog-jquery: 3.0.11
+      conventional-changelog-jshint: 2.0.9
+      conventional-changelog-preset-loader: 2.3.4
+    dev: true
+
+  /conventional-changelog/3.1.25:
+    resolution: {integrity: sha512-ryhi3fd1mKf3fSjbLXOfK2D06YwKNic1nC9mWqybBHdObPd8KJ2vjaXZfYj1U23t+V8T8n0d7gwnc9XbIdFbyQ==}
+    engines: {node: '>=10'}
+    dependencies:
+      conventional-changelog-angular: 5.0.12
+      conventional-changelog-atom: 2.0.8
+      conventional-changelog-codemirror: 2.0.8
+      conventional-changelog-conventionalcommits: 4.6.1
       conventional-changelog-core: 4.2.1
       conventional-changelog-ember: 2.0.9
       conventional-changelog-eslint: 3.0.9
