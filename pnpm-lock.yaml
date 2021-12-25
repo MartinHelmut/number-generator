@@ -15,7 +15,7 @@ specifiers:
   chai: 4.3.4
   commitizen: 4.2.4
   conventional-changelog: 3.1.25
-  conventional-changelog-conventionalcommits: 4.6.1
+  conventional-changelog-conventionalcommits: 4.6.2
   coveralls: 3.1.1
   cz-conventional-changelog: 3.3.0
   eslint: 8.5.0
@@ -51,7 +51,7 @@ devDependencies:
   chai: 4.3.4
   commitizen: 4.2.4
   conventional-changelog: 3.1.25
-  conventional-changelog-conventionalcommits: 4.6.1
+  conventional-changelog-conventionalcommits: 4.6.2
   coveralls: 3.1.1
   cz-conventional-changelog: 3.3.0
   eslint: 8.5.0
@@ -1259,7 +1259,7 @@ packages:
       '@commitlint/types': 11.0.0
       chalk: 4.1.0
       cosmiconfig: 7.0.0
-      lodash: 4.17.20
+      lodash: 4.17.21
       resolve-from: 5.0.0
     dev: true
     optional: true
@@ -1269,7 +1269,7 @@ packages:
     engines: {node: '>=v10.22.0'}
     dependencies:
       import-fresh: 3.3.0
-      lodash: 4.17.20
+      lodash: 4.17.21
       resolve-from: 5.0.0
       resolve-global: 1.0.0
     dev: true
@@ -2462,7 +2462,7 @@ packages:
       glob: 7.1.4
       inquirer: 6.5.2
       is-utf8: 0.2.1
-      lodash: 4.17.20
+      lodash: 4.17.21
       minimist: 1.2.5
       strip-bom: 4.0.0
       strip-json-comments: 3.0.1
@@ -2592,6 +2592,15 @@ packages:
       q: 1.5.1
     dev: true
 
+  /conventional-changelog-conventionalcommits/4.6.2:
+    resolution: {integrity: sha512-fo+VhM0VtD3wdHZtrPhgvTFjAhAMUjYeQV6B5+DB/cupG1O554pJdTwrvBInq8JLHl+GucKQpZycMPye/OpgSw==}
+    engines: {node: '>=10'}
+    dependencies:
+      compare-func: 2.0.0
+      lodash: 4.17.21
+      q: 1.5.1
+    dev: true
+
   /conventional-changelog-core/4.2.1:
     resolution: {integrity: sha512-8cH8/DEoD3e5Q6aeogdR5oaaKs0+mG6+f+Om0ZYt3PNv7Zo0sQhu4bMDRsqAF+UTekTAtP1W/C41jH/fkm8Jtw==}
     engines: {node: '>=10'}
@@ -2678,7 +2687,7 @@ packages:
       conventional-changelog-angular: 5.0.12
       conventional-changelog-atom: 2.0.8
       conventional-changelog-codemirror: 2.0.8
-      conventional-changelog-conventionalcommits: 4.6.1
+      conventional-changelog-conventionalcommits: 4.6.2
       conventional-changelog-core: 4.2.1
       conventional-changelog-ember: 2.0.9
       conventional-changelog-eslint: 3.0.9
@@ -2695,7 +2704,7 @@ packages:
       conventional-changelog-angular: 5.0.12
       conventional-changelog-atom: 2.0.8
       conventional-changelog-codemirror: 2.0.8
-      conventional-changelog-conventionalcommits: 4.6.1
+      conventional-changelog-conventionalcommits: 4.6.2
       conventional-changelog-core: 4.2.1
       conventional-changelog-ember: 2.0.9
       conventional-changelog-eslint: 3.0.9
