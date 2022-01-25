@@ -133,7 +133,7 @@
     "@types/node": "16.11.21",
     "agadoo": "2.0.0",
     "benchmark": "2.1.4",
-    "chai": "4.3.4",
+    "chai": "4.3.5",
     "commitizen": "4.2.4",
     "conventional-changelog": "3.1.25",
     "conventional-changelog-conventionalcommits": "4.6.3",
