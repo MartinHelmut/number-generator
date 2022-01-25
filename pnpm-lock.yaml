@@ -20,7 +20,7 @@ specifiers:
   cz-conventional-changelog: 3.3.0
   eslint: 8.7.0
   eslint-config-prettier: 8.3.0
-  jsdoc: 3.6.9
+  jsdoc: 3.6.10
   mocha: 9.2.0
   nyc: 15.1.0
   prettier: 2.5.1
@@ -56,7 +56,7 @@ devDependencies:
   cz-conventional-changelog: 3.3.0
   eslint: 8.7.0
   eslint-config-prettier: 8.3.0_eslint@8.7.0
-  jsdoc: 3.6.9
+  jsdoc: 3.6.10
   mocha: 9.2.0
   nyc: 15.1.0
   prettier: 2.5.1
@@ -4687,11 +4687,10 @@ packages:
     resolution: {integrity: sha1-peZUwuWi3rXyAdls77yoDA7y9RM=}
     dev: true
 
-  /jsdoc/3.6.9:
-    resolution: {integrity: sha512-bVrM2DT2iLmv6jd2IdTRk67tC4iaSDUicD+47y+cNCYlE8dccd4xZnlANG4M+OmGyV389bABSTKKfoPCOofbKw==}
+  /jsdoc/3.6.10:
+    resolution: {integrity: sha512-IdQ8ppSo5LKZ9o3M+LKIIK8i00DIe5msDvG3G81Km+1dhy0XrOWD0Ji8H61ElgyEj/O9KRLokgKbAM9XX9CJAg==}
     engines: {node: '>=8.15.0'}
     hasBin: true
-    requiresBuild: true
     dependencies:
       '@babel/parser': 7.16.12
       '@types/markdown-it': 12.2.3
