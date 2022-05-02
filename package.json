@@ -126,7 +126,7 @@
     "@babel/preset-env": "7.17.10",
     "@babel/register": "7.17.7",
     "@rollup/plugin-babel": "5.3.1",
-    "@rollup/plugin-node-resolve": "13.2.1",
+    "@rollup/plugin-node-resolve": "13.3.0",
     "@rollup/plugin-replace": "4.0.0",
     "@types/chai": "4.3.1",
     "@types/mocha": "9.1.1",
