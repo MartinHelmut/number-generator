@@ -32,7 +32,7 @@ specifiers:
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-terser: 7.0.2
   serve: 13.0.2
-  standard-version: 9.3.2
+  standard-version: 9.5.0
   ts-node: 10.7.0
   typescript: 4.6.4
 
@@ -68,7 +68,7 @@ devDependencies:
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-terser: 7.0.2_rollup@2.73.0
   serve: 13.0.2
-  standard-version: 9.3.2
+  standard-version: 9.5.0
   ts-node: 10.7.0_h4tw2vgfqmmy4uhtcfuxwgfqbm
   typescript: 4.6.4
 
@@ -2650,15 +2650,6 @@ packages:
     resolution: {integrity: sha512-IpVePh16EbbB02V+UA+HQnnPIohgXvJRxHcS5+Uwk4AT5LjzCZJm5sp/yqs5C6KZJ1jMsV4paEV13BN1pvDuxQ==}
     dev: true
 
-  /conventional-changelog-conventionalcommits/4.6.1:
-    resolution: {integrity: sha512-lzWJpPZhbM1R0PIzkwzGBCnAkH5RKJzJfFQZcl/D+2lsJxAwGnDKBqn/F4C1RD31GJNn8NuKWQzAZDAVXPp2Mw==}
-    engines: {node: '>=10'}
-    dependencies:
-      compare-func: 2.0.0
-      lodash: 4.17.21
-      q: 1.5.1
-    dev: true
-
   /conventional-changelog-conventionalcommits/4.6.3:
     resolution: {integrity: sha512-LTTQV4fwOM4oLPad317V/QNQ1FY4Hju5qeBIM1uTHbrnCE+Eg4CdRZ3gO2pUeR+tzWdp80M2j3qFFEDWVqOV4g==}
     engines: {node: '>=10'}
@@ -2745,23 +2736,6 @@ packages:
       semver: 6.3.0
       split: 1.0.1
       through2: 4.0.2
-    dev: true
-
-  /conventional-changelog/3.1.24:
-    resolution: {integrity: sha512-ed6k8PO00UVvhExYohroVPXcOJ/K1N0/drJHx/faTH37OIZthlecuLIRX/T6uOp682CAoVoFpu+sSEaeuH6Asg==}
-    engines: {node: '>=10'}
-    dependencies:
-      conventional-changelog-angular: 5.0.12
-      conventional-changelog-atom: 2.0.8
-      conventional-changelog-codemirror: 2.0.8
-      conventional-changelog-conventionalcommits: 4.6.3
-      conventional-changelog-core: 4.2.1
-      conventional-changelog-ember: 2.0.9
-      conventional-changelog-eslint: 3.0.9
-      conventional-changelog-express: 2.0.6
-      conventional-changelog-jquery: 3.0.11
-      conventional-changelog-jshint: 2.0.9
-      conventional-changelog-preset-loader: 2.3.4
     dev: true
 
   /conventional-changelog/3.1.25:
@@ -3778,13 +3752,6 @@ packages:
     resolution: {integrity: sha512-cHEpEQHUg0f8XdtZCc2ZAhrHzKzT0MrFUTcvx+hfxYu7rGMDc5SKoXFh+n4YigxsHXRzc6OrCshdR1bWH6HHyg==}
     dev: true
 
-  /fs-access/1.0.1:
-    resolution: {integrity: sha1-1qh/JiJxzv6+wwxVNAf7mV2od3o=}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      null-check: 1.0.0
-    dev: true
-
   /fs-extra/8.1.0:
     resolution: {integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==}
     engines: {node: '>=6 <7 || >=8'}
@@ -3990,7 +3957,7 @@ packages:
       fs.realpath: 1.0.0
       inflight: 1.0.6
       inherits: 2.0.4
-      minimatch: 3.0.4
+      minimatch: 3.1.2
       once: 1.4.0
       path-is-absolute: 1.0.1
     dev: true
@@ -5694,11 +5661,6 @@ packages:
       set-blocking: 2.0.0
     dev: true
 
-  /null-check/1.0.0:
-    resolution: {integrity: sha1-l33/1xdgErnsMNKjnbXPcqBDnt0=}
-    engines: {node: '>=0.10.0'}
-    dev: true
-
   /number-is-nan/1.0.1:
     resolution: {integrity: sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=}
     engines: {node: '>=0.10.0'}
@@ -7141,22 +7103,21 @@ packages:
       minipass: 3.1.3
     dev: true
 
-  /standard-version/9.3.2:
-    resolution: {integrity: sha512-u1rfKP4o4ew7Yjbfycv80aNMN2feTiqseAhUhrrx2XtdQGmu7gucpziXe68Z4YfHVqlxVEzo4aUA0Iu3VQOTgQ==}
+  /standard-version/9.5.0:
+    resolution: {integrity: sha512-3zWJ/mmZQsOaO+fOlsa0+QK90pwhNd042qEcw6hKFNoLFs7peGyvPffpEBbK/DSGPbyOvli0mUIFv5A4qTjh2Q==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
       chalk: 2.4.2
-      conventional-changelog: 3.1.24
+      conventional-changelog: 3.1.25
       conventional-changelog-config-spec: 2.1.0
-      conventional-changelog-conventionalcommits: 4.6.1
+      conventional-changelog-conventionalcommits: 4.6.3
       conventional-recommended-bump: 6.1.0
       detect-indent: 6.0.0
       detect-newline: 3.1.0
       dotgitignore: 2.1.0
       figures: 3.2.0
       find-up: 5.0.0
-      fs-access: 1.0.1
       git-semver-tags: 4.1.1
       semver: 7.3.4
       stringify-package: 1.0.1
