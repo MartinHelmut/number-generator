@@ -34,7 +34,7 @@ specifiers:
   serve: 13.0.2
   standard-version: 9.5.0
   ts-node: 10.8.1
-  typescript: 4.7.2
+  typescript: 4.7.3
 
 devDependencies:
   '@babel/core': 7.18.2
@@ -69,8 +69,8 @@ devDependencies:
   rollup-plugin-terser: 7.0.2_rollup@2.75.5
   serve: 13.0.2
   standard-version: 9.5.0
-  ts-node: 10.8.1_bduezlpfhhu2salo6sf734d7nq
-  typescript: 4.7.2
+  ts-node: 10.8.1_xrrid5ahylip6fa4hrbwh6apl4
+  typescript: 4.7.3
 
 packages:
 
@@ -7395,7 +7395,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /ts-node/10.8.1_bduezlpfhhu2salo6sf734d7nq:
+  /ts-node/10.8.1_xrrid5ahylip6fa4hrbwh6apl4:
     resolution: {integrity: sha512-Wwsnao4DQoJsN034wePSg5nZiw4YKXf56mPIAeD6wVmiv+RytNSWqc2f3fKvcUoV+Yn2+yocD71VOfQHbmVX4g==}
     hasBin: true
     peerDependencies:
@@ -7421,7 +7421,7 @@ packages:
       create-require: 1.1.1
       diff: 4.0.2
       make-error: 1.3.6
-      typescript: 4.7.2
+      typescript: 4.7.3
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
     dev: true
@@ -7486,8 +7486,8 @@ packages:
     resolution: {integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=}
     dev: true
 
-  /typescript/4.7.2:
-    resolution: {integrity: sha512-Mamb1iX2FDUpcTRzltPxgWMKy3fhg0TN378ylbktPGPK/99KbDtMQ4W1hwgsbPAsG3a0xKa1vmw4VKZQbkvz5A==}
+  /typescript/4.7.3:
+    resolution: {integrity: sha512-WOkT3XYvrpXx4vMMqlD+8R8R37fZkjyLGlxavMc4iB8lrl8L0DeTcHbYgw/v0N/z9wAFsgBhcsF0ruoySS22mA==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
