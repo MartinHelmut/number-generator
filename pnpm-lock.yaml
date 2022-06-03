@@ -33,7 +33,7 @@ specifiers:
   rollup-plugin-terser: 7.0.2
   serve: 13.0.2
   standard-version: 9.5.0
-  ts-node: 10.8.0
+  ts-node: 10.8.1
   typescript: 4.7.2
 
 devDependencies:
@@ -69,7 +69,7 @@ devDependencies:
   rollup-plugin-terser: 7.0.2_rollup@2.75.5
   serve: 13.0.2
   standard-version: 9.5.0
-  ts-node: 10.8.0_bduezlpfhhu2salo6sf734d7nq
+  ts-node: 10.8.1_bduezlpfhhu2salo6sf734d7nq
   typescript: 4.7.2
 
 packages:
@@ -7395,8 +7395,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /ts-node/10.8.0_bduezlpfhhu2salo6sf734d7nq:
-    resolution: {integrity: sha512-/fNd5Qh+zTt8Vt1KbYZjRHCE9sI5i7nqfD/dzBBRDeVXZXS6kToW6R7tTU6Nd4XavFs0mAVCg29Q//ML7WsZYA==}
+  /ts-node/10.8.1_bduezlpfhhu2salo6sf734d7nq:
+    resolution: {integrity: sha512-Wwsnao4DQoJsN034wePSg5nZiw4YKXf56mPIAeD6wVmiv+RytNSWqc2f3fKvcUoV+Yn2+yocD71VOfQHbmVX4g==}
     hasBin: true
     peerDependencies:
       '@swc/core': '>=1.2.50'
