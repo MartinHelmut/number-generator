@@ -26,7 +26,7 @@ To generate reference values in C++ please ensure that g++ is setup correctly (c
 The following command will generate reference values into a JSON file in `src/reference/cpp/results.json` that will be picked-up by the tests to match results against the C++ implementation. This will ensure that the JavaScript implementation produces the same values as the C++ one.
 
 ```shell script
-pnpm run build:reference:code
+pnpm build:reference:code
 ```
 
 ## Run tests
@@ -36,16 +36,16 @@ pnpm run build:reference:code
 pnpm test
 
 # Run production tests
-pnpm run test:prod
+pnpm test:prod
 
 # Test if the application is tree shakable
-pnpm run test:treeshaking
+pnpm test:treeshaking
 ```
 
 Tests can also be executed in a browser of your choice. To generate the browser tests run:
 
 ```shell script
-pnpm run build:tests
+pnpm build:tests
 ```
 
 This will generate the necessary tests files compatible for the browser in `compiled_tests/`. After that you can open the `src/__tests__/browser.html` in a browser to view the tests.
@@ -54,13 +54,13 @@ This will generate the necessary tests files compatible for the browser in `comp
 
 ```shell script
 # Lint the application
-pnpm run lint
+pnpm lint
 
 # Check the formatting, enforced by prettier
-pnpm run format:check
+pnpm format:check
 
 # Format the code with prettier
-pnpm run format
+pnpm format
 ```
 
 ## Build the library
@@ -68,7 +68,7 @@ pnpm run format
 To build the project run:
 
 ```shell script
-pnpm run build
+pnpm build
 ```
 
 to generate a minified version of the library under `lib/`.
@@ -78,7 +78,7 @@ to generate a minified version of the library under `lib/`.
 You can serve the documentation locally or via your local network by running:
 
 ```shell script
-pnpm run docs
+pnpm docs
 ```
 
 This will use [JSDoc][jsdoc] to generate the documentation.
@@ -87,15 +87,15 @@ This will use [JSDoc][jsdoc] to generate the documentation.
 
 **This repo is Commitizen-friendly!** (read more in the [official commitizen documentation][czcli])
 
-Checkout a new branch, there is no naming convention for branches, only for commits. Add your changes and run `pnpx git-cz` (or `pnpm run commit`) to start the commitizen cli to create a proper commit message.
+Checkout a new branch, there is no naming convention for branches, only for commits. Add your changes and run `pnpx git-cz` (or `pnpm commit`) to start the commitizen cli to create a proper commit message.
 
 Push the changes with your feature branch and create a "Pull Request" on GitHub.
 
 ## Recommended workflow for release
 
 1.  Make changes
-2.  Commit those changes with `pnpx git-cz` (or `pnpm run commit`)
-3.  Create a new release with `pnpm run release`
+2.  Commit those changes with `pnpx git-cz` (or `pnpm commit`)
+3.  Create a new release with `pnpm release`
 4.  Push your release `git push --follow-tags origin main`
 5.  Publish: `NPM_CONFIG_OTP=XXXXXX npm publish` (replace `XXXXXX` with a valid 2FA token)
 6.  **Done!**
