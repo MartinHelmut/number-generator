@@ -24,8 +24,7 @@
     "test": "nyc mocha --require @babel/register src/__tests__/*.test.js src/**/__tests__/*.test.js",
     "test:benchmark": "node --require @babel/register src/__tests__/murmur.benchmark.js && node --require @babel/register src/__tests__/alea.benchmark.js",
     "test:prod": "pnpm run build && NODE_ENV=production nyc mocha --require @babel/register src/**/__tests__/*.js && TS_NODE_PROJECT=src/__tests__/tsconfig.json mocha --require ts-node/register src/**/*.test.ts",
-    "test:treeshaking": "agadoo lib/index.esm.js",
-    "prepare": "node ./scripts/ensure-package-manager.js"
+    "test:treeshaking": "agadoo lib/index.esm.js"
   },
   "repository": {
     "type": "git",
