@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: "krieselreihe/node-pnpm:0.3.0"
+      - image: "krieselreihe/node-pnpm:0.4.0"
     steps:
       - checkout
       - restore_cache:
