@@ -5,7 +5,7 @@ specifiers:
   '@babel/preset-env': 7.19.0
   '@babel/register': 7.18.9
   '@rollup/plugin-babel': 5.3.1
-  '@rollup/plugin-node-resolve': 13.3.0
+  '@rollup/plugin-node-resolve': 14.0.1
   '@rollup/plugin-replace': 4.0.0
   '@types/chai': 4.3.3
   '@types/mocha': 9.1.1
@@ -41,7 +41,7 @@ devDependencies:
   '@babel/preset-env': 7.19.0_@babel+core@7.19.0
   '@babel/register': 7.18.9_@babel+core@7.19.0
   '@rollup/plugin-babel': 5.3.1_b6woseefyuugm6lsnk4tw7iz2e
-  '@rollup/plugin-node-resolve': 13.3.0_rollup@2.79.0
+  '@rollup/plugin-node-resolve': 14.0.1_rollup@2.79.0
   '@rollup/plugin-replace': 4.0.0_rollup@2.79.0
   '@types/chai': 4.3.3
   '@types/mocha': 9.1.1
@@ -1500,11 +1500,11 @@ packages:
       rollup: 2.79.0
     dev: true
 
-  /@rollup/plugin-node-resolve/13.3.0_rollup@2.79.0:
-    resolution: {integrity: sha512-Lus8rbUo1eEcnS4yTFKLZrVumLPY+YayBdWXgFSHYhTT2iJbMhoaaBL3xl5NCdeRytErGr8tZ0L71BMRmnlwSw==}
+  /@rollup/plugin-node-resolve/14.0.1_rollup@2.79.0:
+    resolution: {integrity: sha512-YvSs0ev00QWTQS8u+yaCJkIUPBgpmBsnzRJFvg8c2chbky85ZKoZtoNuRH0k9rjZT4xpgEPOiVTyeJTj1/iMdQ==}
     engines: {node: '>= 10.0.0'}
     peerDependencies:
-      rollup: ^2.42.0
+      rollup: ^2.78.0
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.79.0
       '@types/resolve': 1.17.1
@@ -1533,7 +1533,7 @@ packages:
     dependencies:
       '@types/estree': 0.0.39
       estree-walker: 1.0.1
-      picomatch: 2.2.2
+      picomatch: 2.3.1
       rollup: 2.79.0
     dev: true
 
@@ -4235,7 +4235,7 @@ packages:
     dev: true
 
   /is-module/1.0.0:
-    resolution: {integrity: sha1-Mlj7afeMFNW4FdZkM2tM/7ZEFZE=}
+    resolution: {integrity: sha512-51ypPSPCoTEIN9dy5Oy+h4pShgJmPCygKfyRCISBI+JoWT/2oJvK8QPxmwv7b/p239jXrm9M1mlQbyKJ5A152g==}
     dev: true
 
   /is-number/7.0.0:
