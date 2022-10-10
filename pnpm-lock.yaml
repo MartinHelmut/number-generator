@@ -6,7 +6,7 @@ specifiers:
   '@babel/register': 7.18.9
   '@rollup/plugin-babel': 6.0.0
   '@rollup/plugin-node-resolve': 14.1.0
-  '@rollup/plugin-replace': 4.0.0
+  '@rollup/plugin-replace': 5.0.0
   '@types/chai': 4.3.3
   '@types/mocha': 10.0.0
   '@types/node': 16.11.64
@@ -42,7 +42,7 @@ devDependencies:
   '@babel/register': 7.18.9_@babel+core@7.19.3
   '@rollup/plugin-babel': 6.0.0_vy4anxjpv2s44kyfi2kxqu576u
   '@rollup/plugin-node-resolve': 14.1.0_rollup@2.79.1
-  '@rollup/plugin-replace': 4.0.0_rollup@2.79.1
+  '@rollup/plugin-replace': 5.0.0_rollup@2.79.1
   '@types/chai': 4.3.3
   '@types/mocha': 10.0.0
   '@types/node': 16.11.64
@@ -1514,13 +1514,17 @@ packages:
       rollup: 2.79.1
     dev: true
 
-  /@rollup/plugin-replace/4.0.0_rollup@2.79.1:
-    resolution: {integrity: sha512-+rumQFiaNac9y64OHtkHGmdjm7us9bo1PlbgQfdihQtuNxzjpaB064HbRnewUOggLQxVCCyINfStkgmBeQpv1g==}
+  /@rollup/plugin-replace/5.0.0_rollup@2.79.1:
+    resolution: {integrity: sha512-TiPmjMuBjQM+KLWK16O5TAM/eW4yXBYyQ17FbfeNzBC1t2kzX2aXoa8AlS9XTSmg6/2TNvkER1lMEEeN4Lhavw==}
+    engines: {node: '>=14.0.0'}
     peerDependencies:
-      rollup: ^1.20.0 || ^2.0.0
+      rollup: ^1.20.0||^2.0.0||^3.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
     dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.79.1
-      magic-string: 0.25.7
+      '@rollup/pluginutils': 4.2.1
+      magic-string: 0.26.7
       rollup: 2.79.1
     dev: true
 
@@ -4805,6 +4809,13 @@ packages:
 
   /magic-string/0.25.7:
     resolution: {integrity: sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==}
+    dependencies:
+      sourcemap-codec: 1.4.8
+    dev: true
+
+  /magic-string/0.26.7:
+    resolution: {integrity: sha512-hX9XH3ziStPoPhJxLq1syWuZMxbDvGNbVchfrdCtanC7D13888bMFow61x8axrx+GfHLtVeAx2kxL7tTGRl+Ow==}
+    engines: {node: '>=12'}
     dependencies:
       sourcemap-codec: 1.4.8
     dev: true
