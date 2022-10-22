@@ -126,7 +126,7 @@
     "@babel/register": "7.18.9",
     "@rollup/plugin-babel": "6.0.2",
     "@rollup/plugin-node-resolve": "15.0.1",
-    "@rollup/plugin-replace": "5.0.0",
+    "@rollup/plugin-replace": "5.0.1",
     "@types/chai": "4.3.3",
     "@types/mocha": "10.0.0",
     "@types/node": "16.11.68",
