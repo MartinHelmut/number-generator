@@ -9,7 +9,7 @@ specifiers:
   '@rollup/plugin-replace': 5.0.1
   '@types/chai': 4.3.3
   '@types/mocha': 10.0.0
-  '@types/node': 16.18.1
+  '@types/node': 16.18.2
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.3.6
@@ -45,7 +45,7 @@ devDependencies:
   '@rollup/plugin-replace': 5.0.1_rollup@2.79.1
   '@types/chai': 4.3.3
   '@types/mocha': 10.0.0
-  '@types/node': 16.18.1
+  '@types/node': 16.18.2
   agadoo: 2.0.0
   benchmark: 2.1.4
   chai: 4.3.6
@@ -69,7 +69,7 @@ devDependencies:
   rollup-plugin-terser: 7.0.2_rollup@2.79.1
   serve: 14.0.1
   standard-version: 9.5.0
-  ts-node: 10.9.1_fwaebtqljc26bpgmozmklo7czq
+  ts-node: 10.9.1_csgtisay5j2uefybgrhleyyi3u
   typescript: 4.8.4
 
 packages:
@@ -1574,14 +1574,14 @@ packages:
   /@types/fs-extra/8.1.1:
     resolution: {integrity: sha512-TcUlBem321DFQzBNuz8p0CLLKp0VvF/XH9E4KHNmgwyp4E3AfgI5cjiIVZWlbfThBop2qxFIh4+LeY6hVWWZ2w==}
     dependencies:
-      '@types/node': 16.18.1
+      '@types/node': 16.18.2
     dev: true
 
   /@types/glob/7.1.3:
     resolution: {integrity: sha512-SEYeGAIQIQX8NN6LDKprLjbrd5dARM5EXsd8GI/A5l0apYI1fGMWgPHSe4ZKL4eozlAyI+doUE9XbYS4xCkQ1w==}
     dependencies:
       '@types/minimatch': 3.0.3
-      '@types/node': 16.18.1
+      '@types/node': 16.18.2
     dev: true
 
   /@types/linkify-it/3.0.2:
@@ -1611,8 +1611,8 @@ packages:
     resolution: {integrity: sha512-rADY+HtTOA52l9VZWtgQfn4p+UDVM2eDVkMZT1I6syp0YKxW2F9v+0pbRZLsvskhQv/vMb6ZfCay81GHbz5SHg==}
     dev: true
 
-  /@types/node/16.18.1:
-    resolution: {integrity: sha512-Z659t5cj2Tt2SaqbJxXRo5EaU86E4l2CxtklCY1VftxYXhR81Z75UsugwdI7l5MUAR1I+l8sdt3B5Y++ZV76WQ==}
+  /@types/node/16.18.2:
+    resolution: {integrity: sha512-KIGQJyya+opDCFvDSZMNNS899ov5jlNdtN7PypgHWeb8e+5vWISdwTRo/ClsNVlmDihzOGqFyNBDamUs7TQQCA==}
     dev: true
 
   /@types/normalize-package-data/2.4.0:
@@ -4387,7 +4387,7 @@ packages:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 16.18.1
+      '@types/node': 16.18.2
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -6312,7 +6312,7 @@ packages:
     hasBin: true
     dependencies:
       '@types/estree': 0.0.45
-      '@types/node': 16.18.1
+      '@types/node': 16.18.2
       acorn: 7.4.1
     dev: true
 
@@ -6899,7 +6899,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /ts-node/10.9.1_fwaebtqljc26bpgmozmklo7czq:
+  /ts-node/10.9.1_csgtisay5j2uefybgrhleyyi3u:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -6918,7 +6918,7 @@ packages:
       '@tsconfig/node12': 1.0.7
       '@tsconfig/node14': 1.0.0
       '@tsconfig/node16': 1.0.2
-      '@types/node': 16.18.1
+      '@types/node': 16.18.2
       acorn: 8.7.1
       acorn-walk: 8.1.1
       arg: 4.1.3
