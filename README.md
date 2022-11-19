@@ -88,7 +88,7 @@ const murmurhash3_x86_128 = require("number-generator/lib/murmurhash3_x86_128");
 const murmurhash3_x64_128 = require("number-generator/lib/murmurhash3_x64_128");
 ```
 
-Also the library can safely be [tree shaked][trsh]. If tree shaking is used in e.g. Rollup or Webpack this will only put the used function with helpers in your bundle:
+Also, the library can safely be [tree shaked][trsh]. If tree shaking is used in e.g. Rollup or Webpack this will only put the used function with helpers in your bundle:
 
 ```javascript
 import { aleaRNGFactory } from "number-generator";
@@ -107,7 +107,7 @@ All supported environments are listed under the [support section](#support).
 
 ### Random numbers
 
-You can use the `aleaRNGFactory` method to generate (pseudo) random numbers based an a seed (**default seed is** `1`). Every seed produces the same result for the created getter method.
+You can use the `aleaRNGFactory` method to generate (pseudo) random numbers based on a seed (**default seed is** `1`). Every seed produces the same result for the created getter method.
 
 ⚠️ **Attention:** The default seed `1` should not be used! It produces one duplicate at 4370 calls. This can be avoided by using a seed larger or equal to 2. Nevertheless, this is still included in the library to not break applications using the default behavior.
 
@@ -254,7 +254,7 @@ random();
 
 ### Murmur hash
 
-To generate a hash there are four functions, `murmurhash2_x86_32`, `murmurhash3_x86_32`, `murmurhash3_x86_128` and `murmurhash3_x64_128`. The "murmur hash" functions implement the [MurmurHash algorithm for 32 and 128 bit][mur] in JavaScript (murmurhash2 and 3) for x86 and x64. They take a string and generate a non-cryptographic hash number as unsigned integer with 32 bit or a string hash with 128 bit.
+To generate a hash there are four functions, `murmurhash2_x86_32`, `murmurhash3_x86_32`, `murmurhash3_x86_128` and `murmurhash3_x64_128`. The "murmur hash" functions implement the [MurmurHash algorithm for 32 and 128 bit][mur] in JavaScript (murmurhash2 and 3) for x86 and x64. They take a string and generate a non-cryptographic hash number as an unsigned integer with 32 bit or a string hash with 128 bit.
 
 You can import the functions directly:
 
@@ -265,7 +265,7 @@ const murmurhash3_x86_128 = require("number-generator/lib/murmurhash3_x86_128");
 const murmurhash3_x64_128 = require("number-generator/lib/murmurhash3_x64_128");
 ```
 
-Both `murmurhash2_x86_32` and `murmurhash3_x86_32` will generate a unsigned 32 bit number. The `murmurhash3_x86_128` and `murmurhash3_x64_128` functions will generate a 128 bit string. To showcase the difference:
+Both `murmurhash2_x86_32` and `murmurhash3_x86_32` will generate an unsigned 32-bit number. The `murmurhash3_x86_128` and `murmurhash3_x64_128` functions will generate a 128 bit string. To showcase the difference:
 
 ```javascript
 murmurhash2_x86_32("Hello"); // 1826530862
