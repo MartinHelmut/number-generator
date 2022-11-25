@@ -4,7 +4,7 @@ specifiers:
   '@babel/core': 7.20.2
   '@babel/preset-env': 7.20.2
   '@babel/register': 7.18.9
-  '@rollup/plugin-babel': 6.0.2
+  '@rollup/plugin-babel': 6.0.3
   '@rollup/plugin-node-resolve': 15.0.1
   '@rollup/plugin-replace': 5.0.1
   '@types/chai': 4.3.4
@@ -40,7 +40,7 @@ devDependencies:
   '@babel/core': 7.20.2
   '@babel/preset-env': 7.20.2_@babel+core@7.20.2
   '@babel/register': 7.18.9_@babel+core@7.20.2
-  '@rollup/plugin-babel': 6.0.2_ecxuj7zm5zl7qcys7nvyfh7ewm
+  '@rollup/plugin-babel': 6.0.3_ecxuj7zm5zl7qcys7nvyfh7ewm
   '@rollup/plugin-node-resolve': 15.0.1_rollup@3.4.0
   '@rollup/plugin-replace': 5.0.1_rollup@3.4.0
   '@types/chai': 4.3.4
@@ -1483,8 +1483,8 @@ packages:
       read-package-json-fast: 2.0.2
     dev: true
 
-  /@rollup/plugin-babel/6.0.2_ecxuj7zm5zl7qcys7nvyfh7ewm:
-    resolution: {integrity: sha512-Vnt8XIWYwCf3MD7qhBWYlP9pjSZvcE++nlPXhQYw6YNehl5742AzFbrV6h4BHb20VAOVUlIksVLymQCTwVCGDg==}
+  /@rollup/plugin-babel/6.0.3_ecxuj7zm5zl7qcys7nvyfh7ewm:
+    resolution: {integrity: sha512-fKImZKppa1A/gX73eg4JGo+8kQr/q1HBQaCGKECZ0v4YBBv3lFqi14+7xyApECzvkLTHCifx+7ntcrvtBIRcpg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@babel/core': ^7.0.0
