@@ -10,7 +10,7 @@ specifiers:
   '@types/chai': 4.3.4
   '@types/mocha': 10.0.1
   '@types/node': 18.11.9
-  agadoo: 2.0.0
+  agadoo: 3.0.0
   benchmark: 2.1.4
   chai: 4.3.7
   commitizen: 4.2.5
@@ -46,7 +46,7 @@ devDependencies:
   '@types/chai': 4.3.4
   '@types/mocha': 10.0.1
   '@types/node': 18.11.9
-  agadoo: 2.0.0
+  agadoo: 3.0.0
   benchmark: 2.1.4
   chai: 4.3.7
   commitizen: 4.2.5
@@ -1543,6 +1543,18 @@ packages:
       rollup: 3.5.0
     dev: true
 
+  /@rollup/plugin-virtual/3.0.1_rollup@3.5.0:
+    resolution: {integrity: sha512-fK8O0IL5+q+GrsMLuACVNk2x21g3yaw+sG2qn16SnUd3IlBsQyvWxLMGHmCmXRMecPjGRSZ/1LmZB4rjQm68og==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      rollup: 3.5.0
+    dev: true
+
   /@rollup/pluginutils/5.0.2_rollup@3.5.0:
     resolution: {integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==}
     engines: {node: '>=14.0.0'}
@@ -1581,10 +1593,6 @@ packages:
 
   /@types/chai/4.3.4:
     resolution: {integrity: sha512-KnRanxnpfpjUTqTCXslZSEdLfXExwgNxYPdiO2WGUj8+HDjFi8R3k5RVKPeSCzLjCcshCAtVO2QBbVuAV4kTnw==}
-    dev: true
-
-  /@types/estree/0.0.45:
-    resolution: {integrity: sha512-jnqIUKDUqJbDIUxm0Uj7bnlMnRm1T/eZ9N+AVMqhPgzrba2GhGG5o/jCTwmdPK709nEZsGoMzXEDUjcXHa3W0g==}
     dev: true
 
   /@types/estree/1.0.0:
@@ -1678,23 +1686,17 @@ packages:
       negotiator: 0.6.2
     dev: true
 
-  /acorn-jsx/5.3.2_acorn@8.8.0:
+  /acorn-jsx/5.3.2_acorn@8.8.1:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
-      acorn: 8.8.0
+      acorn: 8.8.1
     dev: true
 
   /acorn-walk/8.1.1:
     resolution: {integrity: sha512-FbJdceMlPHEAWJOILDk1fXD8lnTlEIWFkqtfk+MvmL5q/qlHfN7GEHcsFZWt/Tea9jRNPWUZG4G976nqAAmU9w==}
     engines: {node: '>=0.4.0'}
-    dev: true
-
-  /acorn/7.4.1:
-    resolution: {integrity: sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
     dev: true
 
   /acorn/8.7.1:
@@ -1703,8 +1705,8 @@ packages:
     hasBin: true
     dev: true
 
-  /acorn/8.8.0:
-    resolution: {integrity: sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==}
+  /acorn/8.8.1:
+    resolution: {integrity: sha512-7zFpHzhnqYKrkYdUjF1HI1bzd0VygEGX8lFk4k5zVMqHEoES+P+7TKI+EvLO9WVMJ8eekdO0aDEK044xTXwPPA==}
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
@@ -1713,13 +1715,13 @@ packages:
     resolution: {integrity: sha1-anmQQ3ynNtXhKI25K9MmbV9csqo=}
     dev: true
 
-  /agadoo/2.0.0:
-    resolution: {integrity: sha512-68aFhseH51ZBKYKkQNxwDi1hJwTnywBjHWg068qFnMkpXShhOazNzJUPRvaLQjrqhT3EOUth5G9mt1A0/dGhOw==}
+  /agadoo/3.0.0:
+    resolution: {integrity: sha512-gq+fjT3Ilrhb88Jf+vYMjdO/+3znYfa7vJ4IMLPFsBPUxglnr40Ed3yCLrW6IABdJAedB94b2BkqR6I04lh3dg==}
     hasBin: true
     dependencies:
-      acorn: 7.4.1
-      rollup: 1.32.1
-      rollup-plugin-virtual: 1.0.1
+      '@rollup/plugin-virtual': 3.0.1_rollup@3.5.0
+      acorn: 8.8.1
+      rollup: 3.5.0
     dev: true
 
   /agent-base/6.0.2:
@@ -3296,8 +3298,8 @@ packages:
     resolution: {integrity: sha512-DQmnRpLj7f6TgN/NYb0MTzJXL+vJF9h3pHy4JhCIs3zwcgez8xmGg3sXHcEO97BrmO2OSvCwMdfdlyl+E9KjOw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
-      acorn: 8.8.0
-      acorn-jsx: 5.3.2_acorn@8.8.0
+      acorn: 8.8.1
+      acorn-jsx: 5.3.2_acorn@8.8.1
       eslint-visitor-keys: 3.3.0
     dev: true
 
@@ -6266,20 +6268,6 @@ packages:
       terser: 5.5.1
     dev: true
 
-  /rollup-plugin-virtual/1.0.1:
-    resolution: {integrity: sha512-HCTBpV8MwP5lNzZrHD2moVxHIToHU1EkzkKGVj6Z0DcgUfxrxrZmeQirQeLz2yhnkJqRjwiVywK9CS8jDYakrw==}
-    deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-virtual.
-    dev: true
-
-  /rollup/1.32.1:
-    resolution: {integrity: sha512-/2HA0Ec70TvQnXdzynFffkjA6XN+1e2pEv/uKS5Ulca40g2L7KuOE3riasHoNVHOsFD5KKZgDsMk1CP3Tw9s+A==}
-    hasBin: true
-    dependencies:
-      '@types/estree': 0.0.45
-      '@types/node': 18.11.9
-      acorn: 7.4.1
-    dev: true
-
   /rollup/3.5.0:
     resolution: {integrity: sha512-TYu2L+TGhmNsXCtByont89u+ATQLcDy6A+++PwLXYunRtOm7XnaD+65s1pvewaOxMYR0eOkMXn9/i0saBxxpnQ==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
@@ -6760,7 +6748,7 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      acorn: 8.8.0
+      acorn: 8.8.1
       commander: 2.20.3
       source-map: 0.7.3
       source-map-support: 0.5.19
@@ -6771,7 +6759,7 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      acorn: 8.8.0
+      acorn: 8.8.1
       commander: 2.20.3
       source-map: 0.7.3
       source-map-support: 0.5.19
