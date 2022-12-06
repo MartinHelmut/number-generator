@@ -13,7 +13,7 @@ specifiers:
   agadoo: 3.0.0
   benchmark: 2.1.4
   chai: 4.3.7
-  commitizen: 4.2.5
+  commitizen: 4.2.6
   conventional-changelog: 3.1.25
   conventional-changelog-conventionalcommits: 5.0.0
   coveralls: 3.1.1
@@ -49,7 +49,7 @@ devDependencies:
   agadoo: 3.0.0
   benchmark: 2.1.4
   chai: 4.3.7
-  commitizen: 4.2.5
+  commitizen: 4.2.6
   conventional-changelog: 3.1.25
   conventional-changelog-conventionalcommits: 5.0.0
   coveralls: 3.1.1
@@ -2455,7 +2455,7 @@ packages:
     dev: true
 
   /clone/0.1.19:
-    resolution: {integrity: sha1-YT+2hjmyaklKxTJT4Vsaa9iK2oU=}
+    resolution: {integrity: sha512-IO78I0y6JcSpEPHzK4obKdsL7E7oLdRVDVOLwr2Hkbjsb+Eoz0dxW6tef0WizoKu0gLC4oZSZuEF4U2K6w1WQw==}
     dev: true
 
   /clone/1.0.4:
@@ -2509,8 +2509,8 @@ packages:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
     dev: true
 
-  /commitizen/4.2.5:
-    resolution: {integrity: sha512-9sXju8Qrz1B4Tw7kC5KhnvwYQN88qs2zbiB8oyMsnXZyJ24PPGiNM3nHr73d32dnE3i8VJEXddBFIbOgYSEXtQ==}
+  /commitizen/4.2.6:
+    resolution: {integrity: sha512-RyTM+EiD9GO01DJUn9MRRAet3XUHGfoUZoksLfr+1ym1Xt2q5EYJs9Fg2BtKSb5Mo53i0BtMBmWMHQXVlZ/L9w==}
     engines: {node: '>= 12'}
     hasBin: true
     dependencies:
@@ -2886,7 +2886,7 @@ packages:
     engines: {node: '>= 10'}
     dependencies:
       chalk: 2.4.2
-      commitizen: 4.2.5
+      commitizen: 4.2.6
       conventional-commit-types: 3.0.0
       lodash.map: 4.6.0
       longest: 2.0.1
@@ -5932,7 +5932,7 @@ packages:
     dev: true
 
   /readable-stream/1.1.14:
-    resolution: {integrity: sha1-fPTFTvZI44EwhMY23SB54WbAgdk=}
+    resolution: {integrity: sha512-+MeVjFf4L44XUkhM1eYbD8fyEsxcV81pqMSR5gblfcLCHfZvbrqy4/qYHE+/R5HoBUT11WV5O08Cr1n3YXkWVQ==}
     dependencies:
       core-util-is: 1.0.2
       inherits: 2.0.4
@@ -6606,7 +6606,7 @@ packages:
     dev: true
 
   /string_decoder/0.10.31:
-    resolution: {integrity: sha1-YuIDvEF2bGwoyfyEMB2rHFMQ+pQ=}
+    resolution: {integrity: sha512-ev2QzSzWPYmy9GuqfIVildA4OdcGLeFZQrq5ys6RtiuF+RQQiZWr8TZNyAcuVXyQRYfEO+MsoB/1BuQVhOJuoQ==}
     dev: true
 
   /string_decoder/1.1.1:
