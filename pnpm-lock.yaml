@@ -23,7 +23,7 @@ specifiers:
   jsdoc: 4.0.0
   mocha: 10.1.0
   nyc: 15.1.0
-  prettier: 2.8.0
+  prettier: 2.8.1
   rollup: 3.6.0
   rollup-plugin-clear: 2.0.7
   rollup-plugin-copy: 3.4.0
@@ -59,7 +59,7 @@ devDependencies:
   jsdoc: 4.0.0
   mocha: 10.1.0
   nyc: 15.1.0
-  prettier: 2.8.0
+  prettier: 2.8.1
   rollup: 3.6.0
   rollup-plugin-clear: 2.0.7
   rollup-plugin-copy: 3.4.0
@@ -5730,8 +5730,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier/2.8.0:
-    resolution: {integrity: sha512-9Lmg8hTFZKG0Asr/kW9Bp8tJjRVluO8EJQVfY2T7FMw9T5jy4I/Uvx0Rca/XWf50QQ1/SS48+6IJWnrb+2yemA==}
+  /prettier/2.8.1:
+    resolution: {integrity: sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
