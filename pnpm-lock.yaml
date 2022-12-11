@@ -21,7 +21,7 @@ specifiers:
   eslint: 8.29.0
   eslint-config-prettier: 8.5.0
   jsdoc: 4.0.0
-  mocha: 10.1.0
+  mocha: 10.2.0
   nyc: 15.1.0
   prettier: 2.8.1
   rollup: 3.7.2
@@ -57,7 +57,7 @@ devDependencies:
   eslint: 8.29.0
   eslint-config-prettier: 8.5.0_eslint@8.29.0
   jsdoc: 4.0.0
-  mocha: 10.1.0
+  mocha: 10.2.0
   nyc: 15.1.0
   prettier: 2.8.1
   rollup: 3.7.2
@@ -5101,8 +5101,8 @@ packages:
     hasBin: true
     dev: true
 
-  /mocha/10.1.0:
-    resolution: {integrity: sha512-vUF7IYxEoN7XhQpFLxQAEMtE4W91acW4B6En9l97MwE9stL1A9gusXfoHZCLVHDUJ/7V5+lbCM6yMqzo5vNymg==}
+  /mocha/10.2.0:
+    resolution: {integrity: sha512-IDY7fl/BecMwFHzoqF2sg/SHHANeBoMMXFlS9r0OXKDssYE1M5O43wUY/9BVPeIvfH2zmEbBfseqN9gBQZzXkg==}
     engines: {node: '>= 14.0.0'}
     hasBin: true
     dependencies:
@@ -6104,7 +6104,7 @@ packages:
     dev: true
 
   /require-directory/2.1.1:
-    resolution: {integrity: sha1-jGStX9MNqxyXbiNE/+f3kqam30I=}
+    resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
     engines: {node: '>=0.10.0'}
     dev: true
 
