@@ -143,7 +143,7 @@
     "jsdoc": "4.0.0",
     "mocha": "10.2.0",
     "nyc": "15.1.0",
-    "prettier": "2.8.2",
+    "prettier": "2.8.3",
     "rollup": "3.10.0",
     "rollup-plugin-clear": "2.0.7",
     "rollup-plugin-copy": "3.4.0",
