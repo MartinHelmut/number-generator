@@ -139,7 +139,7 @@
     "coveralls": "3.1.1",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "8.35.0",
-    "eslint-config-prettier": "8.6.0",
+    "eslint-config-prettier": "8.7.0",
     "jsdoc": "4.0.2",
     "mocha": "10.2.0",
     "nyc": "15.1.0",
