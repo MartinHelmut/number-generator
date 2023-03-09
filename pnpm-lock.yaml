@@ -27,7 +27,7 @@ specifiers:
   rollup: 3.18.0
   rollup-plugin-clear: 2.0.7
   rollup-plugin-copy: 3.4.0
-  rollup-plugin-external-globals: 0.7.1
+  rollup-plugin-external-globals: 0.7.3
   rollup-plugin-filesize: 10.0.0
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-terser: 7.0.2
@@ -63,7 +63,7 @@ devDependencies:
   rollup: 3.18.0
   rollup-plugin-clear: 2.0.7
   rollup-plugin-copy: 3.4.0
-  rollup-plugin-external-globals: 0.7.1_rollup@3.18.0
+  rollup-plugin-external-globals: 0.7.3_rollup@3.18.0
   rollup-plugin-filesize: 10.0.0
   rollup-plugin-node-builtins: 2.1.2
   rollup-plugin-terser: 7.0.2_rollup@3.18.0
@@ -6412,8 +6412,8 @@ packages:
       is-plain-object: 3.0.1
     dev: true
 
-  /rollup-plugin-external-globals/0.7.1_rollup@3.18.0:
-    resolution: {integrity: sha512-3U2OBhCa/D57P2SA9fx1CGS1xi9h7x7L3+nnAJ0563nIucQysHQdebfKYoI+2WZVkRdVuZKh4M+rgoF0B5W9Ag==}
+  /rollup-plugin-external-globals/0.7.3_rollup@3.18.0:
+    resolution: {integrity: sha512-rOxtHUyIYR06kV2H5xhxIjbmdfQ7YGw/LUPFzxi9qwUqTqnbBUbZlVpkc5hs13b8KVO20Zkb+LzT2TGpJgRaIg==}
     peerDependencies:
       rollup: ^2.25.0 || ^3.3.0
     dependencies:
@@ -6682,6 +6682,7 @@ packages:
 
   /sourcemap-codec/1.4.8:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
+    deprecated: Please use @jridgewell/sourcemap-codec instead
     dev: true
 
   /spawn-wrap/2.0.0:
