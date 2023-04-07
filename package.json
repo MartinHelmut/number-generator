@@ -154,6 +154,6 @@
     "serve": "14.2.0",
     "standard-version": "9.5.0",
     "ts-node": "10.9.1",
-    "typescript": "5.0.2"
+    "typescript": "5.0.4"
   }
 }
