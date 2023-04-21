@@ -78,7 +78,7 @@ to generate a minified version of the library under `lib/`.
 You can serve the documentation locally or via your local network by running:
 
 ```shell script
-pnpm docs
+pnpm docs:local
 ```
 
 This will use [JSDoc][jsdoc] to generate the documentation.
@@ -100,10 +100,10 @@ Push the changes with your feature branch and create a "Pull Request" on GitHub.
 5.  Publish: `NPM_CONFIG_OTP=XXXXXX npm publish` (replace `XXXXXX` with a valid 2FA token)
 6.  **Done!**
 
-For more information on building a release see [https://github.com/conventional-changelog/standard-version][sv]
+For more information on building a release see [https://github.com/absolute-version/commit-and-tag-version][sv]
 
 [czcli]: http://commitizen.github.io/cz-cli/
-[sv]: https://github.com/conventional-changelog/standard-version
+[sv]: https://github.com/absolute-version/commit-and-tag-version
 [karma]: https://karma-runner.github.io/1.0/index.html
 [pnurl]: https://pnpm.js.org/docs/en/installation.html
 [jsdoc]: https://jsdoc.app/
