@@ -4,7 +4,6 @@
 [![Build Status][circleimg]][circle]
 [![Coverage Status][covimg]][covurl]
 [![Commitizen friendly][czimg]][czcli]
-[![Standard Version][stdimg]][stdurl]
 [![styled with prettier][prtimg]][prturl]
 
 Generate repeatable pseudo random numbers and non-cryptographic hash numbers for usage in Node.js (>= 8) and browser environments (major browsers and IE >= 10).
@@ -389,8 +388,6 @@ Big thanks as well to Alex Ciminian for raising the issue with non ASCII charact
 [covurl]: https://coveralls.io/github/MartinHelmut/number-generator?branch=main
 [czimg]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
 [czcli]: http://commitizen.github.io/cz-cli/
-[stdimg]: https://img.shields.io/badge/release-standard%20version-brightgreen.svg
-[stdurl]: https://github.com/conventional-changelog/standard-version
 [prtimg]: https://img.shields.io/badge/styled_with-prettier-ff69b4.svg
 [prturl]: https://github.com/prettier/prettier
 [ts]: http://www.typescriptlang.org/
