@@ -129,7 +129,7 @@
     "@rollup/plugin-terser": "0.4.1",
     "@types/chai": "4.3.5",
     "@types/mocha": "10.0.1",
-    "@types/node": "18.16.2",
+    "@types/node": "18.16.3",
     "agadoo": "3.0.0",
     "benchmark": "2.1.4",
     "chai": "4.3.7",
