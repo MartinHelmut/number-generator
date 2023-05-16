@@ -20,8 +20,8 @@ devDependencies:
     specifier: 5.0.2
     version: 5.0.2(rollup@3.21.8)
   '@rollup/plugin-terser':
-    specifier: 0.4.1
-    version: 0.4.1(rollup@3.21.8)
+    specifier: 0.4.2
+    version: 0.4.2(rollup@3.21.8)
   '@types/chai':
     specifier: 4.3.5
     version: 4.3.5
@@ -1655,8 +1655,8 @@ packages:
       rollup: 3.21.8
     dev: true
 
-  /@rollup/plugin-terser@0.4.1(rollup@3.21.8):
-    resolution: {integrity: sha512-aKS32sw5a7hy+fEXVy+5T95aDIwjpGHCTv833HXVtyKMDoVS7pBr5K3L9hEQoNqbJFjfANPrNpIXlTQ7is00eA==}
+  /@rollup/plugin-terser@0.4.2(rollup@3.21.8):
+    resolution: {integrity: sha512-jfUVQ4MxzIB0mz8QhDA1xiLT+pTF3WEWXeIqcwhoF84WhLWscPpxjJgjYMyAq0Po4UXqw2D9C64tD0gRDzJzfA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       rollup: ^2.x || ^3.x
