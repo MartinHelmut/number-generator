@@ -20,8 +20,8 @@ devDependencies:
     specifier: 5.0.2
     version: 5.0.2(rollup@3.22.0)
   '@rollup/plugin-terser':
-    specifier: 0.4.2
-    version: 0.4.2(rollup@3.22.0)
+    specifier: 0.4.3
+    version: 0.4.3(rollup@3.22.0)
   '@types/chai':
     specifier: 4.3.5
     version: 4.3.5
@@ -1655,8 +1655,8 @@ packages:
       rollup: 3.22.0
     dev: true
 
-  /@rollup/plugin-terser@0.4.2(rollup@3.22.0):
-    resolution: {integrity: sha512-jfUVQ4MxzIB0mz8QhDA1xiLT+pTF3WEWXeIqcwhoF84WhLWscPpxjJgjYMyAq0Po4UXqw2D9C64tD0gRDzJzfA==}
+  /@rollup/plugin-terser@0.4.3(rollup@3.22.0):
+    resolution: {integrity: sha512-EF0oejTMtkyhrkwCdg0HJ0IpkcaVg1MMSf2olHb2Jp+1mnLM04OhjpJWGma4HobiDTF0WCyViWuvadyE9ch2XA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       rollup: ^2.x || ^3.x
@@ -1665,9 +1665,9 @@ packages:
         optional: true
     dependencies:
       rollup: 3.22.0
-      serialize-javascript: 6.0.0
-      smob: 0.0.6
-      terser: 5.17.1
+      serialize-javascript: 6.0.1
+      smob: 1.0.0
+      terser: 5.17.4
     dev: true
 
   /@rollup/plugin-virtual@3.0.1(rollup@3.22.0):
@@ -6605,6 +6605,12 @@ packages:
       randombytes: 2.1.0
     dev: true
 
+  /serialize-javascript@6.0.1:
+    resolution: {integrity: sha512-owoXEFjWRllis8/M1Q+Cw5k8ZH40e3zhp/ovX+Xr/vi1qj6QesbyXXViFbpNvWvPNAD62SutwEXavefrLJWj7w==}
+    dependencies:
+      randombytes: 2.1.0
+    dev: true
+
   /serve-handler@6.1.5:
     resolution: {integrity: sha512-ijPFle6Hwe8zfmBxJdE+5fta53fdIY0lHISJvuikXB3VYFafRjMRpOffSPvCYsbKyBA7pvy9oYr/BT1O3EArlg==}
     dependencies:
@@ -6709,8 +6715,8 @@ packages:
     engines: {node: '>= 6.0.0', npm: '>= 3.0.0'}
     dev: true
 
-  /smob@0.0.6:
-    resolution: {integrity: sha512-V21+XeNni+tTyiST1MHsa84AQhT1aFZipzPpOFAVB8DkHzwJyjjAmt9bgwnuZiZWnIbMo2duE29wybxv/7HWUw==}
+  /smob@1.0.0:
+    resolution: {integrity: sha512-fnePEPpgGjAdBDk0nV7L9jcStbbcUsKS5TC+RYambCSU9Dm1k2rqDivdg5LBRVWF/NXe0Rq8yfnKKQI08kSXIg==}
     dev: true
 
   /socks-proxy-agent@7.0.0:
@@ -6984,8 +6990,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /terser@5.17.1:
-    resolution: {integrity: sha512-hVl35zClmpisy6oaoKALOpS0rDYLxRFLHhRuDlEGTKey9qHjS1w9GMORjuwIMt70Wan4lwsLYyWDVnWgF+KUEw==}
+  /terser@5.17.4:
+    resolution: {integrity: sha512-jcEKZw6UPrgugz/0Tuk/PVyLAPfMBJf5clnGueo45wTweoV8yh7Q7PEkhkJ5uuUbC7zAxEcG3tqNr1bstkQ8nw==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
