@@ -54,8 +54,8 @@ devDependencies:
     specifier: 3.1.25
     version: 3.1.25
   conventional-changelog-conventionalcommits:
-    specifier: 5.0.0
-    version: 5.0.0
+    specifier: 6.0.0
+    version: 6.0.0
   coveralls:
     specifier: 3.1.1
     version: 3.1.1
@@ -2931,6 +2931,13 @@ packages:
       compare-func: 2.0.0
       lodash: 4.17.21
       q: 1.5.1
+    dev: true
+
+  /conventional-changelog-conventionalcommits@6.0.0:
+    resolution: {integrity: sha512-pOQWvJ2se8UmGj3Vz5NzhljdgHvGow6ATZ7pM0TZqGekAfwgJkr3YQ9ZbooB4VIh35KS/cpfIgVrLoqLNvFNYg==}
+    engines: {node: '>=14'}
+    dependencies:
+      compare-func: 2.0.0
     dev: true
 
   /conventional-changelog-core@4.2.1:

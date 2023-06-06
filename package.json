@@ -136,7 +136,7 @@
     "commit-and-tag-version": "11.2.1",
     "commitizen": "4.3.0",
     "conventional-changelog": "3.1.25",
-    "conventional-changelog-conventionalcommits": "5.0.0",
+    "conventional-changelog-conventionalcommits": "6.0.0",
     "coveralls": "3.1.1",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "8.42.0",
