@@ -54,8 +54,8 @@ devDependencies:
     specifier: 4.0.0
     version: 4.0.0
   conventional-changelog-conventionalcommits:
-    specifier: 6.0.0
-    version: 6.0.0
+    specifier: 6.1.0
+    version: 6.1.0
   coveralls:
     specifier: 3.1.1
     version: 3.1.1
@@ -2898,8 +2898,8 @@ packages:
       q: 1.5.1
     dev: true
 
-  /conventional-changelog-conventionalcommits@6.0.0:
-    resolution: {integrity: sha512-pOQWvJ2se8UmGj3Vz5NzhljdgHvGow6ATZ7pM0TZqGekAfwgJkr3YQ9ZbooB4VIh35KS/cpfIgVrLoqLNvFNYg==}
+  /conventional-changelog-conventionalcommits@6.1.0:
+    resolution: {integrity: sha512-3cS3GEtR78zTfMzk0AizXKKIdN4OvSh7ibNz6/DPbhWWQu7LqE/8+/GqSodV+sywUR2gpJAdP/1JFf4XtN7Zpw==}
     engines: {node: '>=14'}
     dependencies:
       compare-func: 2.0.0
@@ -3073,7 +3073,7 @@ packages:
       conventional-changelog-angular: 6.0.0
       conventional-changelog-atom: 3.0.0
       conventional-changelog-codemirror: 3.0.0
-      conventional-changelog-conventionalcommits: 6.0.0
+      conventional-changelog-conventionalcommits: 6.1.0
       conventional-changelog-core: 5.0.0
       conventional-changelog-ember: 3.0.0
       conventional-changelog-eslint: 4.0.0
