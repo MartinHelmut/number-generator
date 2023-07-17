@@ -8,7 +8,7 @@ describe("murmurhash3_x86_128()", () => {
     assert.throws(
       () => murmurhash3_x86_128(),
       TypeError,
-      "murmurhash3_x86_128(): first argument is not a string."
+      "murmurhash3_x86_128(): first argument is not a string.",
     );
   });
 
@@ -16,7 +16,7 @@ describe("murmurhash3_x86_128()", () => {
     assert.throws(
       () => murmurhash3_x86_128(true),
       TypeError,
-      "murmurhash3_x86_128(): first argument is not a string."
+      "murmurhash3_x86_128(): first argument is not a string.",
     );
   });
 
@@ -107,7 +107,7 @@ describe("murmurhash3_x86_128()", () => {
 
     // Test the "unique-nes" of the generated numbers
     const uniqueStack = stack.filter(
-      (value, index, self) => index === self.indexOf(value)
+      (value, index, self) => index === self.indexOf(value),
     );
 
     assert.lengthOf(stack, uniqueStack.length);
@@ -127,7 +127,7 @@ describe("murmurhash3_x86_128()", () => {
 
     // Test the "unique-nes" of the generated numbers
     const uniqueStack = stack.filter(
-      (value, index, self) => index === self.indexOf(value)
+      (value, index, self) => index === self.indexOf(value),
     );
 
     assert.lengthOf(stack, uniqueStack.length);

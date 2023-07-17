@@ -99,7 +99,7 @@ export function throwInvalidMurmurSeed(seed) {
 export function throwInvalidAleaSeed(seed) {
   if (seed % 1 !== 0 || seed <= 0) {
     throw new TypeError(
-      `Expected seed to be an unsigned integer greater or equal 1, but got "${seed}"`
+      `Expected seed to be an unsigned integer greater or equal 1, but got "${seed}"`,
     );
   }
 }

@@ -5,12 +5,12 @@ export function requireFunction(name) {
   const fnPath = path.resolve(
     process.env.NODE_ENV === "production"
       ? `lib/${name}.js`
-      : `src/fns/${name}.js`
+      : `src/fns/${name}.js`,
   );
 
   if (!fs.existsSync(fnPath)) {
     throw new ReferenceError(
-      `Function "${name}" does not exist under ${fnPath}`
+      `Function "${name}" does not exist under ${fnPath}`,
     );
   }
 

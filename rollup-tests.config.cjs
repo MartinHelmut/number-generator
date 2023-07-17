@@ -23,7 +23,7 @@ function createTestConfig(input) {
       replace({
         [`requireFunction("${input}")`]: `numberGenerator.${input}`,
         'require("../../reference/cpp/results.json")': `(${JSON.stringify(
-          require("./src/reference/cpp/results.json")
+          require("./src/reference/cpp/results.json"),
         )})`,
         delimiters: ["", ""],
         preventAssignment: true,

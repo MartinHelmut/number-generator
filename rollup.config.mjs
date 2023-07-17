@@ -19,7 +19,7 @@ function createBundleConfig(input, output = {}) {
         sourcemapFile: `${targetDir}/${fileName}.js.map`,
         exports: "auto",
       },
-      output
+      output,
     ),
     plugins: [
       clear({ targets: [targetDir] }),

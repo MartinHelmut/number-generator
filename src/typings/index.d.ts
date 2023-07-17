@@ -13,7 +13,7 @@ export declare interface NumberGenerator {
 
 export declare type NumberHashGenerator = (
   hash: string,
-  seed?: number
+  seed?: number,
 ) => number;
 
 export declare function aleaRNGFactory(initialSeed?: number): NumberGenerator;
@@ -21,9 +21,9 @@ export declare function murmurhash2_x86_32(hash: string, seed?: number): number;
 export declare function murmurhash3_x86_32(hash: string, seed?: number): number;
 export declare function murmurhash3_x86_128(
   hash: string,
-  seed?: number
+  seed?: number,
 ): string;
 export declare function murmurhash3_x64_128(
   hash: string,
-  seed?: number
+  seed?: number,
 ): string;
