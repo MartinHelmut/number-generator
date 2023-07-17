@@ -42,14 +42,14 @@ describe("utils", () => {
     it("returns an unsigned integer incremented by a left shift of 8 bit", () => {
       assert.strictEqual(
         uInt32Getter(["a".charCodeAt(0), "b".charCodeAt(0)], 0),
-        25185
+        25185,
       );
       assert.strictEqual(
         uInt32Getter(
           ["a".charCodeAt(0), "b".charCodeAt(0), "c".charCodeAt(0)],
-          0
+          0,
         ),
-        6513249
+        6513249,
       );
       assert.strictEqual(
         uInt32Getter(
@@ -59,9 +59,9 @@ describe("utils", () => {
             "c".charCodeAt(0),
             "d".charCodeAt(0),
           ],
-          0
+          0,
         ),
-        1684234849
+        1684234849,
       );
     });
 
@@ -73,7 +73,7 @@ describe("utils", () => {
           "c".charCodeAt(0),
           "d".charCodeAt(0),
         ],
-        0
+        0,
       );
       const int2 = uInt32Getter(
         [
@@ -83,7 +83,7 @@ describe("utils", () => {
           "d".charCodeAt(0),
           "e".charCodeAt(0),
         ],
-        0
+        0,
       );
 
       assert.strictEqual(int1, int2);
@@ -126,7 +126,7 @@ describe("utils", () => {
       assert.throws(
         () => throwInvalidStringHash(undefined, "fn"),
         TypeError,
-        "fn(): first argument is not a string."
+        "fn(): first argument is not a string.",
       );
     });
 
@@ -134,7 +134,7 @@ describe("utils", () => {
       assert.throws(
         () => throwInvalidStringHash({}, "fn"),
         TypeError,
-        "fn(): first argument is not a string."
+        "fn(): first argument is not a string.",
       );
     });
 
@@ -142,7 +142,7 @@ describe("utils", () => {
       assert.throws(
         () => throwInvalidStringHash(null, "fn"),
         TypeError,
-        "fn(): first argument is not a string."
+        "fn(): first argument is not a string.",
       );
     });
 

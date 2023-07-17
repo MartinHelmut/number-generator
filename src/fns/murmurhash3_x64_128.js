@@ -252,37 +252,37 @@ export default (() => {
       case 15:
         calculated2 = uInt64Xor(
           calculated2,
-          uInt64LeftShift([0, hash[currentIndex + 14]], 48)
+          uInt64LeftShift([0, hash[currentIndex + 14]], 48),
         );
       // eslint-disable-next-line no-fallthrough
       case 14:
         calculated2 = uInt64Xor(
           calculated2,
-          uInt64LeftShift([0, hash[currentIndex + 13]], 40)
+          uInt64LeftShift([0, hash[currentIndex + 13]], 40),
         );
       // eslint-disable-next-line no-fallthrough
       case 13:
         calculated2 = uInt64Xor(
           calculated2,
-          uInt64LeftShift([0, hash[currentIndex + 12]], 32)
+          uInt64LeftShift([0, hash[currentIndex + 12]], 32),
         );
       // eslint-disable-next-line no-fallthrough
       case 12:
         calculated2 = uInt64Xor(
           calculated2,
-          uInt64LeftShift([0, hash[currentIndex + 11]], 24)
+          uInt64LeftShift([0, hash[currentIndex + 11]], 24),
         );
       // eslint-disable-next-line no-fallthrough
       case 11:
         calculated2 = uInt64Xor(
           calculated2,
-          uInt64LeftShift([0, hash[currentIndex + 10]], 16)
+          uInt64LeftShift([0, hash[currentIndex + 10]], 16),
         );
       // eslint-disable-next-line no-fallthrough
       case 10:
         calculated2 = uInt64Xor(
           calculated2,
-          uInt64LeftShift([0, hash[currentIndex + 9]], 8)
+          uInt64LeftShift([0, hash[currentIndex + 9]], 8),
         );
       // eslint-disable-next-line no-fallthrough
       case 9:
@@ -295,43 +295,43 @@ export default (() => {
       case 8:
         calculated1 = uInt64Xor(
           calculated1,
-          uInt64LeftShift([0, hash[currentIndex + 7]], 56)
+          uInt64LeftShift([0, hash[currentIndex + 7]], 56),
         );
       // eslint-disable-next-line no-fallthrough
       case 7:
         calculated1 = uInt64Xor(
           calculated1,
-          uInt64LeftShift([0, hash[currentIndex + 6]], 48)
+          uInt64LeftShift([0, hash[currentIndex + 6]], 48),
         );
       // eslint-disable-next-line no-fallthrough
       case 6:
         calculated1 = uInt64Xor(
           calculated1,
-          uInt64LeftShift([0, hash[currentIndex + 5]], 40)
+          uInt64LeftShift([0, hash[currentIndex + 5]], 40),
         );
       // eslint-disable-next-line no-fallthrough
       case 5:
         calculated1 = uInt64Xor(
           calculated1,
-          uInt64LeftShift([0, hash[currentIndex + 4]], 32)
+          uInt64LeftShift([0, hash[currentIndex + 4]], 32),
         );
       // eslint-disable-next-line no-fallthrough
       case 4:
         calculated1 = uInt64Xor(
           calculated1,
-          uInt64LeftShift([0, hash[currentIndex + 3]], 24)
+          uInt64LeftShift([0, hash[currentIndex + 3]], 24),
         );
       // eslint-disable-next-line no-fallthrough
       case 3:
         calculated1 = uInt64Xor(
           calculated1,
-          uInt64LeftShift([0, hash[currentIndex + 2]], 16)
+          uInt64LeftShift([0, hash[currentIndex + 2]], 16),
         );
       // eslint-disable-next-line no-fallthrough
       case 2:
         calculated1 = uInt64Xor(
           calculated1,
-          uInt64LeftShift([0, hash[currentIndex + 1]], 8)
+          uInt64LeftShift([0, hash[currentIndex + 1]], 8),
         );
       // eslint-disable-next-line no-fallthrough
       case 1:

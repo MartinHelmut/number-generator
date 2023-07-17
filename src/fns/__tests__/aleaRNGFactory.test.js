@@ -76,7 +76,7 @@ describe("aleaRNGFactory", () => {
 
       // Test the "unique-nes" of the generated numbers
       const uniqueStack = stack.filter(
-        (value, index, self) => index === self.indexOf(value)
+        (value, index, self) => index === self.indexOf(value),
       );
 
       assert.lengthOf(
@@ -84,7 +84,7 @@ describe("aleaRNGFactory", () => {
         uniqueStack.length,
         `There is/are ${
           stack.length - uniqueStack.length
-        } duplicate(s) after ${iterations} iterations.`
+        } duplicate(s) after ${iterations} iterations.`,
       );
     });
 
@@ -172,7 +172,7 @@ describe("aleaRNGFactory", () => {
 
       // Test the "unique-nes" of the generated numbers
       const uniqueStack = stack.filter(
-        (value, index, self) => index === self.indexOf(value)
+        (value, index, self) => index === self.indexOf(value),
       );
 
       assert.lengthOf(
@@ -180,7 +180,7 @@ describe("aleaRNGFactory", () => {
         uniqueStack.length,
         `There is/are ${
           stack.length - uniqueStack.length
-        } duplicate(s) after ${iterations} iterations.`
+        } duplicate(s) after ${iterations} iterations.`,
       );
     });
 
