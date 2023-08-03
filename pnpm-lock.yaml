@@ -2936,7 +2936,7 @@ packages:
       q: 1.5.1
       read-pkg: 3.0.0
       read-pkg-up: 3.0.0
-      shelljs: 0.8.4
+      shelljs: 0.8.5
       through2: 4.0.2
     dev: true
 
@@ -6908,8 +6908,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /shelljs@0.8.4:
-    resolution: {integrity: sha512-7gk3UZ9kOfPLIAbslLzyWeGiEqx9e3rxwZM0KE6EL8GlGwjym9Mrlx5/p33bWTu9YG6vcS4MBxYZDHYr5lr8BQ==}
+  /shelljs@0.8.5:
+    resolution: {integrity: sha512-TiwcRcrkhHvbrZbnRcFYMLl30Dfov3HKqzp5tO5b4pt6G/SezKcYhmDg15zXVBswHmctSAQKznqNW2LO5tTDow==}
     engines: {node: '>=4'}
     hasBin: true
     dependencies:
