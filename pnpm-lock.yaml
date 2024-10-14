@@ -3798,10 +3798,6 @@ packages:
     resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
     engines: {node: '>=0.10.0'}
 
-  source-map@0.7.3:
-    resolution: {integrity: sha512-CkCj6giN3S+n9qrYiBTX5gystlENnRW5jZeNLHpe6aue+SrHcG5VYwujhW9s4dY31mEGsxBDrHR6oI69fTXsaQ==}
-    engines: {node: '>= 8'}
-
   spawn-wrap@2.0.0:
     resolution: {integrity: sha512-EeajNjfN9zMnULLwhZZQU3GWBoFNkbngTUPfaawT4RkMiviTxcX0qfhVbGey39mfctfDHkWtuecgQ8NJcyQWHg==}
     engines: {node: '>=8'}
@@ -3932,13 +3928,8 @@ packages:
     resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
 
-  terser@5.17.4:
-    resolution: {integrity: sha512-jcEKZw6UPrgugz/0Tuk/PVyLAPfMBJf5clnGueo45wTweoV8yh7Q7PEkhkJ5uuUbC7zAxEcG3tqNr1bstkQ8nw==}
-    engines: {node: '>=10'}
-    hasBin: true
-
-  terser@5.6.0:
-    resolution: {integrity: sha512-vyqLMoqadC1uR0vywqOZzriDYzgEkNJFK4q9GeyOBHIbiECHiWLKcWfbQWAUaPfxkjDhapSlZB9f7fkMrvkVjA==}
+  terser@5.34.1:
+    resolution: {integrity: sha512-FsJZ7iZLd/BXkz+4xrRTGJ26o/6VTjQytUk8b8OxkwcD2I+79VPJlz7qss1+zE7h8GNIScFqXcDyJ/KqBYZFVA==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -5341,7 +5332,7 @@ snapshots:
     dependencies:
       serialize-javascript: 6.0.1
       smob: 1.0.0
-      terser: 5.17.4
+      terser: 5.34.1
     optionalDependencies:
       rollup: 3.28.1
 
@@ -8484,7 +8475,7 @@ snapshots:
       filesize: 6.1.0
       gzip-size: 6.0.0
       pacote: 15.1.1
-      terser: 5.6.0
+      terser: 5.34.1
     transitivePeerDependencies:
       - bluebird
       - supports-color
@@ -8624,8 +8615,6 @@ snapshots:
 
   source-map@0.6.1: {}
 
-  source-map@0.7.3: {}
-
   spawn-wrap@2.0.0:
     dependencies:
       foreground-child: 2.0.0
@@ -8764,18 +8753,11 @@ snapshots:
       mkdirp: 1.0.4
       yallist: 4.0.0
 
-  terser@5.17.4:
+  terser@5.34.1:
     dependencies:
       '@jridgewell/source-map': 0.3.3
-      acorn: 8.8.1
-      commander: 2.20.3
-      source-map-support: 0.5.21
-
-  terser@5.6.0:
-    dependencies:
       acorn: 8.9.0
       commander: 2.20.3
-      source-map: 0.7.3
       source-map-support: 0.5.21
 
   test-exclude@6.0.0:
